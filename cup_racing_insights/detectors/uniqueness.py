@@ -33,23 +33,32 @@ def detect_only_to_pole_sweep(
       GROUP BY driver
         """
     ).fetchall()
-    by_driver = {d: s for d, s in sweeps}
+    by_driver = {d: int(s) for d, s in sweeps}
     if driver not in by_driver:
         return []
-    if len(by_driver) > 1:
-        return []
+    n = by_driver[driver]
+    cohort_size = len(by_driver)
+    rank = 1 + sum(1 for c in by_driver.values() if c > n)
+    if cohort_size == 1:
+        headline = (
+            f"Only driver in league history to sweep every pole at a venue "
+            f"({n} venue weekend{'s' if n != 1 else ''})"
+        )
+    else:
+        headline = (
+            f"One of {cohort_size} drivers ever to sweep every pole at a "
+            f"venue weekend ({n} sweep{'s' if n != 1 else ''})"
+        )
     return [
         Insight(
             category=InsightCategory.FIRST_ONLY_LAST,
             kind="only_to_pole_sweep",
             subject=driver,
-            headline=(
-                f"Only driver in league history to sweep every pole at a venue "
-                f"({by_driver[driver]} venue weekend{'s' if by_driver[driver] != 1 else ''})"
-            ),
+            headline=headline,
             payload={
-                "sweep_count": int(by_driver[driver]),
-                "cohort_size": len(by_driver),
+                "sweep_count": n,
+                "cohort_size": cohort_size,
+                "rank_in_cohort": rank,
             },
         )
     ]
@@ -449,6 +458,132 @@ def detect_multiple_wdc_club(
                 "cohort_size": cohort_size,
                 "leader_titles": leader_wdc,
                 "rank_in_cohort": rank,
+            },
+        )
+    ]
+
+
+def detect_only_race_week_sweep(
+    con: DuckDBPyConnection, driver: str
+) -> list[Insight]:
+    """Driver won every race in a venue weekend, AND is the only driver in
+    league history to have done so at any weekend.
+
+    A "race-week sweep" requires winning all races at a venue weekend with
+    races_per_venue >= 3 (so a 1- or 2-race weekend can't qualify). Mirrors
+    `detect_only_to_pole_sweep` but for wins.
+    """
+    sweeps = con.execute(
+        """
+        WITH per_weekend AS (
+          SELECT r.driver, r.season_id, r.venue,
+                 SUM(CASE WHEN r.position = 1 THEN 1 ELSE 0 END) AS wins,
+                 s.races_per_venue                               AS slots
+            FROM race_results r
+            JOIN seasons s USING (season_id)
+        GROUP BY r.driver, r.season_id, r.venue, r.venue_order, s.races_per_venue
+        )
+        SELECT driver, COUNT(*) AS sweeps
+          FROM per_weekend
+         WHERE wins = slots AND slots >= 3
+      GROUP BY driver
+        """
+    ).fetchall()
+    by_driver = {d: int(s) for d, s in sweeps}
+    if driver not in by_driver:
+        return []
+    n = by_driver[driver]
+    cohort_size = len(by_driver)
+    rank = 1 + sum(1 for c in by_driver.values() if c > n)
+    if cohort_size == 1:
+        headline = (
+            f"Only driver in league history to win every race in a venue "
+            f"weekend ({n} race-week sweep{'s' if n != 1 else ''})"
+        )
+    else:
+        headline = (
+            f"One of {cohort_size} drivers ever to win every race in a venue "
+            f"weekend ({n} race-week sweep{'s' if n != 1 else ''})"
+        )
+    return [
+        Insight(
+            category=InsightCategory.FIRST_ONLY_LAST,
+            kind="only_race_week_sweep",
+            subject=driver,
+            headline=headline,
+            payload={
+                "sweep_count": n,
+                "cohort_size": cohort_size,
+                "rank_in_cohort": rank,
+            },
+        )
+    ]
+
+
+# Minimum starts at a venue before a 100%-podium claim is meaningful.
+_PERFECT_PODIUM_MIN_STARTS = 4
+
+
+def detect_only_perfect_podium_venue(
+    con: DuckDBPyConnection, driver: str
+) -> list[Insight]:
+    """Driver podiumed in every race they started at one or more venues
+    (>= 4 starts there), AND belongs to the league-wide set of drivers who
+    can make that claim.
+
+    Reported with cohort framing — "only driver" when the set is just them.
+    """
+    # Per-driver, per-venue: starts and podiums. A venue qualifies when the
+    # driver has >= MIN starts there and every one was a podium.
+    qualifying = con.execute(
+        """
+        WITH per_venue AS (
+          SELECT driver, venue,
+                 COUNT(*) FILTER (WHERE NOT dns AND position IS NOT NULL) AS starts,
+                 COUNT(*) FILTER (WHERE position BETWEEN 1 AND 3)         AS podiums
+            FROM race_results
+        GROUP BY driver, venue
+        )
+        SELECT driver, venue, starts
+          FROM per_venue
+         WHERE starts >= ? AND podiums = starts
+        """,
+        [_PERFECT_PODIUM_MIN_STARTS],
+    ).fetchall()
+    if not qualifying:
+        return []
+
+    by_driver: dict[str, list[tuple[str, int]]] = {}
+    for d, venue, starts in qualifying:
+        by_driver.setdefault(d, []).append((venue, int(starts)))
+    if driver not in by_driver:
+        return []
+
+    cohort_size = len(by_driver)
+    venues = sorted(by_driver[driver], key=lambda x: (-x[1], x[0]))
+    venue_names = [v for v, _ in venues]
+
+    if cohort_size == 1:
+        headline = (
+            f"Only driver in league history with a 100% podium rate at a venue "
+            f"({len(venues)} venue{'s' if len(venues) != 1 else ''})"
+        )
+    else:
+        headline = (
+            f"100% podium rate at {len(venues)} venue{'s' if len(venues) != 1 else ''} "
+            f"— one of {cohort_size} drivers ever to manage it"
+        )
+    return [
+        Insight(
+            category=InsightCategory.FIRST_ONLY_LAST,
+            kind="only_perfect_podium_venue",
+            subject=driver,
+            headline=headline,
+            payload={
+                "venue_count": len(venues),
+                "cohort_size": cohort_size,
+                "venues": venue_names,
+                "top_venue": {"venue": venues[0][0], "starts": venues[0][1]},
             },
         )
     ]

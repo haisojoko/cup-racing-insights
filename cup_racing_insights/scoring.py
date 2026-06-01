@@ -170,6 +170,8 @@ _RULES: dict[str, ScoringRule] = {
     "in_season_hot_streak":     ScoringRule(magnitude=("length", 12, 0.18)),
     "consecutive_season_bests": ScoringRule(magnitude=("length", 5, 0.15)),
     "seasons_always_scoring":   ScoringRule(magnitude=("season_count", 6, 0.18)),
+    "fastest_lap_streak":       ScoringRule(magnitude=("length", 10, 0.18)),
+    "consecutive_podium_weekends": ScoringRule(magnitude=("length", 8, 0.18)),
 
     # --- Records & personal bests
     "career_best_finish":       ScoringRule(position_field="position"),
@@ -178,9 +180,14 @@ _RULES: dict[str, ScoringRule] = {
     "best_venue_weekend":       ScoringRule(),
     "highest_single_race_pts":  ScoringRule(magnitude=("points", 80, 0.15)),
     "largest_win_margin":       ScoringRule(magnitude=("margin", 40, 0.15)),
-    "triple_crown_weekends":    ScoringRule(magnitude=("total", 8, 0.15)),
+    "hat_trick_races":          ScoringRule(magnitude=("total", 8, 0.15)),
     "tightest_season_range":    ScoringRule(),
     "season_never_outside_top_n": ScoringRule(),  # tightness encoded in headline; magnitude here would invert awkwardly
+    # League records — holding an all-time mark is a top-tier story; the
+    # magnitude bump keeps a bigger record (more wins) slightly ahead.
+    "league_record_wins_season":     ScoringRule(magnitude=("record", 12, 0.18),
+                                                 flat_bonuses=("historic_first",)),
+    "league_record_weighted_score":  ScoringRule(flat_bonuses=("historic_first", "singular")),
 
     # --- Concentrated / majority (ANOMALY: "all in one season")
     "concentrated_poles":   ScoringRule(magnitude=("total", 6, 0.18)),
@@ -231,7 +238,11 @@ _RULES: dict[str, ScoringRule] = {
 
     # --- Uniqueness — rarity + magnitude + leadership combos
     "only_to_pole_sweep":         ScoringRule(magnitude=("sweep_count", 8, 0.15),
-                                              flat_bonuses=("singular",)),
+                                              rarity_field="cohort_size"),
+    "only_race_week_sweep":       ScoringRule(magnitude=("sweep_count", 8, 0.15),
+                                              rarity_field="cohort_size"),
+    "only_perfect_podium_venue":  ScoringRule(magnitude=("venue_count", 4, 0.15),
+                                              rarity_field="cohort_size"),
     "sole_venue_winner":          ScoringRule(magnitude=("venue_count", 4, 0.15)),
     "wins_without_poles":         ScoringRule(magnitude=("wins", 8, 0.15),
                                               rarity_field="cohort_size"),

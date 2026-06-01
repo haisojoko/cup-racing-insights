@@ -36,14 +36,18 @@ ALL_DETECTORS: list[DetectorFn] = [
     streak.detect_in_season_hot_streak,
     streak.detect_consecutive_season_bests,
     streak.detect_seasons_always_scoring,
+    streak.detect_fastest_lap_streak,
+    streak.detect_consecutive_podium_weekends,
     # Personal bests / records
     personal_best.detect_career_best_finish,
     personal_best.detect_best_season,
     personal_best.detect_best_venue_weekend,
     personal_best.detect_highest_single_race_points,
     personal_best.detect_largest_win_margin,
-    personal_best.detect_triple_crown_weekends,
+    personal_best.detect_hat_trick_races,
     personal_best.detect_concentrated_records,
+    personal_best.detect_league_record_wins_season,
+    personal_best.detect_league_record_weighted_score,
     # Firsts / lasts
     firsts.detect_career_firsts,
     firsts.detect_career_lasts,
@@ -76,6 +80,8 @@ ALL_DETECTORS: list[DetectorFn] = [
     uniqueness.detect_won_both_classes,
     uniqueness.detect_multiple_wcc_club,
     uniqueness.detect_multiple_wdc_club,
+    uniqueness.detect_only_race_week_sweep,
+    uniqueness.detect_only_perfect_podium_venue,
     # Penalties
     penalty.detect_penalty_summary,
     # Championship margins
