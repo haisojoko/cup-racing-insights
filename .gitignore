@@ -1,12 +1,26 @@
-.venv/
-__pycache__/
-*.py[cod]
-*.egg-info/
-.DS_Store
+# Python build artifacts
+dist/
+build/
+*.egg
+.eggs/
+pip-wheel-metadata/
 
-output/
-*.duckdb
+# Env / secrets
+.env
+.env.*
+!.env.example
 
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
+# Test / coverage
+.coverage
+coverage.xml
+htmlcov/
+
+# Browser/test artifacts
+playwright-report/
+test-results/
+
+# Logs
+*.log
+
+# DuckDB sidecars
+*.duckdb.*
