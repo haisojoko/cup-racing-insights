@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>{{ driver }} — Cup Racing Insights</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-0: #0a0e1a;
+    --bg-1: #111726;
+    --bg-2: #1a2236;
+    --accent: #ff3b3b;
+    --accent-soft: rgba(255, 59, 59, 0.18);
+    --accent-edge: rgba(255, 59, 59, 0.45);
+    --gold: #f5c542;
+    --silver: #cfd6e0;
+    --text: #ffffff;
+    --text-dim: #8a93a8;
+    --text-muted: #5a637a;
+    --border: rgba(255, 255, 255, 0.06);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    width: 1200px;
+    font-family: 'Inter', -apple-system, system-ui, sans-serif;
+    color: var(--text);
+    background: var(--bg-0);
+    -webkit-font-smoothing: antialiased;
+  }
+  .card {
+    width: 100%;
+    padding: 64px 72px;
+    background:
+      radial-gradient(1200px 800px at 90% -10%, rgba(255, 59, 59, 0.18), transparent 60%),
+      radial-gradient(900px 600px at -10% 110%, rgba(80, 110, 220, 0.12), transparent 60%),
+      linear-gradient(180deg, var(--bg-1) 0%, var(--bg-0) 100%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+  .card::before {
+    content: '';
+    position: absolute;
+    inset: 28px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    pointer-events: none;
+  }
+  /* ---------- header ---------- */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .brand {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    color: var(--text-dim);
+    text-transform: uppercase;
+  }
+  .brand .dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--accent);
+    margin-right: 14px;
+    transform: translateY(-2px);
+    box-shadow: 0 0 14px var(--accent);
+  }
+  .tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 18px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+  }
+  /* ---------- title block ---------- */
+  .title-block .eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.32em;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+  .title-block h1 {
+    font-size: 160px;
+    font-weight: 900;
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+    margin-bottom: 22px;
+  }
+  .title-block .subtitle {
+    font-size: 34px;
+    color: var(--text-dim);
+    font-weight: 500;
+  }
+  /* ---------- summary strip ---------- */
+  .strip {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background: var(--bg-2);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  .stat {
+    padding: 26px 14px;
+    border-right: 1px solid var(--border);
+    text-align: center;
+  }
+  .stat:last-child { border-right: none; }
+  .stat .val {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 52px;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1;
+  }
+  .stat .label {
+    font-size: 16px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    margin-top: 10px;
+    font-weight: 600;
+  }
+  /* ---------- insights — bento grid ---------- */
+  .insights {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: dense;
+    grid-auto-rows: minmax(0, auto);
+    gap: 16px;
+  }
+  .insight {
+    background: var(--bg-2);
+    border: 1px solid var(--border);
+    border-left: 6px solid var(--accent);
+    border-radius: 14px;
+    padding: 22px 26px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    align-items: start;
+    min-width: 0;
+  }
+  .insight.span-2 { grid-column: span 2; }
+  .insight.rank-1 { border-left-color: var(--gold); }
+  .insight.rank-2 { border-left-color: var(--silver); }
+  .insight .rank {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--text-muted);
+    width: 56px;
+    text-align: right;
+    padding-top: 2px;
+    line-height: 1;
+  }
+  .insight.rank-1 .rank { color: var(--gold); }
+  .insight.rank-2 .rank { color: var(--silver); }
+  .insight .body { min-width: 0; }
+  .insight .headline {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 12px;
+    letter-spacing: -0.005em;
+  }
+  .insight.span-2 .headline {
+    font-size: 34px;
+  }
+  .insight .meta {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 8px;
+    background: var(--accent-soft);
+    border: 1px solid var(--accent-edge);
+    color: var(--text);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  .chip.muted {
+    background: transparent;
+    border-color: var(--border-strong, rgba(255,255,255,0.12));
+    color: var(--text-dim);
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <header>
+    <div class="brand"><span class="dot"></span>Cup Racing Insights</div>
+    <div class="tag">{{ data.deck_tag or 'Driver Deep Cuts' }}</div>
+  </header>
+
+  <div class="title-block">
+    <div class="eyebrow">Driver Profile</div>
+    <h1>{{ driver }}</h1>
+    <div class="subtitle">{{ data.subtitle }}</div>
+  </div>
+
+  <div class="strip">
+    <div class="stat"><div class="val">{{ data.career.races }}</div><div class="label">Starts</div></div>
+    <div class="stat"><div class="val">{{ data.career.wins }}</div><div class="label">Wins</div></div>
+    <div class="stat"><div class="val">{{ data.career.podiums }}</div><div class="label">Podiums</div></div>
+    <div class="stat"><div class="val">{{ data.career.poles }}</div><div class="label">Poles</div></div>
+    <div class="stat"><div class="val">{{ data.career.points }}</div><div class="label">Points</div></div>
+    <div class="stat"><div class="val">{{ '%.0f' | format(data.career.top5_pct * 100) }}%</div><div class="label">Top-5 Rate</div></div>
+  </div>
+
+  <div class="insights">
+    {% for i in data.insights %}
+    <div class="insight rank-{{ loop.index }}{% if i.span == 2 %} span-2{% endif %}">
+      <div class="rank">{{ '%02d' | format(loop.index) }}</div>
+      <div class="body">
+        <div class="headline">{{ i.headline }}</div>
+        {% if i.chips %}
+        <div class="meta">
+          {% for c in i.chips %}<span class="chip{% if c.muted %} muted{% endif %}">{{ c.text }}</span>{% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+</body>
+</html>

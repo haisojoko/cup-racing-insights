@@ -1,0 +1,5 @@
+{%- if p.rank_in_cohort == 1 and p.wdc_titles == p.leader_titles -%}
+**League-leading {{ p.wdc_titles }} WDC titles.** {{ ins.subject }} sits alone atop the all-time WDC count; the multi-WDC club numbers just {{ p.cohort_size }} drivers.
+{%- else -%}
+**{{ p.wdc_titles }}-time WDC champion.** {{ ins.subject }} is one of only {{ p.cohort_size }} multi-WDC drivers in league history; the leader holds {{ p.leader_titles }}.
+{%- endif -%}

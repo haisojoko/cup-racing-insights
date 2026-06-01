@@ -1,0 +1,8 @@
+<div class="ctitle">{{ t.title }}</div>
+<div class="ladder">
+  {% for s in t.context.steps %}
+  <div class="label">{{ s.label }}</div>
+  <div class="bar" style="width: {{ s.bar_pct }}%;"></div>
+  <div class="num">{{ s.length }}</div>
+  {% endfor %}
+</div>

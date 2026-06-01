@@ -1,0 +1,26 @@
+[project]
+name = "cup-racing-insights"
+version = "0.1.0"
+description = "Cup Racing League analytics + insight generator for snippets and infographics"
+requires-python = ">=3.9"
+dependencies = [
+    "duckdb>=1.0.0",
+    "pydantic>=2.0.0",
+    "jinja2>=3.1.0",
+    "typer>=0.12.0",
+    "rich>=13.0.0",
+    "playwright>=1.45.0",
+]
+
+[project.scripts]
+cri = "cup_racing_insights.cli:app"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["cup_racing_insights*"]
+
+[tool.setuptools.package-data]
+cup_racing_insights = ["templates/**/*"]

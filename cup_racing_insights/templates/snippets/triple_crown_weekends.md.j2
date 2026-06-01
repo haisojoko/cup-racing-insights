@@ -1,0 +1,8 @@
+{%- if p.total >= 4 -%}
+**{{ p.total }} career triple-crown races (pole + fastest lap + win in the same race).** {{ ins.subject }} achieved the trifecta across {{ p.season_count }} seasons, first at {{ p.first.venue }} R{{ p.first.race }} ({{ p.first.season }}), most recently at {{ p.latest.venue }} R{{ p.latest.race }} ({{ p.latest.season }}).
+{%- else -%}
+**{{ p.total }} triple-crown race{{ 's' if p.total != 1 }} (pole + fastest lap + win in one race).**
+{%- for r in p.races %}
+- {{ r.season }} {{ r.venue }} R{{ r.race }}
+{%- endfor %}
+{%- endif -%}

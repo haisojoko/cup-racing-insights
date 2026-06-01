@@ -1,0 +1,8 @@
+<div class="ctitle">{{ t.title }}</div>
+<div class="ctable">
+  {% for row in t.context.rows %}
+  <div class="k">{{ row.label }}</div>
+  <div class="v">{{ row.where }}</div>
+  <div class="meta">{{ row.season }}</div>
+  {% endfor %}
+</div>

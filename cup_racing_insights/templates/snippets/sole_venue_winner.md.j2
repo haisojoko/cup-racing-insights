@@ -1,0 +1,5 @@
+{%- if p.venue_count >= 4 -%}
+**Sole winner at {{ p.venue_count }} different circuits.** {{ ins.subject }} is the only driver in league history to have won at these tracks — examples include {{ p.examples | join(", ") }}.
+{%- else -%}
+**Sole winner in league history at {{ p.venues | join(", ") }}.** No other driver has won at th{{ 'ese venues' if p.venue_count > 1 else 'is venue' }}.
+{%- endif -%}

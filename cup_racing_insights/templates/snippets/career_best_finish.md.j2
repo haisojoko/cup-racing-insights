@@ -1,0 +1,11 @@
+**Career-best result: P{{ p.position }}.**
+{%- if p.count == 1 %}
+{{ ins.subject }} has reached the position once, at {{ p.occurrences[0].season }} {{ p.occurrences[0].venue }} R{{ p.occurrences[0].race }}, worth {{ p.occurrences[0].points }} points.
+{%- elif p.count <= 5 %}
+{{ ins.subject }} has matched it {{ p.count }} times:
+{%- for o in p.occurrences %}
+- {{ o.season }} {{ o.venue }} R{{ o.race }} — {{ o.points }} pts{% if o.pole %} (pole){% endif %}{% if o.fl %} (FL){% endif %}
+{%- endfor %}
+{%- else %}
+{{ ins.subject }} has recorded the position {{ p.count }} times. First instance: {{ p.first_occurrence.season }} {{ p.first_occurrence.venue }} R{{ p.first_occurrence.race }}. Most recent: {{ p.latest_occurrence.season }} {{ p.latest_occurrence.venue }} R{{ p.latest_occurrence.race }}.
+{%- endif %}

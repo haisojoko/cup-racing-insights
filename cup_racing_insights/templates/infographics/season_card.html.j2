@@ -1,0 +1,220 @@
+{#- Season celebration card. Inline SVG only — no asset files, no network
+    image fetches (matters for headless render). Glyphs use currentColor so
+    they inherit the surrounding text color. Template variable: `s`
+    (a SeasonSummary). -#}
+{%- macro glyph(name) -%}
+{%- if name == "trophy" -%}
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12v4a6 6 0 0 1-12 0V4Z"/><path d="M6 6H3v1a4 4 0 0 0 4 4"/><path d="M18 6h3v1a4 4 0 0 1-4 4"/><path d="M9 18h6"/><path d="M10 14.5V18"/><path d="M14 14.5V18"/><path d="M8 21h8"/></svg>
+{%- elif name == "podium" -%}
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="4" width="6" height="17"/><rect x="2" y="10" width="6" height="11"/><rect x="16" y="13" width="6" height="8"/></svg>
+{%- elif name == "pole" -%}
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V3"/><path d="M5 4h11l-2 3 2 3H5"/></svg>
+{%- elif name == "stopwatch" -%}
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 13V9"/><path d="M9 2h6"/><path d="M18.5 5.5L17 7"/></svg>
+{%- elif name == "top5" -%}
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.6L21 9.3l-4.5 4.3 1.1 6.1L12 17l-5.6 2.7 1.1-6.1L3 9.3l6.4-.4Z"/></svg>
+{%- elif name == "points" -%}
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 8.5h4a2 2 0 0 1 0 4H9.5V17"/><path d="M9.5 8.5V12.5"/></svg>
+{%- elif name == "rate" -%}
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19L19 5"/><circle cx="7.5" cy="7.5" r="2.5"/><circle cx="16.5" cy="16.5" r="2.5"/></svg>
+{%- elif name == "crown" -%}
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 7l4 4 5-6 5 6 4-4v11H3V7Z"/></svg>
+{%- endif -%}
+{%- endmacro -%}
+{#- Laurel wreath wrapping the hero badge -#}
+{%- macro laurel() -%}
+<svg class="laurel" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+  {% for side in [-1, 1] %}
+  <g transform="translate(100,100) scale({{ side }},1)">
+    {% for i in range(7) %}
+    <ellipse cx="-72" cy="0" rx="11" ry="5" transform="rotate({{ 118 + i * 13 }}) translate(0,-2)"/>
+    {% endfor %}
+    <path d="M-80 -50 A 88 88 0 0 0 -80 50"/>
+  </g>
+  {% endfor %}
+</svg>
+{%- endmacro -%}
+{#- Donut gauge: pct 0–100 with a center label -#}
+{%- macro gauge(pct, center, label) -%}
+{%- set r = 52 -%}
+{%- set circ = 6.2831853 * r -%}
+{%- set filled = circ * pct / 100 -%}
+<div class="gauge">
+  <svg viewBox="0 0 130 130">
+    <circle class="gauge-bg" cx="65" cy="65" r="{{ r }}"/>
+    <circle class="gauge-fg" cx="65" cy="65" r="{{ r }}"
+            stroke-dasharray="{{ '%.1f'|format(filled) }} {{ '%.1f'|format(circ) }}"
+            transform="rotate(-90 65 65)"/>
+    <text x="65" y="65" class="gauge-center" text-anchor="middle" dominant-baseline="central">{{ center }}</text>
+  </svg>
+  <div class="gauge-label">{{ label }}</div>
+</div>
+{%- endmacro -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>{{ s.driver }} — {{ s.season_id }} Season</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-0:#0a0e1a; --bg-1:#111726; --bg-2:#1a2236; --bg-3:#232c44;
+    --accent:#ff3b3b; --accent-soft:rgba(255,59,59,0.18); --accent-edge:rgba(255,59,59,0.45);
+    --gold:#f5c542; --gold-soft:rgba(245,197,66,0.16); --gold-edge:rgba(245,197,66,0.5);
+    --silver:#cfd6e0; --bronze:#cd8e54;
+    --text:#ffffff; --text-dim:#8a93a8; --text-muted:#5a637a;
+    --border:rgba(255,255,255,0.06); --border-strong:rgba(255,255,255,0.12);
+  }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html, body {
+    width:1200px; height:auto;
+    font-family:'Inter',-apple-system,system-ui,sans-serif;
+    color:var(--text); background:var(--bg-0); -webkit-font-smoothing:antialiased;
+  }
+  {%- set theme = 'var(--gold)' if s.hero.crown else 'var(--accent)' -%}
+  .card {
+    width:100%; padding:64px 72px; position:relative;
+    display:flex; flex-direction:column; gap:40px;
+    background:
+      radial-gradient(1200px 800px at 90% -10%, {{ 'var(--gold-soft)' if s.hero.crown else 'rgba(255,59,59,0.18)' }}, transparent 60%),
+      radial-gradient(900px 600px at -10% 110%, rgba(80,110,220,0.12), transparent 60%),
+      linear-gradient(180deg, var(--bg-1) 0%, var(--bg-0) 100%);
+  }
+  .card::before { content:''; position:absolute; inset:28px; border:1px solid var(--border);
+    border-radius:20px; pointer-events:none; }
+  header { display:flex; align-items:center; justify-content:space-between; }
+  .brand { font-family:'JetBrains Mono',monospace; font-size:22px; font-weight:700;
+    letter-spacing:0.18em; color:var(--text-dim); text-transform:uppercase; }
+  .brand .dot { display:inline-block; width:12px; height:12px; border-radius:50%;
+    background:var(--accent); margin-right:14px; transform:translateY(-2px); box-shadow:0 0 14px var(--accent); }
+  .tag { font-family:'JetBrains Mono',monospace; font-size:18px; color:var(--text-muted);
+    text-transform:uppercase; letter-spacing:0.18em; }
+  .title-block .eyebrow { font-family:'JetBrains Mono',monospace; font-size:20px; font-weight:700;
+    letter-spacing:0.32em; color:{{ theme }}; text-transform:uppercase; margin-bottom:18px;
+    display:flex; align-items:center; gap:12px; }
+  .title-block .eyebrow svg { width:30px; height:30px; }
+  .title-block h1 { font-size:128px; font-weight:900; line-height:0.95; letter-spacing:0; margin-bottom:14px; }
+  .title-block .subtitle { font-size:30px; color:var(--text-dim); font-weight:500; }
+  .title-block .subtitle b { color:var(--text); font-weight:700; }
+  .hero { display:flex; align-items:center; gap:38px;
+    background:linear-gradient(135deg, var(--bg-2) 0%, var(--bg-3) 100%);
+    border:1px solid {{ 'var(--gold-edge)' if s.hero.crown else 'var(--accent-edge)' }};
+    border-radius:20px; padding:36px 44px; }
+  .badge { position:relative; flex-shrink:0; width:160px; height:160px;
+    display:flex; align-items:center; justify-content:center; }
+  .badge .laurel { position:absolute; inset:0; width:160px; height:160px; opacity:0.9;
+    color:{% if s.hero.medal == 'gold' %}var(--gold){% elif s.hero.medal == 'silver' %}var(--silver){% elif s.hero.medal == 'bronze' %}var(--bronze){% else %}var(--text-muted){% endif %}; }
+  .badge .disc { width:104px; height:104px; border-radius:50%;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    border:2px solid rgba(255,255,255,0.25); box-shadow:0 8px 30px rgba(0,0,0,0.35);
+    background:
+      {% if s.hero.medal == 'gold' %}radial-gradient(circle at 35% 30%, #ffe9a8, var(--gold))
+      {% elif s.hero.medal == 'silver' %}radial-gradient(circle at 35% 30%, #ffffff, var(--silver))
+      {% elif s.hero.medal == 'bronze' %}radial-gradient(circle at 35% 30%, #e8b487, var(--bronze))
+      {% else %}radial-gradient(circle at 35% 30%, var(--bg-3), var(--bg-1)){% endif %}; }
+  .badge .disc .pnum { font-family:'JetBrains Mono',monospace; font-weight:700; font-size:48px; line-height:1;
+    color:{% if s.hero.medal %}#1a1206{% else %}var(--text){% endif %}; }
+  .badge .disc .plabel { font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700;
+    letter-spacing:0.18em; margin-top:4px;
+    color:{% if s.hero.medal %}rgba(26,18,6,0.7){% else %}var(--text-dim){% endif %}; }
+  .hero-text { min-width:0; }
+  .hero-text .hlabel { font-family:'JetBrains Mono',monospace; font-size:19px; font-weight:700;
+    letter-spacing:0.22em; text-transform:uppercase; color:{{ theme }}; margin-bottom:10px; }
+  .hero-text .htier { font-size:48px; font-weight:900; line-height:1.02; letter-spacing:0; }
+  .hero-text .hsub { font-size:22px; color:var(--text-dim); margin-top:12px; font-weight:500; }
+  .hero-rate-num { flex-shrink:0; width:170px; text-align:center; }
+  .hero-rate-num .big { font-family:'JetBrains Mono',monospace; font-weight:700; font-size:78px; line-height:1; color:{{ theme }}; }
+  .hero-rate-num .cap { font-family:'JetBrains Mono',monospace; font-size:16px; font-weight:700;
+    letter-spacing:0.16em; text-transform:uppercase; color:var(--text-dim); margin-top:8px; }
+  .metrics { display:flex; align-items:stretch; gap:30px; }
+  .gauges { display:flex; gap:24px; justify-content:flex-start; align-items:center; flex-shrink:0; }
+  .gauge { display:flex; flex-direction:column; align-items:center; gap:10px; }
+  .gauge svg { width:132px; height:132px; }
+  .gauge-bg { fill:none; stroke:var(--bg-3); stroke-width:10; }
+  .gauge-fg { fill:none; stroke:{{ theme }}; stroke-width:10; stroke-linecap:round; }
+  .gauge-center { fill:var(--text); font-family:'JetBrains Mono',monospace; font-size:24px; font-weight:700; }
+  .gauge-label { font-size:15px; color:var(--text-dim); font-weight:600; white-space:nowrap; }
+  .rates { flex:1; display:grid; grid-template-columns:repeat(4, minmax(0, 1fr)); gap:14px; }
+  .rate-tile { background:rgba(255,255,255,0.035); border:1px solid var(--border);
+    border-radius:14px; padding:20px 18px; display:flex; flex-direction:column; justify-content:center; min-height:112px; }
+  .rate-tile .rv { font-family:'JetBrains Mono',monospace; font-size:34px; font-weight:700; line-height:1; color:{{ theme }}; }
+  .rate-tile .rl { font-size:13px; color:var(--text-dim); font-weight:700; margin-top:12px;
+    text-transform:uppercase; letter-spacing:0.08em; }
+  .stats { display:grid; grid-template-columns:repeat(3, 1fr); gap:18px; }
+  .stat-tile { background:var(--bg-2); border:1px solid var(--border); border-radius:16px;
+    padding:28px 30px; display:flex; align-items:center; gap:22px; }
+  .stat-tile .ico { width:52px; height:52px; flex-shrink:0; color:{{ theme }};
+    display:flex; align-items:center; justify-content:center; }
+  .stat-tile .ico svg { width:100%; height:100%; }
+  .stat-tile .v { font-family:'JetBrains Mono',monospace; font-size:46px; font-weight:700; line-height:1; }
+  .stat-tile .l { font-size:17px; color:var(--text-dim); font-weight:600; margin-top:6px;
+    text-transform:uppercase; letter-spacing:0.08em; }
+</style>
+</head>
+<body>
+<div class="card">
+  <header>
+    <div class="brand"><span class="dot"></span>Cup Racing Insights</div>
+    <div class="tag">{{ s.season_id }} · {{ s.type }}</div>
+  </header>
+
+  <div class="title-block">
+    <div class="eyebrow">{% if s.hero.crown %}{{ glyph("crown") }}{% endif %}Season {{ s.season_num }} Review</div>
+    <h1>{{ s.driver }}</h1>
+    <div class="subtitle"><b>{{ s.car }}</b> · {{ s.type }} season</div>
+  </div>
+
+  <div class="hero">
+    {% if s.hero.kind == "finish" %}
+    <div class="badge">
+      {{ laurel() }}
+      <div class="disc">
+        <div class="pnum">P{{ s.hero.position }}</div>
+        <div class="plabel">{% if s.hero.count > 1 %}×{{ s.hero.count }}{% else %}BEST{% endif %}</div>
+      </div>
+    </div>
+    <div class="hero-text">
+      <div class="hlabel">{{ s.hero.tier_copy }}</div>
+      <div class="htier">{{ s.hero.label }}</div>
+      <div class="hsub">{% if s.hero.secondary %}{{ s.hero.secondary.pct }}% {{ s.hero.secondary.label | lower }}{% endif %}</div>
+    </div>
+    {% else %}
+    <div class="hero-rate-num">
+      <div class="big">{{ s.hero.pct }}%</div>
+      <div class="cap">{{ s.hero.label }}</div>
+    </div>
+    <div class="hero-text">
+      <div class="hlabel">{{ s.hero.tier_copy }}</div>
+      <div class="htier">{% if s.hero.secondary and s.hero.secondary.kind == "finish" %}Season-best P{{ s.hero.secondary.position }}{% else %}{{ s.hero.label }}{% endif %}</div>
+      <div class="hsub">{{ s.starts }} of {{ s.scheduled }} races contested</div>
+    </div>
+    {% endif %}
+  </div>
+
+  <div class="metrics">
+    <div class="gauges">
+      {% for g in s.gauges %}{{ gauge(g.pct, g.center, g.label) }}{% endfor %}
+    </div>
+    <div class="rates">
+      {% for r in s.rate_tiles %}
+      <div class="rate-tile">
+        <div class="rv">{{ r.value }}</div>
+        <div class="rl">{{ r.label }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="stats">
+    {% for t in s.stat_tiles %}
+    <div class="stat-tile">
+      <div class="ico">{{ glyph(t.glyph) }}</div>
+      <div><div class="v">{{ t.value }}</div><div class="l">{{ t.label }}</div></div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+</body>
+</html>

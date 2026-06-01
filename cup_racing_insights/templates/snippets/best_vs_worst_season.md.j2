@@ -1,0 +1,4 @@
+**Best vs worst season difference: P{{ p.best_rank }} ({{ p.best_season }}) to P{{ p.worst_rank }} ({{ p.worst_season }}).** {{ ins.subject }}'s overall championship finish has spanned {{ p.spread }} place{{ 's' if p.spread != 1 }} across {{ p.season_count }} completed seasons.
+{%- if p.series %}
+Season-by-season: {% for s in p.series %}{{ s.season }} P{{ s.rank }}{% if not loop.last %} · {% endif %}{% endfor %}
+{%- endif %}

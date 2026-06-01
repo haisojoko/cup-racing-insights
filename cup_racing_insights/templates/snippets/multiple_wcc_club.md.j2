@@ -1,0 +1,5 @@
+{%- if p.rank_in_cohort == 1 and p.wcc_titles == p.leader_titles -%}
+**League-leading {{ p.wcc_titles }} WCC titles.** {{ ins.subject }} sits alone at the top of the all-time WCC count, ahead of a multi-WCC cohort of {{ p.cohort_size }} drivers.
+{%- else -%}
+**{{ p.wcc_titles }}-time WCC winner.** {{ ins.subject }} is one of {{ p.cohort_size }} multi-WCC drivers in league history; the leader stands on {{ p.leader_titles }}.
+{%- endif -%}

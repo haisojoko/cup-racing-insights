@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>{{ driver }} — Cup Racing Insights</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-0: #0a0e1a;
+    --bg-1: #111726;
+    --bg-2: #1a2236;
+    --bg-3: #232c44;
+    --accent: #ff3b3b;
+    --accent-soft: rgba(255, 59, 59, 0.18);
+    --accent-edge: rgba(255, 59, 59, 0.45);
+    --gold: #f5c542;
+    --silver: #cfd6e0;
+    --text: #ffffff;
+    --text-dim: #8a93a8;
+    --text-muted: #5a637a;
+    --border: rgba(255, 255, 255, 0.06);
+    --border-strong: rgba(255, 255, 255, 0.12);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    width: 1200px;
+    {% if grow and trim %}
+    /* exact-fit: canvas matches content height in both directions */
+    height: auto;
+    {% elif grow %}
+    /* grow-only: at least the default, expands if content is taller */
+    min-height: 1600px;
+    {% elif trim %}
+    /* trim-only: caps at default, shrinks if content is shorter */
+    height: auto;
+    max-height: 1600px;
+    overflow: hidden;
+    {% else %}
+    /* default: locked at the fixed canvas height */
+    height: 1600px;
+    overflow: hidden;
+    {% endif %}
+    font-family: 'Inter', -apple-system, system-ui, sans-serif;
+    color: var(--text);
+    background: var(--bg-0);
+    -webkit-font-smoothing: antialiased;
+  }
+  .card {
+    width: 100%;
+    {% if grow %}min-height: 1600px;{% elif trim %}min-height: auto;{% else %}height: 100%;{% endif %}
+    padding: 56px 64px;
+    background:
+      radial-gradient(1200px 800px at 90% -10%, rgba(255, 59, 59, 0.18), transparent 60%),
+      radial-gradient(900px 600px at -10% 110%, rgba(80, 110, 220, 0.12), transparent 60%),
+      linear-gradient(180deg, var(--bg-1) 0%, var(--bg-0) 100%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  .card::before {
+    content: '';
+    position: absolute;
+    inset: 24px;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    pointer-events: none;
+  }
+  /* ---------- header ---------- */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .brand {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    color: var(--text-dim);
+    text-transform: uppercase;
+  }
+  .brand .dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--accent);
+    margin-right: 14px;
+    transform: translateY(-2px);
+    box-shadow: 0 0 14px var(--accent);
+  }
+  .tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 18px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+  }
+  /* ---------- title block ---------- */
+  .title-block .eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.32em;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+  .title-block h1 {
+    font-size: 140px;
+    font-weight: 900;
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+    margin-bottom: 22px;
+  }
+  .title-block .subtitle {
+    font-size: 30px;
+    color: var(--text-dim);
+    font-weight: 500;
+  }
+  /* ---------- summary strip ---------- */
+  .strip {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background: var(--bg-2);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  .stat {
+    padding: 24px 12px;
+    border-right: 1px solid var(--border);
+    text-align: center;
+  }
+  .stat:last-child { border-right: none; }
+  .stat .val {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1;
+  }
+  .stat .label {
+    font-size: 15px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    margin-top: 10px;
+    font-weight: 600;
+  }
+  /* ---------- hero insight ---------- */
+  .hero {
+    background: linear-gradient(135deg, var(--bg-2) 0%, var(--bg-3) 100%);
+    border: 1px solid var(--accent-edge);
+    border-left: 7px solid var(--accent);
+    border-radius: 14px;
+    padding: 28px 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .hero .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 20px;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    font-weight: 700;
+  }
+  .hero .headline {
+    font-size: 46px;
+    font-weight: 800;
+    line-height: 1.18;
+    letter-spacing: -0.005em;
+  }
+  /* ---------- card grid ---------- */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: dense;
+    gap: 18px;
+    {% if not grow and not trim %}flex: 1;
+    overflow: hidden;{% endif %}
+  }
+  .card-tile {
+    background: var(--bg-2);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 26px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: dense;
+    gap: 20px 22px;
+    align-items: start;
+    min-width: 0;
+  }
+  .card-tile.span-2 { grid-column: span 2; }
+  .card-tile .card-title {
+    grid-column: span 2;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--border-strong);
+  }
+  .tile-item { min-width: 0; }
+  .tile-item.span-2 { grid-column: span 2; }
+  /* tiles inside a card */
+  .row {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .row .row-headline {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: var(--text);
+  }
+  .row .row-meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 19px;
+    color: var(--text-muted);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  /* composite tables */
+  .ctable {
+    display: grid;
+    gap: 14px 22px;
+    grid-template-columns: auto 1fr auto;
+    align-items: baseline;
+  }
+  .ctable .k {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 19px;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-weight: 600;
+  }
+  .ctable .v {
+    font-size: 30px;
+    color: var(--text);
+    font-weight: 700;
+  }
+  .ctable .meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 19px;
+    color: var(--text-muted);
+  }
+  .ctitle {
+    font-size: 27px;
+    font-weight: 800;
+    color: var(--text);
+    letter-spacing: 0.005em;
+    margin-bottom: 10px;
+  }
+  /* milestone / ladder chains */
+  .chain {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+  }
+  .chain .step {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 16px;
+    background: var(--accent-soft);
+    border: 1px solid var(--accent-edge);
+    border-radius: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    font-weight: 700;
+    min-width: 64px;
+  }
+  .chain .step .step-meta {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-dim);
+    letter-spacing: 0.04em;
+  }
+  .chain .arrow {
+    color: var(--text-muted);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+  }
+  /* league-rank list */
+  .lrtable {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 12px 22px;
+    align-items: baseline;
+  }
+  .lrtable .rank {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--gold);
+    min-width: 52px;
+  }
+  .lrtable .rank.r2 { color: var(--silver); }
+  .lrtable .rank.rN { color: var(--text-dim); }
+  .lrtable .metric {
+    font-size: 30px;
+    color: var(--text);
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+  .lrtable .meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 19px;
+    color: var(--text-muted);
+  }
+  /* streak ladder bars */
+  .ladder {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 12px 20px;
+    align-items: center;
+  }
+  .ladder .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 19px;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-weight: 600;
+  }
+  .ladder .bar {
+    height: 14px;
+    background: var(--accent);
+    border-radius: 7px;
+    box-shadow: 0 0 14px var(--accent-soft);
+  }
+  .ladder .num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--text);
+    min-width: 50px;
+    text-align: right;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <header>
+    <div class="brand"><span class="dot"></span>Cup Racing Insights</div>
+    <div class="tag">{{ data.deck_tag or 'All-Cards Profile' }}</div>
+  </header>
+
+  <div class="title-block">
+    <div class="eyebrow">Driver Profile</div>
+    <h1>{{ driver }}</h1>
+    <div class="subtitle">{{ data.subtitle }}</div>
+  </div>
+
+  <div class="strip">
+    <div class="stat"><div class="val">{{ data.career.races }}</div><div class="label">Starts</div></div>
+    <div class="stat"><div class="val">{{ data.career.wins }}</div><div class="label">Wins</div></div>
+    <div class="stat"><div class="val">{{ data.career.podiums }}</div><div class="label">Podiums</div></div>
+    <div class="stat"><div class="val">{{ data.career.poles }}</div><div class="label">Poles</div></div>
+    <div class="stat"><div class="val">{{ data.career.points }}</div><div class="label">Points</div></div>
+    <div class="stat"><div class="val">{{ '%.0f' | format(data.career.top5_pct * 100) }}%</div><div class="label">Top-5 Rate</div></div>
+  </div>
+
+  {% if data.hero %}
+  <div class="hero">
+    <div class="label">Headline</div>
+    <div class="headline">{{ data.hero.headline }}</div>
+  </div>
+  {% endif %}
+
+  <div class="grid">
+    {% for ct in data.card_tiles %}
+    <div class="card-tile{% if ct.span == 2 %} span-2{% endif %}">
+      <div class="card-title">{{ ct.title }}</div>
+      {% for t in ct.tiles %}
+      <div class="tile-item{% if t.span == 2 %} span-2{% endif %}">
+        {% include "composites/" + t.template ignore missing %}
+      </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+</div>
+</body>
+</html>

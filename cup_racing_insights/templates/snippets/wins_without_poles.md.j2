@@ -1,0 +1,5 @@
+{%- if p.cohort_size == 1 -%}
+**Only driver in league history with multiple career wins and zero career poles.** {{ ins.subject }} has converted {{ p.wins }} race victories without ever starting from the front row of the grid.
+{%- else -%}
+**{{ p.wins }} career wins, zero career poles.** {{ ins.subject }} is one of {{ p.cohort_size }} drivers in league history to reach multiple wins without a single career pole.
+{%- endif -%}

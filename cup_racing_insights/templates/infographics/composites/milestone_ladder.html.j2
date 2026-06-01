@@ -1,0 +1,7 @@
+<div class="ctitle">{{ t.title }}</div>
+<div class="chain">
+  {% for s in t.context.steps %}
+  <div class="step">{{ s.threshold }}<div class="step-meta">{{ s.season }}</div></div>
+  {% if not loop.last %}<div class="arrow">→</div>{% endif %}
+  {% endfor %}
+</div>
