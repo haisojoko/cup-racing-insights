@@ -1,16 +1,35 @@
+# Local environment
+.venv/
+
+# Python bytecode / caches
+__pycache__/
+*.py[cod]
+
 # Python build artifacts
 dist/
 build/
 *.egg
+*.egg-info/
 .eggs/
 pip-wheel-metadata/
+
+# OS files
+.DS_Store
 
 # Env / secrets
 .env
 .env.*
 !.env.example
 
+# Generated app output / local databases
+output/
+*.duckdb
+*.duckdb.*
+
 # Test / coverage
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 .coverage
 coverage.xml
 htmlcov/
@@ -21,6 +40,3 @@ test-results/
 
 # Logs
 *.log
-
-# DuckDB sidecars
-*.duckdb.*
