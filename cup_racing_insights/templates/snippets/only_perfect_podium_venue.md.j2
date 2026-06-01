@@ -1,0 +1,5 @@
+{%- if p.cohort_size == 1 -%}
+**Only driver in league history with a 100% podium rate at a venue.** {{ ins.subject }} has finished on the podium in every race started at {{ p.venues | join(", ") }}{% if p.venue_count == 1 %} ({{ p.top_venue.starts }} starts){% endif %}.
+{%- else -%}
+**100% podium rate at {{ p.venue_count }} venue{{ 's' if p.venue_count != 1 }} ({{ p.venues | join(", ") }}).** {{ ins.subject }} is one of {{ p.cohort_size }} drivers ever to manage a perfect podium record at a circuit.
+{%- endif -%}

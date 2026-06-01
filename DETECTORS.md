@@ -31,10 +31,10 @@ firsts · splits · uniqueness · discipline · current-form · head-to-head
 
 | Status | Count |
 |---|---|
-| ✅ Shipped | 41 |
-| 📋 Planned | 40 |
+| ✅ Shipped | 47 |
+| 📋 Planned | 38 |
 | 🔬 Research / Schema-blocked | 15 |
-| **Total catalogued** | **96** |
+| **Total catalogued** | **100** |
 
 ---
 
@@ -51,6 +51,8 @@ firsts · splits · uniqueness · discipline · current-form · head-to-head
 | D-007 | 📋 | `detect_in_season_cold_streak` | `in_season_cold_streak` | streaks |
 | D-008 | ✅ | `detect_consecutive_season_bests` | `consecutive_season_bests` | streaks |
 | D-009 | ✅ | `detect_seasons_always_scoring` | `seasons_always_scoring` | streaks |
+| D-104 | ✅ | `detect_fastest_lap_streak` | `fastest_lap_streak` | streaks |
+| D-105 | ✅ | `detect_consecutive_podium_weekends` | `consecutive_podium_weekends` | streaks |
 
 ## 2 · Records & Personal Bests
 
@@ -63,8 +65,8 @@ firsts · splits · uniqueness · discipline · current-form · head-to-head
 | D-014 | ✅ | `detect_highest_single_race_points` | `highest_single_race_pts` | records |
 | D-015 | ✅ | `detect_largest_win_margin` | `largest_win_margin` | records |
 | D-016 | 📋 | `detect_career_high_low_finish` | `career_high_finish`, `career_low_finish` | records |
-| D-095 | 📋 | `detect_league_record_wins_season` | `league_record_wins_season` | records |
-| D-096 | 📋 | `detect_league_record_weighted_score` | `league_record_weighted_score` | records |
+| D-095 | ✅ | `detect_league_record_wins_season` | `league_record_wins_season` | records |
+| D-096 | ✅ | `detect_league_record_weighted_score` | `league_record_weighted_score` | records |
 
 ## 3 · Firsts, Lasts & Milestones
 
@@ -113,7 +115,7 @@ firsts · splits · uniqueness · discipline · current-form · head-to-head
 | D-042 | 📋 | `detect_pole_to_win_rate` | `pole_to_win_rate` | splits |
 | D-043 | 📋 | `detect_pole_to_podium_rate` | `pole_to_podium_rate` | splits |
 | D-044 | 📋 | `detect_wins_from_non_pole` | `wins_from_non_pole` | splits |
-| D-045 | ✅ | `detect_triple_crown_weekends` | `triple_crown_weekends` | records |
+| D-045 | ✅ | `detect_hat_trick_races` | `hat_trick_races` | records |
 
 ## 7 · Peer Rankings
 
@@ -164,6 +166,8 @@ firsts · splits · uniqueness · discipline · current-form · head-to-head
 | D-101 | ✅ | `detect_multiple_wcc_club` | `multiple_wcc_club` | uniqueness |
 | D-102 | ✅ | `detect_multiple_wdc_club` | `multiple_wdc_club` | uniqueness |
 | D-103 | 🔬 | `detect_wcc_varied_teammates` | `wcc_varied_teammates` | uniqueness |
+| D-106 | ✅ | `detect_only_race_week_sweep` | `only_race_week_sweep` | uniqueness |
+| D-107 | ✅ | `detect_only_perfect_podium_venue` | `only_perfect_podium_venue` | uniqueness |
 
 ## 11 · Penalty / Discipline
 
@@ -220,6 +224,22 @@ firsts · splits · uniqueness · discipline · current-form · head-to-head
 
 ## Change log
 
+- **Renamed D-045 `triple_crown_weekends` → `hat_trick_races`.** Aligns with
+  F1 usage: a *hat-trick* is pole + fastest lap + win in the same race (what
+  this detector measures); the *triple crown* is wins at three landmark
+  events, which we do not model. Function, insight kind, snippet template,
+  scoring rule, card mapping and docs all updated.
+- **Batch +6 shipped (race-week, streak & league-record focus).**
+  D-104 (`fastest_lap_streak`, streaks), D-105
+  (`consecutive_podium_weekends`, streaks — consecutive race weeks with ≥1
+  podium; distinct from D-025's consecutive *seasons*), D-106
+  (`only_race_week_sweep`, uniqueness — league-only to win every race in a
+  venue weekend), D-107 (`only_perfect_podium_venue`, uniqueness — 100%
+  podium rate at ≥1 venue with min-4 starts, cohort-framed), plus pulled
+  forward D-095 (`league_record_wins_season`) and D-096
+  (`league_record_weighted_score`) — both records, fire only for the
+  all-time mark holder. League records carry a `historic_first` scoring
+  bonus.
 - **Batch +5 shipped (uniqueness focus).** D-094 (`wins_without_poles`),
   D-098 (`won_both_classes`), D-099 (`venue_multi_season_podium` + aggregate
   `_career` variant), D-101 (`multiple_wcc_club`), D-102 (`multiple_wdc_club`).

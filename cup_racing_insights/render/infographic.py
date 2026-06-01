@@ -156,9 +156,13 @@ def _summary_chips(ins: Insight) -> list[dict[str, Any]]:
     elif k == "won_both_classes":
         chips.append({"text": f"{p.get('formula_wins', 0)}F / {p.get('sports_wins', 0)}S"})
         chips.append({"text": f"cohort of {p.get('cohort_size', 0)}", "muted": True})
-    elif k == "only_to_pole_sweep":
+    elif k in ("only_to_pole_sweep", "only_race_week_sweep"):
         chips.append({"text": f"×{p.get('sweep_count', 0)}"})
-        chips.append({"text": "league-only", "muted": True})
+        cohort = p.get("cohort_size", 1)
+        chips.append({"text": "league-only" if cohort == 1 else f"1 of {cohort}", "muted": True})
+    elif k == "only_perfect_podium_venue":
+        chips.append({"text": f"{p.get('venue_count', 0)} venue{'s' if p.get('venue_count', 0) != 1 else ''}"})
+        chips.append({"text": "100% podium", "muted": True})
     elif k == "only_winless_with_long_streak":
         chips.append({"text": f"{p.get('length', 0)} races"})
         chips.append({"text": "winless leader", "muted": True})
@@ -173,8 +177,16 @@ def _summary_chips(ins: Insight) -> list[dict[str, Any]]:
     elif k == "highest_single_race_pts":
         chips.append({"text": f"{p.get('points', 0)} pts"})
         chips.append({"text": f"{p.get('venue', '')} {p.get('season', '')}", "muted": True})
-    elif k == "triple_crown_weekends":
+    elif k == "hat_trick_races":
         chips.append({"text": f"×{p.get('total', 0)}"})
+    elif k == "league_record_wins_season":
+        chips.append({"text": f"{p.get('record', 0)} wins"})
+        seasons = p.get("seasons") or []
+        if seasons:
+            chips.append({"text": seasons[0], "muted": True})
+    elif k == "league_record_weighted_score":
+        chips.append({"text": f"{p.get('weighted_score', 0):.3f}"})
+        chips.append({"text": p.get("season", ""), "muted": True})
     elif k == "tightest_season_range":
         chips.append({"text": p.get("season", "")})
         if "range" in p:
@@ -190,6 +202,10 @@ def _summary_chips(ins: Insight) -> list[dict[str, Any]]:
             chips.append({"text": f"spread {p['spread']}", "muted": True})
     elif k == "consecutive_podium_seasons":
         chips.append({"text": f"{p.get('length', 0)} seasons"})
+    elif k == "consecutive_podium_weekends":
+        chips.append({"text": f"{p.get('length', 0)} weeks"})
+        if "start" in p and "end" in p:
+            chips.append({"text": f"{p['start']['season']} → {p['end']['season']}", "muted": True})
 
     # Splits
     elif k == "specialist_car":

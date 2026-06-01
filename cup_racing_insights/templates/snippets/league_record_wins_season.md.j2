@@ -1,0 +1,5 @@
+{%- if p.shared_with > 0 -%}
+**League record: {{ p.record }} race wins in a single season ({{ p.seasons | join(", ") }}).** {{ ins.subject }} shares the all-time single-season win record with {{ p.shared_with }} other driver{{ 's' if p.shared_with != 1 }}.
+{%- else -%}
+**League record: {{ p.record }} race wins in a single season ({{ p.seasons | join(", ") }}).** No driver has ever won more races in one season than {{ ins.subject }}.
+{%- endif -%}

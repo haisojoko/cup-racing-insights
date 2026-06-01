@@ -312,10 +312,13 @@ def detect_largest_win_margin(
     ]
 
 
-def detect_triple_crown_weekends(
+def detect_hat_trick_races(
     con: DuckDBPyConnection, driver: str
 ) -> list[Insight]:
     """Races where the driver took pole, fastest lap AND the win.
+
+    This is F1's "hat-trick" (pole + fastest lap + win in the same race) —
+    not to be confused with the triple crown (wins at three landmark events).
 
     For dominant drivers, returns a single aggregate; otherwise lists
     individual examples.
@@ -341,10 +344,10 @@ def detect_triple_crown_weekends(
         return [
             Insight(
                 category=InsightCategory.RECORD,
-                kind="triple_crown_weekends",
+                kind="hat_trick_races",
                 subject=driver,
                 headline=(
-                    f"{len(rows)} career triple-crown races "
+                    f"{len(rows)} career hat-tricks "
                     f"(pole + FL + win in the same race)"
                 ),
                 payload={
@@ -360,10 +363,10 @@ def detect_triple_crown_weekends(
     return [
         Insight(
             category=InsightCategory.RECORD,
-            kind="triple_crown_weekends",
+            kind="hat_trick_races",
             subject=driver,
             headline=(
-                f"{len(rows)} triple-crown race{'s' if len(rows) != 1 else ''} "
+                f"{len(rows)} hat-trick{'s' if len(rows) != 1 else ''} "
                 f"(pole + FL + win)"
             ),
             payload={
@@ -453,3 +456,96 @@ def detect_concentrated_records(
                 )
             )
     return out
+
+
+def detect_league_record_wins_season(
+    con: DuckDBPyConnection, driver: str
+) -> list[Insight]:
+    """League record for most race wins in a single season.
+
+    Fires only for the driver(s) who hold (or tie) the all-time record, so
+    it reads as a celebration of holding the mark rather than a ranking.
+    """
+    per_driver_season = con.execute(
+        """
+        SELECT driver, season_id, COUNT(*) AS wins
+          FROM race_results
+         WHERE position = 1
+      GROUP BY driver, season_id
+        """
+    ).fetchall()
+    if not per_driver_season:
+        return []
+
+    record = max(int(r[2]) for r in per_driver_season)
+    if record <= 0:
+        return []
+    holders = {r[0] for r in per_driver_season if int(r[2]) == record}
+    if driver not in holders:
+        return []
+
+    # The driver's own record-equalling season(s).
+    mine = sorted(
+        [r[1] for r in per_driver_season if r[0] == driver and int(r[2]) == record],
+        key=_season_sort_key,
+    )
+    shared = len(holders) > 1
+    headline = (
+        f"League record: {record} race wins in a single season ({mine[0]})"
+    )
+    if shared:
+        headline += f" — shared with {len(holders) - 1} other"
+        headline += "s" if len(holders) - 1 != 1 else ""
+    return [
+        Insight(
+            category=InsightCategory.RECORD,
+            kind="league_record_wins_season",
+            subject=driver,
+            headline=headline,
+            payload={
+                "record": record,
+                "seasons": mine,
+                "shared_with": len(holders) - 1,
+            },
+            sources=mine,
+        )
+    ]
+
+
+def detect_league_record_weighted_score(
+    con: DuckDBPyConnection, driver: str
+) -> list[Insight]:
+    """League record for the highest single-season weighted score ever.
+
+    Fires only for the holder. The weighted score is the league's composite
+    season-quality metric, so holding the all-time peak is a standout claim.
+    """
+    top = con.execute(
+        """
+        SELECT driver, season_id, weighted_score
+          FROM weighted_scores
+      ORDER BY weighted_score DESC
+         LIMIT 1
+        """
+    ).fetchone()
+    if not top:
+        return []
+    rec_driver, rec_season, rec_score = top
+    if rec_driver != driver:
+        return []
+    return [
+        Insight(
+            category=InsightCategory.RECORD,
+            kind="league_record_weighted_score",
+            subject=driver,
+            headline=(
+                f"League record: highest single-season weighted score ever "
+                f"({float(rec_score):.3f}, {rec_season})"
+            ),
+            payload={
+                "weighted_score": float(rec_score),
+                "season": rec_season,
+            },
+            sources=[rec_season],
+        )
+    ]

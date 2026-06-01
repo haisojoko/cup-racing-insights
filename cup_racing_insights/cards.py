@@ -83,6 +83,8 @@ CARDS: dict[str, Card] = {
             "in_season_cold_streak",
             "consecutive_season_bests",
             "seasons_always_scoring",
+            "fastest_lap_streak",
+            "consecutive_podium_weekends",
         ),
         max_items=5,
     ),
@@ -107,7 +109,9 @@ CARDS: dict[str, Card] = {
             # Reserved:
             "highest_single_race_pts",
             "largest_win_margin",
-            "triple_crown_weekends",
+            "hat_trick_races",
+            "league_record_wins_season",
+            "league_record_weighted_score",
             "career_high_finish",
             "career_low_finish",
         ),
@@ -252,6 +256,8 @@ CARDS: dict[str, Card] = {
             "won_both_classes",
             "multiple_wcc_club",
             "multiple_wdc_club",
+            "only_race_week_sweep",
+            "only_perfect_podium_venue",
         ),
         max_items=12,
         # Uniqueness produces many same-kind insights for dominant drivers

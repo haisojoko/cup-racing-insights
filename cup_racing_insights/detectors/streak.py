@@ -376,3 +376,136 @@ def detect_consecutive_points_streak(
             sources=[best_start[0], best_end[0]],
         )
     ]
+
+
+def detect_fastest_lap_streak(
+    con: DuckDBPyConnection, driver: str
+) -> list[Insight]:
+    """Longest run of consecutive races (in season order) with a fastest lap.
+
+    DNS rows break the streak, as does any race without an FL.
+    """
+    rows = _ordered_results(con, driver)
+    if not rows:
+        return []
+
+    best_len = 0
+    best_start = best_end = None
+    cur_len = 0
+    cur_start = None
+    # _ordered_results doesn't return is_fastest_lap, so pull it alongside.
+    fl_rows = con.execute(
+        f"""
+        SELECT r.season_id, r.venue, r.venue_order, r.race_num,
+               r.is_fastest_lap, r.dns
+          FROM race_results r
+          JOIN seasons s USING (season_id)
+         WHERE r.driver = ?
+      ORDER BY {_SEASON_ORDER}
+        """,
+        [driver],
+    ).fetchall()
+    for row in fl_rows:
+        _, _, _, _, is_fl, dns = row
+        if (not dns) and is_fl:
+            if cur_len == 0:
+                cur_start = row
+            cur_len += 1
+            if cur_len > best_len:
+                best_len = cur_len
+                best_start = cur_start
+                best_end = row
+        else:
+            cur_len = 0
+            cur_start = None
+
+    if best_len < 3:
+        return []
+
+    return [
+        Insight(
+            category=InsightCategory.STREAK,
+            kind="fastest_lap_streak",
+            subject=driver,
+            headline=f"{best_len}-race fastest-lap streak",
+            payload={
+                "length": best_len,
+                "start": {
+                    "season": best_start[0],
+                    "venue": best_start[1],
+                    "race": best_start[3],
+                },
+                "end": {
+                    "season": best_end[0],
+                    "venue": best_end[1],
+                    "race": best_end[3],
+                },
+            },
+            sources=[best_start[0], best_end[0]],
+        )
+    ]
+
+
+def detect_consecutive_podium_weekends(
+    con: DuckDBPyConnection, driver: str
+) -> list[Insight]:
+    """Longest run of consecutive race weeks (venue weekends) each with at
+    least one podium.
+
+    A "race week" is one venue weekend (a season_id + venue_order group). We
+    walk the weekends the driver actually contested, in calendar order, and
+    find the longest run where every weekend yielded a podium. Distinct from
+    `consecutive_podium_seasons` (D-025), which counts whole seasons.
+    """
+    rows = con.execute(
+        f"""
+        SELECT r.season_id, r.venue, r.venue_order,
+               MAX(CASE WHEN r.position BETWEEN 1 AND 3 THEN 1 ELSE 0 END) AS has_podium
+          FROM race_results r
+          JOIN seasons s USING (season_id)
+         WHERE r.driver = ? AND NOT r.dns
+      GROUP BY r.season_id, r.venue, r.venue_order, s.season_num, s.season_sub
+      ORDER BY s.season_num, s.season_sub, r.venue_order
+        """,
+        [driver],
+    ).fetchall()
+    if not rows:
+        return []
+
+    best_len = 0
+    best_start = best_end = None
+    cur_len = 0
+    cur_start = None
+    for row in rows:
+        has_podium = row[3]
+        if has_podium:
+            if cur_len == 0:
+                cur_start = row
+            cur_len += 1
+            if cur_len > best_len:
+                best_len = cur_len
+                best_start = cur_start
+                best_end = row
+        else:
+            cur_len = 0
+            cur_start = None
+
+    if best_len < 3:
+        return []
+
+    return [
+        Insight(
+            category=InsightCategory.STREAK,
+            kind="consecutive_podium_weekends",
+            subject=driver,
+            headline=(
+                f"{best_len} consecutive race weeks with a podium"
+            ),
+            payload={
+                "length": best_len,
+                "start": {"season": best_start[0], "venue": best_start[1]},
+                "end": {"season": best_end[0], "venue": best_end[1]},
+            },
+            sources=sorted({best_start[0], best_end[0]}),
+        )
+    ]

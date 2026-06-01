@@ -135,7 +135,7 @@ a curated set of detectors; the same detector may feed multiple cards.
 `detect_distinct_venues_won` · `detect_venue_pole_sweep` · `detect_venue_repeat_wins` · `detect_best_avg_venue` · `detect_weekend_multi_podium` · `detect_venue_multi_season_podium`
 
 ### `records` — Records & Personal Bests
-`detect_career_best_finish` · `detect_best_season` · `detect_best_venue_weekend` · `detect_concentrated_records` · `detect_highest_single_race_points` · `detect_largest_win_margin` · `detect_personal_best_season_rank` · `detect_triple_crown_weekends` · `detect_tightest_season_range`
+`detect_career_best_finish` · `detect_best_season` · `detect_best_venue_weekend` · `detect_concentrated_records` · `detect_highest_single_race_points` · `detect_largest_win_margin` · `detect_personal_best_season_rank` · `detect_hat_trick_races` · `detect_tightest_season_range`
 
 ### `trajectory` — Career Trajectory
 `detect_best_vs_worst_season` · `detect_consecutive_podium_seasons` · `detect_personal_best_season_rank` · `detect_comeback_after_gap`
