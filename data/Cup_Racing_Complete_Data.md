@@ -8,15 +8,15 @@ Season 18 was split into S18a and S18b (both sports car seasons).
 
 | Season | Type | Car | Venues | Races/Venue | WDC | WCC |
 | --- | --- | --- | --- | --- | --- | --- |
-| S1 | Formula | Super Formula 2020 | Autopolis, MidField Raceway, Interlagos | 3 | Josie | Josie + Ghin |
+| S1 | Formula | Super Formula 2020 | Autopolis, Midfield Raceway, Interlagos | 3 | Josie | Josie + Ghin |
 | S2 | Sports | Cup Miata | Laguna Seca, Watkins Glen Short, Brands Hatch Indy, Red Bull Ring National | 3 | Josie | James + Isaac |
 | S3 | Formula | Tatuus FA01 | Vallelunga Classic, Tokyo R246, Road America, Suzuka | 3 | Josie | Josie + Joyce |
-| S4 | Sports | TCR 2023 | Midfield Raceway, Usui Circuit, Tsukuba Circuit, Misano International Raceway | 3 | James | James + Isaac |
+| S4 | Sports | TCR 2023 | Midfield Raceway, Usui Circuit, Tsukuba, Misano | 3 | James | James + Isaac |
 | S5 | Formula | F1 2013 (single car spec) | Silverstone, Mugello, Interlagos, Suzuka | 3 | Josie | Dom + Lee |
 | S6 | Sports | Cup Miata | Midfield Raceway, VIR North, Zandvoort, Laguna Seca | 3 | Josie | Colin + Green Kyle + Martin |
-| S7 | Formula | F1 2000 (single car spec) | Nurburgring Grand Prix, Watkins Glen, Brands Hatch, Spa | 3 | Josie | Josie + Lee |
+| S7 | Formula | F1 2000 (single car spec) | Nurburgring, Watkins Glen, Brands Hatch, Spa | 3 | Josie | Josie + Lee |
 | S8 | Sports | Street Cars | Oran Park, Silver Coin, Tsukuba, Zwartkops | 3 | Green Kyle | Brie + Tawm + Mike |
-| S9 | Formula | F1 2023 (single car spec) | Mugello, Pinwheel, Dragon Trail Seaside, Autodromo de Palmadera | 3 | Josie | Josie + Toby |
+| S9 | Formula | F1 2023 (single car spec) | Mugello, Pinwheel, Dragon Trail Seaside, Autodromo de Palmadera (chicane) | 3 | Josie | Josie + Toby |
 | S10 | Sports | TCR 2023 | Road America, Red Bull Ring, Albert Park, Estoril | 4 | Josie | Josie + Toby |
 | S11 | Formula | F1 1991 (McLaren, Williams, Ferrari) | Circuit d'Ajaccio, Autopolis, Suzuka, Interlagos | 4 | Josie | Lee + Green Kyle + Colin |
 | S12 | Sports | Caterham 420R/R300 | Club Motorsport, Deep Forest Raceway, Mid Ohio, Road Atlanta | 4 | Josie | Josie + Joyce |
@@ -25,12 +25,13 @@ Season 18 was split into S18a and S18b (both sports car seasons).
 | S15 | Formula | F1 1986 (single car spec) | Silverstone, PGO International, Imola, Kalinago | 4 | Josie | Josie + Toby |
 | S16 | Sports | 70s GT | Riverside NASCAR, Daytona Road Course, Port Newark, Silver City Circuit | 4 | Toby | Lee + Toby + Lucian |
 | S17 | Formula | F1 2026 V12 (single car spec) | Red Bull Ring 2024, Barcelona GP Moto, Pinwheel, Albert Park | 4 | Josie | James + Lee + Colin |
-| S18a | Sports | WEC (GT3 and Hypercars) | Chang International, Okayama, Autodromo de Palmadera, Fuji Short (chicane) | 4 | James | James + Lee |
+| S18a | Sports | WEC (GT3 and Hypercars) | Chang International, Okayama, Autodromo de Palmadera, Fuji Short (no chicane) | 4 | James | James + Lee |
 | S18b | Sports | WEC (GT3 and Hypercars) | Watkins Glen Classic Boot, Circuit d'Ajaccio, Sonoma Long, Zandvoort | 4 | Lee | Toby + Walnut |
-| S19 | Formula | Tatuus FA01 | Imola 2025, Circuit of the Americas, Singapore GP 2025, Hungaroring 2025 | 4 | Josie | Josie + Toby |
+| S19 | Formula | Tatuus FA01 | Imola, COTA, Singapore, Hungaroring | 4 | Josie | Josie + Toby |
 | S20 | Sports | Josie GT (tuners with slicks and aero) | Oulton Park International Hislops, Tokyo R246, Mid Ohio, Donington Park National | 4 | Josie | Josie + Toby |
-| S21 | Formula | F1 2007 (McLaren, Ferrari) | Kyalami, Shanghai GP, Monza, Sepang GP | 4 | James | Allan + Walnut |
-| S22 | Sports | GT4 | VIR, Charlotte Roval, Barcelona City Circuit, Road Atlanta | 4 | TBD | TBD |
+| S21 | Formula | F1 2007 (McLaren, Ferrari) | Kyalami, Shanghai, Monza, Sepang | 4 | James | Allan + Walnut |
+| S22 | Sports | GT4 | VIR, Charlotte Roval, Barcelona City Circuit, Road Atlanta | 4 | Josie | Josie + Toby + Kevin + Alfred |
+| S23 | Formula | F1 1990 (McLaren, Ferrari) | Silverstone, Spa, Suzuka, Interlagos | 4 | TBD | TBD |
 
 ## Scoring System
 
@@ -50,9 +51,9 @@ Cumulative career statistics for all drivers across all completed seasons.
 
 ## Championship Winners
 
-- **Josie**: 16 WDC, 11 WCC
+- **Josie**: 17 WDC, 12 WCC
 - **James**: 3 WDC, 4 WCC
-- **Toby**: 2 WDC, 9 WCC
+- **Toby**: 2 WDC, 10 WCC
 - **Lee**: 1 WDC, 6 WCC
 - **Green Kyle**: 1 WDC, 2 WCC
 
@@ -60,123 +61,126 @@ Cumulative career statistics for all drivers across all completed seasons.
 
 | Driver | WDC | WCC | Wins | Podiums | Poles | FLs | Points | Races | Win% | Pod% | Pts/Race | FL% | Top5 | Top5% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Josie | 16 | 11 | 153 | 252 | 229 | 210 | 8442 | 316 | 48.4% | 79.7% | 26.7 | 66.5% | 288 | 91.1% |
-| James | 3 | 4 | 68 | 200 | 69 | 81 | 6963 | 304 | 22.4% | 65.8% | 22.9 | 26.6% | 261 | 85.9% |
-| Lee | 1 | 6 | 30 | 130 | 15 | 16 | 5357 | 262 | 11.5% | 49.6% | 20.4 | 6.1% | 195 | 74.4% |
-| Brie | 0 | 1 | 11 | 77 | 0 | 6 | 4451 | 235 | 4.7% | 32.8% | 18.9 | 2.6% | 163 | 69.4% |
-| Toby | 2 | 9 | 31 | 102 | 22 | 24 | 4193 | 197 | 15.7% | 51.8% | 21.3 | 12.2% | 160 | 81.2% |
-| Colin | 0 | 3 | 3 | 19 | 0 | 0 | 3754 | 249 | 1.2% | 7.6% | 15.1 | 0% | 71 | 28.5% |
+| Josie | 17 | 12 | 160 | 261 | 237 | 218 | 8767 | 328 | 48.8% | 79.6% | 26.7 | 66.5% | 299 | 91.2% |
+| James | 3 | 4 | 68 | 206 | 69 | 82 | 7135 | 312 | 21.8% | 66.0% | 22.9 | 26.3% | 268 | 85.9% |
+| Lee | 1 | 6 | 32 | 134 | 17 | 17 | 5558 | 274 | 11.7% | 48.9% | 20.3 | 6.2% | 201 | 73.4% |
+| Brie | 0 | 1 | 11 | 77 | 0 | 6 | 4495 | 241 | 4.6% | 32.0% | 18.7 | 2.5% | 163 | 67.6% |
+| Toby | 2 | 10 | 31 | 102 | 22 | 24 | 4335 | 209 | 14.8% | 48.8% | 20.7 | 11.5% | 161 | 77.0% |
+| Colin | 0 | 3 | 3 | 19 | 0 | 0 | 3841 | 257 | 1.2% | 7.4% | 14.9 | 0% | 72 | 28.0% |
 | Isaac | 0 | 2 | 2 | 34 | 0 | 1 | 2919 | 184 | 1.1% | 18.5% | 15.9 | 0.5% | 70 | 38.0% |
-| Green Kyle | 1 | 2 | 10 | 30 | 8 | 7 | 2563 | 158 | 6.3% | 19.0% | 16.2 | 4.4% | 67 | 42.4% |
-| Mike | 0 | 1 | 0 | 5 | 0 | 0 | 2551 | 186 | 0% | 2.7% | 13.7 | 0% | 30 | 16.1% |
+| Mike | 0 | 1 | 0 | 5 | 0 | 0 | 2668 | 196 | 0% | 2.6% | 13.6 | 0% | 30 | 15.3% |
+| Green Kyle | 1 | 2 | 10 | 30 | 8 | 7 | 2629 | 166 | 6.0% | 18.1% | 15.8 | 4.2% | 67 | 40.4% |
+| Walnut | 0 | 2 | 7 | 39 | 0 | 1 | 2351 | 130 | 5.4% | 30.0% | 18.1 | 0.8% | 80 | 61.5% |
 | Tawm | 0 | 1 | 5 | 34 | 0 | 2 | 2287 | 129 | 3.9% | 26.4% | 17.7 | 1.6% | 71 | 55.0% |
-| Walnut | 0 | 2 | 6 | 34 | 0 | 0 | 2121 | 118 | 5.1% | 28.8% | 18.0 | 0% | 73 | 61.9% |
 | Joyce | 0 | 2 | 0 | 11 | 0 | 1 | 1407 | 99 | 0% | 11.1% | 14.2 | 1.0% | 22 | 22.2% |
-| Dom | 0 | 1 | 12 | 28 | 7 | 7 | 1203 | 57 | 21.1% | 49.1% | 21.1 | 12.3% | 41 | 71.9% |
-| Allan | 0 | 1 | 0 | 11 | 6 | 0 | 1138 | 71 | 0% | 15.5% | 16.0 | 0% | 35 | 49.3% |
+| Dom | 0 | 1 | 12 | 28 | 7 | 7 | 1261 | 60 | 20.0% | 46.7% | 21.0 | 11.7% | 44 | 73.3% |
+| Allan | 0 | 1 | 0 | 11 | 6 | 0 | 1253 | 79 | 0% | 13.9% | 15.9 | 0% | 37 | 46.8% |
 | Jerry | 0 | 0 | 2 | 10 | 6 | 7 | 815 | 54 | 3.7% | 18.5% | 15.1 | 13.0% | 21 | 38.9% |
-| Alfred | 0 | 0 | 0 | 0 | 0 | 0 | 784 | 64 | 0% | 0% | 12.3 | 0% | 5 | 7.8% |
-| Ghin | 0 | 1 | 0 | 0 | 0 | 0 | 636 | 55 | 0% | 0% | 11.6 | 0% | 1 | 1.8% |
-| Timmy | 0 | 0 | 0 | 1 | 0 | 0 | 520 | 46 | 0% | 2.2% | 11.3 | 0% | 3 | 6.5% |
+| Alfred | 0 | 1 | 0 | 0 | 0 | 0 | 814 | 68 | 0% | 0% | 12.0 | 0% | 5 | 7.4% |
+| Ghin | 0 | 1 | 0 | 0 | 0 | 0 | 688 | 63 | 0% | 0% | 10.9 | 0% | 1 | 1.6% |
+| Timmy | 0 | 0 | 0 | 1 | 0 | 0 | 578 | 52 | 0% | 1.9% | 11.1 | 0% | 3 | 5.8% |
+| Kevin | 0 | 1 | 0 | 1 | 0 | 0 | 502 | 38 | 0% | 2.6% | 13.2 | 0% | 9 | 23.7% |
 | Caleb | 0 | 1 | 0 | 4 | 0 | 0 | 490 | 32 | 0% | 12.5% | 15.3 | 0% | 13 | 40.6% |
-| Kevin | 0 | 0 | 0 | 1 | 0 | 0 | 451 | 32 | 0% | 3.1% | 14.1 | 0% | 9 | 28.1% |
-| Michael G | 0 | 0 | 0 | 0 | 0 | 0 | 413 | 39 | 0% | 0% | 10.6 | 0% | 1 | 2.6% |
-| Samson | 0 | 0 | 0 | 2 | 0 | 0 | 380 | 29 | 0% | 6.9% | 13.1 | 0% | 6 | 20.7% |
+| Michael G | 0 | 0 | 0 | 0 | 0 | 0 | 451 | 43 | 0% | 0% | 10.5 | 0% | 1 | 2.3% |
+| Samson | 0 | 0 | 0 | 2 | 0 | 0 | 439 | 33 | 0% | 6.1% | 13.3 | 0% | 9 | 27.3% |
 | Austin | 0 | 0 | 0 | 0 | 0 | 0 | 369 | 28 | 0% | 0% | 13.2 | 0% | 6 | 21.4% |
 | Nick | 0 | 0 | 0 | 7 | 1 | 1 | 346 | 20 | 0% | 35.0% | 17.3 | 5.0% | 13 | 65.0% |
 | Calvin | 0 | 0 | 0 | 0 | 0 | 0 | 315 | 21 | 0% | 0% | 15.0 | 0% | 6 | 28.6% |
-| JingTang | 0 | 0 | 0 | 3 | 0 | 0 | 271 | 22 | 0% | 13.6% | 12.3 | 0% | 5 | 22.7% |
+| JingTang | 0 | 0 | 0 | 3 | 0 | 0 | 306 | 26 | 0% | 11.5% | 11.8 | 0% | 5 | 19.2% |
+| Chris | 0 | 0 | 2 | 6 | 0 | 0 | 236 | 12 | 16.7% | 50.0% | 19.7 | 0% | 9 | 75.0% |
+| DK | 0 | 0 | 0 | 6 | 4 | 1 | 225 | 12 | 0% | 50.0% | 18.8 | 8.3% | 7 | 58.3% |
+| Arren | 0 | 0 | 0 | 2 | 0 | 0 | 224 | 24 | 0% | 8.3% | 9.3 | 0% | 5 | 20.8% |
 | Edwin | 0 | 0 | 0 | 0 | 0 | 0 | 193 | 17 | 0% | 0% | 11.4 | 0% | 0 | 0% |
 | Abu | 0 | 0 | 0 | 0 | 0 | 0 | 188 | 12 | 0% | 0% | 15.7 | 0% | 3 | 25.0% |
 | Martin | 0 | 1 | 0 | 0 | 0 | 0 | 187 | 15 | 0% | 0% | 12.5 | 0% | 0 | 0% |
 | Viphu | 0 | 0 | 0 | 0 | 0 | 0 | 175 | 18 | 0% | 0% | 9.7 | 0% | 0 | 0% |
 | Luke | 0 | 0 | 0 | 0 | 0 | 0 | 170 | 15 | 0% | 0% | 11.3 | 0% | 0 | 0% |
 | Clive | 0 | 0 | 0 | 0 | 0 | 0 | 165 | 18 | 0% | 0% | 9.2 | 0% | 0 | 0% |
+| Donald | 0 | 0 | 1 | 2 | 0 | 0 | 160 | 10 | 10.0% | 20.0% | 16.0 | 0% | 5 | 50.0% |
 | Ryan | 0 | 0 | 0 | 0 | 0 | 0 | 145 | 12 | 0% | 0% | 12.1 | 0% | 0 | 0% |
 | Ivan | 0 | 0 | 0 | 0 | 0 | 0 | 130 | 11 | 0% | 0% | 11.8 | 0% | 0 | 0% |
 | Hana | 0 | 0 | 0 | 0 | 0 | 0 | 103 | 9 | 0% | 0% | 11.4 | 0% | 0 | 0% |
-| Arren | 0 | 0 | 0 | 0 | 0 | 0 | 101 | 16 | 0% | 0% | 6.3 | 0% | 1 | 6.3% |
-| Chris | 0 | 0 | 1 | 3 | 0 | 0 | 94 | 4 | 25.0% | 75.0% | 23.5 | 0% | 4 | 100.0% |
-| DK | 0 | 0 | 0 | 2 | 2 | 0 | 72 | 4 | 0% | 50.0% | 18.0 | 0% | 2 | 50.0% |
+| Cheese | 0 | 0 | 0 | 1 | 0 | 0 | 92 | 8 | 0% | 12.5% | 11.5 | 0% | 1 | 12.5% |
 | Steven | 0 | 0 | 0 | 0 | 0 | 0 | 71 | 7 | 0% | 0% | 10.1 | 0% | 0 | 0% |
 | Big Mike | 0 | 0 | 0 | 0 | 0 | 0 | 70 | 6 | 0% | 0% | 11.7 | 0% | 0 | 0% |
 | Sunny | 0 | 0 | 0 | 0 | 0 | 0 | 68 | 4 | 0% | 0% | 17.0 | 0% | 2 | 50.0% |
 | Lucian | 0 | 1 | 0 | 0 | 0 | 0 | 61 | 4 | 0% | 0% | 15.3 | 0% | 0 | 0% |
+| Allen Q | 0 | 0 | 0 | 0 | 0 | 0 | 53 | 6 | 0% | 0% | 8.8 | 0% | 0 | 0% |
 | Wild Card | 0 | 0 | 0 | 0 | 0 | 0 | 44 | 4 | 0% | 0% | 11.0 | 0% | 0 | 0% |
 | Lea | 0 | 0 | 0 | 0 | 0 | 0 | 42 | 4 | 0% | 0% | 10.5 | 0% | 0 | 0% |
 | Alan | 0 | 0 | 0 | 0 | 0 | 0 | 38 | 3 | 0% | 0% | 12.7 | 0% | 0 | 0% |
 | Anlac | 0 | 0 | 0 | 0 | 0 | 0 | 32 | 3 | 0% | 0% | 10.7 | 0% | 0 | 0% |
-| Donald | 0 | 0 | 0 | 0 | 0 | 0 | 25 | 2 | 0% | 0% | 12.5 | 0% | 1 | 50.0% |
 | Henly | 0 | 0 | 0 | 0 | 0 | 0 | 19 | 2 | 0% | 0% | 9.5 | 0% | 0 | 0% |
+| Winston | 0 | 0 | 0 | 0 | 0 | 0 | 19 | 4 | 0% | 0% | 4.8 | 0% | 0 | 0% |
 | Aditya | 0 | 0 | 0 | 0 | 0 | 0 | 11 | 2 | 0% | 0% | 5.5 | 0% | 0 | 0% |
 
 ## Driver Career Summaries
 
 ### Josie — Career Summary
-Josie has competed in 316 races across Cup Racing history. 16x World Drivers' Champion. 11x World Constructors' Champion. 153 wins (48.4% win rate). 252 podiums (79.7% podium rate). 229 pole positions. 210 fastest laps (66.5% FL rate). 8442 career points (26.7 pts/race). 288 top-5 finishes (91.1% top-5 rate).
+Josie has competed in 328 races across Cup Racing history. 17x World Drivers' Champion. 12x World Constructors' Champion. 160 wins (48.8% win rate). 261 podiums (79.6% podium rate). 237 pole positions. 218 fastest laps (66.5% FL rate). 8767 career points (26.7 pts/race). 299 top-5 finishes (91.2% top-5 rate).
 
 ### James — Career Summary
-James has competed in 304 races across Cup Racing history. 3x World Drivers' Champion. 4x World Constructors' Champion. 68 wins (22.4% win rate). 200 podiums (65.8% podium rate). 69 pole positions. 81 fastest laps (26.6% FL rate). 6963 career points (22.9 pts/race). 261 top-5 finishes (85.9% top-5 rate).
+James has competed in 312 races across Cup Racing history. 3x World Drivers' Champion. 4x World Constructors' Champion. 68 wins (21.8% win rate). 206 podiums (66.0% podium rate). 69 pole positions. 82 fastest laps (26.3% FL rate). 7135 career points (22.9 pts/race). 268 top-5 finishes (85.9% top-5 rate).
 
 ### Lee — Career Summary
-Lee has competed in 262 races across Cup Racing history. 1x World Drivers' Champion. 6x World Constructors' Champion. 30 wins (11.5% win rate). 130 podiums (49.6% podium rate). 15 pole positions. 16 fastest laps (6.1% FL rate). 5357 career points (20.4 pts/race). 195 top-5 finishes (74.4% top-5 rate).
+Lee has competed in 274 races across Cup Racing history. 1x World Drivers' Champion. 6x World Constructors' Champion. 32 wins (11.7% win rate). 134 podiums (48.9% podium rate). 17 pole positions. 17 fastest laps (6.2% FL rate). 5558 career points (20.3 pts/race). 201 top-5 finishes (73.4% top-5 rate).
 
 ### Brie — Career Summary
-Brie has competed in 235 races across Cup Racing history. 1x World Constructors' Champion. 11 wins (4.7% win rate). 77 podiums (32.8% podium rate). 6 fastest laps (2.6% FL rate). 4451 career points (18.9 pts/race). 163 top-5 finishes (69.4% top-5 rate).
+Brie has competed in 241 races across Cup Racing history. 1x World Constructors' Champion. 11 wins (4.6% win rate). 77 podiums (32.0% podium rate). 6 fastest laps (2.5% FL rate). 4495 career points (18.7 pts/race). 163 top-5 finishes (67.6% top-5 rate).
 
 ### Toby — Career Summary
-Toby has competed in 197 races across Cup Racing history. 2x World Drivers' Champion. 9x World Constructors' Champion. 31 wins (15.7% win rate). 102 podiums (51.8% podium rate). 22 pole positions. 24 fastest laps (12.2% FL rate). 4193 career points (21.3 pts/race). 160 top-5 finishes (81.2% top-5 rate).
+Toby has competed in 209 races across Cup Racing history. 2x World Drivers' Champion. 10x World Constructors' Champion. 31 wins (14.8% win rate). 102 podiums (48.8% podium rate). 22 pole positions. 24 fastest laps (11.5% FL rate). 4335 career points (20.7 pts/race). 161 top-5 finishes (77.0% top-5 rate).
 
 ### Colin — Career Summary
-Colin has competed in 249 races across Cup Racing history. 3x World Constructors' Champion. 3 wins (1.2% win rate). 19 podiums (7.6% podium rate). 3754 career points (15.1 pts/race). 71 top-5 finishes (28.5% top-5 rate).
+Colin has competed in 257 races across Cup Racing history. 3x World Constructors' Champion. 3 wins (1.2% win rate). 19 podiums (7.4% podium rate). 3841 career points (14.9 pts/race). 72 top-5 finishes (28.0% top-5 rate).
 
 ### Isaac — Career Summary
 Isaac has competed in 184 races across Cup Racing history. 2x World Constructors' Champion. 2 wins (1.1% win rate). 34 podiums (18.5% podium rate). 1 fastest laps (0.5% FL rate). 2919 career points (15.9 pts/race). 70 top-5 finishes (38.0% top-5 rate).
 
-### Green Kyle — Career Summary
-Green Kyle has competed in 158 races across Cup Racing history. 1x World Drivers' Champion. 2x World Constructors' Champion. 10 wins (6.3% win rate). 30 podiums (19.0% podium rate). 8 pole positions. 7 fastest laps (4.4% FL rate). 2563 career points (16.2 pts/race). 67 top-5 finishes (42.4% top-5 rate).
-
 ### Mike — Career Summary
-Mike has competed in 186 races across Cup Racing history. 1x World Constructors' Champion. 5 podiums (2.7% podium rate). 2551 career points (13.7 pts/race). 30 top-5 finishes (16.1% top-5 rate).
+Mike has competed in 196 races across Cup Racing history. 1x World Constructors' Champion. 5 podiums (2.6% podium rate). 2668 career points (13.6 pts/race). 30 top-5 finishes (15.3% top-5 rate).
+
+### Green Kyle — Career Summary
+Green Kyle has competed in 166 races across Cup Racing history. 1x World Drivers' Champion. 2x World Constructors' Champion. 10 wins (6.0% win rate). 30 podiums (18.1% podium rate). 8 pole positions. 7 fastest laps (4.2% FL rate). 2629 career points (15.8 pts/race). 67 top-5 finishes (40.4% top-5 rate).
+
+### Walnut — Career Summary
+Walnut has competed in 130 races across Cup Racing history. 2x World Constructors' Champion. 7 wins (5.4% win rate). 39 podiums (30.0% podium rate). 1 fastest laps (0.8% FL rate). 2351 career points (18.1 pts/race). 80 top-5 finishes (61.5% top-5 rate).
 
 ### Tawm — Career Summary
 Tawm has competed in 129 races across Cup Racing history. 1x World Constructors' Champion. 5 wins (3.9% win rate). 34 podiums (26.4% podium rate). 2 fastest laps (1.6% FL rate). 2287 career points (17.7 pts/race). 71 top-5 finishes (55.0% top-5 rate).
-
-### Walnut — Career Summary
-Walnut has competed in 118 races across Cup Racing history. 2x World Constructors' Champion. 6 wins (5.1% win rate). 34 podiums (28.8% podium rate). 2121 career points (18.0 pts/race). 73 top-5 finishes (61.9% top-5 rate).
 
 ### Joyce — Career Summary
 Joyce has competed in 99 races across Cup Racing history. 2x World Constructors' Champion. 11 podiums (11.1% podium rate). 1 fastest laps (1.0% FL rate). 1407 career points (14.2 pts/race). 22 top-5 finishes (22.2% top-5 rate).
 
 ### Dom — Career Summary
-Dom has competed in 57 races across Cup Racing history. 1x World Constructors' Champion. 12 wins (21.1% win rate). 28 podiums (49.1% podium rate). 7 pole positions. 7 fastest laps (12.3% FL rate). 1203 career points (21.1 pts/race). 41 top-5 finishes (71.9% top-5 rate).
+Dom has competed in 60 races across Cup Racing history. 1x World Constructors' Champion. 12 wins (20.0% win rate). 28 podiums (46.7% podium rate). 7 pole positions. 7 fastest laps (11.7% FL rate). 1261 career points (21.0 pts/race). 44 top-5 finishes (73.3% top-5 rate).
 
 ### Allan — Career Summary
-Allan has competed in 71 races across Cup Racing history. 1x World Constructors' Champion. 11 podiums (15.5% podium rate). 6 pole positions. 1138 career points (16.0 pts/race). 35 top-5 finishes (49.3% top-5 rate).
+Allan has competed in 79 races across Cup Racing history. 1x World Constructors' Champion. 11 podiums (13.9% podium rate). 6 pole positions. 1253 career points (15.9 pts/race). 37 top-5 finishes (46.8% top-5 rate).
 
 ### Jerry — Career Summary
 Jerry has competed in 54 races across Cup Racing history. 2 wins (3.7% win rate). 10 podiums (18.5% podium rate). 6 pole positions. 7 fastest laps (13.0% FL rate). 815 career points (15.1 pts/race). 21 top-5 finishes (38.9% top-5 rate).
 
 ### Alfred — Career Summary
-Alfred has competed in 64 races across Cup Racing history. 784 career points (12.3 pts/race). 5 top-5 finishes (7.8% top-5 rate).
+Alfred has competed in 68 races across Cup Racing history. 1x World Constructors' Champion. 814 career points (12.0 pts/race). 5 top-5 finishes (7.4% top-5 rate).
 
 ### Ghin — Career Summary
-Ghin has competed in 55 races across Cup Racing history. 1x World Constructors' Champion. 636 career points (11.6 pts/race). 1 top-5 finishes (1.8% top-5 rate).
+Ghin has competed in 63 races across Cup Racing history. 1x World Constructors' Champion. 688 career points (10.9 pts/race). 1 top-5 finishes (1.6% top-5 rate).
 
 ### Timmy — Career Summary
-Timmy has competed in 46 races across Cup Racing history. 1 podiums (2.2% podium rate). 520 career points (11.3 pts/race). 3 top-5 finishes (6.5% top-5 rate).
+Timmy has competed in 52 races across Cup Racing history. 1 podiums (1.9% podium rate). 578 career points (11.1 pts/race). 3 top-5 finishes (5.8% top-5 rate).
+
+### Kevin — Career Summary
+Kevin has competed in 38 races across Cup Racing history. 1x World Constructors' Champion. 1 podiums (2.6% podium rate). 502 career points (13.2 pts/race). 9 top-5 finishes (23.7% top-5 rate).
 
 ### Caleb — Career Summary
 Caleb has competed in 32 races across Cup Racing history. 1x World Constructors' Champion. 4 podiums (12.5% podium rate). 490 career points (15.3 pts/race). 13 top-5 finishes (40.6% top-5 rate).
 
-### Kevin — Career Summary
-Kevin has competed in 32 races across Cup Racing history. 1 podiums (3.1% podium rate). 451 career points (14.1 pts/race). 9 top-5 finishes (28.1% top-5 rate).
-
 ### Michael G — Career Summary
-Michael G has competed in 39 races across Cup Racing history. 413 career points (10.6 pts/race). 1 top-5 finishes (2.6% top-5 rate).
+Michael G has competed in 43 races across Cup Racing history. 451 career points (10.5 pts/race). 1 top-5 finishes (2.3% top-5 rate).
 
 ### Samson — Career Summary
-Samson has competed in 29 races across Cup Racing history. 2 podiums (6.9% podium rate). 380 career points (13.1 pts/race). 6 top-5 finishes (20.7% top-5 rate).
+Samson has competed in 33 races across Cup Racing history. 2 podiums (6.1% podium rate). 439 career points (13.3 pts/race). 9 top-5 finishes (27.3% top-5 rate).
 
 ### Austin — Career Summary
 Austin has competed in 28 races across Cup Racing history. 369 career points (13.2 pts/race). 6 top-5 finishes (21.4% top-5 rate).
@@ -188,7 +192,16 @@ Nick has competed in 20 races across Cup Racing history. 7 podiums (35.0% podium
 Calvin has competed in 21 races across Cup Racing history. 315 career points (15.0 pts/race). 6 top-5 finishes (28.6% top-5 rate).
 
 ### JingTang — Career Summary
-JingTang has competed in 22 races across Cup Racing history. 3 podiums (13.6% podium rate). 271 career points (12.3 pts/race). 5 top-5 finishes (22.7% top-5 rate).
+JingTang has competed in 26 races across Cup Racing history. 3 podiums (11.5% podium rate). 306 career points (11.8 pts/race). 5 top-5 finishes (19.2% top-5 rate).
+
+### Chris — Career Summary
+Chris has competed in 12 races across Cup Racing history. 2 wins (16.7% win rate). 6 podiums (50.0% podium rate). 236 career points (19.7 pts/race). 9 top-5 finishes (75.0% top-5 rate).
+
+### DK — Career Summary
+DK has competed in 12 races across Cup Racing history. 6 podiums (50.0% podium rate). 4 pole positions. 1 fastest laps (8.3% FL rate). 225 career points (18.8 pts/race). 7 top-5 finishes (58.3% top-5 rate).
+
+### Arren — Career Summary
+Arren has competed in 24 races across Cup Racing history. 2 podiums (8.3% podium rate). 224 career points (9.3 pts/race). 5 top-5 finishes (20.8% top-5 rate).
 
 ### Edwin — Career Summary
 Edwin has competed in 17 races across Cup Racing history. 193 career points (11.4 pts/race). 0 top-5 finishes (0% top-5 rate).
@@ -208,6 +221,9 @@ Luke has competed in 15 races across Cup Racing history. 170 career points (11.3
 ### Clive — Career Summary
 Clive has competed in 18 races across Cup Racing history. 165 career points (9.2 pts/race). 0 top-5 finishes (0% top-5 rate).
 
+### Donald — Career Summary
+Donald has competed in 10 races across Cup Racing history. 1 wins (10.0% win rate). 2 podiums (20.0% podium rate). 160 career points (16.0 pts/race). 5 top-5 finishes (50.0% top-5 rate).
+
 ### Ryan — Career Summary
 Ryan has competed in 12 races across Cup Racing history. 145 career points (12.1 pts/race). 0 top-5 finishes (0% top-5 rate).
 
@@ -217,14 +233,8 @@ Ivan has competed in 11 races across Cup Racing history. 130 career points (11.8
 ### Hana — Career Summary
 Hana has competed in 9 races across Cup Racing history. 103 career points (11.4 pts/race). 0 top-5 finishes (0% top-5 rate).
 
-### Arren — Career Summary
-Arren has competed in 16 races across Cup Racing history. 101 career points (6.3 pts/race). 1 top-5 finishes (6.3% top-5 rate).
-
-### Chris — Career Summary
-Chris has competed in 4 races across Cup Racing history. 1 wins (25.0% win rate). 3 podiums (75.0% podium rate). 94 career points (23.5 pts/race). 4 top-5 finishes (100.0% top-5 rate).
-
-### DK — Career Summary
-DK has competed in 4 races across Cup Racing history. 2 podiums (50.0% podium rate). 2 pole positions. 72 career points (18.0 pts/race). 2 top-5 finishes (50.0% top-5 rate).
+### Cheese — Career Summary
+Cheese has competed in 8 races across Cup Racing history. 1 podiums (12.5% podium rate). 92 career points (11.5 pts/race). 1 top-5 finishes (12.5% top-5 rate).
 
 ### Steven — Career Summary
 Steven has competed in 7 races across Cup Racing history. 71 career points (10.1 pts/race). 0 top-5 finishes (0% top-5 rate).
@@ -238,6 +248,9 @@ Sunny has competed in 4 races across Cup Racing history. 68 career points (17.0 
 ### Lucian — Career Summary
 Lucian has competed in 4 races across Cup Racing history. 1x World Constructors' Champion. 61 career points (15.3 pts/race). 0 top-5 finishes (0% top-5 rate).
 
+### Allen Q — Career Summary
+Allen Q has competed in 6 races across Cup Racing history. 53 career points (8.8 pts/race). 0 top-5 finishes (0% top-5 rate).
+
 ### Wild Card — Career Summary
 Wild Card has competed in 4 races across Cup Racing history. 44 career points (11.0 pts/race). 0 top-5 finishes (0% top-5 rate).
 
@@ -250,11 +263,11 @@ Alan has competed in 3 races across Cup Racing history. 38 career points (12.7 p
 ### Anlac — Career Summary
 Anlac has competed in 3 races across Cup Racing history. 32 career points (10.7 pts/race). 0 top-5 finishes (0% top-5 rate).
 
-### Donald — Career Summary
-Donald has competed in 2 races across Cup Racing history. 25 career points (12.5 pts/race). 1 top-5 finishes (50.0% top-5 rate).
-
 ### Henly — Career Summary
 Henly has competed in 2 races across Cup Racing history. 19 career points (9.5 pts/race). 0 top-5 finishes (0% top-5 rate).
+
+### Winston — Career Summary
+Winston has competed in 4 races across Cup Racing history. 19 career points (4.8 pts/race). 0 top-5 finishes (0% top-5 rate).
 
 ### Aditya — Career Summary
 Aditya has competed in 2 races across Cup Racing history. 11 career points (5.5 pts/race). 0 top-5 finishes (0% top-5 rate).
@@ -269,86 +282,99 @@ average weighted score, peak weighted score, average points rate, average top-5 
 
 | Rank | Driver | CPI | Avg WS | Peak WS | Avg Pts Rate | Avg Top5 Rate | WDCs | WCCs |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Josie | 2.395 | 0.767 | 0.952 | 83.1% | 91.0% | 16 | 11 |
-| 2 | Toby | 1.116 | 0.471 | 1.000 | 59.6% | 73.2% | 2 | 9 |
-| 3 | James | 1.001 | 0.578 | 0.888 | 68.0% | 81.9% | 3 | 4 |
-| 4 | Lee | 0.846 | 0.452 | 0.653 | 59.2% | 68.3% | 1 | 6 |
-| 5 | Green Kyle | 0.485 | 0.265 | 0.773 | 38.1% | 32.8% | 1 | 2 |
-| 6 | Walnut | 0.461 | 0.335 | 0.568 | 44.6% | 49.3% | 0 | 2 |
-| 7 | Brie | 0.454 | 0.364 | 0.667 | 49.1% | 57.8% | 0 | 1 |
-| 8 | Dom | 0.451 | 0.427 | 0.627 | 42.7% | 46.5% | 0 | 1 |
-| 9 | Colin | 0.404 | 0.211 | 0.438 | 40.7% | 25.8% | 0 | 3 |
-| 10 | Allan | 0.357 | 0.267 | 0.452 | 42.6% | 43.8% | 0 | 1 |
+| 1 | Josie | 2.514 | 0.766 | 0.952 | 83.0% | 90.8% | 17 | 12 |
+| 2 | Toby | 1.148 | 0.449 | 1.000 | 58.2% | 68.8% | 2 | 10 |
+| 3 | James | 0.997 | 0.574 | 0.888 | 67.3% | 81.0% | 3 | 4 |
+| 4 | Lee | 0.841 | 0.446 | 0.653 | 58.7% | 67.1% | 1 | 6 |
+| 5 | Green Kyle | 0.474 | 0.253 | 0.773 | 36.5% | 30.7% | 1 | 2 |
+| 6 | Walnut | 0.468 | 0.341 | 0.568 | 46.0% | 50.0% | 0 | 2 |
+| 7 | Brie | 0.443 | 0.352 | 0.667 | 47.7% | 55.6% | 0 | 1 |
+| 8 | Dom | 0.427 | 0.394 | 0.627 | 39.5% | 44.3% | 0 | 1 |
+| 9 | Colin | 0.398 | 0.205 | 0.438 | 39.8% | 24.9% | 0 | 3 |
+| 10 | Chris | 0.396 | 0.419 | 0.419 | 46.1% | 56.3% | 0 | 0 |
 | 11 | Isaac | 0.353 | 0.220 | 0.498 | 33.9% | 28.3% | 0 | 2 |
-| 12 | Tawm | 0.327 | 0.264 | 0.532 | 31.3% | 32.4% | 0 | 1 |
-| 13 | Joyce | 0.296 | 0.155 | 0.492 | 29.2% | 14.0% | 0 | 2 |
-| 14 | Nick | 0.261 | 0.274 | 0.398 | 27.3% | 33.3% | 0 | 0 |
-| 15 | Mike | 0.237 | 0.154 | 0.293 | 35.7% | 13.4% | 0 | 1 |
-| 16 | Jerry | 0.226 | 0.214 | 0.369 | 30.4% | 25.0% | 0 | 0 |
-| 17 | JingTang | 0.198 | 0.186 | 0.272 | 30.7% | 19.8% | 0 | 0 |
-| 18 | Caleb | 0.194 | 0.141 | 0.303 | 16.3% | 13.7% | 0 | 1 |
-| 19 | Martin | 0.156 | 0.100 | 0.121 | 24.3% | 0% | 0 | 1 |
-| 20 | Kevin | 0.149 | 0.148 | 0.204 | 21.5% | 15.0% | 0 | 0 |
-| 21 | Timmy | 0.141 | 0.122 | 0.149 | 31.7% | 6.3% | 0 | 0 |
-| 22 | Samson | 0.137 | 0.138 | 0.250 | 18.6% | 9.4% | 0 | 0 |
-| 23 | Ghin | 0.136 | 0.090 | 0.144 | 14.6% | 1.1% | 0 | 1 |
-| 24 | Lucian | 0.134 | 0.108 | 0.108 | 12.0% | 0% | 0 | 1 |
-| 25 | Abu | 0.129 | 0.136 | 0.181 | 18.3% | 10.2% | 0 | 0 |
-| 26 | Calvin | 0.127 | 0.127 | 0.208 | 16.9% | 11.7% | 0 | 0 |
-| 27 | Sunny | 0.123 | 0.146 | 0.146 | 13.3% | 12.5% | 0 | 0 |
-| 28 | Ryan | 0.114 | 0.105 | 0.105 | 28.3% | 0% | 0 | 0 |
-| 29 | Arren | 0.109 | 0.112 | 0.112 | 19.7% | 6.3% | 0 | 0 |
-| 30 | Alfred | 0.104 | 0.103 | 0.141 | 19.2% | 3.9% | 0 | 0 |
-| 31 | Luke | 0.097 | 0.092 | 0.109 | 22.1% | 0% | 0 | 0 |
-| 32 | Austin | 0.091 | 0.097 | 0.179 | 11.3% | 5.4% | 0 | 0 |
-| 33 | Michael G | 0.089 | 0.090 | 0.099 | 18.1% | 1.6% | 0 | 0 |
-| 34 | Ivan | 0.074 | 0.087 | 0.095 | 12.8% | 0% | 0 | 0 |
-| 35 | Viphu | 0.070 | 0.072 | 0.100 | 13.9% | 0% | 0 | 0 |
-| 36 | Hana | 0.065 | 0.080 | 0.090 | 10.1% | 0% | 0 | 0 |
-| 37 | Alan | 0.063 | 0.088 | 0.088 | 7.5% | 0% | 0 | 0 |
-| 38 | Edwin | 0.063 | 0.082 | 0.102 | 8.1% | 0% | 0 | 0 |
-| 39 | Clive | 0.063 | 0.073 | 0.081 | 10.8% | 0% | 0 | 0 |
-| 40 | Wild Card | 0.060 | 0.078 | 0.078 | 8.6% | 0% | 0 | 0 |
-| 41 | Anlac | 0.058 | 0.076 | 0.076 | 8.3% | 0% | 0 | 0 |
-| 42 | Lea | 0.057 | 0.075 | 0.075 | 8.2% | 0% | 0 | 0 |
-| 43 | Big Mike | 0.055 | 0.079 | 0.082 | 5.7% | 0% | 0 | 0 |
-| 44 | Steven | 0.052 | 0.070 | 0.085 | 6.2% | 0% | 0 | 0 |
-| 45 | Henly | 0.039 | 0.062 | 0.066 | 2.4% | 0% | 0 | 0 |
+| 12 | DK | 0.349 | 0.371 | 0.371 | 43.9% | 43.8% | 0 | 0 |
+| 13 | Allan | 0.338 | 0.246 | 0.452 | 40.9% | 38.5% | 0 | 1 |
+| 14 | Tawm | 0.327 | 0.264 | 0.532 | 31.3% | 32.4% | 0 | 1 |
+| 15 | Joyce | 0.296 | 0.155 | 0.492 | 29.2% | 14.0% | 0 | 2 |
+| 16 | Nick | 0.261 | 0.274 | 0.398 | 27.3% | 33.3% | 0 | 0 |
+| 17 | Donald | 0.244 | 0.256 | 0.256 | 31.3% | 31.3% | 0 | 0 |
+| 18 | Mike | 0.234 | 0.150 | 0.293 | 35.4% | 12.5% | 0 | 1 |
+| 19 | Jerry | 0.226 | 0.214 | 0.369 | 30.4% | 25.0% | 0 | 0 |
+| 20 | Caleb | 0.194 | 0.141 | 0.303 | 16.3% | 13.7% | 0 | 1 |
+| 21 | Kevin | 0.187 | 0.133 | 0.204 | 20.0% | 12.5% | 0 | 1 |
+| 22 | Arren | 0.161 | 0.167 | 0.222 | 21.9% | 15.6% | 0 | 0 |
+| 23 | Martin | 0.156 | 0.100 | 0.121 | 24.3% | 0% | 0 | 1 |
+| 24 | JingTang | 0.155 | 0.144 | 0.272 | 23.0% | 13.2% | 0 | 0 |
+| 25 | Alfred | 0.148 | 0.098 | 0.141 | 17.7% | 3.5% | 0 | 1 |
+| 26 | Samson | 0.137 | 0.139 | 0.250 | 17.2% | 11.3% | 0 | 0 |
+| 27 | Lucian | 0.134 | 0.108 | 0.108 | 12.0% | 0% | 0 | 1 |
+| 28 | Ghin | 0.133 | 0.087 | 0.144 | 14.2% | 1.0% | 0 | 1 |
+| 29 | Abu | 0.129 | 0.136 | 0.181 | 18.3% | 10.2% | 0 | 0 |
+| 30 | Timmy | 0.127 | 0.111 | 0.149 | 28.3% | 4.7% | 0 | 0 |
+| 31 | Calvin | 0.127 | 0.127 | 0.208 | 16.9% | 11.7% | 0 | 0 |
+| 32 | Sunny | 0.123 | 0.146 | 0.146 | 13.3% | 12.5% | 0 | 0 |
+| 33 | Cheese | 0.115 | 0.128 | 0.128 | 18.0% | 6.3% | 0 | 0 |
+| 34 | Ryan | 0.114 | 0.105 | 0.105 | 28.3% | 0% | 0 | 0 |
+| 35 | Luke | 0.097 | 0.092 | 0.109 | 22.1% | 0% | 0 | 0 |
+| 36 | Austin | 0.091 | 0.097 | 0.179 | 11.3% | 5.4% | 0 | 0 |
+| 37 | Michael G | 0.087 | 0.088 | 0.099 | 17.7% | 1.3% | 0 | 0 |
+| 38 | Ivan | 0.074 | 0.087 | 0.095 | 12.8% | 0% | 0 | 0 |
+| 39 | Viphu | 0.070 | 0.072 | 0.100 | 13.9% | 0% | 0 | 0 |
+| 40 | Hana | 0.065 | 0.080 | 0.090 | 10.1% | 0% | 0 | 0 |
+| 41 | Alan | 0.063 | 0.088 | 0.088 | 7.5% | 0% | 0 | 0 |
+| 42 | Edwin | 0.063 | 0.082 | 0.102 | 8.1% | 0% | 0 | 0 |
+| 43 | Clive | 0.063 | 0.073 | 0.081 | 10.8% | 0% | 0 | 0 |
+| 44 | Wild Card | 0.060 | 0.078 | 0.078 | 8.6% | 0% | 0 | 0 |
+| 45 | Anlac | 0.058 | 0.076 | 0.076 | 8.3% | 0% | 0 | 0 |
+| 46 | Lea | 0.057 | 0.075 | 0.075 | 8.2% | 0% | 0 | 0 |
+| 47 | Allen Q | 0.057 | 0.066 | 0.066 | 10.4% | 0% | 0 | 0 |
+| 48 | Big Mike | 0.055 | 0.079 | 0.082 | 5.7% | 0% | 0 | 0 |
+| 49 | Steven | 0.052 | 0.070 | 0.085 | 6.2% | 0% | 0 | 0 |
+| 50 | Henly | 0.039 | 0.062 | 0.066 | 2.4% | 0% | 0 | 0 |
+| 51 | Winston | 0.026 | 0.034 | 0.034 | 3.7% | 0% | 0 | 0 |
+| 52 | Aditya | 0.025 | 0.037 | 0.037 | 2.1% | 0% | 0 | 0 |
 
 ## CPI Driver Summaries
 
-### Josie — CPI: 2.395
-Josie holds a CPI of 2.395, with an average weighted score of 0.767 and a career peak of 0.952. Average points rate: 83.1%, average top-5 rate: 91.0%. Championships: 16 WDC, 11 WCC.
+### Josie — CPI: 2.514
+Josie holds a CPI of 2.514, with an average weighted score of 0.766 and a career peak of 0.952. Average points rate: 83.0%, average top-5 rate: 90.8%. Championships: 17 WDC, 12 WCC.
 
-### Toby — CPI: 1.116
-Toby holds a CPI of 1.116, with an average weighted score of 0.471 and a career peak of 1.000. Average points rate: 59.6%, average top-5 rate: 73.2%. Championships: 2 WDC, 9 WCC.
+### Toby — CPI: 1.148
+Toby holds a CPI of 1.148, with an average weighted score of 0.449 and a career peak of 1.000. Average points rate: 58.2%, average top-5 rate: 68.8%. Championships: 2 WDC, 10 WCC.
 
-### James — CPI: 1.001
-James holds a CPI of 1.001, with an average weighted score of 0.578 and a career peak of 0.888. Average points rate: 68.0%, average top-5 rate: 81.9%. Championships: 3 WDC, 4 WCC.
+### James — CPI: 0.997
+James holds a CPI of 0.997, with an average weighted score of 0.574 and a career peak of 0.888. Average points rate: 67.3%, average top-5 rate: 81.0%. Championships: 3 WDC, 4 WCC.
 
-### Lee — CPI: 0.846
-Lee holds a CPI of 0.846, with an average weighted score of 0.452 and a career peak of 0.653. Average points rate: 59.2%, average top-5 rate: 68.3%. Championships: 1 WDC, 6 WCC.
+### Lee — CPI: 0.841
+Lee holds a CPI of 0.841, with an average weighted score of 0.446 and a career peak of 0.653. Average points rate: 58.7%, average top-5 rate: 67.1%. Championships: 1 WDC, 6 WCC.
 
-### Green Kyle — CPI: 0.485
-Green Kyle holds a CPI of 0.485, with an average weighted score of 0.265 and a career peak of 0.773. Average points rate: 38.1%, average top-5 rate: 32.8%. Championships: 1 WDC, 2 WCC.
+### Green Kyle — CPI: 0.474
+Green Kyle holds a CPI of 0.474, with an average weighted score of 0.253 and a career peak of 0.773. Average points rate: 36.5%, average top-5 rate: 30.7%. Championships: 1 WDC, 2 WCC.
 
-### Walnut — CPI: 0.461
-Walnut holds a CPI of 0.461, with an average weighted score of 0.335 and a career peak of 0.568. Average points rate: 44.6%, average top-5 rate: 49.3%. Championships: 0 WDC, 2 WCC.
+### Walnut — CPI: 0.468
+Walnut holds a CPI of 0.468, with an average weighted score of 0.341 and a career peak of 0.568. Average points rate: 46.0%, average top-5 rate: 50.0%. Championships: 0 WDC, 2 WCC.
 
-### Brie — CPI: 0.454
-Brie holds a CPI of 0.454, with an average weighted score of 0.364 and a career peak of 0.667. Average points rate: 49.1%, average top-5 rate: 57.8%. Championships: 0 WDC, 1 WCC.
+### Brie — CPI: 0.443
+Brie holds a CPI of 0.443, with an average weighted score of 0.352 and a career peak of 0.667. Average points rate: 47.7%, average top-5 rate: 55.6%. Championships: 0 WDC, 1 WCC.
 
-### Dom — CPI: 0.451
-Dom holds a CPI of 0.451, with an average weighted score of 0.427 and a career peak of 0.627. Average points rate: 42.7%, average top-5 rate: 46.5%. Championships: 0 WDC, 1 WCC.
+### Dom — CPI: 0.427
+Dom holds a CPI of 0.427, with an average weighted score of 0.394 and a career peak of 0.627. Average points rate: 39.5%, average top-5 rate: 44.3%. Championships: 0 WDC, 1 WCC.
 
-### Colin — CPI: 0.404
-Colin holds a CPI of 0.404, with an average weighted score of 0.211 and a career peak of 0.438. Average points rate: 40.7%, average top-5 rate: 25.8%. Championships: 0 WDC, 3 WCC.
+### Colin — CPI: 0.398
+Colin holds a CPI of 0.398, with an average weighted score of 0.205 and a career peak of 0.438. Average points rate: 39.8%, average top-5 rate: 24.9%. Championships: 0 WDC, 3 WCC.
 
-### Allan — CPI: 0.357
-Allan holds a CPI of 0.357, with an average weighted score of 0.267 and a career peak of 0.452. Average points rate: 42.6%, average top-5 rate: 43.8%. Championships: 0 WDC, 1 WCC.
+### Chris — CPI: 0.396
+Chris holds a CPI of 0.396, with an average weighted score of 0.419 and a career peak of 0.419. Average points rate: 46.1%, average top-5 rate: 56.3%. Championships: 0 WDC, 0 WCC.
 
 ### Isaac — CPI: 0.353
 Isaac holds a CPI of 0.353, with an average weighted score of 0.220 and a career peak of 0.498. Average points rate: 33.9%, average top-5 rate: 28.3%. Championships: 0 WDC, 2 WCC.
+
+### DK — CPI: 0.349
+DK holds a CPI of 0.349, with an average weighted score of 0.371 and a career peak of 0.371. Average points rate: 43.9%, average top-5 rate: 43.8%. Championships: 0 WDC, 0 WCC.
+
+### Allan — CPI: 0.338
+Allan holds a CPI of 0.338, with an average weighted score of 0.246 and a career peak of 0.452. Average points rate: 40.9%, average top-5 rate: 38.5%. Championships: 0 WDC, 1 WCC.
 
 ### Tawm — CPI: 0.327
 Tawm holds a CPI of 0.327, with an average weighted score of 0.264 and a career peak of 0.532. Average points rate: 31.3%, average top-5 rate: 32.4%. Championships: 0 WDC, 1 WCC.
@@ -359,38 +385,47 @@ Joyce holds a CPI of 0.296, with an average weighted score of 0.155 and a career
 ### Nick — CPI: 0.261
 Nick holds a CPI of 0.261, with an average weighted score of 0.274 and a career peak of 0.398. Average points rate: 27.3%, average top-5 rate: 33.3%. Championships: 0 WDC, 0 WCC.
 
-### Mike — CPI: 0.237
-Mike holds a CPI of 0.237, with an average weighted score of 0.154 and a career peak of 0.293. Average points rate: 35.7%, average top-5 rate: 13.4%. Championships: 0 WDC, 1 WCC.
+### Donald — CPI: 0.244
+Donald holds a CPI of 0.244, with an average weighted score of 0.256 and a career peak of 0.256. Average points rate: 31.3%, average top-5 rate: 31.3%. Championships: 0 WDC, 0 WCC.
+
+### Mike — CPI: 0.234
+Mike holds a CPI of 0.234, with an average weighted score of 0.150 and a career peak of 0.293. Average points rate: 35.4%, average top-5 rate: 12.5%. Championships: 0 WDC, 1 WCC.
 
 ### Jerry — CPI: 0.226
 Jerry holds a CPI of 0.226, with an average weighted score of 0.214 and a career peak of 0.369. Average points rate: 30.4%, average top-5 rate: 25.0%. Championships: 0 WDC, 0 WCC.
 
-### JingTang — CPI: 0.198
-JingTang holds a CPI of 0.198, with an average weighted score of 0.186 and a career peak of 0.272. Average points rate: 30.7%, average top-5 rate: 19.8%. Championships: 0 WDC, 0 WCC.
-
 ### Caleb — CPI: 0.194
 Caleb holds a CPI of 0.194, with an average weighted score of 0.141 and a career peak of 0.303. Average points rate: 16.3%, average top-5 rate: 13.7%. Championships: 0 WDC, 1 WCC.
+
+### Kevin — CPI: 0.187
+Kevin holds a CPI of 0.187, with an average weighted score of 0.133 and a career peak of 0.204. Average points rate: 20.0%, average top-5 rate: 12.5%. Championships: 0 WDC, 1 WCC.
+
+### Arren — CPI: 0.161
+Arren holds a CPI of 0.161, with an average weighted score of 0.167 and a career peak of 0.222. Average points rate: 21.9%, average top-5 rate: 15.6%. Championships: 0 WDC, 0 WCC.
 
 ### Martin — CPI: 0.156
 Martin holds a CPI of 0.156, with an average weighted score of 0.100 and a career peak of 0.121. Average points rate: 24.3%, average top-5 rate: 0%. Championships: 0 WDC, 1 WCC.
 
-### Kevin — CPI: 0.149
-Kevin holds a CPI of 0.149, with an average weighted score of 0.148 and a career peak of 0.204. Average points rate: 21.5%, average top-5 rate: 15.0%. Championships: 0 WDC, 0 WCC.
+### JingTang — CPI: 0.155
+JingTang holds a CPI of 0.155, with an average weighted score of 0.144 and a career peak of 0.272. Average points rate: 23.0%, average top-5 rate: 13.2%. Championships: 0 WDC, 0 WCC.
 
-### Timmy — CPI: 0.141
-Timmy holds a CPI of 0.141, with an average weighted score of 0.122 and a career peak of 0.149. Average points rate: 31.7%, average top-5 rate: 6.3%. Championships: 0 WDC, 0 WCC.
+### Alfred — CPI: 0.148
+Alfred holds a CPI of 0.148, with an average weighted score of 0.098 and a career peak of 0.141. Average points rate: 17.7%, average top-5 rate: 3.5%. Championships: 0 WDC, 1 WCC.
 
 ### Samson — CPI: 0.137
-Samson holds a CPI of 0.137, with an average weighted score of 0.138 and a career peak of 0.250. Average points rate: 18.6%, average top-5 rate: 9.4%. Championships: 0 WDC, 0 WCC.
-
-### Ghin — CPI: 0.136
-Ghin holds a CPI of 0.136, with an average weighted score of 0.090 and a career peak of 0.144. Average points rate: 14.6%, average top-5 rate: 1.1%. Championships: 0 WDC, 1 WCC.
+Samson holds a CPI of 0.137, with an average weighted score of 0.139 and a career peak of 0.250. Average points rate: 17.2%, average top-5 rate: 11.3%. Championships: 0 WDC, 0 WCC.
 
 ### Lucian — CPI: 0.134
 Lucian holds a CPI of 0.134, with an average weighted score of 0.108 and a career peak of 0.108. Average points rate: 12.0%, average top-5 rate: 0%. Championships: 0 WDC, 1 WCC.
 
+### Ghin — CPI: 0.133
+Ghin holds a CPI of 0.133, with an average weighted score of 0.087 and a career peak of 0.144. Average points rate: 14.2%, average top-5 rate: 1.0%. Championships: 0 WDC, 1 WCC.
+
 ### Abu — CPI: 0.129
 Abu holds a CPI of 0.129, with an average weighted score of 0.136 and a career peak of 0.181. Average points rate: 18.3%, average top-5 rate: 10.2%. Championships: 0 WDC, 0 WCC.
+
+### Timmy — CPI: 0.127
+Timmy holds a CPI of 0.127, with an average weighted score of 0.111 and a career peak of 0.149. Average points rate: 28.3%, average top-5 rate: 4.7%. Championships: 0 WDC, 0 WCC.
 
 ### Calvin — CPI: 0.127
 Calvin holds a CPI of 0.127, with an average weighted score of 0.127 and a career peak of 0.208. Average points rate: 16.9%, average top-5 rate: 11.7%. Championships: 0 WDC, 0 WCC.
@@ -398,14 +433,11 @@ Calvin holds a CPI of 0.127, with an average weighted score of 0.127 and a caree
 ### Sunny — CPI: 0.123
 Sunny holds a CPI of 0.123, with an average weighted score of 0.146 and a career peak of 0.146. Average points rate: 13.3%, average top-5 rate: 12.5%. Championships: 0 WDC, 0 WCC.
 
+### Cheese — CPI: 0.115
+Cheese holds a CPI of 0.115, with an average weighted score of 0.128 and a career peak of 0.128. Average points rate: 18.0%, average top-5 rate: 6.3%. Championships: 0 WDC, 0 WCC.
+
 ### Ryan — CPI: 0.114
 Ryan holds a CPI of 0.114, with an average weighted score of 0.105 and a career peak of 0.105. Average points rate: 28.3%, average top-5 rate: 0%. Championships: 0 WDC, 0 WCC.
-
-### Arren — CPI: 0.109
-Arren holds a CPI of 0.109, with an average weighted score of 0.112 and a career peak of 0.112. Average points rate: 19.7%, average top-5 rate: 6.3%. Championships: 0 WDC, 0 WCC.
-
-### Alfred — CPI: 0.104
-Alfred holds a CPI of 0.104, with an average weighted score of 0.103 and a career peak of 0.141. Average points rate: 19.2%, average top-5 rate: 3.9%. Championships: 0 WDC, 0 WCC.
 
 ### Luke — CPI: 0.097
 Luke holds a CPI of 0.097, with an average weighted score of 0.092 and a career peak of 0.109. Average points rate: 22.1%, average top-5 rate: 0%. Championships: 0 WDC, 0 WCC.
@@ -413,8 +445,8 @@ Luke holds a CPI of 0.097, with an average weighted score of 0.092 and a career 
 ### Austin — CPI: 0.091
 Austin holds a CPI of 0.091, with an average weighted score of 0.097 and a career peak of 0.179. Average points rate: 11.3%, average top-5 rate: 5.4%. Championships: 0 WDC, 0 WCC.
 
-### Michael G — CPI: 0.089
-Michael G holds a CPI of 0.089, with an average weighted score of 0.090 and a career peak of 0.099. Average points rate: 18.1%, average top-5 rate: 1.6%. Championships: 0 WDC, 0 WCC.
+### Michael G — CPI: 0.087
+Michael G holds a CPI of 0.087, with an average weighted score of 0.088 and a career peak of 0.099. Average points rate: 17.7%, average top-5 rate: 1.3%. Championships: 0 WDC, 0 WCC.
 
 ### Ivan — CPI: 0.074
 Ivan holds a CPI of 0.074, with an average weighted score of 0.087 and a career peak of 0.095. Average points rate: 12.8%, average top-5 rate: 0%. Championships: 0 WDC, 0 WCC.
@@ -443,6 +475,9 @@ Anlac holds a CPI of 0.058, with an average weighted score of 0.076 and a career
 ### Lea — CPI: 0.057
 Lea holds a CPI of 0.057, with an average weighted score of 0.075 and a career peak of 0.075. Average points rate: 8.2%, average top-5 rate: 0%. Championships: 0 WDC, 0 WCC.
 
+### Allen Q — CPI: 0.057
+Allen Q holds a CPI of 0.057, with an average weighted score of 0.066 and a career peak of 0.066. Average points rate: 10.4%, average top-5 rate: 0%. Championships: 0 WDC, 0 WCC.
+
 ### Big Mike — CPI: 0.055
 Big Mike holds a CPI of 0.055, with an average weighted score of 0.079 and a career peak of 0.082. Average points rate: 5.7%, average top-5 rate: 0%. Championships: 0 WDC, 0 WCC.
 
@@ -451,6 +486,12 @@ Steven holds a CPI of 0.052, with an average weighted score of 0.070 and a caree
 
 ### Henly — CPI: 0.039
 Henly holds a CPI of 0.039, with an average weighted score of 0.062 and a career peak of 0.066. Average points rate: 2.4%, average top-5 rate: 0%. Championships: 0 WDC, 0 WCC.
+
+### Winston — CPI: 0.026
+Winston holds a CPI of 0.026, with an average weighted score of 0.034 and a career peak of 0.034. Average points rate: 3.7%, average top-5 rate: 0%. Championships: 0 WDC, 0 WCC.
+
+### Aditya — CPI: 0.025
+Aditya holds a CPI of 0.025, with an average weighted score of 0.037 and a career peak of 0.037. Average points rate: 2.1%, average top-5 rate: 0%. Championships: 0 WDC, 0 WCC.
 
 
 # Cup Racing Weighted Score Rankings (WSR)
@@ -481,306 +522,332 @@ Scores are normalized so the best performance in each category = 1.0.
 | 15 | Josie | S7 | 0.7646 | 41.7% | 75.0% | 91.7% | 26.9 | 83.3% | 91.7% | 84.1% | 100.0% | Yes | Yes |
 | 16 | Josie | S17 | 0.7612 | 50.0% | 75.0% | 87.5% | 26.8 | 62.5% | 87.5% | 84.4% | 100.0% | Yes |  |
 | 17 | Josie | S2 | 0.7516 | 66.7% | 66.7% | 83.3% | 27.5 | 50.0% | 58.3% | 80.9% | 100.0% | Yes |  |
-| 18 | Josie | S20 | 0.7200 | 37.5% | 75.0% | 100.0% | 24.7 | 62.5% | 50.0% | 77.1% | 100.0% | Yes | Yes |
-| 19 | Josie | S19 | 0.7163 | 56.3% | 75.0% | 81.3% | 25.7 | 43.8% | 37.5% | 80.3% | 100.0% | Yes | Yes |
-| 20 | Josie | S21 | 0.7126 | 37.5% | 93.8% | 100.0% | 25.6 | 6.3% | 0% | 79.9% | 100.0% |  |  |
-| 21 | Josie | S5 | 0.7125 | 33.3% | 75.0% | 83.3% | 25.5 | 75.0% | 91.7% | 79.7% | 100.0% | Yes |  |
-| 22 | James | S12 | 0.7093 | 31.3% | 87.5% | 93.8% | 25.6 | 37.5% | 37.5% | 80.5% | 100.0% |  |  |
-| 23 | Josie | S16 | 0.6940 | 53.3% | 66.7% | 68.8% | 25.4 | 66.7% | 80.0% | 75.0% | 93.8% |  |  |
-| 24 | Josie | S18b | 0.6887 | 37.5% | 56.3% | 81.3% | 24.6 | 100.0% | 100.0% | 77.6% | 100.0% |  |  |
-| 25 | James | S18a | 0.6847 | 25.0% | 81.3% | 87.5% | 24.4 | 62.5% | 62.5% | 76.8% | 100.0% | Yes | Yes |
-| 26 | Josie | S18a | 0.6800 | 31.3% | 68.8% | 75.0% | 24.1 | 93.8% | 100.0% | 76.0% | 100.0% |  |  |
-| 27 | Toby | S16 | 0.6741 | 25.0% | 87.5% | 100.0% | 24.3 | 18.8% | 12.5% | 76.4% | 100.0% | Yes | Yes |
-| 28 | Brie | S1 | 0.6668 | 44.4% | 77.8% | 88.9% | 25.1 | 11.1% | 0% | 73.9% | 100.0% |  |  |
-| 29 | James | S13 | 0.6575 | 37.5% | 75.0% | 93.8% | 24.7 | 12.5% | 0% | 77.1% | 100.0% |  |  |
-| 30 | Lee | S18b | 0.6531 | 18.8% | 75.0% | 93.8% | 24.8 | 31.3% | 50.0% | 78.0% | 100.0% | Yes |  |
-| 31 | James | S2 | 0.6510 | 25.0% | 66.7% | 91.7% | 25.3 | 50.0% | 41.7% | 74.5% | 100.0% |  | Yes |
-| 32 | Lee | S7 | 0.6498 | 41.7% | 75.0% | 83.3% | 24.9 | 8.3% | 8.3% | 77.9% | 100.0% |  | Yes |
-| 33 | Lee | S11 | 0.6418 | 43.8% | 75.0% | 81.3% | 23.9 | 18.8% | 0% | 74.8% | 100.0% |  | Yes |
-| 34 | Lee | S18a | 0.6307 | 12.5% | 75.0% | 100.0% | 24.1 | 25.0% | 25.0% | 76.0% | 100.0% |  | Yes |
-| 35 | Dom | S5 | 0.6271 | 45.5% | 63.6% | 83.3% | 24.2 | 18.2% | 9.1% | 69.3% | 91.7% |  | Yes |
-| 36 | James | S10 | 0.6249 | 33.3% | 91.7% | 68.8% | 24.9 | 33.3% | 0% | 58.4% | 75.0% |  |  |
-| 37 | James | S16 | 0.6108 | 6.3% | 87.5% | 93.8% | 23.4 | 12.5% | 12.5% | 73.8% | 100.0% |  |  |
-| 38 | Josie | S4 | 0.6051 | 8.3% | 83.3% | 83.3% | 23.8 | 25.0% | 33.3% | 74.2% | 100.0% |  |  |
-| 39 | James | S9 | 0.5986 | 8.3% | 83.3% | 83.3% | 23.5 | 33.3% | 16.7% | 73.4% | 100.0% |  |  |
-| 40 | James | S6 | 0.5978 | 8.3% | 75.0% | 100.0% | 23.4 | 0% | 16.7% | 73.2% | 100.0% |  |  |
-| 41 | James | S17 | 0.5958 | 18.8% | 62.5% | 93.8% | 23.0 | 37.5% | 12.5% | 72.4% | 100.0% |  | Yes |
-| 42 | Toby | S17 | 0.5936 | 6.3% | 81.3% | 100.0% | 22.9 | 0% | 0% | 72.2% | 100.0% |  |  |
-| 43 | James | S19 | 0.5892 | 31.3% | 56.3% | 81.3% | 22.2 | 37.5% | 37.5% | 69.3% | 100.0% |  |  |
-| 44 | Walnut | S21 | 0.5680 | 6.3% | 68.8% | 100.0% | 22.9 | 0% | 0% | 71.7% | 100.0% |  | Yes |
-| 45 | Toby | S18b | 0.5492 | 12.5% | 50.0% | 93.8% | 22.1 | 25.0% | 25.0% | 69.7% | 100.0% |  | Yes |
-| 46 | Toby | S11 | 0.5428 | 0% | 75.0% | 93.8% | 21.7 | 0% | 0% | 67.8% | 100.0% |  |  |
-| 47 | James | S1 | 0.5411 | 11.1% | 66.7% | 88.9% | 22.2 | 0% | 0% | 65.4% | 100.0% |  |  |
-| 48 | Brie | S7 | 0.5385 | 0% | 75.0% | 91.7% | 21.7 | 0% | 0% | 67.7% | 100.0% |  |  |
-| 49 | Tawm | S3 | 0.5318 | 11.1% | 77.8% | 75.0% | 23.3 | 0% | 0% | 54.7% | 75.0% |  |  |
-| 50 | Lee | S12 | 0.5287 | 6.3% | 62.5% | 93.8% | 21.4 | 0% | 0% | 67.3% | 100.0% |  |  |
-| 51 | Walnut | S14 | 0.5259 | 12.5% | 100.0% | 50.0% | 25.3 | 0% | 0% | 39.5% | 50.0% |  |  |
-| 52 | James | S15 | 0.5193 | 6.3% | 68.8% | 81.3% | 21.8 | 0% | 0% | 68.0% | 100.0% |  |  |
-| 53 | Lee | S10 | 0.5087 | 18.8% | 62.5% | 68.8% | 21.1 | 0% | 12.5% | 66.0% | 100.0% |  |  |
-| 54 | Lee | S14 | 0.5069 | 6.3% | 62.5% | 81.3% | 21.4 | 6.3% | 0% | 67.0% | 100.0% |  |  |
-| 55 | James | S14 | 0.5066 | 12.5% | 37.5% | 87.5% | 21.3 | 18.8% | 37.5% | 66.6% | 100.0% |  |  |
-| 56 | James | S18b | 0.5007 | 18.8% | 62.5% | 75.0% | 19.6 | 0% | 0% | 61.6% | 100.0% |  |  |
-| 57 | Brie | S3 | 0.4996 | 0% | 66.7% | 83.3% | 21.1 | 0% | 0% | 65.9% | 100.0% |  |  |
-| 58 | James | S7 | 0.4989 | 22.2% | 66.7% | 58.3% | 23.2 | 0% | 0% | 54.4% | 75.0% |  |  |
-| 59 | Isaac | S2 | 0.4980 | 0% | 75.0% | 75.0% | 21.3 | 0% | 0% | 62.7% | 100.0% |  | Yes |
-| 60 | Toby | S20 | 0.4962 | 25.0% | 50.0% | 75.0% | 20.4 | 0% | 0% | 63.7% | 100.0% |  | Yes |
-| 61 | Toby | S18a | 0.4942 | 18.8% | 43.8% | 81.3% | 21.2 | 6.3% | 0% | 66.7% | 100.0% |  |  |
-| 62 | Joyce | S14 | 0.4922 | 0% | 62.5% | 81.3% | 21.6 | 0% | 0% | 67.6% | 100.0% |  |  |
-| 63 | Lee | S17 | 0.4915 | 12.5% | 56.3% | 75.0% | 21.3 | 0% | 0% | 67.1% | 100.0% |  | Yes |
-| 64 | James | S20 | 0.4865 | 12.5% | 56.3% | 75.0% | 20.2 | 12.5% | 0% | 63.1% | 100.0% |  |  |
-| 65 | Green Kyle | S6 | 0.4750 | 0% | 58.3% | 83.3% | 20.3 | 0% | 0% | 63.3% | 100.0% |  | Yes |
-| 66 | James | S5 | 0.4728 | 11.1% | 55.6% | 75.0% | 21.7 | 0% | 0% | 50.8% | 75.0% |  |  |
-| 67 | James | S11 | 0.4702 | 12.5% | 31.3% | 87.5% | 20.4 | 12.5% | 12.5% | 63.9% | 100.0% |  |  |
-| 68 | Tawm | S2 | 0.4698 | 11.1% | 55.6% | 75.0% | 21.7 | 0% | 0% | 47.8% | 75.0% |  |  |
-| 69 | Brie | S12 | 0.4690 | 0% | 43.8% | 93.8% | 20.4 | 0% | 0% | 64.4% | 100.0% |  |  |
-| 70 | Dom | S20 | 0.4688 | 30.0% | 60.0% | 43.8% | 21.4 | 20.0% | 20.0% | 41.8% | 62.5% |  |  |
-| 71 | Brie | S14 | 0.4685 | 0% | 43.8% | 93.8% | 20.4 | 0% | 0% | 63.9% | 100.0% |  |  |
-| 72 | Josie | S8 | 0.4669 | 0% | 50.0% | 83.3% | 19.8 | 0% | 25.0% | 62.0% | 100.0% |  |  |
-| 73 | Dom | S4 | 0.4661 | 22.2% | 55.6% | 58.3% | 22.0 | 0% | 0% | 51.6% | 75.0% |  |  |
-| 74 | Isaac | S3 | 0.4642 | 8.3% | 58.3% | 66.7% | 20.8 | 0% | 0% | 64.8% | 100.0% |  |  |
-| 75 | Isaac | S1 | 0.4606 | 0% | 33.3% | 100.0% | 20.9 | 0% | 0% | 61.4% | 100.0% |  |  |
-| 76 | Dom | S19 | 0.4525 | 0% | 58.3% | 68.8% | 21.4 | 8.3% | 16.7% | 50.2% | 75.0% |  |  |
-| 77 | Allan | S21 | 0.4524 | 0% | 31.3% | 100.0% | 20.1 | 0% | 0% | 62.7% | 100.0% |  | Yes |
-| 78 | Lee | S6 | 0.4518 | 0% | 66.7% | 66.7% | 21.3 | 0% | 0% | 50.0% | 75.0% |  |  |
-| 79 | Toby | S9 | 0.4420 | 8.3% | 41.7% | 75.0% | 20.2 | 0% | 0% | 63.0% | 100.0% |  | Yes |
-| 80 | Toby | S10 | 0.4402 | 6.3% | 31.3% | 87.5% | 20.0 | 0% | 0% | 62.5% | 100.0% |  | Yes |
-| 81 | Colin | S14 | 0.4384 | 0% | 66.7% | 62.5% | 20.8 | 0% | 0% | 48.6% | 75.0% |  |  |
-| 82 | Lee | S16 | 0.4378 | 16.7% | 33.3% | 75.0% | 21.3 | 0% | 0% | 50.4% | 75.0% |  | Yes |
-| 83 | James | S3 | 0.4328 | 11.1% | 44.4% | 58.3% | 20.9 | 22.2% | 22.2% | 49.0% | 75.0% |  |  |
-| 84 | Brie | S8 | 0.4215 | 16.7% | 41.7% | 50.0% | 20.1 | 25.0% | 0% | 62.8% | 100.0% |  | Yes |
-| 85 | Green Kyle | S9 | 0.4112 | 8.3% | 33.3% | 75.0% | 18.7 | 0% | 0% | 58.3% | 100.0% |  |  |
-| 86 | Tawm | S1 | 0.4088 | 0% | 50.0% | 66.7% | 21.2 | 0% | 0% | 41.5% | 66.7% |  |  |
-| 87 | Brie | S5 | 0.4013 | 0% | 33.3% | 75.0% | 19.5 | 0% | 0% | 60.9% | 100.0% |  |  |
-| 88 | Nick | S8 | 0.3978 | 0% | 33.3% | 75.0% | 18.3 | 8.3% | 8.3% | 57.0% | 100.0% |  |  |
-| 89 | Isaac | S4 | 0.3958 | 0% | 33.3% | 75.0% | 18.9 | 0% | 0% | 59.1% | 100.0% |  | Yes |
-| 90 | Brie | S16 | 0.3952 | 12.5% | 50.0% | 43.8% | 22.1 | 12.5% | 0% | 34.8% | 50.0% |  |  |
-| 91 | Toby | S19 | 0.3894 | 0% | 43.8% | 62.5% | 18.7 | 0% | 0% | 58.4% | 100.0% |  | Yes |
-| 92 | Lee | S13 | 0.3813 | 7.1% | 42.9% | 56.3% | 18.5 | 0% | 0% | 50.6% | 87.5% |  |  |
-| 93 | Brie | S2 | 0.3793 | 0% | 33.3% | 66.7% | 21.0 | 0% | 0% | 46.3% | 75.0% |  |  |
-| 94 | Colin | S9 | 0.3789 | 11.1% | 22.2% | 66.7% | 20.4 | 0% | 0% | 47.9% | 75.0% |  |  |
-| 95 | Lee | S21 | 0.3785 | 0% | 33.3% | 68.8% | 20.1 | 0% | 0% | 47.1% | 75.0% |  |  |
-| 96 | Tawm | S14 | 0.3781 | 0% | 50.0% | 56.3% | 19.1 | 0% | 0% | 44.7% | 75.0% |  |  |
-| 97 | Brie | S13 | 0.3756 | 8.3% | 41.7% | 56.3% | 18.7 | 0% | 0% | 43.8% | 75.0% |  |  |
-| 98 | Jerry | S18b | 0.3689 | 8.3% | 33.3% | 43.8% | 18.3 | 41.7% | 33.3% | 43.3% | 75.0% |  |  |
-| 99 | Isaac | S6 | 0.3678 | 11.1% | 22.2% | 58.3% | 20.4 | 11.1% | 0% | 47.9% | 75.0% |  |  |
-| 100 | Lee | S20 | 0.3644 | 9.1% | 45.5% | 50.0% | 17.6 | 9.1% | 0% | 37.9% | 68.8% |  |  |
-| 101 | Toby | S15 | 0.3623 | 0% | 33.3% | 62.5% | 19.7 | 0% | 0% | 46.1% | 75.0% |  | Yes |
-| 102 | Lee | S15 | 0.3533 | 0% | 41.7% | 50.0% | 19.6 | 0% | 0% | 45.9% | 75.0% |  |  |
-| 103 | Nick | S14 | 0.3527 | 0% | 75.0% | 25.0% | 21.5 | 0% | 0% | 16.8% | 25.0% |  |  |
-| 104 | Walnut | S18b | 0.3449 | 6.3% | 18.8% | 62.5% | 17.8 | 0% | 0% | 56.1% | 100.0% |  | Yes |
-| 105 | Toby | S13 | 0.3436 | 0% | 18.8% | 68.8% | 17.8 | 0% | 0% | 55.7% | 100.0% |  | Yes |
-| 106 | Brie | S18a | 0.3367 | 6.3% | 12.5% | 62.5% | 17.9 | 6.3% | 0% | 56.5% | 100.0% |  |  |
-| 107 | Brie | S15 | 0.3363 | 0% | 36.4% | 56.3% | 17.8 | 0% | 0% | 38.3% | 68.8% |  |  |
-| 108 | Lee | S9 | 0.3363 | 0% | 25.0% | 58.3% | 17.9 | 0% | 0% | 56.0% | 100.0% |  |  |
-| 109 | Green Kyle | S5 | 0.3347 | 11.1% | 33.3% | 41.7% | 18.6 | 0% | 0% | 43.5% | 75.0% |  |  |
-| 110 | Lee | S19 | 0.3336 | 0% | 25.0% | 62.5% | 16.8 | 0% | 0% | 52.3% | 100.0% |  |  |
-| 111 | Brie | S11 | 0.3335 | 0% | 12.5% | 68.8% | 18.1 | 0% | 0% | 56.4% | 100.0% |  |  |
-| 112 | Brie | S10 | 0.3317 | 0% | 18.8% | 62.5% | 17.9 | 0% | 0% | 55.9% | 100.0% |  |  |
-| 113 | Lee | S8 | 0.3271 | 8.3% | 25.0% | 50.0% | 16.8 | 0% | 0% | 52.6% | 100.0% |  |  |
-| 114 | Brie | S17 | 0.3267 | 8.3% | 16.7% | 56.3% | 18.8 | 0% | 0% | 44.3% | 75.0% |  |  |
-| 115 | Tawm | S8 | 0.3191 | 22.2% | 33.3% | 25.0% | 17.2 | 11.1% | 0% | 40.4% | 75.0% |  | Yes |
-| 116 | Walnut | S18a | 0.3149 | 0% | 12.5% | 62.5% | 17.4 | 0% | 0% | 54.7% | 100.0% |  |  |
-| 117 | Colin | S3 | 0.3118 | 11.1% | 11.1% | 50.0% | 19.1 | 0% | 0% | 44.8% | 75.0% |  |  |
-| 118 | Walnut | S17 | 0.3111 | 16.7% | 33.3% | 31.3% | 19.5 | 0% | 0% | 23.0% | 37.5% |  |  |
-| 119 | Lee | S4 | 0.3102 | 0% | 25.0% | 50.0% | 16.9 | 0% | 0% | 52.9% | 100.0% |  |  |
-| 120 | Jerry | S5 | 0.3094 | 0% | 25.0% | 50.0% | 16.8 | 0% | 0% | 52.6% | 100.0% |  |  |
-| 121 | Allan | S20 | 0.3071 | 0% | 25.0% | 43.8% | 16.7 | 0% | 50.0% | 39.1% | 75.0% |  |  |
-| 122 | Lee | S5 | 0.3059 | 8.3% | 25.0% | 33.3% | 17.7 | 8.3% | 0% | 55.2% | 100.0% |  | Yes |
-| 123 | Isaac | S10 | 0.3041 | 0% | 28.6% | 43.8% | 17.6 | 0% | 0% | 48.0% | 87.5% |  |  |
-| 124 | Caleb | S14 | 0.3029 | 0% | 37.5% | 37.5% | 19.4 | 0% | 0% | 30.3% | 50.0% |  | Yes |
-| 125 | Dom | S18a | 0.2937 | 25.0% | 25.0% | 12.5% | 19.8 | 0% | 50.0% | 15.6% | 25.0% |  |  |
-| 126 | Mike | S16 | 0.2935 | 0% | 6.3% | 56.3% | 17.8 | 0% | 0% | 55.9% | 100.0% |  |  |
-| 127 | Walnut | S13 | 0.2931 | 0% | 18.8% | 50.0% | 16.4 | 0% | 0% | 51.4% | 100.0% |  |  |
-| 128 | Tawm | S15 | 0.2864 | 0% | 37.5% | 31.3% | 18.9 | 0% | 0% | 29.5% | 50.0% |  |  |
-| 129 | Tawm | S7 | 0.2859 | 0% | 11.1% | 50.0% | 18.2 | 11.1% | 0% | 42.7% | 75.0% |  |  |
-| 130 | Tawm | S12 | 0.2792 | 8.3% | 8.3% | 43.8% | 18.1 | 0% | 0% | 42.7% | 75.0% |  |  |
-| 131 | Green Kyle | S13 | 0.2747 | 0% | 25.0% | 37.5% | 17.3 | 0% | 0% | 40.4% | 75.0% |  |  |
-| 132 | JingTang | S8 | 0.2722 | 0% | 33.3% | 33.3% | 16.0 | 0% | 0% | 37.5% | 75.0% |  |  |
-| 133 | Caleb | S2 | 0.2693 | 0% | 11.1% | 50.0% | 17.2 | 0% | 0% | 38.0% | 75.0% |  |  |
-| 134 | Allan | S19 | 0.2681 | 0% | 12.5% | 43.8% | 16.4 | 0% | 0% | 51.4% | 100.0% |  |  |
-| 135 | Walnut | S15 | 0.2614 | 16.7% | 16.7% | 25.0% | 16.4 | 0% | 0% | 38.5% | 75.0% |  |  |
-| 136 | Colin | S2 | 0.2591 | 0% | 22.2% | 33.3% | 17.3 | 0% | 0% | 38.2% | 75.0% |  |  |
-| 137 | Brie | S4 | 0.2541 | 0% | 11.1% | 41.7% | 17.1 | 0% | 0% | 40.1% | 75.0% |  |  |
-| 138 | Dom | S18b | 0.2525 | 12.5% | 25.0% | 12.5% | 17.5 | 25.0% | 0% | 27.6% | 50.0% |  |  |
-| 139 | James | S8 | 0.2515 | 0% | 16.7% | 33.3% | 16.0 | 0% | 0% | 50.0% | 100.0% |  |  |
-| 140 | Colin | S8 | 0.2515 | 0% | 8.3% | 41.7% | 16.0 | 0% | 0% | 50.0% | 100.0% |  |  |
-| 141 | Brie | S19 | 0.2512 | 6.3% | 18.8% | 31.3% | 14.6 | 0% | 0% | 45.5% | 100.0% |  |  |
-| 142 | Green Kyle | S10 | 0.2512 | 8.3% | 8.3% | 37.5% | 16.3 | 0% | 0% | 38.3% | 75.0% |  |  |
-| 143 | Samson | S14 | 0.2503 | 0% | 33.3% | 25.0% | 17.8 | 0% | 0% | 20.9% | 37.5% |  |  |
-| 144 | Colin | S7 | 0.2495 | 0% | 0% | 50.0% | 17.2 | 0% | 0% | 40.4% | 75.0% |  |  |
-| 145 | Mike | S15 | 0.2485 | 0% | 6.3% | 43.8% | 15.7 | 0% | 0% | 49.0% | 100.0% |  |  |
-| 146 | Green Kyle | S16 | 0.2482 | 0% | 12.5% | 37.5% | 18.8 | 0% | 0% | 29.5% | 50.0% |  |  |
-| 147 | Green Kyle | S11 | 0.2420 | 0% | 12.5% | 37.5% | 15.0 | 0% | 0% | 46.9% | 100.0% |  | Yes |
-| 148 | Jerry | S19 | 0.2342 | 8.3% | 16.7% | 25.0% | 13.4 | 16.7% | 16.7% | 31.4% | 75.0% |  |  |
-| 149 | Isaac | S5 | 0.2333 | 0% | 22.2% | 25.0% | 16.0 | 0% | 0% | 37.5% | 75.0% |  |  |
-| 150 | Colin | S15 | 0.2331 | 0% | 25.0% | 25.0% | 15.3 | 0% | 0% | 35.9% | 75.0% |  |  |
-| 151 | Isaac | S12 | 0.2310 | 0% | 0% | 43.8% | 16.5 | 0% | 0% | 39.0% | 75.0% |  |  |
-| 152 | Tawm | S6 | 0.2302 | 0% | 33.3% | 16.7% | 18.3 | 0% | 0% | 14.3% | 25.0% |  |  |
-| 153 | Brie | S9 | 0.2302 | 0% | 33.3% | 16.7% | 18.3 | 0% | 0% | 14.3% | 25.0% |  |  |
-| 154 | Colin | S10 | 0.2244 | 6.3% | 6.3% | 25.0% | 15.7 | 0% | 0% | 49.0% | 100.0% |  |  |
-| 155 | Tawm | S9 | 0.2240 | 0% | 16.7% | 25.0% | 17.8 | 0% | 0% | 27.9% | 50.0% |  |  |
-| 156 | Isaac | S7 | 0.2201 | 0% | 16.7% | 25.0% | 17.3 | 0% | 0% | 27.1% | 50.0% |  |  |
-| 157 | Colin | S21 | 0.2200 | 0% | 0% | 37.5% | 15.3 | 0% | 0% | 47.9% | 100.0% |  |  |
-| 158 | Jerry | S4 | 0.2140 | 0% | 11.1% | 25.0% | 16.3 | 0% | 0% | 38.3% | 75.0% |  |  |
-| 159 | Allan | S18b | 0.2132 | 0% | 8.3% | 31.3% | 15.4 | 0% | 0% | 36.4% | 75.0% |  |  |
-| 160 | Calvin | S1 | 0.2076 | 0% | 0% | 33.3% | 17.0 | 0% | 0% | 33.3% | 66.7% |  |  |
-| 161 | Kevin | S7 | 0.2045 | 0% | 0% | 33.3% | 16.4 | 0% | 0% | 34.1% | 66.7% |  |  |
-| 162 | Kevin | S3 | 0.2029 | 0% | 0% | 33.3% | 16.7 | 0% | 0% | 30.5% | 58.3% |  |  |
-| 163 | Mike | S20 | 0.2024 | 0% | 14.3% | 25.0% | 13.6 | 0% | 0% | 37.3% | 87.5% |  |  |
-| 164 | Walnut | S20 | 0.2016 | 0% | 0% | 37.5% | 13.4 | 0% | 0% | 41.8% | 100.0% |  |  |
-| 165 | Walnut | S19 | 0.1983 | 0% | 12.5% | 25.0% | 15.6 | 0% | 0% | 24.4% | 50.0% |  |  |
-| 166 | Colin | S6 | 0.1960 | 0% | 0% | 25.0% | 15.4 | 0% | 0% | 48.2% | 100.0% |  | Yes |
-| 167 | Green Kyle | S7 | 0.1955 | 0% | 16.7% | 16.7% | 16.3 | 0% | 0% | 25.5% | 50.0% |  |  |
-| 168 | Colin | S17 | 0.1924 | 0% | 0% | 25.0% | 15.0 | 0% | 0% | 47.2% | 100.0% |  | Yes |
-| 169 | Isaac | S14 | 0.1880 | 0% | 8.3% | 18.8% | 15.4 | 0% | 0% | 36.1% | 75.0% |  |  |
-| 170 | Tawm | S4 | 0.1876 | 0% | 16.7% | 16.7% | 15.3 | 0% | 0% | 24.0% | 50.0% |  |  |
-| 171 | Joyce | S4 | 0.1857 | 0% | 0% | 25.0% | 14.3 | 0% | 0% | 44.8% | 100.0% |  |  |
-| 172 | Green Kyle | S12 | 0.1853 | 0% | 0% | 25.0% | 14.3 | 0% | 0% | 44.9% | 100.0% |  |  |
-| 173 | Isaac | S13 | 0.1829 | 0% | 8.3% | 18.8% | 14.8 | 0% | 0% | 34.8% | 75.0% |  |  |
-| 174 | Calvin | S2 | 0.1819 | 0% | 0% | 25.0% | 15.4 | 0% | 0% | 34.1% | 75.0% |  |  |
-| 175 | Mike | S14 | 0.1819 | 0% | 0% | 18.8% | 15.3 | 0% | 0% | 47.7% | 100.0% |  |  |
-| 176 | Abu | S1 | 0.1813 | 0% | 0% | 22.2% | 16.5 | 0% | 0% | 32.4% | 66.7% |  |  |
-| 177 | Colin | S16 | 0.1804 | 0% | 0% | 25.0% | 16.5 | 0% | 0% | 26.0% | 50.0% |  |  |
-| 178 | Austin | S14 | 0.1787 | 0% | 0% | 25.0% | 17.2 | 0% | 0% | 20.1% | 37.5% |  |  |
-| 179 | Joyce | S3 | 0.1730 | 0% | 0% | 16.7% | 14.8 | 0% | 0% | 46.1% | 100.0% |  | Yes |
-| 180 | Tawm | S13 | 0.1726 | 0% | 25.0% | 6.3% | 15.5 | 0% | 0% | 12.1% | 25.0% |  |  |
-| 181 | Tawm | S11 | 0.1723 | 0% | 12.5% | 12.5% | 15.5 | 0% | 0% | 24.2% | 50.0% |  |  |
-| 182 | Tawm | S5 | 0.1705 | 0% | 0% | 25.0% | 13.9 | 0% | 0% | 32.6% | 75.0% |  |  |
-| 183 | Colin | S4 | 0.1698 | 0% | 0% | 16.7% | 14.4 | 0% | 0% | 45.1% | 100.0% |  |  |
-| 184 | Tawm | S17 | 0.1689 | 0% | 0% | 18.8% | 16.2 | 0% | 0% | 28.7% | 56.3% |  |  |
-| 185 | Kevin | S8 | 0.1618 | 0% | 16.7% | 8.3% | 14.2 | 0% | 0% | 22.1% | 50.0% |  |  |
-| 186 | Toby | S6 | 0.1611 | 0% | 0% | 16.7% | 18.0 | 0% | 0% | 14.1% | 25.0% |  |  |
-| 187 | Colin | S20 | 0.1595 | 0% | 8.3% | 12.5% | 13.6 | 0% | 0% | 31.8% | 75.0% |  |  |
-| 188 | Isaac | S8 | 0.1549 | 0% | 0% | 16.7% | 13.6 | 0% | 0% | 35.4% | 83.3% |  |  |
-| 189 | Joyce | S6 | 0.1543 | 0% | 0% | 16.7% | 15.3 | 0% | 0% | 24.0% | 50.0% |  |  |
-| 190 | Colin | S11 | 0.1534 | 0% | 0% | 12.5% | 13.6 | 0% | 0% | 42.4% | 100.0% |  | Yes |
-| 191 | Brie | S6 | 0.1530 | 0% | 0% | 16.7% | 15.2 | 0% | 0% | 23.7% | 50.0% |  |  |
-| 192 | Mike | S19 | 0.1523 | 0% | 6.3% | 12.5% | 12.1 | 0% | 0% | 37.9% | 100.0% |  |  |
-| 193 | Timmy | S20 | 0.1493 | 0% | 6.3% | 12.5% | 11.8 | 0% | 0% | 36.9% | 100.0% |  |  |
-| 194 | Joyce | S8 | 0.1491 | 0% | 16.7% | 8.3% | 11.5 | 16.7% | 0% | 18.0% | 50.0% |  |  |
-| 195 | Mike | S13 | 0.1481 | 0% | 0% | 12.5% | 13.0 | 0% | 0% | 40.6% | 100.0% |  |  |
-| 196 | Sunny | S14 | 0.1457 | 0% | 0% | 12.5% | 17.0 | 0% | 0% | 13.3% | 25.0% |  |  |
-| 197 | Ghin | S1 | 0.1438 | 0% | 0% | 11.1% | 14.7 | 0% | 0% | 28.8% | 66.7% |  | Yes |
-| 198 | Colin | S5 | 0.1430 | 0% | 0% | 8.3% | 14.6 | 0% | 0% | 34.1% | 75.0% |  |  |
-| 199 | Mike | S17 | 0.1425 | 0% | 0% | 12.5% | 14.9 | 0% | 0% | 23.4% | 50.0% |  |  |
-| 200 | Green Kyle | S18a | 0.1408 | 0% | 0% | 12.5% | 11.9 | 6.3% | 0% | 37.4% | 100.0% |  |  |
-| 201 | Alfred | S14 | 0.1407 | 0% | 0% | 12.5% | 13.3 | 0% | 0% | 31.3% | 75.0% |  |  |
-| 202 | Samson | S15 | 0.1384 | 0% | 0% | 12.5% | 14.4 | 0% | 0% | 22.5% | 50.0% |  |  |
-| 203 | Mike | S12 | 0.1341 | 0% | 0% | 0% | 14.1 | 0% | 0% | 44.5% | 100.0% |  |  |
-| 204 | Green Kyle | S4 | 0.1337 | 0% | 0% | 8.3% | 14.8 | 0% | 0% | 23.2% | 50.0% |  |  |
-| 205 | Joyce | S12 | 0.1329 | 0% | 0% | 6.3% | 12.7 | 0% | 0% | 40.0% | 100.0% |  | Yes |
-| 206 | Mike | S11 | 0.1308 | 0% | 0% | 6.3% | 12.5 | 0% | 0% | 39.1% | 100.0% |  |  |
-| 207 | Abu | S3 | 0.1303 | 0% | 0% | 8.3% | 16.0 | 0% | 0% | 12.5% | 25.0% |  |  |
-| 208 | Colin | S13 | 0.1302 | 0% | 0% | 0% | 13.8 | 0% | 0% | 43.0% | 100.0% |  |  |
-| 209 | Green Kyle | S14 | 0.1297 | 0% | 0% | 6.3% | 13.5 | 0% | 0% | 31.6% | 75.0% |  |  |
-| 210 | Caleb | S3 | 0.1284 | 0% | 0% | 8.3% | 14.2 | 0% | 0% | 22.1% | 50.0% |  |  |
-| 211 | Alfred | S15 | 0.1276 | 0% | 0% | 12.5% | 13.0 | 0% | 0% | 20.3% | 50.0% |  |  |
-| 212 | Timmy | S18b | 0.1256 | 0% | 0% | 6.3% | 13.0 | 0% | 0% | 30.7% | 75.0% |  |  |
-| 213 | Martin | S6 | 0.1215 | 0% | 0% | 0% | 12.8 | 0% | 0% | 40.1% | 100.0% |  | Yes |
-| 214 | Joyce | S2 | 0.1199 | 0% | 0% | 0% | 12.9 | 0% | 0% | 38.0% | 100.0% |  |  |
-| 215 | Austin | S10 | 0.1187 | 0% | 0% | 6.3% | 14.2 | 0% | 0% | 16.6% | 37.5% |  |  |
-| 216 | Brie | S21 | 0.1174 | 0% | 0% | 0% | 14.9 | 0% | 0% | 23.2% | 50.0% |  |  |
-| 217 | Green Kyle | S20 | 0.1164 | 0% | 12.5% | 6.3% | 10.0 | 0% | 0% | 15.6% | 50.0% |  |  |
-| 218 | Isaac | S11 | 0.1157 | 0% | 0% | 0% | 13.3 | 0% | 0% | 31.3% | 75.0% |  |  |
-| 219 | Colin | S12 | 0.1145 | 0% | 0% | 0% | 13.2 | 0% | 0% | 31.1% | 75.0% |  |  |
-| 220 | Mike | S18a | 0.1145 | 0% | 0% | 0% | 13.2 | 0% | 0% | 31.1% | 75.0% |  |  |
-| 221 | Alfred | S13 | 0.1130 | 0% | 0% | 6.3% | 11.6 | 0% | 0% | 27.1% | 75.0% |  |  |
-| 222 | Arren | S19 | 0.1121 | 0% | 0% | 6.3% | 12.6 | 0% | 0% | 19.7% | 50.0% |  |  |
-| 223 | Mike | S10 | 0.1121 | 0% | 0% | 0% | 12.9 | 0% | 0% | 30.3% | 75.0% |  |  |
-| 224 | Toby | S8 | 0.1100 | 0% | 0% | 8.3% | 11.8 | 0% | 0% | 18.5% | 50.0% |  |  |
-| 225 | Colin | S18b | 0.1094 | 0% | 0% | 0% | 12.6 | 0% | 0% | 29.7% | 75.0% |  |  |
-| 226 | Tawm | S18b | 0.1093 | 0% | 0% | 6.3% | 12.3 | 0% | 0% | 19.3% | 50.0% |  |  |
-| 227 | Luke | S5 | 0.1089 | 0% | 0% | 0% | 11.5 | 0% | 0% | 35.9% | 100.0% |  |  |
-| 228 | Lucian | S16 | 0.1084 | 0% | 0% | 0% | 15.3 | 0% | 0% | 12.0% | 25.0% |  | Yes |
-| 229 | Alfred | S16 | 0.1067 | 0% | 0% | 0% | 13.5 | 0% | 0% | 21.3% | 50.0% |  |  |
-| 230 | Ryan | S11 | 0.1049 | 0% | 0% | 0% | 12.1 | 0% | 0% | 28.3% | 75.0% |  |  |
-| 231 | Alfred | S17 | 0.1047 | 0% | 0% | 0% | 13.3 | 0% | 0% | 20.9% | 50.0% |  |  |
-| 232 | Alfred | S21 | 0.1030 | 0% | 0% | 0% | 14.5 | 0% | 0% | 11.3% | 25.0% |  |  |
-| 233 | Isaac | S9 | 0.1026 | 0% | 0% | 0% | 15.0 | 0% | 0% | 7.8% | 16.7% |  |  |
-| 234 | Edwin | S9 | 0.1018 | 0% | 0% | 0% | 14.3 | 0% | 0% | 11.2% | 25.0% |  |  |
-| 235 | Austin | S18a | 0.1013 | 0% | 0% | 6.3% | 12.5 | 0% | 0% | 9.8% | 25.0% |  |  |
-| 236 | Ghin | S16 | 0.1008 | 0% | 0% | 0% | 12.8 | 0% | 0% | 20.1% | 50.0% |  |  |
-| 237 | JingTang | S20 | 0.1007 | 0% | 0% | 6.3% | 10.2 | 0% | 0% | 23.8% | 75.0% |  |  |
-| 238 | Tawm | S21 | 0.1006 | 0% | 0% | 0% | 15.0 | 0% | 0% | 5.9% | 12.5% |  |  |
-| 239 | Mike | S18b | 0.0998 | 0% | 0% | 0% | 12.6 | 0% | 0% | 19.9% | 50.0% |  |  |
-| 240 | Viphu | S2 | 0.0996 | 0% | 0% | 0% | 11.7 | 0% | 0% | 25.7% | 75.0% |  |  |
-| 241 | Mike | S8 | 0.0994 | 0% | 0% | 0% | 10.5 | 0% | 0% | 32.8% | 100.0% |  | Yes |
-| 242 | Michael G | S20 | 0.0989 | 0% | 0% | 6.3% | 10.2 | 0% | 0% | 21.9% | 68.8% |  |  |
-| 243 | Isaac | S18a | 0.0985 | 0% | 0% | 0% | 10.4 | 0% | 0% | 32.7% | 100.0% |  |  |
-| 244 | Colin | S19 | 0.0982 | 0% | 0% | 0% | 10.4 | 0% | 0% | 32.4% | 100.0% |  |  |
-| 245 | Edwin | S3 | 0.0970 | 0% | 0% | 0% | 13.7 | 0% | 0% | 10.7% | 25.0% |  |  |
-| 246 | Abu | S2 | 0.0964 | 0% | 0% | 0% | 13.7 | 0% | 0% | 10.0% | 25.0% |  |  |
-| 247 | Isaac | S15 | 0.0962 | 0% | 0% | 0% | 11.1 | 0% | 0% | 26.0% | 75.0% |  |  |
-| 248 | Ivan | S18a | 0.0948 | 0% | 0% | 0% | 12.0 | 0% | 0% | 18.9% | 50.0% |  |  |
-| 249 | Calvin | S6 | 0.0947 | 0% | 0% | 0% | 13.3 | 0% | 0% | 10.4% | 25.0% |  |  |
-| 250 | Ghin | S6 | 0.0947 | 0% | 0% | 0% | 13.3 | 0% | 0% | 10.4% | 25.0% |  |  |
-| 251 | Edwin | S7 | 0.0947 | 0% | 0% | 0% | 13.3 | 0% | 0% | 10.4% | 25.0% |  |  |
-| 252 | Mike | S21 | 0.0941 | 0% | 0% | 0% | 13.3 | 0% | 0% | 10.4% | 25.0% |  |  |
-| 253 | Joyce | S5 | 0.0932 | 0% | 0% | 0% | 11.4 | 0% | 0% | 20.8% | 58.3% |  |  |
-| 254 | Allan | S18a | 0.0927 | 0% | 0% | 0% | 10.9 | 0% | 0% | 23.6% | 68.8% |  |  |
-| 255 | Kevin | S10 | 0.0924 | 0% | 0% | 0% | 12.3 | 0% | 0% | 14.5% | 37.5% |  |  |
-| 256 | Isaac | S19 | 0.0923 | 0% | 0% | 0% | 13.0 | 0% | 0% | 10.2% | 25.0% |  |  |
-| 257 | Austin | S6 | 0.0920 | 0% | 0% | 0% | 12.5 | 0% | 0% | 13.0% | 33.3% |  |  |
-| 258 | Michael G | S18b | 0.0919 | 0% | 0% | 0% | 11.6 | 0% | 0% | 18.3% | 50.0% |  |  |
-| 259 | Timmy | S19 | 0.0914 | 0% | 0% | 0% | 10.1 | 0% | 0% | 27.5% | 87.5% |  |  |
-| 260 | Hana | S17 | 0.0902 | 0% | 0% | 0% | 11.7 | 0% | 0% | 16.1% | 43.8% |  |  |
-| 261 | Caleb | S7 | 0.0889 | 0% | 0% | 0% | 13.0 | 0% | 0% | 6.8% | 16.7% |  |  |
-| 262 | Ghin | S17 | 0.0888 | 0% | 0% | 0% | 12.5 | 0% | 0% | 9.8% | 25.0% |  |  |
-| 263 | Ghin | S11 | 0.0882 | 0% | 0% | 0% | 10.2 | 0% | 0% | 23.8% | 75.0% |  |  |
-| 264 | Alan | S16 | 0.0875 | 0% | 0% | 0% | 12.7 | 0% | 0% | 7.5% | 18.8% |  |  |
-| 265 | Michael G | S18a | 0.0871 | 0% | 0% | 0% | 12.3 | 0% | 0% | 9.6% | 25.0% |  |  |
-| 266 | Steven | S3 | 0.0855 | 0% | 0% | 0% | 12.5 | 0% | 0% | 6.5% | 16.7% |  |  |
-| 267 | Austin | S8 | 0.0854 | 0% | 0% | 0% | 11.2 | 0% | 0% | 14.6% | 41.7% |  |  |
-| 268 | Ghin | S2 | 0.0839 | 0% | 0% | 0% | 10.4 | 0% | 0% | 17.9% | 58.3% |  |  |
-| 269 | Ghin | S10 | 0.0834 | 0% | 0% | 0% | 11.8 | 0% | 0% | 9.2% | 25.0% |  |  |
-| 270 | Michael G | S19 | 0.0832 | 0% | 0% | 0% | 9.6 | 0% | 0% | 22.5% | 75.0% |  |  |
-| 271 | Samson | S20 | 0.0828 | 0% | 0% | 0% | 10.5 | 0% | 0% | 16.4% | 50.0% |  |  |
-| 272 | Big Mike | S2 | 0.0823 | 0% | 0% | 0% | 11.7 | 0% | 0% | 8.6% | 25.0% |  |  |
-| 273 | Big Mike | S3 | 0.0821 | 0% | 0% | 0% | 12.0 | 0% | 0% | 6.3% | 16.7% |  |  |
-| 274 | Ghin | S13 | 0.0817 | 0% | 0% | 0% | 11.2 | 0% | 0% | 10.9% | 31.3% |  |  |
-| 275 | Jerry | S20 | 0.0817 | 0% | 0% | 6.3% | 9.0 | 0% | 0% | 12.3% | 43.8% |  |  |
-| 276 | Samson | S18a | 0.0814 | 0% | 0% | 0% | 10.6 | 0% | 0% | 14.6% | 43.8% |  |  |
-| 277 | Isaac | S17 | 0.0806 | 0% | 0% | 0% | 11.7 | 0% | 0% | 6.9% | 18.8% |  |  |
-| 278 | Clive | S16 | 0.0805 | 0% | 0% | 0% | 12.0 | 0% | 0% | 4.7% | 12.5% |  |  |
-| 279 | Edwin | S4 | 0.0789 | 0% | 0% | 0% | 12.0 | 0% | 0% | 3.1% | 8.3% |  |  |
-| 280 | Ivan | S17 | 0.0783 | 0% | 0% | 0% | 11.3 | 0% | 0% | 6.7% | 18.8% |  |  |
-| 281 | Martin | S4 | 0.0781 | 0% | 0% | 0% | 11.0 | 0% | 0% | 8.6% | 25.0% |  |  |
-| 282 | Ghin | S5 | 0.0781 | 0% | 0% | 0% | 11.0 | 0% | 0% | 8.6% | 25.0% |  |  |
-| 283 | Wild Card | S11 | 0.0781 | 0% | 0% | 0% | 11.0 | 0% | 0% | 8.6% | 25.0% |  |  |
-| 284 | Alfred | S18b | 0.0780 | 0% | 0% | 0% | 9.9 | 0% | 0% | 15.6% | 50.0% |  |  |
-| 285 | Calvin | S16 | 0.0772 | 0% | 0% | 0% | 11.5 | 0% | 0% | 4.5% | 12.5% |  |  |
-| 286 | Kevin | S15 | 0.0759 | 0% | 0% | 0% | 11.0 | 0% | 0% | 6.4% | 18.8% |  |  |
-| 287 | Caleb | S4 | 0.0757 | 0% | 0% | 0% | 10.7 | 0% | 0% | 8.3% | 25.0% |  |  |
-| 288 | Steven | S4 | 0.0757 | 0% | 0% | 0% | 10.7 | 0% | 0% | 8.3% | 25.0% |  |  |
-| 289 | Luke | S4 | 0.0757 | 0% | 0% | 0% | 10.7 | 0% | 0% | 8.3% | 25.0% |  |  |
-| 290 | Anlac | S6 | 0.0757 | 0% | 0% | 0% | 10.7 | 0% | 0% | 8.3% | 25.0% |  |  |
-| 291 | Lea | S11 | 0.0746 | 0% | 0% | 0% | 10.5 | 0% | 0% | 8.2% | 25.0% |  |  |
-| 292 | Jerry | S18a | 0.0738 | 0% | 0% | 0% | 11.0 | 0% | 0% | 4.3% | 12.5% |  |  |
-| 293 | Nick | S10 | 0.0728 | 0% | 0% | 0% | 10.3 | 0% | 0% | 8.0% | 25.0% |  |  |
-| 294 | Joyce | S15 | 0.0720 | 0% | 0% | 0% | 9.1 | 0% | 0% | 14.3% | 50.0% |  |  |
-| 295 | Calvin | S10 | 0.0716 | 0% | 0% | 0% | 11.0 | 0% | 0% | 2.1% | 6.3% |  |  |
-| 296 | Big Mike | S10 | 0.0716 | 0% | 0% | 0% | 11.0 | 0% | 0% | 2.1% | 6.3% |  |  |
-| 297 | Green Kyle | S15 | 0.0710 | 0% | 0% | 0% | 10.0 | 0% | 0% | 7.8% | 25.0% |  |  |
-| 298 | Clive | S19 | 0.0710 | 0% | 0% | 0% | 9.0 | 0% | 0% | 14.1% | 50.0% |  |  |
-| 299 | Hana | S18a | 0.0704 | 0% | 0% | 0% | 10.5 | 0% | 0% | 4.1% | 12.5% |  |  |
-| 300 | Joyce | S10 | 0.0704 | 0% | 0% | 0% | 10.5 | 0% | 0% | 4.1% | 12.5% |  |  |
-| 301 | Caleb | S15 | 0.0704 | 0% | 0% | 0% | 10.5 | 0% | 0% | 4.1% | 12.5% |  |  |
-| 302 | Clive | S18a | 0.0682 | 0% | 0% | 0% | 8.6 | 0% | 0% | 13.6% | 50.0% |  |  |
-| 303 | Henly | S2 | 0.0656 | 0% | 0% | 0% | 10.0 | 0% | 0% | 2.5% | 8.3% |  |  |
-| 304 | Viphu | S15 | 0.0639 | 0% | 0% | 0% | 9.0 | 0% | 0% | 7.0% | 25.0% |  |  |
-| 305 | Austin | S13 | 0.0637 | 0% | 0% | 0% | 9.5 | 0% | 0% | 3.7% | 12.5% |  |  |
-| 306 | Joyce | S19 | 0.0637 | 0% | 0% | 0% | 9.5 | 0% | 0% | 3.7% | 12.5% |  |  |
-| 307 | Edwin | S13 | 0.0621 | 0% | 0% | 0% | 9.0 | 0% | 0% | 5.3% | 18.8% |  |  |
-| 308 | Ghin | S8 | 0.0592 | 0% | 0% | 0% | 8.3 | 0% | 0% | 6.5% | 25.0% |  |  |
-| 309 | Henly | S8 | 0.0592 | 0% | 0% | 0% | 9.0 | 0% | 0% | 2.3% | 8.3% |  |  |
-| 310 | Isaac | S16 | 0.0586 | 0% | 0% | 0% | 8.3 | 0% | 0% | 6.5% | 25.0% |  |  |
-| 311 | Edwin | S8 | 0.0552 | 0% | 0% | 0% | 7.5 | 0% | 0% | 7.8% | 33.3% |  |  |
-| 312 | Caleb | S8 | 0.0547 | 0% | 0% | 0% | 8.0 | 0% | 0% | 4.2% | 16.7% |  |  |
-| 313 | Alfred | S19 | 0.0533 | 0% | 0% | 0% | 7.5 | 0% | 0% | 5.9% | 25.0% |  |  |
-| 314 | Viphu | S8 | 0.0519 | 0% | 0% | 0% | 6.8 | 0% | 0% | 8.9% | 41.7% |  |  |
-| 315 | Isaac | S20 | 0.0503 | 0% | 0% | 0% | 7.5 | 0% | 0% | 2.9% | 12.5% |  |  |
-| 316 | Steven | S8 | 0.0479 | 0% | 0% | 0% | 7.0 | 0% | 0% | 3.6% | 16.7% |  |  |
-| 317 | Austin | S18b | 0.0391 | 0% | 0% | 0% | 6.0 | 0% | 0% | 1.2% | 6.3% |  |  |
+| 18 | Josie | S22 | 0.7409 | 50.0% | 75.0% | 87.5% | 26.1 | 62.5% | 62.5% | 81.4% | 100.0% | Yes | Yes |
+| 19 | Josie | S20 | 0.7200 | 37.5% | 75.0% | 100.0% | 24.7 | 62.5% | 50.0% | 77.1% | 100.0% | Yes | Yes |
+| 20 | Josie | S19 | 0.7163 | 56.3% | 75.0% | 81.3% | 25.7 | 43.8% | 37.5% | 80.3% | 100.0% | Yes | Yes |
+| 21 | Josie | S21 | 0.7126 | 37.5% | 93.8% | 100.0% | 25.6 | 6.3% | 0% | 79.9% | 100.0% |  |  |
+| 22 | Josie | S5 | 0.7125 | 33.3% | 75.0% | 83.3% | 25.5 | 75.0% | 91.7% | 79.7% | 100.0% | Yes |  |
+| 23 | James | S12 | 0.7093 | 31.3% | 87.5% | 93.8% | 25.6 | 37.5% | 37.5% | 80.5% | 100.0% |  |  |
+| 24 | Josie | S16 | 0.6940 | 53.3% | 66.7% | 68.8% | 25.4 | 66.7% | 80.0% | 75.0% | 93.8% |  |  |
+| 25 | Josie | S18b | 0.6887 | 37.5% | 56.3% | 81.3% | 24.6 | 100.0% | 100.0% | 77.6% | 100.0% |  |  |
+| 26 | James | S18a | 0.6847 | 25.0% | 81.3% | 87.5% | 24.4 | 62.5% | 62.5% | 76.8% | 100.0% | Yes | Yes |
+| 27 | Josie | S18a | 0.6800 | 31.3% | 68.8% | 75.0% | 24.1 | 93.8% | 100.0% | 76.0% | 100.0% |  |  |
+| 28 | Toby | S16 | 0.6741 | 25.0% | 87.5% | 100.0% | 24.3 | 18.8% | 12.5% | 76.4% | 100.0% | Yes | Yes |
+| 29 | Brie | S1 | 0.6668 | 44.4% | 77.8% | 88.9% | 25.1 | 11.1% | 0% | 73.9% | 100.0% |  |  |
+| 30 | James | S13 | 0.6575 | 37.5% | 75.0% | 93.8% | 24.7 | 12.5% | 0% | 77.1% | 100.0% |  |  |
+| 31 | Lee | S18b | 0.6531 | 18.8% | 75.0% | 93.8% | 24.8 | 31.3% | 50.0% | 78.0% | 100.0% | Yes |  |
+| 32 | James | S2 | 0.6510 | 25.0% | 66.7% | 91.7% | 25.3 | 50.0% | 41.7% | 74.5% | 100.0% |  | Yes |
+| 33 | Lee | S7 | 0.6498 | 41.7% | 75.0% | 83.3% | 24.9 | 8.3% | 8.3% | 77.9% | 100.0% |  | Yes |
+| 34 | Lee | S11 | 0.6418 | 43.8% | 75.0% | 81.3% | 23.9 | 18.8% | 0% | 74.8% | 100.0% |  | Yes |
+| 35 | Lee | S18a | 0.6307 | 12.5% | 75.0% | 100.0% | 24.1 | 25.0% | 25.0% | 76.0% | 100.0% |  | Yes |
+| 36 | Dom | S5 | 0.6271 | 45.5% | 63.6% | 83.3% | 24.2 | 18.2% | 9.1% | 69.3% | 91.7% |  | Yes |
+| 37 | James | S10 | 0.6249 | 33.3% | 91.7% | 68.8% | 24.9 | 33.3% | 0% | 58.4% | 75.0% |  |  |
+| 38 | James | S16 | 0.6108 | 6.3% | 87.5% | 93.8% | 23.4 | 12.5% | 12.5% | 73.8% | 100.0% |  |  |
+| 39 | Josie | S4 | 0.6051 | 8.3% | 83.3% | 83.3% | 23.8 | 25.0% | 33.3% | 74.2% | 100.0% |  |  |
+| 40 | James | S9 | 0.5986 | 8.3% | 83.3% | 83.3% | 23.5 | 33.3% | 16.7% | 73.4% | 100.0% |  |  |
+| 41 | James | S6 | 0.5978 | 8.3% | 75.0% | 100.0% | 23.4 | 0% | 16.7% | 73.2% | 100.0% |  |  |
+| 42 | James | S17 | 0.5958 | 18.8% | 62.5% | 93.8% | 23.0 | 37.5% | 12.5% | 72.4% | 100.0% |  | Yes |
+| 43 | Toby | S17 | 0.5936 | 6.3% | 81.3% | 100.0% | 22.9 | 0% | 0% | 72.2% | 100.0% |  |  |
+| 44 | James | S19 | 0.5892 | 31.3% | 56.3% | 81.3% | 22.2 | 37.5% | 37.5% | 69.3% | 100.0% |  |  |
+| 45 | Walnut | S21 | 0.5680 | 6.3% | 68.8% | 100.0% | 22.9 | 0% | 0% | 71.7% | 100.0% |  | Yes |
+| 46 | Toby | S18b | 0.5492 | 12.5% | 50.0% | 93.8% | 22.1 | 25.0% | 25.0% | 69.7% | 100.0% |  | Yes |
+| 47 | Toby | S11 | 0.5428 | 0% | 75.0% | 93.8% | 21.7 | 0% | 0% | 67.8% | 100.0% |  |  |
+| 48 | James | S1 | 0.5411 | 11.1% | 66.7% | 88.9% | 22.2 | 0% | 0% | 65.4% | 100.0% |  |  |
+| 49 | Brie | S7 | 0.5385 | 0% | 75.0% | 91.7% | 21.7 | 0% | 0% | 67.7% | 100.0% |  |  |
+| 50 | Tawm | S3 | 0.5318 | 11.1% | 77.8% | 75.0% | 23.3 | 0% | 0% | 54.7% | 75.0% |  |  |
+| 51 | Lee | S12 | 0.5287 | 6.3% | 62.5% | 93.8% | 21.4 | 0% | 0% | 67.3% | 100.0% |  |  |
+| 52 | Walnut | S14 | 0.5259 | 12.5% | 100.0% | 50.0% | 25.3 | 0% | 0% | 39.5% | 50.0% |  |  |
+| 53 | James | S15 | 0.5193 | 6.3% | 68.8% | 81.3% | 21.8 | 0% | 0% | 68.0% | 100.0% |  |  |
+| 54 | Lee | S10 | 0.5087 | 18.8% | 62.5% | 68.8% | 21.1 | 0% | 12.5% | 66.0% | 100.0% |  |  |
+| 55 | Lee | S14 | 0.5069 | 6.3% | 62.5% | 81.3% | 21.4 | 6.3% | 0% | 67.0% | 100.0% |  |  |
+| 56 | James | S14 | 0.5066 | 12.5% | 37.5% | 87.5% | 21.3 | 18.8% | 37.5% | 66.6% | 100.0% |  |  |
+| 57 | James | S18b | 0.5007 | 18.8% | 62.5% | 75.0% | 19.6 | 0% | 0% | 61.6% | 100.0% |  |  |
+| 58 | James | S22 | 0.5002 | 16.7% | 66.7% | 62.5% | 22.3 | 25.0% | 0% | 52.3% | 75.0% |  |  |
+| 59 | Brie | S3 | 0.4996 | 0% | 66.7% | 83.3% | 21.1 | 0% | 0% | 65.9% | 100.0% |  |  |
+| 60 | James | S7 | 0.4989 | 22.2% | 66.7% | 58.3% | 23.2 | 0% | 0% | 54.4% | 75.0% |  |  |
+| 61 | Isaac | S2 | 0.4980 | 0% | 75.0% | 75.0% | 21.3 | 0% | 0% | 62.7% | 100.0% |  | Yes |
+| 62 | Toby | S20 | 0.4962 | 25.0% | 50.0% | 75.0% | 20.4 | 0% | 0% | 63.7% | 100.0% |  | Yes |
+| 63 | Toby | S18a | 0.4942 | 18.8% | 43.8% | 81.3% | 21.2 | 6.3% | 0% | 66.7% | 100.0% |  |  |
+| 64 | Joyce | S14 | 0.4922 | 0% | 62.5% | 81.3% | 21.6 | 0% | 0% | 67.6% | 100.0% |  |  |
+| 65 | Lee | S17 | 0.4915 | 12.5% | 56.3% | 75.0% | 21.3 | 0% | 0% | 67.1% | 100.0% |  | Yes |
+| 66 | James | S20 | 0.4865 | 12.5% | 56.3% | 75.0% | 20.2 | 12.5% | 0% | 63.1% | 100.0% |  |  |
+| 67 | Green Kyle | S6 | 0.4750 | 0% | 58.3% | 83.3% | 20.3 | 0% | 0% | 63.3% | 100.0% |  | Yes |
+| 68 | James | S5 | 0.4728 | 11.1% | 55.6% | 75.0% | 21.7 | 0% | 0% | 50.8% | 75.0% |  |  |
+| 69 | James | S11 | 0.4702 | 12.5% | 31.3% | 87.5% | 20.4 | 12.5% | 12.5% | 63.9% | 100.0% |  |  |
+| 70 | Tawm | S2 | 0.4698 | 11.1% | 55.6% | 75.0% | 21.7 | 0% | 0% | 47.8% | 75.0% |  |  |
+| 71 | Brie | S12 | 0.4690 | 0% | 43.8% | 93.8% | 20.4 | 0% | 0% | 64.4% | 100.0% |  |  |
+| 72 | Dom | S20 | 0.4688 | 30.0% | 60.0% | 43.8% | 21.4 | 20.0% | 20.0% | 41.8% | 62.5% |  |  |
+| 73 | Brie | S14 | 0.4685 | 0% | 43.8% | 93.8% | 20.4 | 0% | 0% | 63.9% | 100.0% |  |  |
+| 74 | Josie | S8 | 0.4669 | 0% | 50.0% | 83.3% | 19.8 | 0% | 25.0% | 62.0% | 100.0% |  |  |
+| 75 | Dom | S4 | 0.4661 | 22.2% | 55.6% | 58.3% | 22.0 | 0% | 0% | 51.6% | 75.0% |  |  |
+| 76 | Isaac | S3 | 0.4642 | 8.3% | 58.3% | 66.7% | 20.8 | 0% | 0% | 64.8% | 100.0% |  |  |
+| 77 | Isaac | S1 | 0.4606 | 0% | 33.3% | 100.0% | 20.9 | 0% | 0% | 61.4% | 100.0% |  |  |
+| 78 | Dom | S19 | 0.4525 | 0% | 58.3% | 68.8% | 21.4 | 8.3% | 16.7% | 50.2% | 75.0% |  |  |
+| 79 | Allan | S21 | 0.4524 | 0% | 31.3% | 100.0% | 20.1 | 0% | 0% | 62.7% | 100.0% |  | Yes |
+| 80 | Lee | S6 | 0.4518 | 0% | 66.7% | 66.7% | 21.3 | 0% | 0% | 50.0% | 75.0% |  |  |
+| 81 | Toby | S9 | 0.4420 | 8.3% | 41.7% | 75.0% | 20.2 | 0% | 0% | 63.0% | 100.0% |  | Yes |
+| 82 | Toby | S10 | 0.4402 | 6.3% | 31.3% | 87.5% | 20.0 | 0% | 0% | 62.5% | 100.0% |  | Yes |
+| 83 | Colin | S14 | 0.4384 | 0% | 66.7% | 62.5% | 20.8 | 0% | 0% | 48.6% | 75.0% |  |  |
+| 84 | Lee | S16 | 0.4378 | 16.7% | 33.3% | 75.0% | 21.3 | 0% | 0% | 50.4% | 75.0% |  | Yes |
+| 85 | James | S3 | 0.4328 | 11.1% | 44.4% | 58.3% | 20.9 | 22.2% | 22.2% | 49.0% | 75.0% |  |  |
+| 86 | Brie | S8 | 0.4215 | 16.7% | 41.7% | 50.0% | 20.1 | 25.0% | 0% | 62.8% | 100.0% |  | Yes |
+| 87 | Chris | S22 | 0.4187 | 16.7% | 50.0% | 56.3% | 19.7 | 0% | 0% | 46.1% | 75.0% |  |  |
+| 88 | Green Kyle | S9 | 0.4112 | 8.3% | 33.3% | 75.0% | 18.7 | 0% | 0% | 58.3% | 100.0% |  |  |
+| 89 | Tawm | S1 | 0.4088 | 0% | 50.0% | 66.7% | 21.2 | 0% | 0% | 41.5% | 66.7% |  |  |
+| 90 | Brie | S5 | 0.4013 | 0% | 33.3% | 75.0% | 19.5 | 0% | 0% | 60.9% | 100.0% |  |  |
+| 91 | Nick | S8 | 0.3978 | 0% | 33.3% | 75.0% | 18.3 | 8.3% | 8.3% | 57.0% | 100.0% |  |  |
+| 92 | Isaac | S4 | 0.3958 | 0% | 33.3% | 75.0% | 18.9 | 0% | 0% | 59.1% | 100.0% |  | Yes |
+| 93 | Walnut | S22 | 0.3957 | 6.3% | 43.8% | 56.3% | 18.9 | 6.3% | 0% | 59.2% | 100.0% |  |  |
+| 94 | Brie | S16 | 0.3952 | 12.5% | 50.0% | 43.8% | 22.1 | 12.5% | 0% | 34.8% | 50.0% |  |  |
+| 95 | Toby | S19 | 0.3894 | 0% | 43.8% | 62.5% | 18.7 | 0% | 0% | 58.4% | 100.0% |  | Yes |
+| 96 | Lee | S13 | 0.3813 | 7.1% | 42.9% | 56.3% | 18.5 | 0% | 0% | 50.6% | 87.5% |  |  |
+| 97 | Brie | S2 | 0.3793 | 0% | 33.3% | 66.7% | 21.0 | 0% | 0% | 46.3% | 75.0% |  |  |
+| 98 | Colin | S9 | 0.3789 | 11.1% | 22.2% | 66.7% | 20.4 | 0% | 0% | 47.9% | 75.0% |  |  |
+| 99 | Lee | S21 | 0.3785 | 0% | 33.3% | 68.8% | 20.1 | 0% | 0% | 47.1% | 75.0% |  |  |
+| 100 | Tawm | S14 | 0.3781 | 0% | 50.0% | 56.3% | 19.1 | 0% | 0% | 44.7% | 75.0% |  |  |
+| 101 | Brie | S13 | 0.3756 | 8.3% | 41.7% | 56.3% | 18.7 | 0% | 0% | 43.8% | 75.0% |  |  |
+| 102 | DK | S22 | 0.3711 | 0% | 50.0% | 43.8% | 18.8 | 8.3% | 33.3% | 43.9% | 75.0% |  |  |
+| 103 | Jerry | S18b | 0.3689 | 8.3% | 33.3% | 43.8% | 18.3 | 41.7% | 33.3% | 43.3% | 75.0% |  |  |
+| 104 | Isaac | S6 | 0.3678 | 11.1% | 22.2% | 58.3% | 20.4 | 11.1% | 0% | 47.9% | 75.0% |  |  |
+| 105 | Lee | S20 | 0.3644 | 9.1% | 45.5% | 50.0% | 17.6 | 9.1% | 0% | 37.9% | 68.8% |  |  |
+| 106 | Toby | S15 | 0.3623 | 0% | 33.3% | 62.5% | 19.7 | 0% | 0% | 46.1% | 75.0% |  | Yes |
+| 107 | Lee | S15 | 0.3533 | 0% | 41.7% | 50.0% | 19.6 | 0% | 0% | 45.9% | 75.0% |  |  |
+| 108 | Nick | S14 | 0.3527 | 0% | 75.0% | 25.0% | 21.5 | 0% | 0% | 16.8% | 25.0% |  |  |
+| 109 | Walnut | S18b | 0.3449 | 6.3% | 18.8% | 62.5% | 17.8 | 0% | 0% | 56.1% | 100.0% |  | Yes |
+| 110 | Toby | S13 | 0.3436 | 0% | 18.8% | 68.8% | 17.8 | 0% | 0% | 55.7% | 100.0% |  | Yes |
+| 111 | Brie | S18a | 0.3367 | 6.3% | 12.5% | 62.5% | 17.9 | 6.3% | 0% | 56.5% | 100.0% |  |  |
+| 112 | Brie | S15 | 0.3363 | 0% | 36.4% | 56.3% | 17.8 | 0% | 0% | 38.3% | 68.8% |  |  |
+| 113 | Lee | S9 | 0.3363 | 0% | 25.0% | 58.3% | 17.9 | 0% | 0% | 56.0% | 100.0% |  |  |
+| 114 | Green Kyle | S5 | 0.3347 | 11.1% | 33.3% | 41.7% | 18.6 | 0% | 0% | 43.5% | 75.0% |  |  |
+| 115 | Lee | S19 | 0.3336 | 0% | 25.0% | 62.5% | 16.8 | 0% | 0% | 52.3% | 100.0% |  |  |
+| 116 | Brie | S11 | 0.3335 | 0% | 12.5% | 68.8% | 18.1 | 0% | 0% | 56.4% | 100.0% |  |  |
+| 117 | Brie | S10 | 0.3317 | 0% | 18.8% | 62.5% | 17.9 | 0% | 0% | 55.9% | 100.0% |  |  |
+| 118 | Lee | S8 | 0.3271 | 8.3% | 25.0% | 50.0% | 16.8 | 0% | 0% | 52.6% | 100.0% |  |  |
+| 119 | Brie | S17 | 0.3267 | 8.3% | 16.7% | 56.3% | 18.8 | 0% | 0% | 44.3% | 75.0% |  |  |
+| 120 | Lee | S22 | 0.3232 | 12.5% | 25.0% | 43.8% | 15.8 | 6.3% | 12.5% | 49.4% | 100.0% |  |  |
+| 121 | Tawm | S8 | 0.3191 | 22.2% | 33.3% | 25.0% | 17.2 | 11.1% | 0% | 40.4% | 75.0% |  | Yes |
+| 122 | Walnut | S18a | 0.3149 | 0% | 12.5% | 62.5% | 17.4 | 0% | 0% | 54.7% | 100.0% |  |  |
+| 123 | Colin | S3 | 0.3118 | 11.1% | 11.1% | 50.0% | 19.1 | 0% | 0% | 44.8% | 75.0% |  |  |
+| 124 | Walnut | S17 | 0.3111 | 16.7% | 33.3% | 31.3% | 19.5 | 0% | 0% | 23.0% | 37.5% |  |  |
+| 125 | Lee | S4 | 0.3102 | 0% | 25.0% | 50.0% | 16.9 | 0% | 0% | 52.9% | 100.0% |  |  |
+| 126 | Jerry | S5 | 0.3094 | 0% | 25.0% | 50.0% | 16.8 | 0% | 0% | 52.6% | 100.0% |  |  |
+| 127 | Allan | S20 | 0.3071 | 0% | 25.0% | 43.8% | 16.7 | 0% | 50.0% | 39.1% | 75.0% |  |  |
+| 128 | Lee | S5 | 0.3059 | 8.3% | 25.0% | 33.3% | 17.7 | 8.3% | 0% | 55.2% | 100.0% |  | Yes |
+| 129 | Isaac | S10 | 0.3041 | 0% | 28.6% | 43.8% | 17.6 | 0% | 0% | 48.0% | 87.5% |  |  |
+| 130 | Caleb | S14 | 0.3029 | 0% | 37.5% | 37.5% | 19.4 | 0% | 0% | 30.3% | 50.0% |  | Yes |
+| 131 | Dom | S18a | 0.2937 | 25.0% | 25.0% | 12.5% | 19.8 | 0% | 50.0% | 15.6% | 25.0% |  |  |
+| 132 | Mike | S16 | 0.2935 | 0% | 6.3% | 56.3% | 17.8 | 0% | 0% | 55.9% | 100.0% |  |  |
+| 133 | Walnut | S13 | 0.2931 | 0% | 18.8% | 50.0% | 16.4 | 0% | 0% | 51.4% | 100.0% |  |  |
+| 134 | Tawm | S15 | 0.2864 | 0% | 37.5% | 31.3% | 18.9 | 0% | 0% | 29.5% | 50.0% |  |  |
+| 135 | Tawm | S7 | 0.2859 | 0% | 11.1% | 50.0% | 18.2 | 11.1% | 0% | 42.7% | 75.0% |  |  |
+| 136 | Tawm | S12 | 0.2792 | 8.3% | 8.3% | 43.8% | 18.1 | 0% | 0% | 42.7% | 75.0% |  |  |
+| 137 | Green Kyle | S13 | 0.2747 | 0% | 25.0% | 37.5% | 17.3 | 0% | 0% | 40.4% | 75.0% |  |  |
+| 138 | JingTang | S8 | 0.2722 | 0% | 33.3% | 33.3% | 16.0 | 0% | 0% | 37.5% | 75.0% |  |  |
+| 139 | Caleb | S2 | 0.2693 | 0% | 11.1% | 50.0% | 17.2 | 0% | 0% | 38.0% | 75.0% |  |  |
+| 140 | Allan | S19 | 0.2681 | 0% | 12.5% | 43.8% | 16.4 | 0% | 0% | 51.4% | 100.0% |  |  |
+| 141 | Walnut | S15 | 0.2614 | 16.7% | 16.7% | 25.0% | 16.4 | 0% | 0% | 38.5% | 75.0% |  |  |
+| 142 | Colin | S2 | 0.2591 | 0% | 22.2% | 33.3% | 17.3 | 0% | 0% | 38.2% | 75.0% |  |  |
+| 143 | Donald | S22 | 0.2564 | 10.0% | 20.0% | 31.3% | 16.0 | 0% | 0% | 31.3% | 62.5% |  |  |
+| 144 | Brie | S4 | 0.2541 | 0% | 11.1% | 41.7% | 17.1 | 0% | 0% | 40.1% | 75.0% |  |  |
+| 145 | Dom | S18b | 0.2525 | 12.5% | 25.0% | 12.5% | 17.5 | 25.0% | 0% | 27.6% | 50.0% |  |  |
+| 146 | James | S8 | 0.2515 | 0% | 16.7% | 33.3% | 16.0 | 0% | 0% | 50.0% | 100.0% |  |  |
+| 147 | Colin | S8 | 0.2515 | 0% | 8.3% | 41.7% | 16.0 | 0% | 0% | 50.0% | 100.0% |  |  |
+| 148 | Brie | S19 | 0.2512 | 6.3% | 18.8% | 31.3% | 14.6 | 0% | 0% | 45.5% | 100.0% |  |  |
+| 149 | Green Kyle | S10 | 0.2512 | 8.3% | 8.3% | 37.5% | 16.3 | 0% | 0% | 38.3% | 75.0% |  |  |
+| 150 | Samson | S14 | 0.2503 | 0% | 33.3% | 25.0% | 17.8 | 0% | 0% | 20.9% | 37.5% |  |  |
+| 151 | Colin | S7 | 0.2495 | 0% | 0% | 50.0% | 17.2 | 0% | 0% | 40.4% | 75.0% |  |  |
+| 152 | Mike | S15 | 0.2485 | 0% | 6.3% | 43.8% | 15.7 | 0% | 0% | 49.0% | 100.0% |  |  |
+| 153 | Green Kyle | S16 | 0.2482 | 0% | 12.5% | 37.5% | 18.8 | 0% | 0% | 29.5% | 50.0% |  |  |
+| 154 | Green Kyle | S11 | 0.2420 | 0% | 12.5% | 37.5% | 15.0 | 0% | 0% | 46.9% | 100.0% |  | Yes |
+| 155 | Jerry | S19 | 0.2342 | 8.3% | 16.7% | 25.0% | 13.4 | 16.7% | 16.7% | 31.4% | 75.0% |  |  |
+| 156 | Isaac | S5 | 0.2333 | 0% | 22.2% | 25.0% | 16.0 | 0% | 0% | 37.5% | 75.0% |  |  |
+| 157 | Colin | S15 | 0.2331 | 0% | 25.0% | 25.0% | 15.3 | 0% | 0% | 35.9% | 75.0% |  |  |
+| 158 | Isaac | S12 | 0.2310 | 0% | 0% | 43.8% | 16.5 | 0% | 0% | 39.0% | 75.0% |  |  |
+| 159 | Tawm | S6 | 0.2302 | 0% | 33.3% | 16.7% | 18.3 | 0% | 0% | 14.3% | 25.0% |  |  |
+| 160 | Brie | S9 | 0.2302 | 0% | 33.3% | 16.7% | 18.3 | 0% | 0% | 14.3% | 25.0% |  |  |
+| 161 | Colin | S10 | 0.2244 | 6.3% | 6.3% | 25.0% | 15.7 | 0% | 0% | 49.0% | 100.0% |  |  |
+| 162 | Tawm | S9 | 0.2240 | 0% | 16.7% | 25.0% | 17.8 | 0% | 0% | 27.9% | 50.0% |  |  |
+| 163 | Arren | S22 | 0.2223 | 0% | 25.0% | 25.0% | 15.5 | 0% | 0% | 24.2% | 50.0% |  |  |
+| 164 | Isaac | S7 | 0.2201 | 0% | 16.7% | 25.0% | 17.3 | 0% | 0% | 27.1% | 50.0% |  |  |
+| 165 | Colin | S21 | 0.2200 | 0% | 0% | 37.5% | 15.3 | 0% | 0% | 47.9% | 100.0% |  |  |
+| 166 | Jerry | S4 | 0.2140 | 0% | 11.1% | 25.0% | 16.3 | 0% | 0% | 38.3% | 75.0% |  |  |
+| 167 | Allan | S18b | 0.2132 | 0% | 8.3% | 31.3% | 15.4 | 0% | 0% | 36.4% | 75.0% |  |  |
+| 168 | Calvin | S1 | 0.2076 | 0% | 0% | 33.3% | 17.0 | 0% | 0% | 33.3% | 66.7% |  |  |
+| 169 | Kevin | S7 | 0.2045 | 0% | 0% | 33.3% | 16.4 | 0% | 0% | 34.1% | 66.7% |  |  |
+| 170 | Kevin | S3 | 0.2029 | 0% | 0% | 33.3% | 16.7 | 0% | 0% | 30.5% | 58.3% |  |  |
+| 171 | Mike | S20 | 0.2024 | 0% | 14.3% | 25.0% | 13.6 | 0% | 0% | 37.3% | 87.5% |  |  |
+| 172 | Walnut | S20 | 0.2016 | 0% | 0% | 37.5% | 13.4 | 0% | 0% | 41.8% | 100.0% |  |  |
+| 173 | Walnut | S19 | 0.1983 | 0% | 12.5% | 25.0% | 15.6 | 0% | 0% | 24.4% | 50.0% |  |  |
+| 174 | Dom | S22 | 0.1962 | 0% | 0% | 31.3% | 17.8 | 0% | 0% | 20.9% | 37.5% |  |  |
+| 175 | Colin | S6 | 0.1960 | 0% | 0% | 25.0% | 15.4 | 0% | 0% | 48.2% | 100.0% |  | Yes |
+| 176 | Green Kyle | S7 | 0.1955 | 0% | 16.7% | 16.7% | 16.3 | 0% | 0% | 25.5% | 50.0% |  |  |
+| 177 | Colin | S17 | 0.1924 | 0% | 0% | 25.0% | 15.0 | 0% | 0% | 47.2% | 100.0% |  | Yes |
+| 178 | Isaac | S14 | 0.1880 | 0% | 8.3% | 18.8% | 15.4 | 0% | 0% | 36.1% | 75.0% |  |  |
+| 179 | Tawm | S4 | 0.1876 | 0% | 16.7% | 16.7% | 15.3 | 0% | 0% | 24.0% | 50.0% |  |  |
+| 180 | Joyce | S4 | 0.1857 | 0% | 0% | 25.0% | 14.3 | 0% | 0% | 44.8% | 100.0% |  |  |
+| 181 | Green Kyle | S12 | 0.1853 | 0% | 0% | 25.0% | 14.3 | 0% | 0% | 44.9% | 100.0% |  |  |
+| 182 | Isaac | S13 | 0.1829 | 0% | 8.3% | 18.8% | 14.8 | 0% | 0% | 34.8% | 75.0% |  |  |
+| 183 | Calvin | S2 | 0.1819 | 0% | 0% | 25.0% | 15.4 | 0% | 0% | 34.1% | 75.0% |  |  |
+| 184 | Mike | S14 | 0.1819 | 0% | 0% | 18.8% | 15.3 | 0% | 0% | 47.7% | 100.0% |  |  |
+| 185 | Abu | S1 | 0.1813 | 0% | 0% | 22.2% | 16.5 | 0% | 0% | 32.4% | 66.7% |  |  |
+| 186 | Colin | S16 | 0.1804 | 0% | 0% | 25.0% | 16.5 | 0% | 0% | 26.0% | 50.0% |  |  |
+| 187 | Austin | S14 | 0.1787 | 0% | 0% | 25.0% | 17.2 | 0% | 0% | 20.1% | 37.5% |  |  |
+| 188 | Joyce | S3 | 0.1730 | 0% | 0% | 16.7% | 14.8 | 0% | 0% | 46.1% | 100.0% |  | Yes |
+| 189 | Tawm | S13 | 0.1726 | 0% | 25.0% | 6.3% | 15.5 | 0% | 0% | 12.1% | 25.0% |  |  |
+| 190 | Tawm | S11 | 0.1723 | 0% | 12.5% | 12.5% | 15.5 | 0% | 0% | 24.2% | 50.0% |  |  |
+| 191 | Tawm | S5 | 0.1705 | 0% | 0% | 25.0% | 13.9 | 0% | 0% | 32.6% | 75.0% |  |  |
+| 192 | Colin | S4 | 0.1698 | 0% | 0% | 16.7% | 14.4 | 0% | 0% | 45.1% | 100.0% |  |  |
+| 193 | Tawm | S17 | 0.1689 | 0% | 0% | 18.8% | 16.2 | 0% | 0% | 28.7% | 56.3% |  |  |
+| 194 | Kevin | S8 | 0.1618 | 0% | 16.7% | 8.3% | 14.2 | 0% | 0% | 22.1% | 50.0% |  |  |
+| 195 | Toby | S6 | 0.1611 | 0% | 0% | 16.7% | 18.0 | 0% | 0% | 14.1% | 25.0% |  |  |
+| 196 | Colin | S20 | 0.1595 | 0% | 8.3% | 12.5% | 13.6 | 0% | 0% | 31.8% | 75.0% |  |  |
+| 197 | Isaac | S8 | 0.1549 | 0% | 0% | 16.7% | 13.6 | 0% | 0% | 35.4% | 83.3% |  |  |
+| 198 | Joyce | S6 | 0.1543 | 0% | 0% | 16.7% | 15.3 | 0% | 0% | 24.0% | 50.0% |  |  |
+| 199 | Colin | S11 | 0.1534 | 0% | 0% | 12.5% | 13.6 | 0% | 0% | 42.4% | 100.0% |  | Yes |
+| 200 | Brie | S6 | 0.1530 | 0% | 0% | 16.7% | 15.2 | 0% | 0% | 23.7% | 50.0% |  |  |
+| 201 | Mike | S19 | 0.1523 | 0% | 6.3% | 12.5% | 12.1 | 0% | 0% | 37.9% | 100.0% |  |  |
+| 202 | Timmy | S20 | 0.1493 | 0% | 6.3% | 12.5% | 11.8 | 0% | 0% | 36.9% | 100.0% |  |  |
+| 203 | Joyce | S8 | 0.1491 | 0% | 16.7% | 8.3% | 11.5 | 16.7% | 0% | 18.0% | 50.0% |  |  |
+| 204 | Mike | S13 | 0.1481 | 0% | 0% | 12.5% | 13.0 | 0% | 0% | 40.6% | 100.0% |  |  |
+| 205 | Sunny | S14 | 0.1457 | 0% | 0% | 12.5% | 17.0 | 0% | 0% | 13.3% | 25.0% |  |  |
+| 206 | Ghin | S1 | 0.1438 | 0% | 0% | 11.1% | 14.7 | 0% | 0% | 28.8% | 66.7% |  | Yes |
+| 207 | Allan | S22 | 0.1436 | 0% | 0% | 12.5% | 13.7 | 0% | 0% | 32.0% | 75.0% |  |  |
+| 208 | Colin | S5 | 0.1430 | 0% | 0% | 8.3% | 14.6 | 0% | 0% | 34.1% | 75.0% |  |  |
+| 209 | Mike | S17 | 0.1425 | 0% | 0% | 12.5% | 14.9 | 0% | 0% | 23.4% | 50.0% |  |  |
+| 210 | Samson | S22 | 0.1422 | 0% | 0% | 18.8% | 14.8 | 0% | 0% | 11.5% | 25.0% |  |  |
+| 211 | Green Kyle | S18a | 0.1408 | 0% | 0% | 12.5% | 11.9 | 6.3% | 0% | 37.4% | 100.0% |  |  |
+| 212 | Alfred | S14 | 0.1407 | 0% | 0% | 12.5% | 13.3 | 0% | 0% | 31.3% | 75.0% |  |  |
+| 213 | Samson | S15 | 0.1384 | 0% | 0% | 12.5% | 14.4 | 0% | 0% | 22.5% | 50.0% |  |  |
+| 214 | Mike | S12 | 0.1341 | 0% | 0% | 0% | 14.1 | 0% | 0% | 44.5% | 100.0% |  |  |
+| 215 | Green Kyle | S4 | 0.1337 | 0% | 0% | 8.3% | 14.8 | 0% | 0% | 23.2% | 50.0% |  |  |
+| 216 | Joyce | S12 | 0.1329 | 0% | 0% | 6.3% | 12.7 | 0% | 0% | 40.0% | 100.0% |  | Yes |
+| 217 | Mike | S11 | 0.1308 | 0% | 0% | 6.3% | 12.5 | 0% | 0% | 39.1% | 100.0% |  |  |
+| 218 | Toby | S22 | 0.1308 | 0% | 0% | 6.3% | 12.5 | 0% | 0% | 39.1% | 100.0% |  | Yes |
+| 219 | Abu | S3 | 0.1303 | 0% | 0% | 8.3% | 16.0 | 0% | 0% | 12.5% | 25.0% |  |  |
+| 220 | Colin | S13 | 0.1302 | 0% | 0% | 0% | 13.8 | 0% | 0% | 43.0% | 100.0% |  |  |
+| 221 | Green Kyle | S14 | 0.1297 | 0% | 0% | 6.3% | 13.5 | 0% | 0% | 31.6% | 75.0% |  |  |
+| 222 | Caleb | S3 | 0.1284 | 0% | 0% | 8.3% | 14.2 | 0% | 0% | 22.1% | 50.0% |  |  |
+| 223 | Cheese | S22 | 0.1282 | 0% | 12.5% | 6.3% | 11.5 | 0% | 0% | 18.0% | 50.0% |  |  |
+| 224 | Alfred | S15 | 0.1276 | 0% | 0% | 12.5% | 13.0 | 0% | 0% | 20.3% | 50.0% |  |  |
+| 225 | Timmy | S18b | 0.1256 | 0% | 0% | 6.3% | 13.0 | 0% | 0% | 30.7% | 75.0% |  |  |
+| 226 | Martin | S6 | 0.1215 | 0% | 0% | 0% | 12.8 | 0% | 0% | 40.1% | 100.0% |  | Yes |
+| 227 | Joyce | S2 | 0.1199 | 0% | 0% | 0% | 12.9 | 0% | 0% | 38.0% | 100.0% |  |  |
+| 228 | Austin | S10 | 0.1187 | 0% | 0% | 6.3% | 14.2 | 0% | 0% | 16.6% | 37.5% |  |  |
+| 229 | Brie | S21 | 0.1174 | 0% | 0% | 0% | 14.9 | 0% | 0% | 23.2% | 50.0% |  |  |
+| 230 | Green Kyle | S20 | 0.1164 | 0% | 12.5% | 6.3% | 10.0 | 0% | 0% | 15.6% | 50.0% |  |  |
+| 231 | Isaac | S11 | 0.1157 | 0% | 0% | 0% | 13.3 | 0% | 0% | 31.3% | 75.0% |  |  |
+| 232 | Colin | S12 | 0.1145 | 0% | 0% | 0% | 13.2 | 0% | 0% | 31.1% | 75.0% |  |  |
+| 233 | Mike | S18a | 0.1145 | 0% | 0% | 0% | 13.2 | 0% | 0% | 31.1% | 75.0% |  |  |
+| 234 | Alfred | S13 | 0.1130 | 0% | 0% | 6.3% | 11.6 | 0% | 0% | 27.1% | 75.0% |  |  |
+| 235 | Mike | S10 | 0.1121 | 0% | 0% | 0% | 12.9 | 0% | 0% | 30.3% | 75.0% |  |  |
+| 236 | Arren | S19 | 0.1111 | 0% | 0% | 6.3% | 12.5 | 0% | 0% | 19.5% | 50.0% |  |  |
+| 237 | Toby | S8 | 0.1100 | 0% | 0% | 8.3% | 11.8 | 0% | 0% | 18.5% | 50.0% |  |  |
+| 238 | Brie | S22 | 0.1095 | 0% | 0% | 12.5% | 10.2 | 0% | 0% | 19.9% | 62.5% |  |  |
+| 239 | Colin | S18b | 0.1094 | 0% | 0% | 0% | 12.6 | 0% | 0% | 29.7% | 75.0% |  |  |
+| 240 | Tawm | S18b | 0.1093 | 0% | 0% | 6.3% | 12.3 | 0% | 0% | 19.3% | 50.0% |  |  |
+| 241 | Luke | S5 | 0.1089 | 0% | 0% | 0% | 11.5 | 0% | 0% | 35.9% | 100.0% |  |  |
+| 242 | Lucian | S16 | 0.1084 | 0% | 0% | 0% | 15.3 | 0% | 0% | 12.0% | 25.0% |  | Yes |
+| 243 | Alfred | S16 | 0.1067 | 0% | 0% | 0% | 13.5 | 0% | 0% | 21.3% | 50.0% |  |  |
+| 244 | Ryan | S11 | 0.1049 | 0% | 0% | 0% | 12.1 | 0% | 0% | 28.3% | 75.0% |  |  |
+| 245 | Alfred | S17 | 0.1047 | 0% | 0% | 0% | 13.3 | 0% | 0% | 20.9% | 50.0% |  |  |
+| 246 | Alfred | S21 | 0.1030 | 0% | 0% | 0% | 14.5 | 0% | 0% | 11.3% | 25.0% |  |  |
+| 247 | Isaac | S9 | 0.1026 | 0% | 0% | 0% | 15.0 | 0% | 0% | 7.8% | 16.7% |  |  |
+| 248 | Mike | S22 | 0.1024 | 0% | 0% | 0% | 11.3 | 0% | 0% | 30.9% | 87.5% |  |  |
+| 249 | Edwin | S9 | 0.1018 | 0% | 0% | 0% | 14.3 | 0% | 0% | 11.2% | 25.0% |  |  |
+| 250 | Austin | S18a | 0.1013 | 0% | 0% | 6.3% | 12.5 | 0% | 0% | 9.8% | 25.0% |  |  |
+| 251 | Ghin | S16 | 0.1008 | 0% | 0% | 0% | 12.8 | 0% | 0% | 20.1% | 50.0% |  |  |
+| 252 | JingTang | S20 | 0.1007 | 0% | 0% | 6.3% | 10.2 | 0% | 0% | 23.8% | 75.0% |  |  |
+| 253 | Tawm | S21 | 0.1006 | 0% | 0% | 0% | 15.0 | 0% | 0% | 5.9% | 12.5% |  |  |
+| 254 | Mike | S18b | 0.0998 | 0% | 0% | 0% | 12.6 | 0% | 0% | 19.9% | 50.0% |  |  |
+| 255 | Viphu | S2 | 0.0996 | 0% | 0% | 0% | 11.7 | 0% | 0% | 25.7% | 75.0% |  |  |
+| 256 | Mike | S8 | 0.0994 | 0% | 0% | 0% | 10.5 | 0% | 0% | 32.8% | 100.0% |  | Yes |
+| 257 | Michael G | S20 | 0.0989 | 0% | 0% | 6.3% | 10.2 | 0% | 0% | 21.9% | 68.8% |  |  |
+| 258 | Isaac | S18a | 0.0985 | 0% | 0% | 0% | 10.4 | 0% | 0% | 32.7% | 100.0% |  |  |
+| 259 | Colin | S19 | 0.0982 | 0% | 0% | 0% | 10.4 | 0% | 0% | 32.4% | 100.0% |  |  |
+| 260 | Colin | S22 | 0.0971 | 0% | 0% | 6.3% | 9.8 | 0% | 0% | 22.9% | 75.0% |  |  |
+| 261 | Edwin | S3 | 0.0970 | 0% | 0% | 0% | 13.7 | 0% | 0% | 10.7% | 25.0% |  |  |
+| 262 | Abu | S2 | 0.0964 | 0% | 0% | 0% | 13.7 | 0% | 0% | 10.0% | 25.0% |  |  |
+| 263 | Isaac | S15 | 0.0962 | 0% | 0% | 0% | 11.1 | 0% | 0% | 26.0% | 75.0% |  |  |
+| 264 | Ivan | S18a | 0.0948 | 0% | 0% | 0% | 12.0 | 0% | 0% | 18.9% | 50.0% |  |  |
+| 265 | Calvin | S6 | 0.0947 | 0% | 0% | 0% | 13.3 | 0% | 0% | 10.4% | 25.0% |  |  |
+| 266 | Ghin | S6 | 0.0947 | 0% | 0% | 0% | 13.3 | 0% | 0% | 10.4% | 25.0% |  |  |
+| 267 | Edwin | S7 | 0.0947 | 0% | 0% | 0% | 13.3 | 0% | 0% | 10.4% | 25.0% |  |  |
+| 268 | Mike | S21 | 0.0941 | 0% | 0% | 0% | 13.3 | 0% | 0% | 10.4% | 25.0% |  |  |
+| 269 | Joyce | S5 | 0.0932 | 0% | 0% | 0% | 11.4 | 0% | 0% | 20.8% | 58.3% |  |  |
+| 270 | Allan | S18a | 0.0927 | 0% | 0% | 0% | 10.9 | 0% | 0% | 23.6% | 68.8% |  |  |
+| 271 | Kevin | S10 | 0.0924 | 0% | 0% | 0% | 12.3 | 0% | 0% | 14.5% | 37.5% |  |  |
+| 272 | Isaac | S19 | 0.0923 | 0% | 0% | 0% | 13.0 | 0% | 0% | 10.2% | 25.0% |  |  |
+| 273 | Austin | S6 | 0.0920 | 0% | 0% | 0% | 12.5 | 0% | 0% | 13.0% | 33.3% |  |  |
+| 274 | Michael G | S18b | 0.0919 | 0% | 0% | 0% | 11.6 | 0% | 0% | 18.3% | 50.0% |  |  |
+| 275 | Timmy | S19 | 0.0914 | 0% | 0% | 0% | 10.1 | 0% | 0% | 27.5% | 87.5% |  |  |
+| 276 | Hana | S17 | 0.0902 | 0% | 0% | 0% | 11.7 | 0% | 0% | 16.1% | 43.8% |  |  |
+| 277 | Caleb | S7 | 0.0889 | 0% | 0% | 0% | 13.0 | 0% | 0% | 6.8% | 16.7% |  |  |
+| 278 | Ghin | S17 | 0.0888 | 0% | 0% | 0% | 12.5 | 0% | 0% | 9.8% | 25.0% |  |  |
+| 279 | Ghin | S11 | 0.0882 | 0% | 0% | 0% | 10.2 | 0% | 0% | 23.8% | 75.0% |  |  |
+| 280 | Alan | S16 | 0.0875 | 0% | 0% | 0% | 12.7 | 0% | 0% | 7.5% | 18.8% |  |  |
+| 281 | Michael G | S18a | 0.0871 | 0% | 0% | 0% | 12.3 | 0% | 0% | 9.6% | 25.0% |  |  |
+| 282 | Steven | S3 | 0.0855 | 0% | 0% | 0% | 12.5 | 0% | 0% | 6.5% | 16.7% |  |  |
+| 283 | Austin | S8 | 0.0854 | 0% | 0% | 0% | 11.2 | 0% | 0% | 14.6% | 41.7% |  |  |
+| 284 | Ghin | S2 | 0.0839 | 0% | 0% | 0% | 10.4 | 0% | 0% | 17.9% | 58.3% |  |  |
+| 285 | Ghin | S10 | 0.0834 | 0% | 0% | 0% | 11.8 | 0% | 0% | 9.2% | 25.0% |  |  |
+| 286 | Michael G | S19 | 0.0832 | 0% | 0% | 0% | 9.6 | 0% | 0% | 22.5% | 75.0% |  |  |
+| 287 | Samson | S20 | 0.0828 | 0% | 0% | 0% | 10.5 | 0% | 0% | 16.4% | 50.0% |  |  |
+| 288 | Big Mike | S2 | 0.0823 | 0% | 0% | 0% | 11.7 | 0% | 0% | 8.6% | 25.0% |  |  |
+| 289 | Big Mike | S3 | 0.0821 | 0% | 0% | 0% | 12.0 | 0% | 0% | 6.3% | 16.7% |  |  |
+| 290 | Ghin | S13 | 0.0817 | 0% | 0% | 0% | 11.2 | 0% | 0% | 10.9% | 31.3% |  |  |
+| 291 | Jerry | S20 | 0.0817 | 0% | 0% | 6.3% | 9.0 | 0% | 0% | 12.3% | 43.8% |  |  |
+| 292 | Samson | S18a | 0.0814 | 0% | 0% | 0% | 10.6 | 0% | 0% | 14.6% | 43.8% |  |  |
+| 293 | Michael G | S22 | 0.0809 | 0% | 0% | 0% | 10.3 | 0% | 0% | 16.0% | 50.0% |  |  |
+| 294 | Isaac | S17 | 0.0806 | 0% | 0% | 0% | 11.7 | 0% | 0% | 6.9% | 18.8% |  |  |
+| 295 | Clive | S16 | 0.0805 | 0% | 0% | 0% | 12.0 | 0% | 0% | 4.7% | 12.5% |  |  |
+| 296 | Edwin | S4 | 0.0789 | 0% | 0% | 0% | 12.0 | 0% | 0% | 3.1% | 8.3% |  |  |
+| 297 | Ivan | S17 | 0.0783 | 0% | 0% | 0% | 11.3 | 0% | 0% | 6.7% | 18.8% |  |  |
+| 298 | Martin | S4 | 0.0781 | 0% | 0% | 0% | 11.0 | 0% | 0% | 8.6% | 25.0% |  |  |
+| 299 | Ghin | S5 | 0.0781 | 0% | 0% | 0% | 11.0 | 0% | 0% | 8.6% | 25.0% |  |  |
+| 300 | Wild Card | S11 | 0.0781 | 0% | 0% | 0% | 11.0 | 0% | 0% | 8.6% | 25.0% |  |  |
+| 301 | Alfred | S18b | 0.0780 | 0% | 0% | 0% | 9.9 | 0% | 0% | 15.6% | 50.0% |  |  |
+| 302 | Calvin | S16 | 0.0772 | 0% | 0% | 0% | 11.5 | 0% | 0% | 4.5% | 12.5% |  |  |
+| 303 | Timmy | S22 | 0.0762 | 0% | 0% | 0% | 9.2 | 0% | 0% | 18.0% | 62.5% |  |  |
+| 304 | Kevin | S15 | 0.0759 | 0% | 0% | 0% | 11.0 | 0% | 0% | 6.4% | 18.8% |  |  |
+| 305 | Caleb | S4 | 0.0757 | 0% | 0% | 0% | 10.7 | 0% | 0% | 8.3% | 25.0% |  |  |
+| 306 | Steven | S4 | 0.0757 | 0% | 0% | 0% | 10.7 | 0% | 0% | 8.3% | 25.0% |  |  |
+| 307 | Luke | S4 | 0.0757 | 0% | 0% | 0% | 10.7 | 0% | 0% | 8.3% | 25.0% |  |  |
+| 308 | Anlac | S6 | 0.0757 | 0% | 0% | 0% | 10.7 | 0% | 0% | 8.3% | 25.0% |  |  |
+| 309 | Lea | S11 | 0.0746 | 0% | 0% | 0% | 10.5 | 0% | 0% | 8.2% | 25.0% |  |  |
+| 310 | Jerry | S18a | 0.0738 | 0% | 0% | 0% | 11.0 | 0% | 0% | 4.3% | 12.5% |  |  |
+| 311 | Nick | S10 | 0.0728 | 0% | 0% | 0% | 10.3 | 0% | 0% | 8.0% | 25.0% |  |  |
+| 312 | Joyce | S15 | 0.0720 | 0% | 0% | 0% | 9.1 | 0% | 0% | 14.3% | 50.0% |  |  |
+| 313 | Calvin | S10 | 0.0716 | 0% | 0% | 0% | 11.0 | 0% | 0% | 2.1% | 6.3% |  |  |
+| 314 | Big Mike | S10 | 0.0716 | 0% | 0% | 0% | 11.0 | 0% | 0% | 2.1% | 6.3% |  |  |
+| 315 | Green Kyle | S15 | 0.0710 | 0% | 0% | 0% | 10.0 | 0% | 0% | 7.8% | 25.0% |  |  |
+| 316 | Clive | S19 | 0.0710 | 0% | 0% | 0% | 9.0 | 0% | 0% | 14.1% | 50.0% |  |  |
+| 317 | Hana | S18a | 0.0704 | 0% | 0% | 0% | 10.5 | 0% | 0% | 4.1% | 12.5% |  |  |
+| 318 | Joyce | S10 | 0.0704 | 0% | 0% | 0% | 10.5 | 0% | 0% | 4.1% | 12.5% |  |  |
+| 319 | Caleb | S15 | 0.0704 | 0% | 0% | 0% | 10.5 | 0% | 0% | 4.1% | 12.5% |  |  |
+| 320 | Clive | S18a | 0.0682 | 0% | 0% | 0% | 8.6 | 0% | 0% | 13.6% | 50.0% |  |  |
+| 321 | Allen Q | S22 | 0.0662 | 0% | 0% | 0% | 8.8 | 0% | 0% | 10.4% | 37.5% |  |  |
+| 322 | Henly | S2 | 0.0656 | 0% | 0% | 0% | 10.0 | 0% | 0% | 2.5% | 8.3% |  |  |
+| 323 | Green Kyle | S22 | 0.0651 | 0% | 0% | 0% | 8.3 | 0% | 0% | 12.9% | 50.0% |  |  |
+| 324 | Viphu | S15 | 0.0639 | 0% | 0% | 0% | 9.0 | 0% | 0% | 7.0% | 25.0% |  |  |
+| 325 | Austin | S13 | 0.0637 | 0% | 0% | 0% | 9.5 | 0% | 0% | 3.7% | 12.5% |  |  |
+| 326 | Joyce | S19 | 0.0637 | 0% | 0% | 0% | 9.5 | 0% | 0% | 3.7% | 12.5% |  |  |
+| 327 | Edwin | S13 | 0.0621 | 0% | 0% | 0% | 9.0 | 0% | 0% | 5.3% | 18.8% |  |  |
+| 328 | Kevin | S22 | 0.0611 | 0% | 0% | 0% | 7.8 | 0% | 0% | 12.1% | 50.0% |  | Yes |
+| 329 | Ghin | S8 | 0.0592 | 0% | 0% | 0% | 8.3 | 0% | 0% | 6.5% | 25.0% |  |  |
+| 330 | Henly | S8 | 0.0592 | 0% | 0% | 0% | 9.0 | 0% | 0% | 2.3% | 8.3% |  |  |
+| 331 | Isaac | S16 | 0.0586 | 0% | 0% | 0% | 8.3 | 0% | 0% | 6.5% | 25.0% |  |  |
+| 332 | JingTang | S22 | 0.0584 | 0% | 0% | 0% | 8.0 | 0% | 0% | 7.8% | 31.3% |  |  |
+| 333 | Edwin | S8 | 0.0552 | 0% | 0% | 0% | 7.5 | 0% | 0% | 7.8% | 33.3% |  |  |
+| 334 | Caleb | S8 | 0.0547 | 0% | 0% | 0% | 8.0 | 0% | 0% | 4.2% | 16.7% |  |  |
+| 335 | Alfred | S19 | 0.0533 | 0% | 0% | 0% | 7.5 | 0% | 0% | 5.9% | 25.0% |  |  |
+| 336 | Alfred | S22 | 0.0533 | 0% | 0% | 0% | 7.5 | 0% | 0% | 5.9% | 25.0% |  | Yes |
+| 337 | Viphu | S8 | 0.0519 | 0% | 0% | 0% | 6.8 | 0% | 0% | 8.9% | 41.7% |  |  |
+| 338 | Ghin | S22 | 0.0513 | 0% | 0% | 0% | 6.5 | 0% | 0% | 10.2% | 50.0% |  |  |
+| 339 | Isaac | S20 | 0.0503 | 0% | 0% | 0% | 7.5 | 0% | 0% | 2.9% | 12.5% |  |  |
+| 340 | Steven | S8 | 0.0479 | 0% | 0% | 0% | 7.0 | 0% | 0% | 3.6% | 16.7% |  |  |
+| 341 | Austin | S18b | 0.0391 | 0% | 0% | 0% | 6.0 | 0% | 0% | 1.2% | 6.3% |  |  |
+| 342 | Aditya | S22 | 0.0369 | 0% | 0% | 0% | 5.5 | 0% | 0% | 2.1% | 12.5% |  |  |
+| 343 | Winston | S22 | 0.0337 | 0% | 0% | 0% | 4.8 | 0% | 0% | 3.7% | 25.0% |  |  |
 
 ## Best Season by Driver
 
@@ -797,12 +864,16 @@ Scores are normalized so the best performance in each category = 1.0.
 - **Joyce**: Best = S14 (0.4922) — 0% wins, 62.5% podiums, 21.6 pts/race
 - **Allan**: Best = S21 (0.4524) — 0% wins, 31.3% podiums, 20.1 pts/race
 - **Colin**: Best = S14 (0.4384) — 0% wins, 66.7% podiums, 20.8 pts/race
+- **Chris**: Best = S22 (0.4187) — 16.7% wins, 50.0% podiums, 19.7 pts/race
 - **Nick**: Best = S8 (0.3978) — 0% wins, 33.3% podiums, 18.3 pts/race
+- **DK**: Best = S22 (0.3711) — 0% wins, 50.0% podiums, 18.8 pts/race
 - **Jerry**: Best = S18b (0.3689) — 8.3% wins, 33.3% podiums, 18.3 pts/race
 - **Caleb**: Best = S14 (0.3029) — 0% wins, 37.5% podiums, 19.4 pts/race
 - **Mike**: Best = S16 (0.2935) — 0% wins, 6.3% podiums, 17.8 pts/race
 - **JingTang**: Best = S8 (0.2722) — 0% wins, 33.3% podiums, 16.0 pts/race
+- **Donald**: Best = S22 (0.2564) — 10.0% wins, 20.0% podiums, 16.0 pts/race
 - **Samson**: Best = S14 (0.2503) — 0% wins, 33.3% podiums, 17.8 pts/race
+- **Arren**: Best = S22 (0.2223) — 0% wins, 25.0% podiums, 15.5 pts/race
 - **Calvin**: Best = S1 (0.2076) — 0% wins, 0% podiums, 17.0 pts/race
 - **Kevin**: Best = S7 (0.2045) — 0% wins, 0% podiums, 16.4 pts/race
 - **Abu**: Best = S1 (0.1813) — 0% wins, 0% podiums, 16.5 pts/race
@@ -811,8 +882,8 @@ Scores are normalized so the best performance in each category = 1.0.
 - **Sunny**: Best = S14 (0.1457) — 0% wins, 0% podiums, 17.0 pts/race
 - **Ghin**: Best = S1 (0.1438) — 0% wins, 0% podiums, 14.7 pts/race
 - **Alfred**: Best = S14 (0.1407) — 0% wins, 0% podiums, 13.3 pts/race
+- **Cheese**: Best = S22 (0.1282) — 0% wins, 12.5% podiums, 11.5 pts/race
 - **Martin**: Best = S6 (0.1215) — 0% wins, 0% podiums, 12.8 pts/race
-- **Arren**: Best = S19 (0.1121) — 0% wins, 0% podiums, 12.6 pts/race
 - **Luke**: Best = S5 (0.1089) — 0% wins, 0% podiums, 11.5 pts/race
 - **Lucian**: Best = S16 (0.1084) — 0% wins, 0% podiums, 15.3 pts/race
 - **Ryan**: Best = S11 (0.1049) — 0% wins, 0% podiums, 12.1 pts/race
@@ -828,7 +899,10 @@ Scores are normalized so the best performance in each category = 1.0.
 - **Wild Card**: Best = S11 (0.0781) — 0% wins, 0% podiums, 11.0 pts/race
 - **Anlac**: Best = S6 (0.0757) — 0% wins, 0% podiums, 10.7 pts/race
 - **Lea**: Best = S11 (0.0746) — 0% wins, 0% podiums, 10.5 pts/race
+- **Allen Q**: Best = S22 (0.0662) — 0% wins, 0% podiums, 8.8 pts/race
 - **Henly**: Best = S2 (0.0656) — 0% wins, 0% podiums, 10.0 pts/race
+- **Aditya**: Best = S22 (0.0369) — 0% wins, 0% podiums, 5.5 pts/race
+- **Winston**: Best = S22 (0.0337) — 0% wins, 0% podiums, 4.8 pts/race
 
 ---
 
@@ -840,7 +914,7 @@ Scores are normalized so the best performance in each category = 1.0.
 
 **Type:** Formula Car Season
 **Car:** Super Formula 2020
-**Venues:** Autopolis, MidField Raceway, Interlagos
+**Venues:** Autopolis, Midfield Raceway, Interlagos
 **Races Per Venue:** 3
 **WDC:** Josie
 **WCC:** Josie + Ghin
@@ -1165,7 +1239,7 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 
 **Type:** Sports Car Season
 **Car:** TCR 2023
-**Venues:** Midfield Raceway, Usui Circuit, Tsukuba Circuit, Misano International Raceway
+**Venues:** Midfield Raceway, Usui Circuit, Tsukuba, Misano
 **Races Per Venue:** 3
 **WDC:** James
 **WCC:** James + Isaac
@@ -1682,7 +1756,7 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 
 **Type:** Formula Car Season
 **Car:** F1 2000 (single car spec)
-**Venues:** Nurburgring Grand Prix, Watkins Glen, Brands Hatch, Spa
+**Venues:** Nurburgring, Watkins Glen, Brands Hatch, Spa
 **Races Per Venue:** 3
 **WDC:** Josie
 **WCC:** Josie + Lee
@@ -2065,7 +2139,7 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 
 **Type:** Formula Car Season
 **Car:** F1 2023 (single car spec)
-**Venues:** Mugello, Pinwheel, Dragon Trail Seaside, Autodromo de Palmadera
+**Venues:** Mugello, Pinwheel, Dragon Trail Seaside, Autodromo de Palmadera (chicane)
 **Races Per Venue:** 3
 **WDC:** Josie
 **WCC:** Josie + Toby
@@ -2866,7 +2940,7 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 | Samson | GT3 NSX | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Nuran | TBD | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 
-#### Venue 2: Sachsenring 2022
+#### Venue 2: Sachsenring
 
 | Driver | Car | R1 Pos | R1 Pts | R2 Pos | R2 Pts | R3 Pos | R3 Pts | R4 Pos | R4 Pts | Day Total |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -2893,7 +2967,7 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 | Lika | Maybe | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Nuran | Maybe | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 
-#### Venue 3: Acopone Raceway Main
+#### Venue 3: Acopone Raceway
 
 | Driver | Car | R1 Pos | R1 Pts | R2 Pos | R2 Pts | R3 Pos | R3 Pts | R4 Pos | R4 Pts | Day Total |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -3014,7 +3088,7 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 | Lee | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Hana | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 
-#### Venue 2: PGO International (no chicanes)
+#### Venue 2: PGO International
 
 | Driver | R1 Pos | R1 Pts | R2 Pos | R2 Pts | R3 Pos | R3 Pts | R4 Pos | R4 Pts | Day Total |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -3387,7 +3461,7 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 
 **Type:** Sports Car Season
 **Car:** WEC (GT3 and Hypercars)
-**Venues:** Chang International, Okayama, Autodromo de Palmadera, Fuji Short (chicane)
+**Venues:** Chang International, Okayama, Autodromo de Palmadera, Fuji Short (no chicane)
 **Races Per Venue:** 4
 **WDC:** James
 **WCC:** James + Lee
@@ -3714,7 +3788,7 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 
 **Type:** Formula Car Season
 **Car:** Tatuus FA01
-**Venues:** Imola 2025, Circuit of the Americas, Singapore GP 2025, Hungaroring 2025
+**Venues:** Imola, COTA, Singapore, Hungaroring
 **Races Per Venue:** 4
 **WDC:** Josie
 **WCC:** Josie + Toby
@@ -3853,7 +3927,7 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 | 11 | Timmy | 141 | 0 | 0 | 0 | 0 | 14 | 87.5% | 27.5% | 0% |
 | 12 | Walnut | 125 | 0 | 1 | 0 | 0 | 8 | 50.0% | 24.4% | 25.0% |
 | 13 | Michael G | 115 | 0 | 0 | 0 | 0 | 12 | 75.0% | 22.5% | 0% |
-| 14 | Arren | 101 | 0 | 0 | 0 | 0 | 8 | 50.0% | 19.7% | 6.3% |
+| 14 | Arren | 100 | 0 | 0 | 0 | 0 | 8 | 50.0% | 19.5% | 6.3% |
 | 15 | Clive | 72 | 0 | 0 | 0 | 0 | 8 | 50.0% | 14.1% | 0% |
 | 16 | Isaac | 52 | 0 | 0 | 0 | 0 | 4 | 25.0% | 10.2% | 0% |
 | 17 | Alfred | 30 | 0 | 0 | 0 | 0 | 4 | 25.0% | 5.9% | 0% |
@@ -3873,7 +3947,7 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 | Dom + Jerry + Michael G | 533 |
 | Allan + Timmy + Clive + Isaac | 528 |
 | Brie + Mike + Alfred | 457 |
-| Joyce + Walnut + Ivan + Colin + Arren | 411 |
+| Joyce + Walnut + Ivan + Colin + Arren | 410 |
 | Edwin + Ghin + Ainesh + Samson | 0 |
 
 ---
@@ -4040,7 +4114,7 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 
 **Type:** Formula Car Season
 **Car:** F1 2007 (McLaren, Ferrari)
-**Venues:** Kyalami, Shanghai GP, Monza, Sepang GP
+**Venues:** Kyalami, Shanghai, Monza, Sepang
 **Races Per Venue:** 4
 **WDC:** James
 **WCC:** Allan + Walnut
@@ -4158,8 +4232,8 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 **Car:** GT4
 **Venues:** VIR, Charlotte Roval, Barcelona City Circuit, Road Atlanta
 **Races Per Venue:** 4
-**WDC:** TBD
-**WCC:** TBD
+**WDC:** Josie
+**WCC:** Josie + Toby + Kevin + Alfred
 
 ### Scoring System
 Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
@@ -4170,18 +4244,18 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 
 | Driver | Car | R1 Pos | R1 Pts | R2 Pos | R2 Pts | R3 Pos | R3 Pts | R4 Pos | R4 Pts | Day Total |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| James | A110 | 1 (FL) | 31 | 5 | 18 | 1 (FL) | 31 | 6 | 16 | 96 |
-| Chris | AMG | 4 | 20 | 3 | 22 | 3 | 22 | 1 | 30 | 94 |
-| Josie | Avezzano | 13 (P) | 9 | 1 (P,FL) | 32 | 2 | 25 | 2 (FL) | 26 | 92 |
-| Walnut | AMG EVO | 3 | 22 | 8 | 13 | 6 | 16 | 3 | 22 | 73 |
-| DK | AMG | 2 | 25 | 2 | 25 | 8 (P) | 14 | 14 (P) | 8 | 72 |
-| Brie | S1 | 11 | 10 | 4 | 20 | 11 | 10 | 5 | 18 | 58 |
+| James | A110 | 1 (FL) | 31 | 5 (-3pen) | 15 | 1 (FL) | 31 | 6 | 16 | 93 |
+| Josie | Avezzano | 13 (P) | 9 | 1 (P,FL) | 32 | 2 | 25 | 2 (FL,-1pen) | 25 | 91 |
+| Chris | AMG | 4 | 20 | 3 (-3pen) | 19 | 3 | 22 | 1 | 30 | 91 |
+| Walnut | AMG EVO | 3 | 22 | 8 | 13 | 6 (-1pen) | 15 | 3 | 22 | 72 |
+| DK | AMG | 2 | 25 | 2 (-1pen) | 24 | 8 (P) | 14 | 14 (P) | 8 | 71 |
 | Toby | Camaro | 6 | 16 | 7 | 14 | 7 | 14 | 7 | 14 | 58 |
-| Lee | AMG | 9 | 12 | 12 | 9 | 4 | 20 | 10 | 11 | 52 |
+| Brie | S1 | 11 | 10 | 4 | 20 | 11 | 10 | 5 (-3pen) | 15 | 55 |
+| Lee | AMG | 9 | 12 | 12 | 9 | 4 | 20 | 10 (-2pen) | 9 | 50 |
 | Dom | 718 Cayman | 5 | 18 | DNS | 0 | 5 | 18 | 8 | 13 | 49 |
-| Allan | AMG | 7 | 14 | 9 | 12 | 10 | 11 | 9 | 12 | 49 |
-| Michael G | 570S | 12 | 9 | 6 | 16 | 12 | 9 | 11 | 10 | 44 |
+| Allan | AMG | 7 | 14 | 9 (-5pen) | 7 | 10 | 11 | 9 | 12 | 44 |
 | Mike | Mustang | 8 | 13 | 13 | 8 | 9 | 12 | 13 | 8 | 41 |
+| Michael G | 570S | 12 | 9 | 6 | 16 | 12 | 9 | 11 (-3pen) | 7 | 41 |
 | Timmy | Mustang | 10 | 11 | 14 | 7 | 14 | 7 | 12 | 9 | 34 |
 | Colin | Supra | 15 | 6 | 11 | 10 | 13 | 8 | 15 | 6 | 30 |
 | Donald | Vantage | DNS | 0 | DNS | 0 | 16 | 5 | 4 | 20 | 25 |
@@ -4199,158 +4273,163 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 | Alfred | 570S | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Samson | 570S | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Arren | M4 G82 | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Allen Q | TBD | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Allen Q | AMG | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Vincent | AMG | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 
 #### Venue 2: Charlotte Roval
 
 | Driver | Car | R1 Pos | R1 Pts | R2 Pos | R2 Pts | R3 Pos | R3 Pts | R4 Pos | R4 Pts | Day Total |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Josie | Avezzano | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Brie | S1 | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| James | A110 | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Josie | Avezzano | 1 (P,FL) | 32 | 1 (P,FL) | 32 | 1 (P,FL) | 32 | 5 (P,FL) | 20 | 116 |
+| James | A110 | 4 | 20 | 2 | 25 | 2 (-2pen) | 23 | 3 | 22 | 90 |
+| DK | AMG | 3 | 22 | 3 | 22 | 5 | 18 | 2 | 25 | 87 |
+| Donald | Vantage | 2 | 25 | 4 | 20 | 14 (-3pen) | 4 | 1 | 30 | 79 |
+| Walnut | AMG EVO | 7 | 14 | 6 | 16 | 3 | 22 | 4 | 20 | 72 |
+| Chris | AMG | 5 | 18 | 5 | 18 | 8 | 13 | 8 | 13 | 62 |
+| Lee | AMG | 15 | 6 | 8 | 13 | 4 | 20 | 10 | 11 | 50 |
+| Toby | Camaro | 10 | 11 | 10 | 11 | 7 | 14 | 12 | 9 | 45 |
+| Mike | Mustang | 6 | 16 | 13 | 8 | 9 | 12 | 13 (-2pen) | 6 | 42 |
+| Allen Q | TBD | 9 | 12 | 9 | 12 | 11 | 10 | 14 | 7 | 41 |
+| Arren | M4 G82 | 13 | 8 | 16 | 5 | 10 | 11 | 6 | 16 | 40 |
+| Cheese | M4 G82 | 8 | 13 | 12 (-2pen) | 7 | 15 | 6 | 9 | 12 | 38 |
+| Brie | S1 | 14 (-3pen) | 4 | 14 | 7 | 6 | 16 | 11 | 10 | 37 |
+| JingTang | Supra | 16 | 5 | 7 | 14 | 16 (-3pen) | 2 | 7 | 14 | 35 |
+| Alfred | 570S | 12 (-1pen) | 8 | 11 (-2pen) | 8 | 13 | 8 | 15 | 6 | 30 |
+| Vincent | AMG | 11 | 10 | 15 | 6 | 12 (-2pen) | 7 | 16 | 5 | 28 |
 | Ghin | Vantage | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Tawm | M4 G82 | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Caleb | TBD | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Edwin | M4 G82 | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Colin | Supra | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Kevin | M4 G82 | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Lee | AMG | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Dom | 718 Cayman | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Toby | Camaro | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Green Kyle | M4 G82 | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Mike | Mustang | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| JingTang | Supra | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Ivan | TBD | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Cheese | M4 G82 | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Alfred | 570S | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Walnut | AMG EVO | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Winston | Mustang | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Aditya | AMG | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Samson | 570S | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Michael G | 570S | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Allan | AMG | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Timmy | Mustang | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Arren | M4 G82 | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Chris | AMG | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| DK | AMG | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Donald | Vantage | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Allen Q | TBD | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 
 #### Venue 3: Barcelona City Circuit
 
 | Driver | Car | R1 Pos | R1 Pts | R2 Pos | R2 Pts | R3 Pos | R3 Pts | R4 Pos | R4 Pts | Day Total |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Josie | Avezzano | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Josie | Avezzano | 1 (P) | 31 | 1 (P,FL) | 32 | 1 (P,FL) | 32 | 5 (P) | 19 | 114 |
+| Walnut | AMG EVO | 3 | 22 | 2 | 25 | 4 | 20 | 1 (FL) | 31 | 98 |
+| James | A110 | 2 (FL) | 26 | 8 | 13 | 2 | 25 | 3 (-1pen) | 21 | 85 |
+| Arren | M4 G82 | 4 | 20 | 3 | 22 | 3 | 22 | 4 | 20 | 84 |
+| Allan | AMG | 5 | 18 | 6 | 16 | 6 | 16 | 6 | 16 | 66 |
+| Colin | Supra | 8 | 13 | 9 | 12 | 5 | 18 | 8 | 13 | 56 |
+| Cheese | M4 G82 | 10 | 11 | 13 | 8 | 11 | 10 | 2 | 25 | 54 |
+| Lee | AMG | 14 | 7 | 4 | 20 | 7 | 14 | 10 | 11 | 52 |
+| Mike | Mustang | 6 | 16 | 7 | 14 | 8 | 13 | 9 (-3pen) | 9 | 52 |
+| Toby | Camaro | 9 | 12 | 5 | 18 | 13 | 8 | 12 | 9 | 47 |
+| Timmy | Mustang | 7 | 14 | 10 | 11 | 9 | 12 | 11 | 10 | 47 |
+| Green Kyle | M4 G82 | 11 | 10 | 11 | 10 | 14 | 7 | 7 (-3pen) | 11 | 38 |
+| Ghin | Vantage | 13 | 8 | 12 | 9 | 12 | 9 | 13 | 8 | 34 |
+| Kevin | M4 G82 | 12 | 9 | 14 | 7 | 10 | 11 | DNS | 0 | 27 |
 | Brie | S1 | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| James | A110 | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Ghin | Vantage | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Tawm | M4 G82 | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Caleb | TBD | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Edwin | M4 G82 | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Colin | Supra | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Kevin | M4 G82 | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Lee | AMG | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Dom | 718 Cayman | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Toby | Camaro | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Green Kyle | M4 G82 | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Mike | Mustang | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | JingTang | Supra | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Ivan | TBD | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Cheese | M4 G82 | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Alfred | 570S | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Walnut | AMG EVO | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Winston | Mustang | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Aditya | AMG | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Samson | 570S | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Michael G | 570S | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Allan | AMG | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Timmy | Mustang | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Arren | M4 G82 | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Chris | AMG | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | DK | AMG | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Donald | Vantage | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Allen Q | TBD | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Vincent | AMG | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 
 #### Venue 4: Road Atlanta
 
 | Driver | Car | R1 Pos | R1 Pts | R2 Pos | R2 Pts | R3 Pos | R3 Pts | R4 Pos | R4 Pts | Day Total |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Josie | Avezzano | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Brie | S1 | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Lee | AMG | 1 | 30 | 1 (-3pen) | 27 | 3 (P,-3pen) | 20 | 3 (P,FL) | 24 | 101 |
+| Josie | Avezzano | 2 (FL) | 26 | 7 | 14 | 1 (FL) | 31 | 2 | 25 | 96 |
+| Chris | AMG | 3 | 22 | 13 | 8 | 2 | 25 | 1 (-2pen) | 28 | 83 |
+| DK | AMG | 7 (P) | 15 | 2 (P,FL,-3pen) | 24 | 9 | 12 | 6 | 16 | 67 |
+| Walnut | AMG EVO | 9 | 12 | 3 (-1pen) | 21 | 6 | 16 | 9 | 12 | 61 |
+| Samson | 570S | 17 (-3pen) | 1 | 5 | 18 | 4 | 20 | 4 | 20 | 59 |
+| Dom | 718 Cayman | 4 | 20 | 4 | 20 | 5 | 18 | DNS | 0 | 58 |
+| Donald | Vantage | 6 (-2pen) | 14 | 10 | 11 | 8 | 13 | 5 | 18 | 56 |
+| Allan | AMG | 5 | 18 | 8 | 13 | 11 | 10 | 8 | 13 | 54 |
+| Toby | Camaro | 11 | 10 | 6 | 16 | 7 | 14 | 11 | 10 | 50 |
+| Michael G | 570S | 14 | 7 | 9 | 12 | 13 | 8 | 7 | 14 | 41 |
+| Colin | Supra | 16 | 5 | 15 | 6 | 12 | 9 | 10 | 11 | 31 |
+| Green Kyle | M4 G82 | 18 | 3 | 16 | 5 | 10 | 11 | 12 | 9 | 28 |
+| Kevin | M4 G82 | 10 (-3pen) | 8 | 12 | 9 | 14 | 7 | DNS | 0 | 24 |
+| Mike | Mustang | 8 | 13 | 11 | 10 | DNS | 0 | DNS | 0 | 23 |
+| Ghin | Vantage | 19 | 2 | 19 | 2 | 15 | 6 | 13 | 8 | 18 |
+| Allen Q | AMG | 13 (-3pen) | 5 | 14 | 7 | DNS | 0 | DNS | 0 | 12 |
+| Timmy | Mustang | 12 | 9 | 18 (-1pen) | 2 | DNS | 0 | DNS | 0 | 11 |
+| Brie | S1 | 15 | 6 | 17 | 4 | DNS | 0 | DNS | 0 | 10 |
 | James | A110 | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Ghin | Vantage | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Tawm | M4 G82 | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Caleb | TBD | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Edwin | M4 G82 | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Colin | Supra | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Kevin | M4 G82 | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Lee | AMG | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Dom | 718 Cayman | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Toby | Camaro | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Green Kyle | M4 G82 | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Mike | Mustang | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | JingTang | Supra | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Ivan | TBD | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Cheese | M4 G82 | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Alfred | 570S | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Walnut | AMG EVO | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Winston | Mustang | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Aditya | AMG | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Samson | 570S | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Michael G | 570S | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Allan | AMG | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Timmy | Mustang | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Arren | M4 G82 | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Chris | AMG | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| DK | AMG | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Donald | Vantage | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Allen Q | TBD | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Vincent | AMG | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 
 ### Season Standings
 
 | Pos | Driver | Points | Wins | Podiums | Poles | FLs | Races | Part. | Pts Rate | Top 5 Rate |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | James | 96 | 2 | 2 | 0 | 2 | 4 | 25.0% | 18.8% | 18.8% |
-| 2 | Chris | 94 | 1 | 3 | 0 | 0 | 4 | 25.0% | 18.4% | 25.0% |
-| 3 | Josie | 92 | 1 | 3 | 2 | 2 | 4 | 25.0% | 18.0% | 18.8% |
-| 4 | Walnut | 73 | 0 | 2 | 0 | 0 | 4 | 25.0% | 14.3% | 12.5% |
-| 5 | DK | 72 | 0 | 2 | 2 | 0 | 4 | 25.0% | 14.1% | 12.5% |
-| 6 | Brie | 58 | 0 | 0 | 0 | 0 | 4 | 25.0% | 11.3% | 12.5% |
-| 6 | Toby | 58 | 0 | 0 | 0 | 0 | 4 | 25.0% | 11.3% | 0% |
-| 8 | Lee | 52 | 0 | 0 | 0 | 0 | 4 | 25.0% | 10.2% | 6.3% |
-| 9 | Dom | 49 | 0 | 0 | 0 | 0 | 3 | 18.8% | 9.6% | 12.5% |
-| 9 | Allan | 49 | 0 | 0 | 0 | 0 | 4 | 25.0% | 9.6% | 0% |
-| 11 | Michael G | 44 | 0 | 0 | 0 | 0 | 4 | 25.0% | 8.6% | 0% |
-| 12 | Mike | 41 | 0 | 0 | 0 | 0 | 4 | 25.0% | 8.0% | 0% |
-| 13 | Timmy | 34 | 0 | 0 | 0 | 0 | 4 | 25.0% | 6.6% | 0% |
-| 14 | Colin | 30 | 0 | 0 | 0 | 0 | 4 | 25.0% | 5.9% | 0% |
-| 15 | Donald | 25 | 0 | 0 | 0 | 0 | 2 | 12.5% | 4.9% | 6.3% |
-| 16 | Winston | 19 | 0 | 0 | 0 | 0 | 4 | 25.0% | 3.7% | 0% |
-| 17 | Kevin | 11 | 0 | 0 | 0 | 0 | 2 | 12.5% | 2.1% | 0% |
-| 17 | Aditya | 11 | 0 | 0 | 0 | 0 | 2 | 12.5% | 2.1% | 0% |
-| 19 | JingTang | 5 | 0 | 0 | 0 | 0 | 1 | 6.3% | 1.0% | 0% |
-| 20 | Ghin | 0 | 0 | 0 | 0 | 0 | 0 | 0% | 0% | 0% |
-| 20 | Tawm | 0 | 0 | 0 | 0 | 0 | 0 | 0% | 0% | 0% |
-| 20 | Caleb | 0 | 0 | 0 | 0 | 0 | 0 | 0% | 0% | 0% |
-| 20 | Edwin | 0 | 0 | 0 | 0 | 0 | 0 | 0% | 0% | 0% |
-| 20 | Green Kyle | 0 | 0 | 0 | 0 | 0 | 0 | 0% | 0% | 0% |
-| 20 | Ivan | 0 | 0 | 0 | 0 | 0 | 0 | 0% | 0% | 0% |
-| 20 | Cheese | 0 | 0 | 0 | 0 | 0 | 0 | 0% | 0% | 0% |
-| 20 | Alfred | 0 | 0 | 0 | 0 | 0 | 0 | 0% | 0% | 0% |
-| 20 | Samson | 0 | 0 | 0 | 0 | 0 | 0 | 0% | 0% | 0% |
-| 20 | Arren | 0 | 0 | 0 | 0 | 0 | 0 | 0% | 0% | 0% |
-| 20 | Allen Q | 0 | 0 | 0 | 0 | 0 | 0 | 0% | 0% | 0% |
+| 1 | Josie **WDC** (WCC) | 417 | 8 | 12 | 10 | 10 | 16 | 100.0% | 81.4% | 87.5% |
+| 2 | Walnut | 303 | 1 | 7 | 0 | 1 | 16 | 100.0% | 59.2% | 56.3% |
+| 3 | James | 268 | 2 | 8 | 0 | 3 | 12 | 75.0% | 52.3% | 62.5% |
+| 4 | Lee | 253 | 2 | 4 | 2 | 1 | 16 | 100.0% | 49.4% | 43.8% |
+| 5 | Chris | 236 | 2 | 6 | 0 | 0 | 12 | 75.0% | 46.1% | 56.3% |
+| 6 | DK | 225 | 0 | 6 | 4 | 1 | 12 | 75.0% | 43.9% | 43.8% |
+| 7 | Toby (WCC) | 200 | 0 | 0 | 0 | 0 | 16 | 100.0% | 39.1% | 6.3% |
+| 8 | Allan | 164 | 0 | 0 | 0 | 0 | 12 | 75.0% | 32.0% | 12.5% |
+| 9 | Donald | 160 | 1 | 2 | 0 | 0 | 10 | 62.5% | 31.3% | 31.3% |
+| 10 | Mike | 158 | 0 | 0 | 0 | 0 | 14 | 87.5% | 30.9% | 0% |
+| 11 | Arren | 124 | 0 | 2 | 0 | 0 | 8 | 50.0% | 24.2% | 25.0% |
+| 12 | Colin | 117 | 0 | 0 | 0 | 0 | 12 | 75.0% | 22.9% | 6.3% |
+| 13 | Dom | 107 | 0 | 0 | 0 | 0 | 6 | 37.5% | 20.9% | 31.3% |
+| 14 | Brie | 102 | 0 | 0 | 0 | 0 | 10 | 62.5% | 19.9% | 12.5% |
+| 15 | Cheese | 92 | 0 | 1 | 0 | 0 | 8 | 50.0% | 18.0% | 6.3% |
+| 15 | Timmy | 92 | 0 | 0 | 0 | 0 | 10 | 62.5% | 18.0% | 0% |
+| 17 | Michael G | 82 | 0 | 0 | 0 | 0 | 8 | 50.0% | 16.0% | 0% |
+| 18 | Green Kyle | 66 | 0 | 0 | 0 | 0 | 8 | 50.0% | 12.9% | 0% |
+| 19 | Kevin (WCC) | 62 | 0 | 0 | 0 | 0 | 8 | 50.0% | 12.1% | 0% |
+| 20 | Samson | 59 | 0 | 0 | 0 | 0 | 4 | 25.0% | 11.5% | 18.8% |
+| 21 | Allen Q | 53 | 0 | 0 | 0 | 0 | 6 | 37.5% | 10.4% | 0% |
+| 22 | Ghin | 52 | 0 | 0 | 0 | 0 | 8 | 50.0% | 10.2% | 0% |
+| 23 | JingTang | 40 | 0 | 0 | 0 | 0 | 5 | 31.3% | 7.8% | 0% |
+| 24 | Alfred (WCC) | 30 | 0 | 0 | 0 | 0 | 4 | 25.0% | 5.9% | 0% |
+| 25 | Vincent | 28 | 0 | 0 | 0 | 0 | 4 | 25.0% | 5.5% | 0% |
+| 26 | Winston | 19 | 0 | 0 | 0 | 0 | 4 | 25.0% | 3.7% | 0% |
+| 27 | Aditya | 11 | 0 | 0 | 0 | 0 | 2 | 12.5% | 2.1% | 0% |
+| 28 | Tawm | 0 | 0 | 0 | 0 | 0 | 0 | 0% | 0% | 0% |
+| 28 | Caleb | 0 | 0 | 0 | 0 | 0 | 0 | 0% | 0% | 0% |
+| 28 | Edwin | 0 | 0 | 0 | 0 | 0 | 0 | 0% | 0% | 0% |
+| 28 | Ivan | 0 | 0 | 0 | 0 | 0 | 0 | 0% | 0% | 0% |
 
 ### Team Standings (WCC)
 
 | Team | Points |
 | --- | --- |
-| DK + Donald + Chris + Aditya + Allen Q | 202 |
-| James + Lee + Winston + Samson | 167 |
-| Josie + Toby + Kevin + Alfred | 161 |
-| Allan + Walnut + Timmy + Cheese | 156 |
-| Brie + Mike + Tawm + Colin + Arren | 129 |
-| Green Kyle + JingTang + Dom + Michael G | 98 |
-| Caleb + Ghin + Ivan + Edwin | 0 |
+| Josie + Toby + Kevin + Alfred | 709 |
+| DK + Donald + Chris + Aditya + Allen Q | 685 |
+| Allan + Walnut + Timmy + Cheese | 651 |
+| James + Lee + Winston + Samson | 599 |
+| Brie + Mike + Tawm + Colin + Arren | 501 |
+| Green Kyle + JingTang + Dom + Michael G + Vincent | 295 |
+| Caleb + Ghin + Ivan + Edwin | 52 |
 
 ---
