@@ -299,21 +299,34 @@ def _parse_career_stats(lines: list[str], ds: ParsedDataset) -> None:
 # ---- Weighted scores ------------------------------------------------------
 
 def _parse_weighted_scores(lines: list[str], ds: ParsedDataset) -> None:
-    """Parse the '## All-Time Weighted Score Rankings' table."""
+    """Parse the '## All-Time Weighted Score Rankings' table.
+
+    Columns are resolved by HEADER NAME rather than fixed index so the parser
+    tolerates added/reordered columns (the data file has grown 'Field' and 'Pen.'
+    columns between PtsRate and Part.). Unrecognised columns are ignored.
+    """
     start = _find_section(lines, "## All-Time Weighted Score Rankings")
     if start is None:
         return
-    rows = _read_table_rows(lines, start)
-    # Columns: Rank | Driver | Season | W.Score | Win% | Pod% | Top5% |
-    # Pts/Race | FL% | Pole% | PtsRate | Part. | WDC | WCC
+    header, rows = _read_table_header_rows(lines, start)
+    if not header:
+        return
+    # normalized-header -> column index
+    idx = {_norm_header(h): i for i, h in enumerate(header)}
+
+    def cell(cells: list[str], *names: str, default: str = "") -> str:
+        for n in names:
+            j = idx.get(n)
+            if j is not None and j < len(cells):
+                return cells[j]
+        return default
+
     for cells in rows:
-        if len(cells) < 12:
-            continue
-        rank_s = cells[0].strip()
+        rank_s = cell(cells, "rank").strip()
         if not rank_s or not rank_s[0].isdigit():
             continue
-        driver = cells[1].strip()
-        season_id = cells[2].strip()
+        driver = cell(cells, "driver").strip()
+        season_id = cell(cells, "season").strip()
         if not driver or not season_id.startswith("S"):
             continue
         ds.weighted_scores.append(
@@ -321,17 +334,17 @@ def _parse_weighted_scores(lines: list[str], ds: ParsedDataset) -> None:
                 driver=driver,
                 season_id=season_id,
                 rank=_parse_int(rank_s),
-                weighted_score=_parse_float(cells[3]),
-                win_pct=_parse_float(cells[4]),
-                pod_pct=_parse_float(cells[5]),
-                top5_pct=_parse_float(cells[6]),
-                pts_per_race=_parse_float(cells[7]),
-                fl_pct=_parse_float(cells[8]),
-                pole_pct=_parse_float(cells[9]),
-                pts_rate=_parse_float(cells[10]),
-                participation=_parse_float(cells[11]),
-                has_wdc=("yes" in cells[12].strip().lower()) if len(cells) > 12 else False,
-                has_wcc=("yes" in cells[13].strip().lower()) if len(cells) > 13 else False,
+                weighted_score=_parse_float(cell(cells, "wscore", "weightedscore")),
+                win_pct=_parse_float(cell(cells, "win")),
+                pod_pct=_parse_float(cell(cells, "pod")),
+                top5_pct=_parse_float(cell(cells, "top5")),
+                pts_per_race=_parse_float(cell(cells, "ptsrace")),
+                fl_pct=_parse_float(cell(cells, "fl")),
+                pole_pct=_parse_float(cell(cells, "pole")),
+                pts_rate=_parse_float(cell(cells, "ptsrate")),
+                participation=_parse_float(cell(cells, "part", "participation")),
+                has_wdc="yes" in cell(cells, "wdc").strip().lower(),
+                has_wcc="yes" in cell(cells, "wcc").strip().lower(),
             )
         )
 
@@ -525,18 +538,22 @@ def _find_section(lines: list[str], header: str) -> int | None:
     return None
 
 
-def _read_table_rows(lines: list[str], start: int) -> list[list[str]]:
-    """Find the next markdown table after `start` and return data rows (cells)."""
+def _norm_header(h: str) -> str:
+    """Normalize a column header for name-based lookup: lowercase, drop everything
+    but letters and digits. e.g. 'W.Score' -> 'wscore', 'Pts/Race' -> 'ptsrace'."""
+    return "".join(ch for ch in h.lower() if ch.isalnum())
+
+
+def _read_table_header_rows(lines: list[str], start: int) -> tuple[list[str], list[list[str]]]:
+    """Like `_read_table_rows`, but also return the header cells so callers can map
+    columns by name."""
     i = start
-    # find first table line
     while i < len(lines) and not lines[i].lstrip().startswith("|"):
         i += 1
     if i >= len(lines):
-        return []
-    # header
+        return [], []
     header = _split_row(lines[i])
     i += 1
-    # separator
     if i < len(lines) and _is_table_separator(lines[i]):
         i += 1
     rows: list[list[str]] = []
@@ -546,7 +563,12 @@ def _read_table_rows(lines: list[str], start: int) -> list[list[str]]:
             break
         rows.append(_split_row(line))
         i += 1
-    return rows
+    return header, rows
+
+
+def _read_table_rows(lines: list[str], start: int) -> list[list[str]]:
+    """Find the next markdown table after `start` and return data rows (cells)."""
+    return _read_table_header_rows(lines, start)[1]
 
 
 __all__ = [
