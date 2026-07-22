@@ -31,7 +31,8 @@ Season 18 was split into S18a and S18b (both sports car seasons).
 | S20 | Sports | Josie GT (tuners with slicks and aero) | Oulton Park International Hislops, Tokyo R246, Mid Ohio, Donington Park National | 4 | Josie | Josie + Toby |
 | S21 | Formula | F1 2007 (McLaren, Ferrari) | Kyalami, Shanghai, Monza, Sepang | 4 | James | Allan + Walnut |
 | S22 | Sports | GT4 | VIR, Charlotte Roval, Barcelona City Circuit, Road Atlanta | 4 | Josie | Josie + Toby + Kevin + Alfred |
-| S23 | Formula | F1 1990 (McLaren, Ferrari) | Silverstone, Spa, Suzuka, Interlagos | 4 | TBD | TBD |
+| S23 | Formula | F1 1990 (McLaren, Ferrari) | Silverstone, Spa, Suzuka, Interlagos | 4 | Josie | Josie + Colin + Alfred |
+| S24 | Sports | WEC (GT3 and Hypercars) | Dragon Trail Seaside, Red Bull Ring, Sebring, Fuji | 4 | TBD | TBD |
 
 ## Scoring System
 
@@ -5038,8 +5039,8 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 **Car:** F1 1990 (McLaren, Ferrari)
 **Venues:** Silverstone, Spa, Suzuka, Interlagos
 **Races Per Venue:** 4
-**WDC:** TBD
-**WCC:** TBD
+**WDC:** Josie
+**WCC:** Josie + Colin + Alfred
 
 ### Scoring System
 Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
@@ -5051,14 +5052,14 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 | Driver | Car | R1 Pos | R1 Pts | R2 Pos | R2 Pts | R3 Pos | R3 Pts | R4 Pos | R4 Pts | Day Total |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Josie | F1 90 McLaren | 1 (P,FL) | 32 | 1 (P,FL) | 32 | 2 (P,FL) | 27 | 2 (P) | 26 | 117 |
-| James | F1 90 Ferrari | 2 | 25 | 2 | 25 | 1 | 30 | 1 (FL) | 31 | 111 |
+| James | F1 90 Ferrari | 2 | 25 | 2 (-5pen) | 20 | 1 | 30 | 1 (FL) | 31 | 106 |
 | Lee | F1 90 Ferrari | 3 | 22 | 6 | 16 | 3 | 22 | 3 | 22 | 82 |
 | Walnut | F1 90 McLaren | 6 | 16 | 4 | 20 | 5 | 18 | 6 | 16 | 70 |
-| Allan | F1 90 Ferrari | 5 | 18 | 7 | 14 | 4 | 20 | 5 | 18 | 70 |
 | DK | F1 90 Ferrari | 10 | 11 | 3 | 22 | 6 | 16 | 4 | 20 | 69 |
+| Allan | F1 90 Ferrari | 5 | 18 | 7 (-2pen) | 12 | 4 | 20 | 5 | 18 | 68 |
 | Arren | F1 90 Ferrari | 4 | 20 | 8 | 13 | 7 | 14 | 11 | 10 | 57 |
 | Chris | F1 90 McLaren | 8 | 13 | 5 | 18 | 10 | 11 | 7 | 14 | 56 |
-| Alfred | F1 90 Ferrari | 7 | 14 | 9 | 12 | 9 | 12 | 8 | 13 | 51 |
+| Alfred | F1 90 Ferrari | 7 | 14 | 9 | 12 | 9 | 12 | 8 (-3pen) | 10 | 48 |
 | Colin | F1 90 Ferrari | 11 | 10 | 11 | 10 | 8 | 13 | 10 | 11 | 44 |
 | Cheese | F1 90 Ferrari | 9 | 12 | 10 | 11 | 12 | 9 | 9 | 12 | 44 |
 | Francis | F1 90 Ferrari | DNS | 0 | 12 | 9 | 11 | 10 | DNS | 0 | 19 |
@@ -5074,107 +5075,107 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 
 | Driver | Car | R1 Pos | R1 Pts | R2 Pos | R2 Pts | R3 Pos | R3 Pts | R4 Pos | R4 Pts | Day Total |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Josie | F1 90 McLaren | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Josie | F1 90 McLaren | 1 (P) | 31 | 2 (P,FL) | 27 | 1 (P) | 31 | 5 (P) | 19 | 108 |
+| James | F1 90 Ferrari | 2 (FL) | 26 | 1 | 30 | 3 (FL) | 23 | 2 (FL) | 26 | 105 |
+| Lee | F1 90 Ferrari | 3 | 22 | 3 | 22 | 9 | 12 | 1 | 30 | 86 |
+| Chris | F1 90 McLaren | 6 | 16 | 6 | 16 | 2 | 25 | 3 | 22 | 79 |
+| Allan | F1 90 Ferrari | 5 | 18 | 4 | 20 | 8 | 13 | 4 | 20 | 71 |
+| DK | F1 90 Ferrari | 4 | 20 | 8 | 13 | 4 | 20 | 9 | 12 | 65 |
+| Arren | F1 90 Ferrari | 7 | 14 | 5 | 18 | 5 | 18 | 7 | 14 | 64 |
+| Timmy | F1 90 Ferrari | 9 | 12 | 10 | 11 | 6 | 16 | 8 | 13 | 52 |
+| Colin | F1 90 Ferrari | 8 | 13 | 9 | 12 | 7 | 14 | 10 | 11 | 50 |
+| Walnut | F1 90 McLaren | 10 | 11 | 7 | 14 | 10 | 11 | 6 (-4pen) | 12 | 48 |
 | Brie | F1 90 McLaren | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Isaac | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| James | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Ghin | F1 90 McLaren | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Colin | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Lee | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Francis | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Aditya | F1 90 McLaren | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Mike | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Alfred | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Walnut | F1 90 McLaren | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Cheese | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Allan | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Timmy | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Arren | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Chris | F1 90 McLaren | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| DK | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Donald | F1 90 McLaren | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 
 #### Venue 3: Suzuka
 
 | Driver | Car | R1 Pos | R1 Pts | R2 Pos | R2 Pts | R3 Pos | R3 Pts | R4 Pos | R4 Pts | Day Total |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Josie | F1 90 McLaren | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Josie | F1 90 McLaren | 1 (P,FL) | 32 | 1 (P,FL) | 32 | 2 (P,FL) | 27 | 1 (P,FL) | 32 | 123 |
+| James | F1 90 Ferrari | 5 | 18 | 2 | 25 | 1 | 30 | 3 | 22 | 95 |
+| Chris | F1 90 McLaren | 2 | 25 | 5 | 18 | 7 | 14 | 2 | 25 | 82 |
+| Walnut | F1 90 McLaren | 3 | 22 | 3 | 22 | 3 | 22 | 9 | 12 | 78 |
+| Lee | F1 90 Ferrari | 8 | 13 | 4 | 20 | 4 | 20 | 5 | 18 | 71 |
+| Arren | F1 90 Ferrari | 4 | 20 | 7 | 14 | 6 (-4pen) | 12 | 6 | 16 | 62 |
+| Allan | F1 90 Ferrari | 6 (-1pen) | 15 | 8 | 13 | 5 | 18 | 7 | 14 | 60 |
+| Colin | F1 90 Ferrari | 7 | 14 | 9 | 12 | 8 | 13 | 8 | 13 | 52 |
+| Alfred | F1 90 Ferrari | 9 | 12 | 6 | 16 | 10 | 11 | 10 | 11 | 50 |
+| DK | F1 90 Ferrari | DNS | 0 | DNS | 0 | 11 | 10 | 4 | 20 | 30 |
+| Donald | F1 90 McLaren | DNS | 0 | DNS | 0 | 9 | 12 | 11 | 10 | 22 |
 | Brie | F1 90 McLaren | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Isaac | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| James | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Ghin | F1 90 McLaren | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Colin | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Lee | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Francis | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Aditya | F1 90 McLaren | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Mike | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Alfred | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Walnut | F1 90 McLaren | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Cheese | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Allan | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Timmy | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Arren | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Chris | F1 90 McLaren | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| DK | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Donald | F1 90 McLaren | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 
 #### Venue 4: Interlagos
 
 | Driver | Car | R1 Pos | R1 Pts | R2 Pos | R2 Pts | R3 Pos | R3 Pts | R4 Pos | R4 Pts | Day Total |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Josie | F1 90 McLaren | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Josie | F1 90 McLaren | 1 (P,FL) | 32 | 1 (P,FL) | 32 | 1 (P,FL) | 32 | 1 (P) | 31 | 127 |
+| James | F1 90 Ferrari | 2 | 25 | 7 | 14 | 2 | 25 | 3 (FL) | 23 | 87 |
+| Chris | F1 90 McLaren | 4 | 20 | 2 | 25 | 8 | 13 | 2 | 25 | 83 |
+| Walnut | F1 90 McLaren | 3 | 22 | 3 | 22 | 4 | 20 | 6 | 16 | 80 |
+| DK | F1 90 Ferrari | 6 | 16 | 4 | 20 | 3 | 22 | 7 | 14 | 72 |
+| Colin | F1 90 Ferrari | 7 | 14 | 6 | 16 | 7 | 14 | 5 | 18 | 62 |
+| Lee | F1 90 Ferrari | 5 | 18 | 8 | 13 | 6 | 16 | 8 | 13 | 60 |
+| Alfred | F1 90 Ferrari | 8 (-5pen) | 8 | 5 | 18 | 5 | 18 | 4 (-8pen) | 12 | 56 |
+| Arren | F1 90 Ferrari | DNS | 0 | DNS | 0 | 9 | 12 | 9 | 12 | 24 |
 | Brie | F1 90 McLaren | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Isaac | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| James | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Ghin | F1 90 McLaren | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Colin | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Lee | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Francis | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Aditya | F1 90 McLaren | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Mike | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Alfred | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Walnut | F1 90 McLaren | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Cheese | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Allan | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Timmy | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Arren | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| Chris | F1 90 McLaren | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
-| DK | F1 90 Ferrari | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 | Donald | F1 90 McLaren | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
 
 ### Season Standings
 
 | Pos | Driver | Points | Wins | Podiums | Poles | FLs | Races | Part. | Pts Rate | Top 5 Rate |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Josie | 117 | 2 | 4 | 4 | 3 | 4 | 25.0% | 22.9% | 25.0% |
-| 2 | James | 111 | 2 | 4 | 0 | 1 | 4 | 25.0% | 21.7% | 25.0% |
-| 3 | Lee | 82 | 0 | 3 | 0 | 0 | 4 | 25.0% | 16.0% | 18.8% |
-| 4 | Walnut | 70 | 0 | 0 | 0 | 0 | 4 | 25.0% | 13.7% | 12.5% |
-| 4 | Allan | 70 | 0 | 0 | 0 | 0 | 4 | 25.0% | 13.7% | 18.8% |
-| 6 | DK | 69 | 0 | 1 | 0 | 0 | 4 | 25.0% | 13.5% | 12.5% |
-| 7 | Arren | 57 | 0 | 0 | 0 | 0 | 4 | 25.0% | 11.1% | 6.3% |
-| 8 | Chris | 56 | 0 | 0 | 0 | 0 | 4 | 25.0% | 10.9% | 6.3% |
-| 9 | Alfred | 51 | 0 | 0 | 0 | 0 | 4 | 25.0% | 10.0% | 0% |
-| 10 | Colin | 44 | 0 | 0 | 0 | 0 | 4 | 25.0% | 8.6% | 0% |
-| 10 | Cheese | 44 | 0 | 0 | 0 | 0 | 4 | 25.0% | 8.6% | 0% |
-| 12 | Francis | 19 | 0 | 0 | 0 | 0 | 2 | 12.5% | 3.7% | 0% |
-| 13 | Brie | 0 | 0 | 0 | 0 | 0 | 0 | 0% | 0% | 0% |
-| 13 | Isaac | 0 | 0 | 0 | 0 | 0 | 0 | 0% | 0% | 0% |
-| 13 | Ghin | 0 | 0 | 0 | 0 | 0 | 0 | 0% | 0% | 0% |
-| 13 | Aditya | 0 | 0 | 0 | 0 | 0 | 0 | 0% | 0% | 0% |
-| 13 | Mike | 0 | 0 | 0 | 0 | 0 | 0 | 0% | 0% | 0% |
-| 13 | Timmy | 0 | 0 | 0 | 0 | 0 | 0 | 0% | 0% | 0% |
-| 13 | Donald | 0 | 0 | 0 | 0 | 0 | 0 | 0% | 0% | 0% |
+| 1 | Josie **WDC** (WCC) | 475 | 11 | 15 | 16 | 11 | 16 | 100.0% | 92.8% | 100.0% |
+| 2 | James | 393 | 4 | 14 | 0 | 5 | 16 | 100.0% | 76.8% | 93.8% |
+| 3 | Chris | 300 | 0 | 6 | 0 | 0 | 16 | 100.0% | 58.6% | 56.3% |
+| 4 | Lee | 299 | 1 | 6 | 0 | 0 | 16 | 100.0% | 58.4% | 62.5% |
+| 5 | Walnut | 276 | 0 | 5 | 0 | 0 | 16 | 100.0% | 53.9% | 50.0% |
+| 6 | DK | 236 | 0 | 2 | 0 | 0 | 14 | 87.5% | 46.1% | 43.8% |
+| 7 | Colin (WCC) | 208 | 0 | 0 | 0 | 0 | 16 | 100.0% | 40.6% | 6.3% |
+| 8 | Arren | 207 | 0 | 0 | 0 | 0 | 14 | 87.5% | 40.4% | 25.0% |
+| 9 | Allan | 199 | 0 | 0 | 0 | 0 | 12 | 75.0% | 38.9% | 43.8% |
+| 10 | Alfred | 154 | 0 | 0 | 0 | 0 | 12 | 75.0% | 30.1% | 18.8% |
+| 11 | Timmy | 52 | 0 | 0 | 0 | 0 | 4 | 25.0% | 10.2% | 0% |
+| 12 | Cheese | 44 | 0 | 0 | 0 | 0 | 4 | 25.0% | 8.6% | 0% |
+| 13 | Donald | 22 | 0 | 0 | 0 | 0 | 2 | 12.5% | 4.3% | 0% |
+| 14 | Francis | 19 | 0 | 0 | 0 | 0 | 2 | 12.5% | 3.7% | 0% |
+| 15 | Brie | 0 | 0 | 0 | 0 | 0 | 0 | 0% | 0% | 0% |
+| 15 | Isaac | 0 | 0 | 0 | 0 | 0 | 0 | 0% | 0% | 0% |
+| 15 | Ghin | 0 | 0 | 0 | 0 | 0 | 0 | 0% | 0% | 0% |
+| 15 | Aditya | 0 | 0 | 0 | 0 | 0 | 0 | 0% | 0% | 0% |
+| 15 | Mike (WCC) | 0 | 0 | 0 | 0 | 0 | 0 | 0% | 0% | 0% |
 
 ### Team Standings (WCC)
 
 | Team | Points |
 | --- | --- |
-| Josie + Colin + Alfred | 212 |
-| James + Lee + Isaac | 193 |
-| Walnut + Arren + Cheese | 171 |
-| Chris + DK + Aditya | 125 |
-| Allan + Timmy + Donald + Francis | 89 |
+| Josie + Colin + Alfred | 837 |
+| James + Lee + Isaac | 692 |
+| Chris + DK + Aditya | 536 |
+| Walnut + Arren + Cheese | 527 |
+| Allan + Timmy + Donald + Francis | 292 |
 | Brie + Mike + Ghin | 0 |
 
 ---
