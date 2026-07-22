@@ -70,10 +70,50 @@ class SeasonSummary:
 
     is_wdc: bool
     celebration_tier: str
+    is_wcc: bool = False               # on the WCC-winning team this season
+    wcc_team: str | None = None        # winning roster label, e.g. "A + B + C"
+    wcc_teammates: list[str] = field(default_factory=list)  # co-winners (not this driver)
     hero: dict[str, Any] = field(default_factory=dict)
     gauges: list[dict[str, Any]] = field(default_factory=list)
     rate_tiles: list[dict[str, Any]] = field(default_factory=list)
     stat_tiles: list[dict[str, Any]] = field(default_factory=list)
+
+
+def _and_join(names: list[str]) -> str:
+    """Human list join: [] → "", [A] → "A", [A,B] → "A & B", [A,B,C] → "A, B & C"."""
+    if not names:
+        return ""
+    if len(names) == 1:
+        return names[0]
+    return f"{', '.join(names[:-1])} & {names[-1]}"
+
+
+def _wcc_membership(
+    con: DuckDBPyConnection, driver: str, season_id: str
+) -> tuple[bool, str | None, list[str]]:
+    """Was `driver` on the season's WCC-winning team?
+
+    Reads the winning roster from `seasons.wcc` (a "A + B + C" label) and
+    checks membership. Returns (is_wcc, roster_label, teammates).
+
+    Defensive by design: minimal in-memory schemas (used in tests) omit the
+    `wcc` column, so a lookup failure degrades to "no WCC" rather than raising.
+    """
+    try:
+        row = con.execute(
+            "SELECT wcc FROM seasons WHERE season_id = ?", [season_id]
+        ).fetchone()
+    except Exception:
+        return False, None, []
+    if not row or not row[0]:
+        return False, None, []
+    roster = str(row[0]).strip()
+    members = [m.strip() for m in roster.split(" + ") if m.strip()]
+    dl = driver.lower()
+    if not any(m.lower() == dl for m in members):
+        return False, None, []
+    teammates = [m for m in members if m.lower() != dl]
+    return True, roster, teammates
 
 
 def _celebration_tier(wins: int, podiums: int, points: int, is_wdc: bool) -> str:
@@ -143,6 +183,7 @@ def build_season_summary(
     scoring_pct = (scoring / starts) if starts else 0.0
     ppr = (pts / starts) if starts else 0.0
     is_wdc = (wdc or "").strip().lower() == driver.lower()
+    is_wcc, wcc_team, wcc_teammates = _wcc_membership(con, driver, season_id)
 
     weighted = con.execute(
         """
@@ -197,6 +238,9 @@ def build_season_summary(
         best_finish_medal=_MEDAL.get(best) if best else None,
         is_wdc=is_wdc,
         celebration_tier=_celebration_tier(wins, podiums, pts, is_wdc),
+        is_wcc=is_wcc,
+        wcc_team=wcc_team,
+        wcc_teammates=wcc_teammates,
     )
     _attach_presentation(summary)
     return summary
@@ -239,6 +283,11 @@ def _attach_presentation(s: SeasonSummary) -> None:
     s.hero["tier_copy"] = _TIER_COPY[s.celebration_tier]
     if s.is_wdc:
         s.hero["crown"] = True
+    if s.is_wcc:
+        s.hero["wcc"] = True
+        s.hero["wcc_with"] = _and_join(s.wcc_teammates)
+    # Gold, championship-grade theme for either title (drivers' or constructors').
+    s.hero["gold"] = s.is_wdc or s.is_wcc
 
     # ---- Gauges (donut arcs) — always-positive framing -------------------
     s.gauges = [
