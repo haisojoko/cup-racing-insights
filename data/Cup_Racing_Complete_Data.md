@@ -6,33 +6,34 @@ Season 18 was split into S18a and S18b (both sports car seasons).
 
 ## Season Registry
 
-| Season | Type | Car | Venues | Races/Venue | WDC | WCC |
-| --- | --- | --- | --- | --- | --- | --- |
-| S1 | Formula | Super Formula 2020 | Autopolis, Midfield Raceway, Interlagos | 3 | Josie | Josie + Ghin |
-| S2 | Sports | Cup Miata | Laguna Seca, Watkins Glen Short, Brands Hatch Indy, Red Bull Ring National | 3 | Josie | James + Isaac |
-| S3 | Formula | Tatuus FA01 | Vallelunga Classic, Tokyo R246, Road America, Suzuka | 3 | Josie | Josie + Joyce |
-| S4 | Sports | TCR 2023 | Midfield Raceway, Usui Circuit, Tsukuba, Misano | 3 | James | James + Isaac |
-| S5 | Formula | F1 2013 (single car spec) | Silverstone, Mugello, Interlagos, Suzuka | 3 | Josie | Dom + Lee |
-| S6 | Sports | Cup Miata | Midfield Raceway, VIR North, Zandvoort, Laguna Seca | 3 | Josie | Colin + Green Kyle + Martin |
-| S7 | Formula | F1 2000 (single car spec) | Nurburgring, Watkins Glen, Brands Hatch, Spa | 3 | Josie | Josie + Lee |
-| S8 | Sports | Street Cars | Oran Park, Silver Coin, Tsukuba, Zwartkops | 3 | Green Kyle | Brie + Tawm + Mike |
-| S9 | Formula | F1 2023 (single car spec) | Mugello, Pinwheel, Dragon Trail Seaside, Autodromo de Palmadera (chicane) | 3 | Josie | Josie + Toby |
-| S10 | Sports | TCR 2023 | Road America, Red Bull Ring, Albert Park, Estoril | 4 | Josie | Josie + Toby |
-| S11 | Formula | F1 1991 (McLaren, Williams, Ferrari) | Circuit d'Ajaccio, Autopolis, Suzuka, Interlagos | 4 | Josie | Lee + Green Kyle + Colin |
-| S12 | Sports | Caterham 420R/R300 | Club Motorsport, Deep Forest Raceway, Mid Ohio, Road Atlanta | 4 | Josie | Josie + Joyce |
-| S13 | Formula | Super Formula 2020 | Spa, Bahrain, Okayama, Vallelunga | 4 | Josie | Josie + Toby |
-| S14 | Sports | Multi-Class (GT3 and Street Cars) | Heart Lake Complex National, Sachsenring, Acopone Raceway, Red Bull Ring National | 4 | Josie (GT3), Toby (Street) | Josie + Toby + Caleb |
-| S15 | Formula | F1 1986 (single car spec) | Silverstone, PGO International, Imola, Kalinago | 4 | Josie | Josie + Toby |
-| S16 | Sports | 70s GT | Riverside NASCAR, Daytona Road Course, Port Newark, Silver City Circuit | 4 | Toby | Lee + Toby + Lucian |
-| S17 | Formula | F1 2026 V12 (single car spec) | Red Bull Ring, Barcelona GP Moto, Pinwheel, Albert Park | 4 | Josie | James + Lee + Colin |
-| S18a | Sports | WEC (GT3 and Hypercars) | Chang International, Okayama, Autodromo de Palmadera, Fuji Short (no chicane) | 4 | James | James + Lee |
-| S18b | Sports | WEC (GT3 and Hypercars) | Watkins Glen Classic Boot, Circuit d'Ajaccio, Sonoma Long, Zandvoort | 4 | Lee | Toby + Walnut |
-| S19 | Formula | Tatuus FA01 | Imola, COTA, Singapore, Hungaroring | 4 | Josie | Josie + Toby |
-| S20 | Sports | Josie GT (tuners with slicks and aero) | Oulton Park International Hislops, Tokyo R246, Mid Ohio, Donington Park National | 4 | Josie | Josie + Toby |
-| S21 | Formula | F1 2007 (McLaren, Ferrari) | Kyalami, Shanghai, Monza, Sepang | 4 | James | Allan + Walnut |
-| S22 | Sports | GT4 | VIR, Charlotte Roval, Barcelona City Circuit, Road Atlanta | 4 | Josie | Josie + Toby + Kevin + Alfred |
-| S23 | Formula | F1 1990 (McLaren, Ferrari) | Silverstone, Spa, Suzuka, Interlagos | 4 | Josie | Josie + Colin + Alfred |
-| S24 | Sports | WEC (GT3 and Hypercars) | Dragon Trail Seaside, Red Bull Ring, Sebring, Fuji | 4 | TBD | TBD |
+| Season | Type | Car | Reverse Grid | Venues | Races/Venue | WDC | WCC |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| S1 | Formula | Super Formula 2020 | No | Autopolis, Midfield Raceway, Interlagos | 3 | Josie | Josie + Ghin |
+| S2 | Sports | Cup Miata | No | Laguna Seca, Watkins Glen Short, Brands Hatch Indy, Red Bull Ring National | 3 | Josie | James + Isaac |
+| S3 | Formula | Tatuus FA01 | No | Vallelunga Classic, Tokyo R246, Road America, Suzuka | 3 | Josie | Josie + Joyce |
+| S4 | Sports | TCR 2023 | No | Midfield Raceway, Usui Circuit, Tsukuba, Misano | 3 | James | James + Isaac |
+| S5 | Formula | F1 2013 (single car spec) | No | Silverstone, Mugello, Interlagos, Suzuka | 3 | Josie | Dom + Lee |
+| S6 | Sports | Cup Miata | No | Midfield Raceway, VIR North, Zandvoort, Laguna Seca | 3 | Josie | Colin + Green Kyle + Martin |
+| S7 | Formula | F1 2000 (single car spec) | No | Nurburgring, Watkins Glen, Brands Hatch, Spa | 3 | Josie | Josie + Lee |
+| S8 | Sports | Street Cars | No | Oran Park, Silver Coin, Tsukuba, Zwartkops | 3 | Green Kyle | Brie + Tawm + Mike |
+| S9 | Formula | F1 2023 (single car spec) | No | Mugello, Pinwheel, Dragon Trail Seaside, Autodromo de Palmadera (chicane) | 3 | Josie | Josie + Toby |
+| S10 | Sports | TCR 2023 | Yes | Road America, Red Bull Ring, Albert Park, Estoril | 4 | Josie | Josie + Toby |
+| S11 | Formula | F1 1991 (McLaren, Williams, Ferrari) | Yes | Circuit d'Ajaccio, Autopolis, Suzuka, Interlagos | 4 | Josie | Lee + Green Kyle + Colin |
+| S12 | Sports | Caterham 420R/R300 | Yes | Club Motorsport, Deep Forest Raceway, Mid Ohio, Road Atlanta | 4 | Josie | Josie + Joyce |
+| S13 | Formula | Super Formula 2020 | Yes | Spa, Bahrain, Okayama, Vallelunga | 4 | Josie | Josie + Toby |
+| S14 | Sports | Multi-Class (GT3 and Street Cars) | No | Heart Lake Complex National, Sachsenring, Acopone Raceway, Red Bull Ring National | 4 | Josie (GT3), Toby (Street) | Josie + Toby + Caleb |
+| S15 | Formula | F1 1986 (single car spec) | No | Silverstone, PGO International, Imola, Kalinago | 4 | Josie | Josie + Toby |
+| S16 | Sports | 70s GT | Yes | Riverside NASCAR, Daytona Road Course, Port Newark, Silver City Circuit | 4 | Toby | Lee + Toby + Lucian |
+| S17 | Formula | F1 2026 V12 (single car spec) | Yes | Red Bull Ring, Barcelona GP Moto, Pinwheel, Albert Park | 4 | Josie | James + Lee + Colin |
+| S18a | Sports | WEC (GT3 and Hypercars) | No | Chang International, Okayama, Autodromo de Palmadera, Fuji Short (no chicane) | 4 | James | James + Lee |
+| S18b | Sports | WEC (GT3 and Hypercars) | No | Watkins Glen Classic Boot, Circuit d'Ajaccio, Sonoma Long, Zandvoort | 4 | Lee | Toby + Walnut |
+| S19 | Formula | Tatuus FA01 | Yes | Imola, COTA, Singapore, Hungaroring | 4 | Josie | Josie + Toby |
+| S20 | Sports | Josie GT (tuners with slicks and aero) | Yes | Oulton Park International Hislops, Tokyo R246, Mid Ohio, Donington Park National | 4 | Josie | Josie + Toby |
+| S21 | Formula | F1 2007 (McLaren, Ferrari) | Yes | Kyalami, Shanghai, Monza, Sepang | 4 | James | Allan + Walnut |
+| S22 | Sports | GT4 | Yes | VIR, Charlotte Roval, Barcelona City Circuit, Road Atlanta | 4 | Josie | Josie + Toby + Kevin + Alfred |
+| S23 | Formula | F1 1990 (McLaren, Ferrari) | Yes | Silverstone, Spa, Suzuka, Interlagos | 4 | Josie | Josie + Colin + Alfred |
+| S24a | Sports | WEC (GT3 and Hypercars) | Yes | Dragon Trail Seaside, Red Bull Ring, Sebring, Fuji | 4 | TBD | TBD |
+| S24b | Sports | Vintage Mini Coopers | Yes | TBD | 4 | TBD | TBD |
 
 ## Scoring System
 
@@ -507,9 +508,10 @@ Weighted scores rank individual driver-season performances using raw stats:
 Win% x 0.20 + Podium% x 0.20 + Top 5 Rate x 0.20 + Pts/Race x 0.20 + FL Rate x 0.05 + Pole Rate x 0.05 + Points Rate x 0.10
 
 Scores are normalized so the best performance in each category = 1.0.
-The raw score is then adjusted by two multipliers:
+The raw score is then adjusted by three multipliers:
 - **Penalty discount**: each penalty costs 1% of the score (floor: 90%).
 - **Field size**: seasons with smaller fields are discounted proportionally against the league average (floor: 87%).
+- **Reverse grid**: reverse-grid seasons get a +5% bonus (starting at the back is harder, so a strong result counts for more). Non-reverse seasons are unaffected.
 
 ## All-Time Weighted Score Rankings
 
@@ -1550,6 +1552,7 @@ Ghin has competed in 11 seasons (63 races). Current rating: 832.9. Peak rating: 
 
 **Type:** Formula Car Season
 **Car:** Super Formula 2020
+**Reverse Grid:** No
 **Venues:** Autopolis, Midfield Raceway, Interlagos
 **Races Per Venue:** 3
 **WDC:** Josie
@@ -1618,6 +1621,7 @@ Pole Position: 2 bonus points, Fastest Lap: 2 bonus points
 
 **Type:** Sports Car Season
 **Car:** Cup Miata
+**Reverse Grid:** No
 **Venues:** Laguna Seca, Watkins Glen Short, Brands Hatch Indy, Red Bull Ring National
 **Races Per Venue:** 3
 **WDC:** Josie
@@ -1739,6 +1743,7 @@ Pole Position: 2 bonus points, Fastest Lap: 2 bonus points
 
 **Type:** Formula Car Season
 **Car:** Tatuus FA01
+**Reverse Grid:** No
 **Venues:** Vallelunga Classic, Tokyo R246, Road America, Suzuka
 **Races Per Venue:** 3
 **WDC:** Josie
@@ -1875,6 +1880,7 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 
 **Type:** Sports Car Season
 **Car:** TCR 2023
+**Reverse Grid:** No
 **Venues:** Midfield Raceway, Usui Circuit, Tsukuba, Misano
 **Races Per Venue:** 3
 **WDC:** James
@@ -2036,6 +2042,7 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 
 **Type:** Formula Car Season
 **Car:** F1 2013 (single car spec)
+**Reverse Grid:** No
 **Venues:** Silverstone, Mugello, Interlagos, Suzuka
 **Races Per Venue:** 3
 **WDC:** Josie
@@ -2209,6 +2216,7 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 
 **Type:** Sports Car Season
 **Car:** Cup Miata
+**Reverse Grid:** No
 **Venues:** Midfield Raceway, VIR North, Zandvoort, Laguna Seca
 **Races Per Venue:** 3
 **WDC:** Josie
@@ -2392,6 +2400,7 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 
 **Type:** Formula Car Season
 **Car:** F1 2000 (single car spec)
+**Reverse Grid:** No
 **Venues:** Nurburgring, Watkins Glen, Brands Hatch, Spa
 **Races Per Venue:** 3
 **WDC:** Josie
@@ -2576,6 +2585,7 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 
 **Type:** Sports Car Season
 **Car:** Street Cars
+**Reverse Grid:** No
 **Venues:** Oran Park, Silver Coin, Tsukuba, Zwartkops
 **Races Per Venue:** 3
 **WDC:** Green Kyle
@@ -2775,6 +2785,7 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 
 **Type:** Formula Car Season
 **Car:** F1 2023 (single car spec)
+**Reverse Grid:** No
 **Venues:** Mugello, Pinwheel, Dragon Trail Seaside, Autodromo de Palmadera (chicane)
 **Races Per Venue:** 3
 **WDC:** Josie
@@ -2971,6 +2982,7 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 
 **Type:** Sports Car Season
 **Car:** TCR 2023
+**Reverse Grid:** Yes
 **Venues:** Road America, Red Bull Ring, Albert Park, Estoril
 **Races Per Venue:** 4
 **WDC:** Josie
@@ -3179,6 +3191,7 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 
 **Type:** Formula Car Season
 **Car:** F1 1991 (McLaren, Williams, Ferrari)
+**Reverse Grid:** Yes
 **Venues:** Circuit d'Ajaccio, Autopolis, Suzuka, Interlagos
 **Races Per Venue:** 4
 **WDC:** Josie
@@ -3300,6 +3313,7 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 
 **Type:** Sports Car Season
 **Car:** Caterham 420R/R300
+**Reverse Grid:** Yes
 **Venues:** Club Motorsport, Deep Forest Raceway, Mid Ohio, Road Atlanta
 **Races Per Venue:** 4
 **WDC:** Josie
@@ -3407,6 +3421,7 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 
 **Type:** Formula Car Season
 **Car:** Super Formula 2020
+**Reverse Grid:** Yes
 **Venues:** Spa, Bahrain, Okayama, Vallelunga
 **Races Per Venue:** 4
 **WDC:** Josie
@@ -3539,6 +3554,7 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 
 **Type:** Sports Car Season
 **Car:** Multi-Class (GT3 and Street Cars)
+**Reverse Grid:** No
 **Venues:** Heart Lake Complex National, Sachsenring, Acopone Raceway, Red Bull Ring National
 **Races Per Venue:** 4
 **WDC:** Josie (GT3), Toby (Street)
@@ -3690,6 +3706,7 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 
 **Type:** Formula Car Season
 **Car:** F1 1986 (single car spec)
+**Reverse Grid:** No
 **Venues:** Silverstone, PGO International, Imola, Kalinago
 **Races Per Venue:** 4
 **WDC:** Josie
@@ -3840,6 +3857,7 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 
 **Type:** Sports Car Season
 **Car:** 70s GT
+**Reverse Grid:** Yes
 **Venues:** Riverside NASCAR, Daytona Road Course, Port Newark, Silver City Circuit
 **Races Per Venue:** 4
 **WDC:** Toby
@@ -3976,6 +3994,7 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 
 **Type:** Formula Car Season
 **Car:** F1 2026 V12 (single car spec)
+**Reverse Grid:** Yes
 **Venues:** Red Bull Ring, Barcelona GP Moto, Pinwheel, Albert Park
 **Races Per Venue:** 4
 **WDC:** Josie
@@ -4097,6 +4116,7 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 
 **Type:** Sports Car Season
 **Car:** WEC (GT3 and Hypercars)
+**Reverse Grid:** No
 **Venues:** Chang International, Okayama, Autodromo de Palmadera, Fuji Short (no chicane)
 **Races Per Venue:** 4
 **WDC:** James
@@ -4265,6 +4285,7 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 
 **Type:** Sports Car Season
 **Car:** WEC (GT3 and Hypercars)
+**Reverse Grid:** No
 **Venues:** Watkins Glen Classic Boot, Circuit d'Ajaccio, Sonoma Long, Zandvoort
 **Races Per Venue:** 4
 **WDC:** Lee
@@ -4424,6 +4445,7 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 
 **Type:** Formula Car Season
 **Car:** Tatuus FA01
+**Reverse Grid:** Yes
 **Venues:** Imola, COTA, Singapore, Hungaroring
 **Races Per Venue:** 4
 **WDC:** Josie
@@ -4592,6 +4614,7 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 
 **Type:** Sports Car Season
 **Car:** Josie GT (tuners with slicks and aero)
+**Reverse Grid:** Yes
 **Venues:** Oulton Park International Hislops, Tokyo R246, Mid Ohio, Donington Park National
 **Races Per Venue:** 4
 **WDC:** Josie
@@ -4750,6 +4773,7 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 
 **Type:** Formula Car Season
 **Car:** F1 2007 (McLaren, Ferrari)
+**Reverse Grid:** Yes
 **Venues:** Kyalami, Shanghai, Monza, Sepang
 **Races Per Venue:** 4
 **WDC:** James
@@ -4866,6 +4890,7 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 
 **Type:** Sports Car Season
 **Car:** GT4
+**Reverse Grid:** Yes
 **Venues:** VIR, Charlotte Roval, Barcelona City Circuit, Road Atlanta
 **Races Per Venue:** 4
 **WDC:** Josie
@@ -5074,6 +5099,7 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 
 **Type:** Formula Car Season
 **Car:** F1 1990 (McLaren, Ferrari)
+**Reverse Grid:** Yes
 **Venues:** Silverstone, Spa, Suzuka, Interlagos
 **Races Per Venue:** 4
 **WDC:** Josie
