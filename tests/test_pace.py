@@ -149,3 +149,50 @@ def test_avg_pace_gap_sets_pace_setter_and_follower():
     follower = [i for i in y if i.kind == "pace_gap_to_leader"]
     assert follower and follower[0].payload["pace_rank"] == 2
     assert 0.5 < follower[0].payload["gap_pct"] < 1.5   # ~1%
+
+
+def test_pace_stats_single_clean_lap_has_null_dev():
+    # Two raw laps → lap 1 dropped → one clean lap → no meaningful spread.
+    stats = races._pace_stats([99000, 90000])
+    assert stats["laps_used"] == 1
+    assert stats["stdev_ms"] is None
+    assert stats["cv_pct"] is None
+
+
+def test_pace_setter_participation_guard():
+    con = _detector_db()
+    # 5-round season. A and C run all 5; B runs only rounds 1-2 but is quickest
+    # there. B must NOT be crowned pace-setter (ran < 60% of rounds).
+    for rn in (1, 2, 3, 4, 5):
+        _pace(con, "S1", 1, rn, "A", 90000, 89000)
+        _pace(con, "S1", 1, rn, "C", 90900, 90000)
+    for rn in (1, 2):
+        _pace(con, "S1", 1, rn, "B", 88000, 87000)
+    assert any(i.kind == "pace_setter_season" for i in pace.detect_avg_pace_gap(con, "A"))
+    assert pace.detect_avg_pace_gap(con, "B") == []   # excluded, not ranked at all
+
+
+def test_all_stats_avg_finish_pace_and_overtaken():
+    con = _detector_db()
+    con.execute(
+        "CREATE TABLE race_results (season_id VARCHAR, venue VARCHAR, venue_order INT, "
+        "race_num INT, driver VARCHAR, car VARCHAR, position INT, points INT, "
+        "is_pole BOOL, is_fastest_lap BOOL, penalty INT, dns BOOL)"
+    )
+    con.executemany(
+        "INSERT INTO race_results VALUES (?,?,?,?,?,?,?,?,?,?,?,?)",
+        [("S1", "V", 1, 1, "X", "c", 2, 25, False, False, 0, False),
+         ("S1", "V", 1, 2, "X", "c", 4, 20, False, False, 0, False)],
+    )
+    for rn in (1, 2):
+        _pace(con, "S1", 1, rn, "X", 90000, 89000)
+        _pace(con, "S1", 1, rn, "Y", 91000, 90000)
+    con.executemany(
+        "INSERT INTO race_overtakes VALUES (?,?,?,?,?,?,?)",
+        [("S1", "V", 1, 1, "X", 3, 1), ("S1", "V", 1, 2, "X", 2, 2)],
+    )
+    from cup_racing_insights.render.season import _all_stats
+    avg_finish, pace_vs_field, overtaken = _all_stats(con, "X", "S1")
+    assert avg_finish == 3.0                      # (2 + 4) / 2
+    assert -0.7 < pace_vs_field < -0.4            # ~-0.55% vs 90500 field avg
+    assert overtaken == 3                          # 1 + 2 suffered

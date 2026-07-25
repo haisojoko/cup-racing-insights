@@ -22,6 +22,10 @@ from ..models import Insight, InsightCategory
 _MIN_FIELD = 3
 # Minimum races in a season before an average-pace ranking is trustworthy.
 _MIN_SEASON_RACES = 3
+# Fraction of the season's rounds a driver must have raced (with representative
+# pace) to be ranked against peers — stops a driver who only ran the rounds they
+# were quick at from being crowned pace-setter over a full-season regular.
+_MIN_PARTICIPATION = 0.6
 # A driver must set at least this many clean laps to count as having a
 # representative pace / best lap (filters out one-lap DNFs and outlap-only runs
 # whose "best" time would otherwise define a garbage P2 gap).
@@ -167,6 +171,11 @@ def detect_avg_pace_gap(con: DuckDBPyConnection, driver: str) -> list[Insight]:
         WITH representative AS (
             SELECT * FROM race_pace WHERE laps_used >= ?
         ),
+        season_rounds AS (
+            SELECT season_id, COUNT(DISTINCT (venue_order, race_num)) AS rounds
+              FROM representative
+          GROUP BY season_id
+        ),
         race_best AS (
             SELECT season_id, venue_order, race_num, MIN(avg_ms) AS best_avg
               FROM representative
@@ -180,20 +189,25 @@ def detect_avg_pace_gap(con: DuckDBPyConnection, driver: str) -> list[Insight]:
               JOIN race_best rb USING (season_id, venue_order, race_num)
           GROUP BY p.season_id, p.driver
         ),
+        eligible AS (
+            SELECT g.*, sr.rounds
+              FROM gaps g
+              JOIN season_rounds sr USING (season_id)
+             WHERE g.races >= GREATEST(?, CEIL(? * sr.rounds))
+        ),
         ranked AS (
             SELECT season_id, driver, gap_pct, races,
                    RANK() OVER (PARTITION BY season_id ORDER BY gap_pct) AS pace_rank,
                    COUNT(*) OVER (PARTITION BY season_id) AS cohort,
                    LEAD(gap_pct) OVER (PARTITION BY season_id ORDER BY gap_pct) AS next_gap_pct
-              FROM gaps
-             WHERE races >= ?
+              FROM eligible
         )
         SELECT season_id, gap_pct, races, pace_rank, cohort, next_gap_pct
           FROM ranked
          WHERE driver = ?
          ORDER BY gap_pct
         """,
-        [_MIN_CLEAN_LAPS, _MIN_SEASON_RACES, driver],
+        [_MIN_CLEAN_LAPS, _MIN_SEASON_RACES, _MIN_PARTICIPATION, driver],
     ).fetchall()
     if not rows:
         return []

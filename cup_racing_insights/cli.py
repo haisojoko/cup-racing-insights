@@ -207,6 +207,7 @@ def _render_season_card(
     save_html: bool,
     width: int,
     height: int,
+    include_all: bool = False,
 ) -> None:
     """Render the single-season celebration card.
 
@@ -230,7 +231,7 @@ def _render_season_card(
                 f"cards are for completed seasons only."
             )
             raise typer.Exit(1)
-        summary = build_season_summary(con, driver, season)
+        summary = build_season_summary(con, driver, season, include_all=include_all)
 
     if summary is None:
         console.print(
@@ -301,6 +302,10 @@ def infographic(
         None, "--season",
         help="Render a single-season celebration card (e.g. --season S21). Overrides card modes.",
     ),
+    all_stats: bool = typer.Option(
+        False, "--all",
+        help="Season mode: add analytical stats (avg finish, pace vs field, times overtaken). May read as unflattering.",
+    ),
 ):
     """Render a polished driver-card PNG infographic.
 
@@ -316,7 +321,7 @@ def infographic(
     """
     # --- Season celebration mode short-circuits the insight pipeline -------
     if season is not None:
-        _render_season_card(driver, season, out, save_html, width, height)
+        _render_season_card(driver, season, out, save_html, width, height, include_all=all_stats)
         raise typer.Exit(0)
 
     with dbmod.open_db() as con:

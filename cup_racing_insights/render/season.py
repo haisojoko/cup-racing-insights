@@ -74,6 +74,10 @@ class SeasonSummary:
     lap_consistency_cv: float | None = None   # mean per-race lap-time CV %
     season_overtakes: int | None = None       # on-track passes made
     season_contacts: int | None = None        # collisions involved in
+    # --all analytical stats (None unless include_all and data present).
+    avg_finish: float | None = None           # mean finishing position (started races)
+    pace_vs_field_pct: float | None = None     # mean % vs the race field average (− = faster)
+    times_overtaken: int | None = None        # on-track passes suffered
     is_wcc: bool = False               # on the WCC-winning team this season
     wcc_team: str | None = None        # winning roster label, e.g. "A + B + C"
     wcc_teammates: list[str] = field(default_factory=list)  # co-winners (not this driver)
@@ -152,6 +156,46 @@ def _race_dataset_stats(
     return float(cv), int(ot), int(contacts)
 
 
+def _all_stats(
+    con: DuckDBPyConnection, driver: str, season_id: str
+) -> tuple[float | None, float | None, int | None]:
+    """`--all` analytical stats: average finish, pace vs the field, times
+    overtaken. Discouraging-by-nature, so opt-in. Defensive like the others."""
+    try:
+        avg_finish = con.execute(
+            "SELECT AVG(position) FROM race_results "
+            "WHERE driver = ? AND season_id = ? AND NOT dns AND position IS NOT NULL",
+            [driver, season_id],
+        ).fetchone()[0]
+        pace_vs_field = con.execute(
+            """
+            WITH rep AS (
+                SELECT * FROM race_pace WHERE season_id = ? AND laps_used >= 2
+            ),
+            field AS (
+                SELECT venue_order, race_num, AVG(avg_ms) AS field_avg
+                  FROM rep GROUP BY venue_order, race_num
+            )
+            SELECT AVG((r.avg_ms - f.field_avg) / f.field_avg) * 100
+              FROM rep r JOIN field f USING (venue_order, race_num)
+             WHERE r.driver = ?
+            """,
+            [season_id, driver],
+        ).fetchone()[0]
+        overtaken = con.execute(
+            "SELECT COALESCE(SUM(suffered), 0) FROM race_overtakes "
+            "WHERE driver = ? AND season_id = ?",
+            [driver, season_id],
+        ).fetchone()[0]
+    except Exception:  # noqa: BLE001
+        return None, None, None
+    return (
+        float(avg_finish) if avg_finish is not None else None,
+        float(pace_vs_field) if pace_vs_field is not None else None,
+        int(overtaken) if overtaken is not None else None,
+    )
+
+
 def _celebration_tier(wins: int, podiums: int, points: int, is_wdc: bool) -> str:
     if is_wdc:
         return "champion"
@@ -165,7 +209,7 @@ def _celebration_tier(wins: int, podiums: int, points: int, is_wdc: bool) -> str
 
 
 def build_season_summary(
-    con: DuckDBPyConnection, driver: str, season_id: str
+    con: DuckDBPyConnection, driver: str, season_id: str, include_all: bool = False
 ) -> SeasonSummary | None:
     """Aggregate one driver's season into a celebration-ready summary.
 
@@ -221,6 +265,9 @@ def build_season_summary(
     is_wdc = (wdc or "").strip().lower() == driver.lower()
     is_wcc, wcc_team, wcc_teammates = _wcc_membership(con, driver, season_id)
     lap_cv, season_ot, season_contacts = _race_dataset_stats(con, driver, season_id)
+    avg_finish = pace_vs_field = times_overtaken = None
+    if include_all:
+        avg_finish, pace_vs_field, times_overtaken = _all_stats(con, driver, season_id)
 
     weighted = con.execute(
         """
@@ -278,6 +325,9 @@ def build_season_summary(
         lap_consistency_cv=lap_cv,
         season_overtakes=season_ot,
         season_contacts=season_contacts,
+        avg_finish=avg_finish,
+        pace_vs_field_pct=pace_vs_field,
+        times_overtaken=times_overtaken,
         is_wcc=is_wcc,
         wcc_team=wcc_team,
         wcc_teammates=wcc_teammates,
@@ -392,4 +442,17 @@ def _attach_presentation(s: SeasonSummary) -> None:
             "value": f"{s.lap_consistency_cv:.2f}%",
             "label": "Lap consistency",
         })
+
+    # ---- --all analytical tiles (opt-in; can read as unflattering) --------
+    if s.avg_finish is not None:
+        tiles.append({"glyph": "finish", "value": f"P{s.avg_finish:.1f}", "label": "Avg finish"})
+    if s.pace_vs_field_pct is not None:
+        sign = "+" if s.pace_vs_field_pct >= 0 else "−"
+        tiles.append({
+            "glyph": "speed",
+            "value": f"{sign}{abs(s.pace_vs_field_pct):.2f}%",
+            "label": "Pace vs field",
+        })
+    if s.times_overtaken is not None:
+        tiles.append({"glyph": "overtaken", "value": s.times_overtaken, "label": "Times overtaken"})
     s.stat_tiles = tiles

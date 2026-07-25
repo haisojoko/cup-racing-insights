@@ -46,8 +46,8 @@ CREATE TABLE race_pace (
     avg_ms       DOUBLE  NOT NULL,   -- mean of clean laps
     best_ms      DOUBLE  NOT NULL,
     worst_ms     DOUBLE  NOT NULL,   -- slowest clean lap
-    stdev_ms     DOUBLE  NOT NULL,   -- population stdev of clean laps
-    cv_pct       DOUBLE  NOT NULL,   -- stdev / mean * 100 (track-agnostic)
+    stdev_ms     DOUBLE,             -- population stdev; NULL with <2 clean laps
+    cv_pct       DOUBLE,             -- stdev / mean * 100 (track-agnostic); NULL if <2
     laps_used    INTEGER NOT NULL
 );
 
@@ -110,13 +110,16 @@ def _pace_stats(laps: list) -> dict[str, float] | None:
     if not clean:
         return None
     avg = statistics.fmean(clean)
-    stdev = statistics.pstdev(clean) if len(clean) > 1 else 0.0
+    # A single clean lap has no meaningful spread — leave stdev/cv NULL rather
+    # than reporting a misleading 0 ("perfectly consistent").
+    stdev = statistics.pstdev(clean) if len(clean) > 1 else None
+    cv = (stdev / avg * 100.0) if (stdev is not None and avg) else None
     return {
         "avg_ms": avg,
         "best_ms": min(clean),
         "worst_ms": max(clean),
         "stdev_ms": stdev,
-        "cv_pct": (stdev / avg * 100.0) if avg else 0.0,
+        "cv_pct": cv,
         "laps_used": len(clean),
     }
 

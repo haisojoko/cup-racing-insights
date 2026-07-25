@@ -229,7 +229,15 @@ would otherwise report absurd (10s+) "margins".
 
 **Season-card stats** (not detectors — glyph tiles on `infographic --season`,
 from the same tables): lap-time consistency (mean per-race coefficient of
-variation, track-agnostic), season overtakes made, season contacts.
+variation, track-agnostic), season overtakes made, season contacts. Adding
+`--all` appends three analytical (can-read-as-unflattering) tiles: average
+finish, pace vs field (mean % over the race field average, − = faster), and
+times overtaken.
+
+Notes: `pace_setter_season` (D-109) only ranks drivers who raced ≥60% of the
+season's rounds, so a part-season driver can't be crowned over a regular.
+Contacts reflect de-mirrored physical collisions (the processor now collapses
+AC's twice-logged events), roughly halving prior counts.
 
 ## 16 · Data-Limited (out of scope without new data)
 
