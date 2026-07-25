@@ -70,6 +70,10 @@ class SeasonSummary:
 
     is_wdc: bool
     celebration_tier: str
+    # Granular-dataset stats (None when the season has no telemetry loaded).
+    lap_consistency_cv: float | None = None   # mean per-race lap-time CV %
+    season_overtakes: int | None = None       # on-track passes made
+    season_contacts: int | None = None        # collisions involved in
     is_wcc: bool = False               # on the WCC-winning team this season
     wcc_team: str | None = None        # winning roster label, e.g. "A + B + C"
     wcc_teammates: list[str] = field(default_factory=list)  # co-winners (not this driver)
@@ -114,6 +118,38 @@ def _wcc_membership(
         return False, None, []
     teammates = [m for m in members if m.lower() != dl]
     return True, roster, teammates
+
+
+def _race_dataset_stats(
+    con: DuckDBPyConnection, driver: str, season_id: str
+) -> tuple[float | None, int | None, int | None]:
+    """Season lap-consistency (mean CV%), overtakes made, and contacts.
+
+    Reads the granular tables loaded from the JSON dataset. Defensive by design:
+    a Markdown-only build (or the minimal in-memory schemas used in tests) omits
+    these tables, so any failure degrades to (None, None, None) — no tiles.
+    """
+    try:
+        cv = con.execute(
+            "SELECT AVG(cv_pct) FROM race_pace "
+            "WHERE driver = ? AND season_id = ? AND laps_used >= 2",
+            [driver, season_id],
+        ).fetchone()[0]
+        ot = con.execute(
+            "SELECT COALESCE(SUM(made), 0) FROM race_overtakes "
+            "WHERE driver = ? AND season_id = ?",
+            [driver, season_id],
+        ).fetchone()[0]
+        contacts = con.execute(
+            "SELECT COALESCE(SUM(contacts), 0) FROM race_contacts "
+            "WHERE driver = ? AND season_id = ?",
+            [driver, season_id],
+        ).fetchone()[0]
+    except Exception:  # noqa: BLE001 — tables absent on Markdown-only builds
+        return None, None, None
+    if cv is None:  # no pace rows for this driver/season
+        return None, None, None
+    return float(cv), int(ot), int(contacts)
 
 
 def _celebration_tier(wins: int, podiums: int, points: int, is_wdc: bool) -> str:
@@ -184,6 +220,7 @@ def build_season_summary(
     ppr = (pts / starts) if starts else 0.0
     is_wdc = (wdc or "").strip().lower() == driver.lower()
     is_wcc, wcc_team, wcc_teammates = _wcc_membership(con, driver, season_id)
+    lap_cv, season_ot, season_contacts = _race_dataset_stats(con, driver, season_id)
 
     weighted = con.execute(
         """
@@ -238,6 +275,9 @@ def build_season_summary(
         best_finish_medal=_MEDAL.get(best) if best else None,
         is_wdc=is_wdc,
         celebration_tier=_celebration_tier(wins, podiums, pts, is_wdc),
+        lap_consistency_cv=lap_cv,
+        season_overtakes=season_ot,
+        season_contacts=season_contacts,
         is_wcc=is_wcc,
         wcc_team=wcc_team,
         wcc_teammates=wcc_teammates,
@@ -340,4 +380,16 @@ def _attach_presentation(s: SeasonSummary) -> None:
         "value": f"{s.points_per_race:.1f}",
         "label": "Points / race",
     })
+
+    # ---- Granular-dataset tiles (only when telemetry exists for the season).
+    if s.season_overtakes is not None:
+        tiles.append({"glyph": "overtake", "value": s.season_overtakes, "label": "Overtakes"})
+    if s.season_contacts:  # hide a clean zero on the celebration card
+        tiles.append({"glyph": "contact", "value": s.season_contacts, "label": "Contacts"})
+    if s.lap_consistency_cv is not None:
+        tiles.append({
+            "glyph": "consistency",
+            "value": f"{s.lap_consistency_cv:.2f}%",
+            "label": "Lap consistency",
+        })
     s.stat_tiles = tiles

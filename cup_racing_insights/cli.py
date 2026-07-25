@@ -60,9 +60,12 @@ def rebuild(
     out: Path = typer.Option(
         dbmod.DEFAULT_DB_PATH, "--out", "-o", help="DuckDB output file."
     ),
+    races: Path = typer.Option(
+        dbmod.DEFAULT_RACES_DIR, "--races", help="Race dataset dir (index.json + seasons/). Optional."
+    ),
 ):
-    """Re-parse the markdown and rebuild the DuckDB database."""
-    counts = dbmod.rebuild(data_path=data, db_path=out)
+    """Re-parse the markdown, load the race dataset, and rebuild the DuckDB."""
+    counts = dbmod.rebuild(data_path=data, db_path=out, races_dir=races)
     console.print(f"[green]ok[/green] rebuilt [bold]{out}[/bold]")
     for k, v in counts.items():
         console.print(f"  {k:>16}  {v:>6}")

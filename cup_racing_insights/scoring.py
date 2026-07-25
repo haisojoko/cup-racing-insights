@@ -266,6 +266,14 @@ _RULES: dict[str, ScoringRule] = {
     # --- Championship margins / team
     "wcc_contribution":  ScoringRule(magnitude=("pct", 50, 0.20)),
     "decisive_wcc_year": ScoringRule(),
+
+    # --- Pace / qualifying (granular race dataset). A ~1.5s pole/FL margin is
+    # elite; pace-setter earns the leader bonus and scales with field size.
+    "pole_margin":          ScoringRule(magnitude=("gap_ms", 1500, 0.15)),
+    "dominant_fastest_lap": ScoringRule(magnitude=("gap_ms", 1500, 0.15)),
+    "pace_setter_season":   ScoringRule(leader_field="rank",
+                                        magnitude=("cohort_size", 20, 0.12)),
+    "pace_gap_to_leader":   ScoringRule(),
 }
 
 

@@ -31,10 +31,10 @@ firsts · splits · uniqueness · discipline · current-form · head-to-head
 
 | Status | Count |
 |---|---|
-| ✅ Shipped | 47 |
+| ✅ Shipped | 51 |
 | 📋 Planned | 38 |
-| 🔬 Research / Schema-blocked | 15 |
-| **Total catalogued** | **100** |
+| 🔬 Research / Schema-blocked | 13 |
+| **Total catalogued** | **102** |
 
 ---
 
@@ -209,16 +209,37 @@ firsts · splits · uniqueness · discipline · current-form · head-to-head
 | D-086 | 🔬 | `detect_first_wcc_year` | `first_wcc_year` | head-to-head |
 | D-087 | 🔬 | `detect_only_constant_team_member` | `only_constant_team_member` | head-to-head, uniqueness |
 
-## 15 · Data-Limited (out of scope without new data)
+## 15 · Pace & Qualifying (granular race dataset)
+
+Unlocked by the race-processor JSON dataset (`data/races/`, loaded by
+`races.py` into `race_pace` / `qual_times` / `race_overtakes` /
+`race_contacts`). These detectors return nothing on a Markdown-only build or
+for seasons with no telemetry (coverage is S4–S23).
+
+| ID | Status | Detector | Insight kinds | Card(s) |
+|---|---|---|---|---|
+| D-089 | ✅ | `detect_pole_margin` | `pole_margin` | records |
+| D-108 | ✅ | `detect_dominant_fastest_lap` | `dominant_fastest_lap` | records |
+| D-109 | ✅ | `detect_avg_pace_gap` | `pace_setter_season`, `pace_gap_to_leader` | peer-rank |
+
+Sanity guards (shared): a gap only counts when the field has ≥3 drivers and
+the comparison lap comes from someone with ≥2 clean laps, and pole/FL margins
+are capped at 3% of the reference time — this strips backmarker outlaps that
+would otherwise report absurd (10s+) "margins".
+
+**Season-card stats** (not detectors — glyph tiles on `infographic --season`,
+from the same tables): lap-time consistency (mean per-race coefficient of
+variation, track-agnostic), season overtakes made, season contacts.
+
+## 16 · Data-Limited (out of scope without new data)
 
 | ID | Status | Detector | Reason |
 |---|---|---|---|
-| D-088 | 🔬 | `detect_comeback_drive` | Needs qualifying-vs-race position (we only have pole flag) |
-| D-089 | 🔬 | `detect_pole_margin` | Needs qualifying time gaps |
+| D-088 | 🔬 | `detect_comeback_drive` | Data ready (`qualVsRace` in dataset); detector not yet built |
 | D-090 | 🔬 | `detect_wet_weather_specialist` | No conditions data |
 | D-091 | 🔬 | `detect_pit_strategy_pattern` | No pit-stop data |
-| D-092 | 🔬 | `detect_lap_pace_anomaly` | No lap times |
-| D-093 | 🔬 | `detect_sector_specialist` | No sector data |
+| D-092 | ✅ | `detect_lap_pace_anomaly` | Superseded — pace now in `race_pace`; see D-109 / consistency stat |
+| D-093 | 🔬 | `detect_sector_specialist` | Data-ready once per-lap sectors are loaded (aggregates only for now) |
 
 ---
 

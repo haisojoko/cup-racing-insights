@@ -35,6 +35,7 @@ class SeasonRow:
     races_per_venue: int
     wdc: str
     wcc: str
+    reverse_grid: bool = False  # season ran reverse-grid races (registry "Reverse Grid")
 
 
 @dataclass
@@ -224,31 +225,43 @@ def parse_markdown(path: Path) -> ParsedDataset:
 # ---- Season registry ------------------------------------------------------
 
 def _parse_season_registry(lines: list[str], ds: ParsedDataset) -> None:
-    """Parse the '## Season Registry' table."""
+    """Parse the '## Season Registry' table.
+
+    Column lookup is by HEADER NAME, not fixed position, so inserting a new column
+    (e.g. 'Reverse Grid', added between Car and Venues) can't silently shift every
+    field after it. 'Reverse Grid' is optional and defaults to False when absent.
+    """
     start = _find_section(lines, "## Season Registry")
     if start is None:
         return
-    rows = _read_table_rows(lines, start)
-    # header order: Season | Type | Car | Venues | Races/Venue | WDC | WCC
+    header, rows = _read_table_header_rows(lines, start)
+    idx = {_norm_header(h): i for i, h in enumerate(header)}
+
+    def cell(cells: list[str], *names: str, default: str = "") -> str:
+        for n in names:
+            i = idx.get(n)
+            if i is not None and i < len(cells):
+                return cells[i].strip()
+        return default
+
     for cells in rows:
-        if len(cells) < 7:
-            continue
-        sid = cells[0].strip()
+        sid = cell(cells, "season")
         if not sid.startswith("S"):
             continue
         season_num, season_sub = _parse_season_id(sid)
-        venues = [v.strip() for v in cells[3].split(",") if v.strip()]
+        venues = [v.strip() for v in cell(cells, "venues").split(",") if v.strip()]
         ds.seasons.append(
             SeasonRow(
                 season_id=sid,
                 season_num=season_num,
                 season_sub=season_sub,
-                type=cells[1].strip(),
-                car=cells[2].strip(),
+                type=cell(cells, "type"),
+                car=cell(cells, "car"),
                 venues=venues,
-                races_per_venue=_parse_int(cells[4], 0),
-                wdc=cells[5].strip(),
-                wcc=cells[6].strip(),
+                races_per_venue=_parse_int(cell(cells, "racesvenue"), 0),
+                wdc=cell(cells, "wdc"),
+                wcc=cell(cells, "wcc"),
+                reverse_grid=cell(cells, "reversegrid").lower() in ("yes", "true", "y", "1"),
             )
         )
 

@@ -95,6 +95,8 @@ CARDS: dict[str, Card] = {
         include_kinds=(
             "career_best_finish",
             "career_best_season",
+            "pole_margin",
+            "dominant_fastest_lap",
             "best_venue_weekend",
             "best_season_rank",
             "tightest_season_range",
@@ -177,6 +179,8 @@ CARDS: dict[str, Card] = {
             "league_rank_points",
             "league_rank_races",
             "league_rank_top5",
+            "pace_setter_season",
+            "pace_gap_to_leader",
             # Reserved:
             "league_rank_wins",
             "league_rank_fls",

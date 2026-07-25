@@ -17,6 +17,7 @@ from . import (
     consistency,
     firsts,
     margins,
+    pace,
     peer_rank,
     penalty,
     personal_best,
@@ -82,6 +83,10 @@ ALL_DETECTORS: list[DetectorFn] = [
     uniqueness.detect_multiple_wdc_club,
     uniqueness.detect_only_race_week_sweep,
     uniqueness.detect_only_perfect_podium_venue,
+    # Pace / qualifying (granular race dataset)
+    pace.detect_pole_margin,
+    pace.detect_dominant_fastest_lap,
+    pace.detect_avg_pace_gap,
     # Penalties
     penalty.detect_penalty_summary,
     # Championship margins

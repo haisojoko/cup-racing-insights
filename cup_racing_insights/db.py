@@ -14,11 +14,13 @@ from typing import Iterator
 
 import duckdb
 
+from . import races as races_mod
 from .parser import ParsedDataset, parse_markdown
 
 
 DEFAULT_DB_PATH = Path("output/cup_racing.duckdb")
 DEFAULT_DATA_PATH = Path("data/Cup_Racing_Complete_Data.md")
+DEFAULT_RACES_DIR = races_mod.DEFAULT_RACES_DIR
 
 
 SCHEMA_SQL = """
@@ -37,7 +39,8 @@ CREATE TABLE seasons (
     venues           VARCHAR[] NOT NULL,
     races_per_venue  INTEGER NOT NULL,
     wdc              VARCHAR,
-    wcc              VARCHAR
+    wcc              VARCHAR,
+    reverse_grid     BOOLEAN NOT NULL DEFAULT FALSE
 );
 
 CREATE TABLE career_stats (
@@ -127,10 +130,13 @@ def open_db(db_path: Path = DEFAULT_DB_PATH) -> Iterator[duckdb.DuckDBPyConnecti
 def rebuild(
     data_path: Path = DEFAULT_DATA_PATH,
     db_path: Path = DEFAULT_DB_PATH,
+    races_dir: Path = DEFAULT_RACES_DIR,
 ) -> dict[str, int]:
-    """Parse the markdown and rebuild the DuckDB from scratch.
+    """Parse the markdown, load the race dataset, and rebuild the DuckDB.
 
-    Returns row counts per table.
+    Returns row counts per table. The race dataset (``races_dir``) is optional:
+    if absent, the granular tables are created empty and the Markdown-derived
+    tables still populate.
     """
     ds = parse_markdown(data_path)
     with open_db(db_path) as con:
@@ -143,6 +149,7 @@ def rebuild(
             "weighted_scores": con.execute("SELECT COUNT(*) FROM weighted_scores").fetchone()[0],
             "team_standings": con.execute("SELECT COUNT(*) FROM team_standings").fetchone()[0],
         }
+        counts.update(races_mod.load_races(con, races_dir))
     return counts
 
 
@@ -152,7 +159,7 @@ def _bulk_insert(con: duckdb.DuckDBPyConnection, ds: ParsedDataset) -> None:
         con.executemany(
             """
             INSERT INTO seasons VALUES
-            (?, ?, ?, ?, ?, ?, ?, ?, ?)
+            (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """,
             [
                 (
@@ -165,6 +172,7 @@ def _bulk_insert(con: duckdb.DuckDBPyConnection, ds: ParsedDataset) -> None:
                     s.races_per_venue,
                     s.wdc,
                     s.wcc,
+                    s.reverse_grid,
                 )
                 for s in ds.seasons
             ],
