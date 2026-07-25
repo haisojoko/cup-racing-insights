@@ -228,11 +228,14 @@ are capped at 3% of the reference time — this strips backmarker outlaps that
 would otherwise report absurd (10s+) "margins".
 
 **Season-card stats** (not detectors — glyph tiles on `infographic --season`,
-from the same tables): lap-time consistency (mean per-race coefficient of
-variation, track-agnostic), season overtakes made, season contacts. Adding
-`--all` appends three analytical (can-read-as-unflattering) tiles: average
-finish, pace vs field (mean % over the race field average, − = faster), and
-times overtaken.
+from the same tables). Default card: lap-time consistency (mean per-race
+coefficient of variation, track-agnostic), season overtakes made, season
+contacts, and **average places gained** (grid → finish via `positionChanges.net`,
+loaded into `grid_moves`; shown only when ≥ 0 so it never reads as a demotion).
+`--all` appends analytical (can-read-as-unflattering) tiles: average qualifying
+position, average gap to pole, average finish, pace vs field (mean % over the
+race field average, − = faster), net overtakes (made − suffered), and times
+overtaken.
 
 Notes: `pace_setter_season` (D-109) only ranks drivers who raced ≥60% of the
 season's rounds, so a part-season driver can't be crowned over a regular.

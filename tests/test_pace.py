@@ -83,7 +83,8 @@ def test_load_races_integration(tmp_path):
 def test_load_races_missing_dir_is_empty(tmp_path):
     con = duckdb.connect(":memory:")
     counts = races.load_races(con, tmp_path / "nope")
-    assert counts == {"race_pace": 0, "qual_times": 0, "race_overtakes": 0, "race_contacts": 0}
+    assert counts == {"race_pace": 0, "qual_times": 0, "race_overtakes": 0,
+                      "race_contacts": 0, "grid_moves": 0}
     # Tables still exist (empty), so detectors can query them safely.
     assert con.execute("SELECT COUNT(*) FROM race_pace").fetchone()[0] == 0
 
@@ -191,8 +192,15 @@ def test_all_stats_avg_finish_pace_and_overtaken():
         "INSERT INTO race_overtakes VALUES (?,?,?,?,?,?,?)",
         [("S1", "V", 1, 1, "X", 3, 1), ("S1", "V", 1, 2, "X", 2, 2)],
     )
+    con.executemany(
+        "INSERT INTO qual_times VALUES (?,?,?,?,?,?)",
+        [("S1", "V", 1, "qual1", "X", 90000.0), ("S1", "V", 1, "qual1", "Y", 90500.0)],
+    )
     from cup_racing_insights.render.season import _all_stats
-    avg_finish, pace_vs_field, overtaken = _all_stats(con, "X", "S1")
-    assert avg_finish == 3.0                      # (2 + 4) / 2
-    assert -0.7 < pace_vs_field < -0.4            # ~-0.55% vs 90500 field avg
-    assert overtaken == 3                          # 1 + 2 suffered
+    stats = _all_stats(con, "X", "S1")
+    assert stats["avg_finish"] == 3.0                    # (2 + 4) / 2
+    assert -0.7 < stats["pace_vs_field_pct"] < -0.4      # ~-0.55% vs 90500 field avg
+    assert stats["times_overtaken"] == 3                 # 1 + 2 suffered
+    assert stats["net_overtakes"] == 2                   # (3+2) made − (1+2) suffered
+    assert stats["avg_qual_position"] == 1.0             # X fastest in the one session
+    assert stats["avg_pole_gap_ms"] == 0.0               # X is pole

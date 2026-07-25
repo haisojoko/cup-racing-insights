@@ -36,6 +36,7 @@ DROP TABLE IF EXISTS race_pace;
 DROP TABLE IF EXISTS qual_times;
 DROP TABLE IF EXISTS race_overtakes;
 DROP TABLE IF EXISTS race_contacts;
+DROP TABLE IF EXISTS grid_moves;
 
 CREATE TABLE race_pace (
     season_id    VARCHAR NOT NULL,
@@ -87,6 +88,17 @@ CREATE TABLE race_contacts (
 );
 
 CREATE INDEX idx_contact_driver ON race_contacts(driver);
+
+CREATE TABLE grid_moves (
+    season_id        VARCHAR NOT NULL,
+    venue            VARCHAR NOT NULL,
+    venue_order      INTEGER NOT NULL,
+    race_num         INTEGER NOT NULL,
+    driver           VARCHAR NOT NULL,
+    positions_gained INTEGER NOT NULL  -- grid -> finish (positionChanges.net); + = up
+);
+
+CREATE INDEX idx_grid_driver ON grid_moves(driver);
 """
 
 
@@ -144,6 +156,7 @@ def _extract(season: dict) -> dict[str, list[tuple]]:
     qual_rows: list[tuple] = []
     ot_rows: list[tuple] = []
     contact_rows: list[tuple] = []
+    grid_rows: list[tuple] = []
 
     for ev in season.get("events", []):
         venue = ev.get("venue", "")
@@ -188,7 +201,14 @@ def _extract(season: dict) -> dict[str, list[tuple]]:
             for driver, n in contacts.items():
                 contact_rows.append((sid, venue, vorder, rnum, driver, n))
 
-    return {"pace": pace_rows, "qual": qual_rows, "overtakes": ot_rows, "contacts": contact_rows}
+            # positionChanges is null on low-confidence grids — skip those races.
+            for driver, ch in (race.get("positionChanges") or {}).items():
+                net = ch.get("net") if isinstance(ch, dict) else None
+                if net is not None:
+                    grid_rows.append((sid, venue, vorder, rnum, driver, int(net)))
+
+    return {"pace": pace_rows, "qual": qual_rows, "overtakes": ot_rows,
+            "contacts": contact_rows, "grid": grid_rows}
 
 
 def load_races(con: duckdb.DuckDBPyConnection, races_dir: Path = DEFAULT_RACES_DIR) -> dict[str, int]:
@@ -200,7 +220,7 @@ def load_races(con: duckdb.DuckDBPyConnection, races_dir: Path = DEFAULT_RACES_D
     con.execute(RACES_SCHEMA_SQL)
     files = _iter_season_files(races_dir) if races_dir.exists() else []
 
-    all_rows: dict[str, list[tuple]] = {"pace": [], "qual": [], "overtakes": [], "contacts": []}
+    all_rows: dict[str, list[tuple]] = {"pace": [], "qual": [], "overtakes": [], "contacts": [], "grid": []}
     for path in files:
         try:
             season = json.loads(path.read_text(encoding="utf-8"))
@@ -217,10 +237,13 @@ def load_races(con: duckdb.DuckDBPyConnection, races_dir: Path = DEFAULT_RACES_D
         con.executemany("INSERT INTO race_overtakes VALUES (?,?,?,?,?,?,?)", all_rows["overtakes"])
     if all_rows["contacts"]:
         con.executemany("INSERT INTO race_contacts VALUES (?,?,?,?,?,?)", all_rows["contacts"])
+    if all_rows["grid"]:
+        con.executemany("INSERT INTO grid_moves VALUES (?,?,?,?,?,?)", all_rows["grid"])
 
     return {
         "race_pace": len(all_rows["pace"]),
         "qual_times": len(all_rows["qual"]),
         "race_overtakes": len(all_rows["overtakes"]),
         "race_contacts": len(all_rows["contacts"]),
+        "grid_moves": len(all_rows["grid"]),
     }
