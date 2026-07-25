@@ -75,6 +75,8 @@ class SeasonSummary:
     season_overtakes: int | None = None       # on-track passes made
     season_contacts: int | None = None        # collisions involved in
     avg_positions_gained: float | None = None  # mean grid→finish (default card; hidden if <0)
+    best_drive: int | None = None             # biggest single-race climb (hidden if ≤0)
+    clean_races: int | None = None            # contact-free races run (hidden if 0)
     # --all analytical stats (None unless include_all and data present).
     avg_finish: float | None = None           # mean finishing position (started races)
     pace_vs_field_pct: float | None = None     # mean % vs the race field average (− = faster)
@@ -130,13 +132,14 @@ def _wcc_membership(
 
 def _race_dataset_stats(
     con: DuckDBPyConnection, driver: str, season_id: str
-) -> tuple[float | None, int | None, int | None, float | None]:
-    """Season lap-consistency (mean CV%), overtakes made, contacts, and mean
-    positions gained (grid → finish, confident grids only).
+) -> dict[str, Any]:
+    """Default-card granular stats: lap consistency (mean CV%), overtakes made,
+    contacts, mean places gained (grid → finish), best single-race climb, and
+    clean (contact-free) races.
 
-    Reads the granular tables loaded from the JSON dataset. Defensive by design:
-    a Markdown-only build (or the minimal in-memory schemas used in tests) omits
-    these tables, so any failure degrades to all-None — no tiles.
+    Reads the tables loaded from the JSON dataset. Defensive by design: a
+    Markdown-only build (or the minimal in-memory schemas used in tests) omits
+    these tables, so any failure degrades to {} — no tiles.
     """
     try:
         cv = con.execute(
@@ -144,6 +147,8 @@ def _race_dataset_stats(
             "WHERE driver = ? AND season_id = ? AND laps_used >= 2",
             [driver, season_id],
         ).fetchone()[0]
+        if cv is None:  # no pace rows for this driver/season → no granular tiles
+            return {}
         ot = con.execute(
             "SELECT COALESCE(SUM(made), 0) FROM race_overtakes "
             "WHERE driver = ? AND season_id = ?",
@@ -159,11 +164,31 @@ def _race_dataset_stats(
             "WHERE driver = ? AND season_id = ?",
             [driver, season_id],
         ).fetchone()[0]
+        best_drive = con.execute(
+            "SELECT MAX(positions_gained) FROM grid_moves "
+            "WHERE driver = ? AND season_id = ?",
+            [driver, season_id],
+        ).fetchone()[0]
+        # A clean race = one the driver ran (has pace) with zero contacts.
+        ran, incident = con.execute(
+            """
+            SELECT (SELECT COUNT(DISTINCT (venue_order, race_num)) FROM race_pace
+                     WHERE driver = ? AND season_id = ?),
+                   (SELECT COUNT(DISTINCT (venue_order, race_num)) FROM race_contacts
+                     WHERE driver = ? AND season_id = ?)
+            """,
+            [driver, season_id, driver, season_id],
+        ).fetchone()
     except Exception:  # noqa: BLE001 — tables absent on Markdown-only builds
-        return None, None, None, None
-    if cv is None:  # no pace rows for this driver/season
-        return None, None, None, None
-    return float(cv), int(ot), int(contacts), (float(gained) if gained is not None else None)
+        return {}
+    return {
+        "lap_consistency_cv": float(cv),
+        "season_overtakes": int(ot),
+        "season_contacts": int(contacts),
+        "avg_positions_gained": float(gained) if gained is not None else None,
+        "best_drive": int(best_drive) if best_drive is not None else None,
+        "clean_races": int((ran or 0) - (incident or 0)),
+    }
 
 
 def _all_stats(
@@ -308,7 +333,7 @@ def build_season_summary(
     ppr = (pts / starts) if starts else 0.0
     is_wdc = (wdc or "").strip().lower() == driver.lower()
     is_wcc, wcc_team, wcc_teammates = _wcc_membership(con, driver, season_id)
-    lap_cv, season_ot, season_contacts, avg_gained = _race_dataset_stats(con, driver, season_id)
+    gstats = _race_dataset_stats(con, driver, season_id)
     all_stats = _all_stats(con, driver, season_id) if include_all else {}
 
     weighted = con.execute(
@@ -364,10 +389,12 @@ def build_season_summary(
         best_finish_medal=_MEDAL.get(best) if best else None,
         is_wdc=is_wdc,
         celebration_tier=_celebration_tier(wins, podiums, pts, is_wdc),
-        lap_consistency_cv=lap_cv,
-        season_overtakes=season_ot,
-        season_contacts=season_contacts,
-        avg_positions_gained=avg_gained,
+        lap_consistency_cv=gstats.get("lap_consistency_cv"),
+        season_overtakes=gstats.get("season_overtakes"),
+        season_contacts=gstats.get("season_contacts"),
+        avg_positions_gained=gstats.get("avg_positions_gained"),
+        best_drive=gstats.get("best_drive"),
+        clean_races=gstats.get("clean_races"),
         avg_finish=all_stats.get("avg_finish"),
         pace_vs_field_pct=all_stats.get("pace_vs_field_pct"),
         times_overtaken=all_stats.get("times_overtaken"),
@@ -482,6 +509,8 @@ def _attach_presentation(s: SeasonSummary) -> None:
         tiles.append({"glyph": "overtake", "value": s.season_overtakes, "label": "Overtakes"})
     if s.season_contacts:  # hide a clean zero on the celebration card
         tiles.append({"glyph": "contact", "value": s.season_contacts, "label": "Contacts"})
+    if s.clean_races:  # contact-free races run — only when there's ≥1 to celebrate
+        tiles.append({"glyph": "clean", "value": s.clean_races, "label": "Clean races"})
     if s.lap_consistency_cv is not None:
         tiles.append({
             "glyph": "consistency",
@@ -496,6 +525,8 @@ def _attach_presentation(s: SeasonSummary) -> None:
             "value": f"+{s.avg_positions_gained:.1f}",
             "label": "Avg places gained",
         })
+    if s.best_drive and s.best_drive > 0:  # biggest single-race climb
+        tiles.append({"glyph": "surge", "value": f"+{s.best_drive}", "label": "Best drive"})
 
     # ---- --all analytical tiles (opt-in; can read as unflattering) --------
     if s.avg_qual_position is not None:
