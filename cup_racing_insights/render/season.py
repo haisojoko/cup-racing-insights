@@ -16,10 +16,44 @@ All figures come from the existing schema scoped to one season.
 
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass, field
 from typing import Any
 
 from duckdb import DuckDBPyConnection
+
+
+def _champion_names(wdc: str | None) -> list[str]:
+    """Champion name(s) from a `seasons.wdc` cell.
+
+    The cell is usually one name ("Josie") but split-class seasons pack several,
+    each tagged with its class: "Josie (GT3), Toby (Street)". We split on commas
+    and strip the trailing "(Class)" qualifier so each champion is matchable.
+    """
+    if not wdc:
+        return []
+    names = []
+    for part in wdc.split(","):
+        name = re.sub(r"\s*\([^)]*\)\s*$", "", part).strip()
+        if name:
+            names.append(name)
+    return names
+
+
+def _is_champion(wdc: str | None, driver: str) -> bool:
+    """Did `driver` win a title this season — including a class title in a
+    split-champion season?"""
+    dl = driver.strip().lower()
+    return any(n.lower() == dl for n in _champion_names(wdc))
+
+
+def _pool_makes(car: str | None) -> list[str]:
+    """Car makes offered in a season, parsed from the pool label's parenthetical:
+    "F1 1990 (McLaren, Ferrari)" → ["McLaren", "Ferrari"]."""
+    m = re.search(r"\(([^)]*)\)", car or "")
+    if not m:
+        return []
+    return [x.strip() for x in m.group(1).split(",") if x.strip()]
 
 
 # Ordinal-position medal tiers. P1–P3 read as podium metal; P4+ is a clean
@@ -33,6 +67,24 @@ _TIER_COPY = {
     "points":   "A Points-Scoring Season",
     "completed": "Season Completed",
 }
+
+# Track-slug noise the processor prefixes/suffixes onto venue names (garage
+# codes, "prototype" builds, trailing revision numbers). Stripped for display
+# so a tile reads "Silverstone", not "Ks Silverstone 66".
+_VENUE_NOISE = {"prototype", "lidar", "acu", "ks", "rt", "acr"}
+
+
+def _short_venue(name: str | None) -> str:
+    """Human-friendly venue label: drop leading garage/build noise and trailing
+    revision numbers, keep the rest. Never mangles a clean name."""
+    if not name:
+        return ""
+    tokens = name.split()
+    while tokens and (tokens[0].lower() in _VENUE_NOISE or tokens[0].isdigit()):
+        tokens.pop(0)
+    while tokens and tokens[-1].isdigit():
+        tokens.pop()
+    return " ".join(tokens) or name
 
 
 @dataclass
@@ -69,13 +121,17 @@ class SeasonSummary:
     best_finish_medal: str | None
 
     is_wdc: bool
-    celebration_tier: str
+    wdc_number: int = 0        # career title ordinal up to & incl. this season
+    driver_car: str | None = None   # the make this driver actually ran (e.g. "McLaren")
+    car_ruleset: str | None = None  # the ruleset/era label (e.g. "F1 1990")
+    celebration_tier: str = "completed"
     # Granular-dataset stats (None when the season has no telemetry loaded).
     lap_consistency_cv: float | None = None   # mean per-race lap-time CV %
     season_overtakes: int | None = None       # on-track passes made
     season_contacts: int | None = None        # collisions involved in
     avg_positions_gained: float | None = None  # mean grid→finish (default card; hidden if <0)
     best_drive: int | None = None             # biggest single-race climb (hidden if ≤0)
+    best_drive_venue: str | None = None       # venue of that best-drive race
     clean_races: int | None = None            # contact-free races run (hidden if 0)
     # --all analytical stats (None unless include_all and data present).
     avg_finish: float | None = None           # mean finishing position (started races)
@@ -91,6 +147,7 @@ class SeasonSummary:
     gauges: list[dict[str, Any]] = field(default_factory=list)
     rate_tiles: list[dict[str, Any]] = field(default_factory=list)
     stat_tiles: list[dict[str, Any]] = field(default_factory=list)
+    stat_sections: list[dict[str, Any]] = field(default_factory=list)
 
 
 def _and_join(names: list[str]) -> str:
@@ -164,11 +221,14 @@ def _race_dataset_stats(
             "WHERE driver = ? AND season_id = ?",
             [driver, season_id],
         ).fetchone()[0]
-        best_drive = con.execute(
-            "SELECT MAX(positions_gained) FROM grid_moves "
-            "WHERE driver = ? AND season_id = ?",
+        bd = con.execute(
+            "SELECT venue, positions_gained FROM grid_moves "
+            "WHERE driver = ? AND season_id = ? "
+            "ORDER BY positions_gained DESC, venue_order LIMIT 1",
             [driver, season_id],
-        ).fetchone()[0]
+        ).fetchone()
+        best_drive = bd[1] if bd else None
+        best_drive_venue = bd[0] if bd else None
         # A clean race = one the driver ran (has pace) with zero contacts.
         ran, incident = con.execute(
             """
@@ -187,6 +247,7 @@ def _race_dataset_stats(
         "season_contacts": int(contacts),
         "avg_positions_gained": float(gained) if gained is not None else None,
         "best_drive": int(best_drive) if best_drive is not None else None,
+        "best_drive_venue": best_drive_venue,
         "clean_races": int((ran or 0) - (incident or 0)),
     }
 
@@ -265,6 +326,31 @@ def _all_stats(
     }
 
 
+def _driver_car(
+    con: DuckDBPyConnection, driver: str, season_id: str, pool_makes: list[str]
+) -> str | None:
+    """The make this driver actually ran (their most-used car that season),
+    normalized to a pool make when possible so it reads "McLaren", not
+    "F1 90 McLaren". Defensive: the `car` column is absent in minimal test
+    schemas, so any failure degrades to None (no car shown)."""
+    try:
+        row = con.execute(
+            "SELECT car FROM race_results "
+            "WHERE driver = ? AND season_id = ? AND car IS NOT NULL AND car <> '' "
+            "GROUP BY car ORDER BY COUNT(*) DESC LIMIT 1",
+            [driver, season_id],
+        ).fetchone()
+    except Exception:  # noqa: BLE001 — no `car` column on minimal schemas
+        return None
+    if not row or not row[0]:
+        return None
+    raw = str(row[0])
+    for make in pool_makes:
+        if make.lower() in raw.lower():
+            return make
+    return raw
+
+
 def _celebration_tier(wins: int, podiums: int, points: int, is_wdc: bool) -> str:
     if is_wdc:
         return "champion"
@@ -331,7 +417,23 @@ def build_season_summary(
     attendance_pct = (starts / scheduled) if scheduled else 0.0
     scoring_pct = (scoring / starts) if starts else 0.0
     ppr = (pts / starts) if starts else 0.0
-    is_wdc = (wdc or "").strip().lower() == driver.lower()
+    is_wdc = _is_champion(wdc, driver)
+    # Career title ordinal: count seasons up to & including this one where the
+    # driver was a champion — handling split-class cells (e.g. "Josie (GT3), …").
+    wdc_number = 0
+    if is_wdc:
+        try:
+            prior = con.execute(
+                "SELECT wdc FROM seasons WHERE season_num <= ?", [season_num]
+            ).fetchall()
+            wdc_number = sum(1 for (w,) in prior if _is_champion(w, driver))
+        except Exception:  # noqa: BLE001 — minimal in-memory schemas in tests
+            wdc_number = 1
+
+    pool_makes = _pool_makes(car)
+    driver_car = _driver_car(con, driver, season_id, pool_makes)
+    # Ruleset/era label is the pool text before the "(makes)" parenthetical.
+    car_ruleset = re.sub(r"\s*\([^)]*\)\s*$", "", (car or "")).strip() or None
     is_wcc, wcc_team, wcc_teammates = _wcc_membership(con, driver, season_id)
     gstats = _race_dataset_stats(con, driver, season_id)
     all_stats = _all_stats(con, driver, season_id) if include_all else {}
@@ -388,12 +490,16 @@ def build_season_summary(
         best_finish_count=best_count,
         best_finish_medal=_MEDAL.get(best) if best else None,
         is_wdc=is_wdc,
+        wdc_number=wdc_number,
+        driver_car=driver_car,
+        car_ruleset=car_ruleset,
         celebration_tier=_celebration_tier(wins, podiums, pts, is_wdc),
         lap_consistency_cv=gstats.get("lap_consistency_cv"),
         season_overtakes=gstats.get("season_overtakes"),
         season_contacts=gstats.get("season_contacts"),
         avg_positions_gained=gstats.get("avg_positions_gained"),
         best_drive=gstats.get("best_drive"),
+        best_drive_venue=gstats.get("best_drive_venue"),
         clean_races=gstats.get("clean_races"),
         avg_finish=all_stats.get("avg_finish"),
         pace_vs_field_pct=all_stats.get("pace_vs_field_pct"),
@@ -446,6 +552,8 @@ def _attach_presentation(s: SeasonSummary) -> None:
     s.hero["tier_copy"] = _TIER_COPY[s.celebration_tier]
     if s.is_wdc:
         s.hero["crown"] = True
+        if s.wdc_number:
+            s.hero["wdc_number"] = s.wdc_number
     if s.is_wcc:
         s.hero["wcc"] = True
         s.hero["wcc_with"] = _and_join(s.wcc_teammates)
@@ -482,69 +590,75 @@ def _attach_presentation(s: SeasonSummary) -> None:
     ])
     s.rate_tiles = rate_tiles
 
-    # ---- Stat tiles with glyphs. Only show counts > 0 (no zeros staring
-    # back at a back-marker), but always include points + points/race so the
-    # card never looks bare.
-    tiles: list[dict[str, Any]] = [
+    # ---- Stat tiles with glyphs, grouped into labeled sections for a coherent
+    # read: Scoring → Qualifying → Racecraft → Pace & finish. Only counts > 0
+    # show (no zeros staring back at a back-marker), but points + points/race
+    # always appear so the card never looks bare. --all tiles slot into their
+    # own theme rather than trailing at the end. Empty sections are dropped, so
+    # this works for the generic card and --all alike.
+
+    # ---- Scoring & honours -----------------------------------------------
+    scoring: list[dict[str, Any]] = [
         {"glyph": "points", "value": s.points, "label": "Points"},
     ]
     if s.wins:
-        tiles.append({"glyph": "trophy", "value": s.wins, "label": "Wins"})
+        scoring.append({"glyph": "trophy", "value": s.wins, "label": "Wins"})
     if s.podiums:
-        tiles.append({"glyph": "podium", "value": s.podiums, "label": "Podiums"})
+        scoring.append({"glyph": "podium", "value": s.podiums, "label": "Podiums"})
     if s.top5:
-        tiles.append({"glyph": "top5", "value": s.top5, "label": "Top-5 finishes"})
+        scoring.append({"glyph": "top5", "value": s.top5, "label": "Top-5 finishes"})
+    scoring.append({"glyph": "rate", "value": f"{s.points_per_race:.1f}", "label": "Points / race"})
+
+    # ---- Qualifying / front-of-grid --------------------------------------
+    quali: list[dict[str, Any]] = []
     if s.poles:
-        tiles.append({"glyph": "pole", "value": s.poles, "label": "Poles"})
+        quali.append({"glyph": "pole", "value": s.poles, "label": "Poles"})
     if s.fastest_laps:
-        tiles.append({"glyph": "stopwatch", "value": s.fastest_laps, "label": "Fastest laps"})
-    tiles.append({
-        "glyph": "rate",
-        "value": f"{s.points_per_race:.1f}",
-        "label": "Points / race",
-    })
-
-    # ---- Granular-dataset tiles (only when telemetry exists for the season).
-    if s.season_overtakes is not None:
-        tiles.append({"glyph": "overtake", "value": s.season_overtakes, "label": "Overtakes"})
-    if s.season_contacts:  # hide a clean zero on the celebration card
-        tiles.append({"glyph": "contact", "value": s.season_contacts, "label": "Contacts"})
-    if s.clean_races:  # contact-free races run — only when there's ≥1 to celebrate
-        tiles.append({"glyph": "clean", "value": s.clean_races, "label": "Clean races"})
-    if s.lap_consistency_cv is not None:
-        tiles.append({
-            "glyph": "consistency",
-            "value": f"{s.lap_consistency_cv:.2f}%",
-            "label": "Lap consistency",
-        })
-    # Positions gained is a default-card stat, but only when it flatters — a
-    # negative average (net places lost) is hidden to keep the celebration honest.
-    if s.avg_positions_gained is not None and s.avg_positions_gained >= 0:
-        tiles.append({
-            "glyph": "climb",
-            "value": f"+{s.avg_positions_gained:.1f}",
-            "label": "Avg places gained",
-        })
-    if s.best_drive and s.best_drive > 0:  # biggest single-race climb
-        tiles.append({"glyph": "surge", "value": f"+{s.best_drive}", "label": "Best drive"})
-
-    # ---- --all analytical tiles (opt-in; can read as unflattering) --------
+        quali.append({"glyph": "stopwatch", "value": s.fastest_laps, "label": "Fastest laps"})
     if s.avg_qual_position is not None:
-        tiles.append({"glyph": "grid", "value": f"P{s.avg_qual_position:.1f}", "label": "Avg qualifying"})
+        quali.append({"glyph": "grid", "value": f"P{s.avg_qual_position:.1f}", "label": "Avg qualifying"})
     if s.avg_pole_gap_ms is not None:
-        tiles.append({"glyph": "pole", "value": f"+{s.avg_pole_gap_ms / 1000:.2f}s", "label": "Avg gap to pole"})
-    if s.avg_finish is not None:
-        tiles.append({"glyph": "finish", "value": f"P{s.avg_finish:.1f}", "label": "Avg finish"})
-    if s.pace_vs_field_pct is not None:
-        sign = "+" if s.pace_vs_field_pct >= 0 else "−"
-        tiles.append({
-            "glyph": "speed",
-            "value": f"{sign}{abs(s.pace_vs_field_pct):.2f}%",
-            "label": "Pace vs field",
-        })
+        quali.append({"glyph": "pole", "value": f"+{s.avg_pole_gap_ms / 1000:.2f}s", "label": "Avg gap to pole"})
+
+    # ---- Racecraft (movement through the field) --------------------------
+    racecraft: list[dict[str, Any]] = []
+    if s.season_overtakes is not None:
+        racecraft.append({"glyph": "overtake", "value": s.season_overtakes, "label": "Overtakes"})
     if s.net_overtakes is not None:
         sign = "+" if s.net_overtakes >= 0 else "−"
-        tiles.append({"glyph": "overtake", "value": f"{sign}{abs(s.net_overtakes)}", "label": "Net overtakes"})
+        racecraft.append({"glyph": "overtake", "value": f"{sign}{abs(s.net_overtakes)}", "label": "Net overtakes"})
     if s.times_overtaken is not None:
-        tiles.append({"glyph": "overtaken", "value": s.times_overtaken, "label": "Times overtaken"})
-    s.stat_tiles = tiles
+        racecraft.append({"glyph": "overtaken", "value": s.times_overtaken, "label": "Times overtaken"})
+    if s.best_drive and s.best_drive > 0:  # biggest single-race climb
+        tile = {"glyph": "surge", "value": f"+{s.best_drive}", "label": "Best drive"}
+        venue = _short_venue(s.best_drive_venue)
+        if venue:
+            tile["sub"] = venue  # small caption; wraps rather than truncates
+        racecraft.append(tile)
+    # Positions gained is default-card, but only when it flatters — a negative
+    # average (net places lost) is hidden to keep the celebration honest.
+    if s.avg_positions_gained is not None and s.avg_positions_gained >= 0:
+        racecraft.append({"glyph": "climb", "value": f"+{s.avg_positions_gained:.1f}", "label": "Avg places gained"})
+    if s.clean_races:  # contact-free races run — only when there's ≥1 to celebrate
+        racecraft.append({"glyph": "clean", "value": s.clean_races, "label": "Clean races"})
+    if s.season_contacts:  # hide a clean zero on the celebration card
+        racecraft.append({"glyph": "contact", "value": s.season_contacts, "label": "Contacts"})
+
+    # ---- Pace & finishing position ---------------------------------------
+    pace: list[dict[str, Any]] = []
+    if s.lap_consistency_cv is not None:
+        pace.append({"glyph": "consistency", "value": f"{s.lap_consistency_cv:.2f}%", "label": "Lap consistency"})
+    if s.pace_vs_field_pct is not None:
+        sign = "+" if s.pace_vs_field_pct >= 0 else "−"
+        pace.append({"glyph": "speed", "value": f"{sign}{abs(s.pace_vs_field_pct):.2f}%", "label": "Pace vs field"})
+    if s.avg_finish is not None:
+        pace.append({"glyph": "finish", "value": f"P{s.avg_finish:.1f}", "label": "Avg finish"})
+
+    sections = [
+        ("Scoring", scoring),
+        ("Qualifying", quali),
+        ("Racecraft", racecraft),
+        ("Pace & finish", pace),
+    ]
+    s.stat_sections = [{"label": lbl, "tiles": ts} for lbl, ts in sections if ts]
+    s.stat_tiles = [t for _, ts in sections for t in ts]  # flat fallback

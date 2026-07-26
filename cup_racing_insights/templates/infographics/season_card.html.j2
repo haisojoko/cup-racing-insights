@@ -117,6 +117,9 @@
     letter-spacing:0.32em; color:{{ theme }}; text-transform:uppercase; margin-bottom:18px;
     display:flex; align-items:center; gap:12px; }
   .title-block .eyebrow svg { width:30px; height:30px; }
+  .title-block .eyebrow .wdc-badge { font-size:17px; font-weight:700; letter-spacing:0.14em;
+    color:var(--gold); background:var(--gold-soft); border:1px solid var(--gold-edge);
+    border-radius:999px; padding:4px 12px; margin-right:2px; }
   .title-block h1 { font-size:128px; font-weight:900; line-height:0.95; letter-spacing:0; margin-bottom:14px; }
   .title-block .subtitle { font-size:30px; color:var(--text-dim); font-weight:500; }
   .title-block .subtitle b { color:var(--text); font-weight:700; }
@@ -167,19 +170,33 @@
   .gauge-label { font-size:15px; color:var(--text-dim); font-weight:600; white-space:nowrap; }
   .rates { flex:1; display:grid; grid-template-columns:repeat(4, minmax(0, 1fr)); gap:14px; }
   .rate-tile { background:rgba(255,255,255,0.035); border:1px solid var(--border);
-    border-radius:14px; padding:20px 18px; display:flex; flex-direction:column; justify-content:center; min-height:112px; }
-  .rate-tile .rv { font-family:'JetBrains Mono',monospace; font-size:34px; font-weight:700; line-height:1; color:{{ theme }}; }
-  .rate-tile .rl { font-size:13px; color:var(--text-dim); font-weight:700; margin-top:12px;
+    border-radius:14px; padding:22px 20px; display:flex; flex-direction:column; justify-content:center; min-height:124px; }
+  .rate-tile .rv { font-family:'JetBrains Mono',monospace; font-size:40px; font-weight:700; line-height:1; color:{{ theme }}; white-space:nowrap; }
+  .rate-tile .rl { font-size:14px; color:var(--text-dim); font-weight:700; margin-top:14px;
     text-transform:uppercase; letter-spacing:0.08em; }
-  .stats { display:grid; grid-template-columns:repeat(3, 1fr); gap:18px; }
+  {#- Labeled category groups. Each section is a hairline-ruled header over its
+      own tile grid, so the reader sees what "family" each stat belongs to. -#}
+  .stat-section { display:flex; flex-direction:column; }
+  .section-label { font-family:'JetBrains Mono',monospace; font-size:15px; font-weight:700;
+    letter-spacing:0.2em; text-transform:uppercase; color:var(--text-muted);
+    margin-bottom:18px; display:flex; align-items:center; gap:16px; }
+  .section-label::after { content:''; flex:1; height:1px; background:var(--border); }
+  {#- Flex, not grid, so a trailing incomplete row centers instead of leaving a
+      lone tile hanging at the left. A bit of side dead space is fine. -#}
+  .stats { display:flex; flex-wrap:wrap; gap:18px; justify-content:center; }
   .stat-tile { background:var(--bg-2); border:1px solid var(--border); border-radius:16px;
-    padding:28px 30px; display:flex; align-items:center; gap:22px; }
+    padding:28px 30px; display:flex; align-items:center; gap:22px;
+    width:calc((100% - 36px) / 3); }
   .stat-tile .ico { width:52px; height:52px; flex-shrink:0; color:{{ theme }};
     display:flex; align-items:center; justify-content:center; }
   .stat-tile .ico svg { width:100%; height:100%; }
+  .stat-tile .txt { min-width:0; }
   .stat-tile .v { font-family:'JetBrains Mono',monospace; font-size:46px; font-weight:700; line-height:1; }
   .stat-tile .l { font-size:17px; color:var(--text-dim); font-weight:600; margin-top:6px;
-    text-transform:uppercase; letter-spacing:0.08em; }
+    text-transform:uppercase; letter-spacing:0.08em;
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .stat-tile .sub { font-size:13px; color:var(--text-muted); font-weight:600; margin-top:5px;
+    text-transform:uppercase; letter-spacing:0.06em; line-height:1.2; overflow-wrap:anywhere; }
 </style>
 </head>
 <body>
@@ -190,9 +207,9 @@
   </header>
 
   <div class="title-block">
-    <div class="eyebrow">{% if s.hero.crown %}{{ glyph("crown") }}{% endif %}Season {{ s.season_num }} Review</div>
+    <div class="eyebrow">{% if s.hero.crown %}{{ glyph("crown") }}{% if s.hero.wdc_number %}<span class="wdc-badge">WDC #{{ s.hero.wdc_number }}</span>{% endif %}{% endif %}Season {{ s.season_num }} Review</div>
     <h1>{{ s.driver }}</h1>
-    <div class="subtitle"><b>{{ s.car }}</b> · {{ s.type }} season</div>
+    <div class="subtitle">{% if s.driver_car %}<b>{{ s.driver_car }}</b>{% if s.car_ruleset %} · {{ s.car_ruleset }}{% endif %} · {% elif s.car %}<b>{{ s.car }}</b> · {% endif %}{{ s.type }} season</div>
     {% if s.is_wcc %}
     <div class="accolade">{{ glyph("shield") }}<span>Constructors' Champion</span>{% if s.hero.wcc_with %}<span class="with">with {{ s.hero.wcc_with }}</span>{% endif %}</div>
     {% endif %}
@@ -239,14 +256,19 @@
     </div>
   </div>
 
-  <div class="stats">
-    {% for t in s.stat_tiles %}
-    <div class="stat-tile">
-      <div class="ico">{{ glyph(t.glyph) }}</div>
-      <div><div class="v">{{ t.value }}</div><div class="l">{{ t.label }}</div></div>
+  {% for sec in s.stat_sections %}
+  <div class="stat-section">
+    <div class="section-label">{{ sec.label }}</div>
+    <div class="stats">
+      {% for t in sec.tiles %}
+      <div class="stat-tile">
+        <div class="ico">{{ glyph(t.glyph) }}</div>
+        <div class="txt"><div class="v">{{ t.value }}</div><div class="l">{{ t.label }}</div>{% if t.sub %}<div class="sub">{{ t.sub }}</div>{% endif %}</div>
+      </div>
+      {% endfor %}
     </div>
-    {% endfor %}
   </div>
+  {% endfor %}
 </div>
 </body>
 </html>
