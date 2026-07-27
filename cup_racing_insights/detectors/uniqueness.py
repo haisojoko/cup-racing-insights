@@ -319,29 +319,29 @@ def detect_won_both_classes(
 ) -> list[Insight]:
     """Driver has won races in both Formula and Sports car seasons.
 
-    Cup Racing alternates classes; winning in both is a versatility marker
+    Cup Racing alternates divisions; winning in both is a versatility marker
     that not every race winner achieves.
     """
     cohort_rows = con.execute(
         """
-        WITH wins_by_class AS (
-            SELECT r.driver, s.type AS class, COUNT(*) AS wins
+        WITH wins_by_division AS (
+            SELECT r.driver, s.type AS division, COUNT(*) AS wins
               FROM race_results r
               JOIN seasons s USING (season_id)
              WHERE r.position = 1
           GROUP BY r.driver, s.type
         )
         SELECT driver
-          FROM wins_by_class
+          FROM wins_by_division
       GROUP BY driver
-        HAVING COUNT(DISTINCT class) = 2
+        HAVING COUNT(DISTINCT division) = 2
         """
     ).fetchall()
     cohort = {d for (d,) in cohort_rows}
     if driver not in cohort:
         return []
 
-    per_class = con.execute(
+    per_division = con.execute(
         """
         SELECT s.type, COUNT(*)
           FROM race_results r
@@ -351,9 +351,9 @@ def detect_won_both_classes(
         """,
         [driver],
     ).fetchall()
-    by_class = {t: int(c) for t, c in per_class}
-    f_wins = by_class.get("Formula", 0)
-    s_wins = by_class.get("Sports", 0)
+    by_division = {t: int(c) for t, c in per_division}
+    f_wins = by_division.get("Formula", 0)
+    s_wins = by_division.get("Sports", 0)
     cohort_size = len(cohort)
 
     if cohort_size == 1:

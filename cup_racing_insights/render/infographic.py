@@ -212,8 +212,12 @@ def _summary_chips(ins: Insight) -> list[dict[str, Any]]:
         chips.append({"text": p.get("car", "")})
         if "points_per_start" in p:
             chips.append({"text": f"{p['points_per_start']:.1f} ppr", "muted": True})
-    elif k.startswith("class_split_"):
+    elif k.startswith("division_split_"):
         chips.append({"text": p.get("leader", "")})
+    elif k == "multi_class_split":
+        chips.append({"text": p.get("car_class", "")})
+        if p.get("rival_class"):
+            chips.append({"text": f"vs {p['rival_class']}", "muted": True})
 
     # Penalty / discipline
     elif k == "clean_career":

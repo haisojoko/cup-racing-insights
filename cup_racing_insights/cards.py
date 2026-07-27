@@ -231,8 +231,8 @@ CARDS: dict[str, Card] = {
         title="Splits & Specialisms",
         description="Cross-segment comparisons (car class, era, race position).",
         include_kinds=(
-            "class_split_podium",
-            "class_split_ppr",
+            "division_split_podium",
+            "division_split_ppr",
             # Reserved:
             "specialist_car",
             "multi_class_split",

@@ -147,7 +147,7 @@ a curated set of detectors; the same detector may feed multiple cards.
 `detect_wcc_contribution` · `detect_decisive_wcc_year`
 
 ### `splits` — Splits & Specialisms
-`detect_car_class_split` · `detect_specialist_car`
+`detect_division_split` · `detect_specialist_car` · `detect_multi_class_split`
 
 ### `uniqueness` — League-Wide Uniqueness
 `detect_only_to_pole_sweep` · `detect_only_winless_with_long_streak` · `detect_sole_venue_winner` · `detect_first_to_milestone` · `detect_wins_without_poles` · `detect_won_both_classes` · `detect_multiple_wcc_club` · `detect_multiple_wdc_club`

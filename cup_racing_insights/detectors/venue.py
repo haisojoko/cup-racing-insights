@@ -14,7 +14,7 @@ import re
 
 from duckdb import DuckDBPyConnection
 
-from ..models import Insight, InsightCategory
+from ..models import PENALTY_POSITION_MIN, Insight, InsightCategory
 
 
 def _season_sort_key(sid: str) -> tuple:
@@ -172,8 +172,13 @@ def detect_best_avg_venue(
 ) -> list[Insight]:
     """Best average finishing position at a venue (min 4 starts to qualify)."""
     row = con.execute(
-        """
-        SELECT venue, AVG(position) AS avg_pos, COUNT(*) AS starts,
+        f"""
+        -- A stewards' penalty placement is a start and keeps its points, but
+        -- it is not a finishing position — so it is excluded from the average
+        -- only, never from the start count that qualifies a venue.
+        SELECT venue,
+               AVG(CASE WHEN position < {PENALTY_POSITION_MIN} THEN position END) AS avg_pos,
+               COUNT(*) AS starts,
                LIST(DISTINCT season_id) AS seasons
           FROM race_results
          WHERE driver = ? AND NOT dns AND position IS NOT NULL

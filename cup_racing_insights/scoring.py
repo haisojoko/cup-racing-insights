@@ -232,9 +232,12 @@ _RULES: dict[str, ScoringRule] = {
     "consecutive_podium_seasons": ScoringRule(magnitude=("length", 5, 0.18)),
 
     # --- Splits
-    "class_split_podium": ScoringRule(),
-    "class_split_ppr":    ScoringRule(),
+    "division_split_podium": ScoringRule(),
+    "division_split_ppr":  ScoringRule(),
     "specialist_car":     ScoringRule(magnitude=("starts", 30, 0.10)),
+    # Multi-class seasons are rare (4 of 24), so the smaller the class the more
+    # unusual the story — being one of two Hypercar runners is a real fact.
+    "multi_class_split":  ScoringRule(magnitude=("starts", 16, 0.10)),
 
     # --- Uniqueness — rarity + magnitude + leadership combos
     "only_to_pole_sweep":         ScoringRule(magnitude=("sweep_count", 8, 0.15),

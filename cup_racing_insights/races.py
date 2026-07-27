@@ -37,6 +37,7 @@ DROP TABLE IF EXISTS qual_times;
 DROP TABLE IF EXISTS race_overtakes;
 DROP TABLE IF EXISTS race_contacts;
 DROP TABLE IF EXISTS grid_moves;
+DROP TABLE IF EXISTS driver_classes;
 
 CREATE TABLE race_pace (
     season_id    VARCHAR NOT NULL,
@@ -99,6 +100,26 @@ CREATE TABLE grid_moves (
 );
 
 CREATE INDEX idx_grid_driver ON grid_moves(driver);
+
+-- Car class on multi-class seasons (S14 GT3/Street, S18a/b and S24a
+-- Hypercar/GT3). Empty for single-class seasons, which are the large majority.
+--
+-- Class comes from the race dataset, where it is declared per season by league
+-- rule; the *results* it gets joined to still come from the hand-audited
+-- Markdown archive, which is the truth source for standings and covers races
+-- whose server logs were lost.
+--
+-- `championship` distinguishes a season with two classes and one title (S18a/b)
+-- from one that awards a title per class (S14, S24a).
+CREATE TABLE driver_classes (
+    season_id     VARCHAR NOT NULL,
+    driver        VARCHAR NOT NULL,
+    car_class     VARCHAR NOT NULL,
+    championship  VARCHAR NOT NULL   -- 'combined' | 'split'
+);
+
+CREATE INDEX idx_class_driver ON driver_classes(driver);
+CREATE INDEX idx_class_season ON driver_classes(season_id);
 """
 
 
@@ -207,8 +228,16 @@ def _extract(season: dict) -> dict[str, list[tuple]]:
                 if net is not None:
                     grid_rows.append((sid, venue, vorder, rnum, driver, int(net)))
 
+    # Season-level, not per race: a driver's class is fixed for the season.
+    class_rows: list[tuple] = []
+    classes = season.get("classes") or {}
+    championship = classes.get("championship") or "combined"
+    for driver, car_class in (classes.get("drivers") or {}).items():
+        if driver and car_class:
+            class_rows.append((sid, driver, car_class, championship))
+
     return {"pace": pace_rows, "qual": qual_rows, "overtakes": ot_rows,
-            "contacts": contact_rows, "grid": grid_rows}
+            "contacts": contact_rows, "grid": grid_rows, "classes": class_rows}
 
 
 def load_races(con: duckdb.DuckDBPyConnection, races_dir: Path = DEFAULT_RACES_DIR) -> dict[str, int]:
@@ -220,7 +249,9 @@ def load_races(con: duckdb.DuckDBPyConnection, races_dir: Path = DEFAULT_RACES_D
     con.execute(RACES_SCHEMA_SQL)
     files = _iter_season_files(races_dir) if races_dir.exists() else []
 
-    all_rows: dict[str, list[tuple]] = {"pace": [], "qual": [], "overtakes": [], "contacts": [], "grid": []}
+    all_rows: dict[str, list[tuple]] = {
+        "pace": [], "qual": [], "overtakes": [], "contacts": [], "grid": [], "classes": [],
+    }
     for path in files:
         try:
             season = json.loads(path.read_text(encoding="utf-8"))
@@ -239,6 +270,8 @@ def load_races(con: duckdb.DuckDBPyConnection, races_dir: Path = DEFAULT_RACES_D
         con.executemany("INSERT INTO race_contacts VALUES (?,?,?,?,?,?)", all_rows["contacts"])
     if all_rows["grid"]:
         con.executemany("INSERT INTO grid_moves VALUES (?,?,?,?,?,?)", all_rows["grid"])
+    if all_rows["classes"]:
+        con.executemany("INSERT INTO driver_classes VALUES (?,?,?,?)", all_rows["classes"])
 
     return {
         "race_pace": len(all_rows["pace"]),
@@ -246,4 +279,5 @@ def load_races(con: duckdb.DuckDBPyConnection, races_dir: Path = DEFAULT_RACES_D
         "race_overtakes": len(all_rows["overtakes"]),
         "race_contacts": len(all_rows["contacts"]),
         "grid_moves": len(all_rows["grid"]),
+        "driver_classes": len(all_rows["classes"]),
     }

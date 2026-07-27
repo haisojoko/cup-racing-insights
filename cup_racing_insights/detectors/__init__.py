@@ -67,8 +67,9 @@ ALL_DETECTORS: list[DetectorFn] = [
     trajectory.detect_consecutive_podium_seasons,
     trajectory.detect_personal_best_season_rank,
     # Splits
-    splits.detect_car_class_split,
+    splits.detect_division_split,
     splits.detect_specialist_car,
+    splits.detect_multi_class_split,
     # Consistency
     consistency.detect_tightest_season_range,
     consistency.detect_season_never_outside_top_n,

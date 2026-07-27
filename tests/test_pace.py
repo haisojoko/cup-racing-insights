@@ -84,7 +84,7 @@ def test_load_races_missing_dir_is_empty(tmp_path):
     con = duckdb.connect(":memory:")
     counts = races.load_races(con, tmp_path / "nope")
     assert counts == {"race_pace": 0, "qual_times": 0, "race_overtakes": 0,
-                      "race_contacts": 0, "grid_moves": 0}
+                      "race_contacts": 0, "grid_moves": 0, "driver_classes": 0}
     # Tables still exist (empty), so detectors can query them safely.
     assert con.execute("SELECT COUNT(*) FROM race_pace").fetchone()[0] == 0
 
@@ -204,3 +204,11 @@ def test_all_stats_avg_finish_pace_and_overtaken():
     assert stats["net_overtakes"] == 2                   # (3+2) made − (1+2) suffered
     assert stats["avg_qual_position"] == 1.0             # X fastest in the one session
     assert stats["avg_pole_gap_ms"] == 0.0               # X is pole
+
+
+def test_load_races_is_idempotent(tmp_path):
+    """A second rebuild must not trip over tables the first one created."""
+    con = duckdb.connect(":memory:")
+    races.load_races(con, tmp_path / "nope")
+    counts = races.load_races(con, tmp_path / "nope")
+    assert counts["driver_classes"] == 0

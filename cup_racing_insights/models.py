@@ -54,4 +54,26 @@ class Insight(BaseModel):
     model_config = {"frozen": False}
 
 
-__all__ = ["Insight", "InsightCategory"]
+# Stewards occasionally record a result at a position far outside the field
+# instead of reclassifying it to last — S21 Monza R4 has James at P99, a
+# self-inflicted DNF they let stand as the penalty. It is a deliberate,
+# meaningful result: it counts as a start and keeps its points. But it is a
+# *penalty placement*, not a finishing position, and averaging it as one turned
+# James's S21 average finish into 7.88 for a season he won 9 of 16 races.
+#
+# The threshold sits well clear of any real field (the largest the league has
+# ever run is 19) so a genuine finish can never be mistaken for one.
+PENALTY_POSITION_MIN = 50
+
+# Reusable predicate for "a position you can average". Note it deliberately
+# does NOT filter DNS — callers that need that add `AND NOT dns` themselves,
+# since a DNS and a penalty placement are different exclusions.
+CLASSIFIED_POSITION_SQL = f"position IS NOT NULL AND position < {PENALTY_POSITION_MIN}"
+
+
+__all__ = [
+    "Insight",
+    "InsightCategory",
+    "PENALTY_POSITION_MIN",
+    "CLASSIFIED_POSITION_SQL",
+]

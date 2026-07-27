@@ -16,6 +16,8 @@ All figures come from the existing schema scoped to one season.
 
 from __future__ import annotations
 
+from ..models import PENALTY_POSITION_MIN
+
 import re
 from dataclasses import dataclass, field
 from typing import Any
@@ -261,7 +263,8 @@ def _all_stats(
     try:
         avg_finish = con.execute(
             "SELECT AVG(position) FROM race_results "
-            "WHERE driver = ? AND season_id = ? AND NOT dns AND position IS NOT NULL",
+            "WHERE driver = ? AND season_id = ? AND NOT dns AND position IS NOT NULL "
+            f"AND position < {PENALTY_POSITION_MIN}",
             [driver, season_id],
         ).fetchone()[0]
         pace_vs_field = con.execute(

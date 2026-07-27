@@ -102,9 +102,9 @@ firsts · splits · uniqueness · discipline · current-form · head-to-head
 
 | ID | Status | Detector | Insight kinds | Card(s) |
 |---|---|---|---|---|
-| D-037 | ✅ | `detect_car_class_split` | `class_split_podium`, `class_split_ppr` | splits |
+| D-037 | ✅ | `detect_division_split` | `division_split_podium`, `division_split_ppr` | splits |
 | D-038 | ✅ | `detect_specialist_car` | `specialist_car` | splits |
-| D-039 | 📋 | `detect_multi_class_split` | `multi_class_split` | splits |
+| D-039 | ✅ | `detect_multi_class_split` | `multi_class_split` | splits |
 | D-040 | 📋 | `detect_recent_vs_early_career` | `recent_vs_early_split` | splits |
 | D-041 | 📋 | `detect_race_position_split` | `r1_vs_r4_split` | splits |
 
