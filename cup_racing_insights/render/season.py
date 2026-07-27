@@ -89,6 +89,28 @@ def _short_venue(name: str | None) -> str:
     return " ".join(tokens) or name
 
 
+# --- Cell formatters for the per-venue table (None → em dash) ----------------
+
+def _fp(v: float | None) -> str:
+    return f"P{v:.1f}" if v is not None else "—"
+
+
+def _fs(v: float | None) -> str:
+    if v is None:
+        return "—"
+    return f"{'+' if v >= 0 else '−'}{abs(v):.1f}s"
+
+
+def _fpct(v: float | None) -> str:
+    return f"{v:.2f}%" if v is not None else "—"
+
+
+def _fsigned(v: float | None, dec: int = 0) -> str:
+    if v is None:
+        return "—"
+    return f"{'+' if v >= 0 else '−'}{abs(v):.{dec}f}"
+
+
 @dataclass
 class SeasonSummary:
     driver: str
@@ -145,11 +167,14 @@ class SeasonSummary:
     is_wcc: bool = False               # on the WCC-winning team this season
     wcc_team: str | None = None        # winning roster label, e.g. "A + B + C"
     wcc_teammates: list[str] = field(default_factory=list)  # co-winners (not this driver)
+    detailed: bool = False    # --detailed: render the per-venue table instead of summary tiles
     hero: dict[str, Any] = field(default_factory=dict)
     gauges: list[dict[str, Any]] = field(default_factory=list)
     rate_tiles: list[dict[str, Any]] = field(default_factory=list)
     stat_tiles: list[dict[str, Any]] = field(default_factory=list)
     stat_sections: list[dict[str, Any]] = field(default_factory=list)
+    venue_rows: list[dict[str, Any]] = field(default_factory=list)   # per-venue table rows
+    venue_total: dict[str, Any] = field(default_factory=dict)        # season summary row
 
 
 def _and_join(names: list[str]) -> str:
@@ -329,6 +354,98 @@ def _all_stats(
     }
 
 
+def _venue_breakdown(
+    con: DuckDBPyConnection, driver: str, season_id: str
+) -> list[dict[str, Any]]:
+    """Per-venue rows for the `--detailed` table: one row per circuit (calendar
+    order) with that venue's aggregates — points, avg finish/qual, pace vs field,
+    consistency, net overtakes, avg places gained, contacts. Values are already
+    formatted for display. Defensive: any missing table degrades to []."""
+    try:
+        vmap: dict[int, str] = {
+            vo: name for vo, name in con.execute(
+                "SELECT venue_order, ANY_VALUE(venue) FROM race_pace "
+                "WHERE driver = ? AND season_id = ? GROUP BY venue_order",
+                [driver, season_id],
+            ).fetchall()
+        }
+        res = {
+            vo: (pts, fin) for vo, pts, fin in con.execute(
+                "SELECT venue_order, COALESCE(SUM(points), 0), "
+                "AVG(position) FILTER (WHERE NOT dns AND position IS NOT NULL) "
+                "FROM race_results WHERE driver = ? AND season_id = ? GROUP BY venue_order",
+                [driver, season_id],
+            ).fetchall()
+        }
+        for vo, name in con.execute(
+            "SELECT venue_order, ANY_VALUE(venue) FROM race_results "
+            "WHERE driver = ? AND season_id = ? GROUP BY venue_order",
+            [driver, season_id],
+        ).fetchall():
+            vmap.setdefault(vo, name)
+        cons = dict(con.execute(
+            "SELECT venue_order, AVG(cv_pct) FROM race_pace "
+            "WHERE driver = ? AND season_id = ? AND laps_used >= 2 GROUP BY venue_order",
+            [driver, season_id],
+        ).fetchall())
+        pace = dict(con.execute(
+            """
+            WITH rep AS (SELECT * FROM race_pace WHERE season_id = ? AND laps_used >= 2),
+                 field AS (SELECT venue_order, race_num, AVG(avg_ms) AS fa FROM rep GROUP BY 1, 2)
+            SELECT r.venue_order, AVG(r.avg_ms - f.fa) / 1000.0
+              FROM rep r JOIN field f USING (venue_order, race_num)
+             WHERE r.driver = ? GROUP BY r.venue_order
+            """,
+            [season_id, driver],
+        ).fetchall())
+        qual = dict(con.execute(
+            """
+            WITH ranked AS (
+                SELECT venue_order, driver,
+                       RANK() OVER (PARTITION BY season_id, venue_order, session ORDER BY best_ms) AS pos
+                  FROM qual_times WHERE season_id = ?
+            )
+            SELECT venue_order, AVG(pos) FROM ranked WHERE driver = ? GROUP BY venue_order
+            """,
+            [season_id, driver],
+        ).fetchall())
+        net_ot = dict(con.execute(
+            "SELECT venue_order, COALESCE(SUM(made), 0) - COALESCE(SUM(suffered), 0) "
+            "FROM race_overtakes WHERE driver = ? AND season_id = ? GROUP BY venue_order",
+            [driver, season_id],
+        ).fetchall())
+        places = dict(con.execute(
+            "SELECT venue_order, AVG(positions_gained) FROM grid_moves "
+            "WHERE driver = ? AND season_id = ? GROUP BY venue_order",
+            [driver, season_id],
+        ).fetchall())
+        contacts = dict(con.execute(
+            "SELECT venue_order, COALESCE(SUM(contacts), 0) FROM race_contacts "
+            "WHERE driver = ? AND season_id = ? GROUP BY venue_order",
+            [driver, season_id],
+        ).fetchall())
+    except Exception:  # noqa: BLE001 — tables absent on Markdown-only builds
+        return []
+
+    rows: list[dict[str, Any]] = []
+    for vo in sorted(vmap):
+        pts, fin = res.get(vo, (0, None))
+        pl = places.get(vo)
+        rows.append({
+            "venue": _short_venue(vmap[vo]),
+            "round": vo,
+            "points": str(int(pts or 0)),
+            "finish": _fp(fin),
+            "qual": _fp(qual.get(vo)),
+            "pace": _fs(pace.get(vo)),
+            "cons": _fpct(cons.get(vo)),
+            "net_ot": _fsigned(net_ot.get(vo)),
+            "places": _fsigned(pl, 1) if pl is not None else "—",
+            "contacts": str(int(contacts.get(vo) or 0)),
+        })
+    return rows
+
+
 def _driver_car(
     con: DuckDBPyConnection, driver: str, season_id: str, pool_makes: list[str]
 ) -> str | None:
@@ -367,13 +484,18 @@ def _celebration_tier(wins: int, podiums: int, points: int, is_wdc: bool) -> str
 
 
 def build_season_summary(
-    con: DuckDBPyConnection, driver: str, season_id: str, include_all: bool = False
+    con: DuckDBPyConnection, driver: str, season_id: str,
+    include_all: bool = False, detailed: bool = False,
 ) -> SeasonSummary | None:
     """Aggregate one driver's season into a celebration-ready summary.
 
     Returns None if the season doesn't exist or the driver never appeared.
     Callers should treat None as "nothing to celebrate / bad input".
+
+    `detailed` renders a per-venue breakdown table in place of the summary
+    tiles; it implies `include_all` since the table draws on every stat.
     """
+    include_all = include_all or detailed
     season = con.execute(
         "SELECT season_num, type, car, wdc FROM seasons WHERE season_id = ?",
         [season_id],
@@ -513,7 +635,22 @@ def build_season_summary(
         is_wcc=is_wcc,
         wcc_team=wcc_team,
         wcc_teammates=wcc_teammates,
+        detailed=detailed,
     )
+    if detailed:
+        summary.venue_rows = _venue_breakdown(con, driver, season_id)
+        if summary.venue_rows:
+            summary.venue_total = {
+                "venue": "Season", "round": "",
+                "points": str(summary.points),
+                "finish": _fp(summary.avg_finish),
+                "qual": _fp(summary.avg_qual_position),
+                "pace": _fs(summary.pace_vs_field_s),
+                "cons": _fpct(summary.lap_consistency_cv),
+                "net_ot": _fsigned(summary.net_overtakes),
+                "places": _fsigned(summary.avg_positions_gained, 1),
+                "contacts": str(summary.season_contacts or 0),
+            }
     _attach_presentation(summary)
     return summary
 

@@ -197,6 +197,24 @@
     white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
   .stat-tile .sub { font-size:13px; color:var(--text-muted); font-weight:600; margin-top:5px;
     text-transform:uppercase; letter-spacing:0.06em; line-height:1.2; overflow-wrap:anywhere; }
+  {#- --detailed per-venue table. Dense, right-aligned numeric columns; the
+      venue name flexes to fill; a gold "SEASON" footer row carries the totals. -#}
+  .venue-wrap { display:flex; flex-direction:column; }
+  table.venue { width:100%; border-collapse:collapse; }
+  table.venue th { font-family:'JetBrains Mono',monospace; font-size:15px; font-weight:700;
+    letter-spacing:0.06em; text-transform:uppercase; color:var(--text-muted); text-align:right;
+    padding:0 0 18px; border-bottom:1px solid var(--border-strong); white-space:nowrap; }
+  table.venue td { font-family:'JetBrains Mono',monospace; font-size:24px; font-weight:700;
+    color:var(--text); text-align:right; padding:18px 0; border-bottom:1px solid var(--border); white-space:nowrap; }
+  table.venue th + th, table.venue td + td { padding-left:26px; }
+  table.venue th.vname, table.venue td.vname { text-align:left; width:100%; }
+  table.venue td.vname { font-family:'Inter',sans-serif; font-size:26px; font-weight:600; }
+  table.venue td.vname .rnd { display:inline-block; min-width:38px; margin-right:16px;
+    font-family:'JetBrains Mono',monospace; font-size:17px; font-weight:700; color:var(--text-muted); }
+  table.venue tfoot td { border-bottom:none; border-top:2px solid var(--border-strong);
+    padding-top:22px; color:{{ theme }}; }
+  table.venue tfoot td.vname { font-family:'JetBrains Mono',monospace; font-size:19px; font-weight:700;
+    text-transform:uppercase; letter-spacing:0.14em; color:{{ theme }}; }
 </style>
 </head>
 <body>
@@ -242,6 +260,40 @@
     {% endif %}
   </div>
 
+  {% if s.detailed %}
+  <div class="venue-wrap">
+    <div class="section-label">Per-venue breakdown</div>
+    <table class="venue">
+      <thead>
+        <tr>
+          <th class="vname">Venue</th>
+          <th>Pts</th><th>Finish</th><th>Qual</th><th>Pace</th>
+          <th>Consist.</th><th>Net OT</th><th>Places</th><th>Cont.</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for r in s.venue_rows %}
+        <tr>
+          <td class="vname"><span class="rnd">{{ r.round }}</span>{{ r.venue }}</td>
+          <td>{{ r.points }}</td><td>{{ r.finish }}</td><td>{{ r.qual }}</td><td>{{ r.pace }}</td>
+          <td>{{ r.cons }}</td><td>{{ r.net_ot }}</td><td>{{ r.places }}</td><td>{{ r.contacts }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+      {% if s.venue_total %}
+      <tfoot>
+        <tr class="total">
+          <td class="vname">{{ s.venue_total.venue }}</td>
+          <td>{{ s.venue_total.points }}</td><td>{{ s.venue_total.finish }}</td>
+          <td>{{ s.venue_total.qual }}</td><td>{{ s.venue_total.pace }}</td>
+          <td>{{ s.venue_total.cons }}</td><td>{{ s.venue_total.net_ot }}</td>
+          <td>{{ s.venue_total.places }}</td><td>{{ s.venue_total.contacts }}</td>
+        </tr>
+      </tfoot>
+      {% endif %}
+    </table>
+  </div>
+  {% else %}
   <div class="metrics">
     <div class="gauges">
       {% for g in s.gauges %}{{ gauge(g.pct, g.center, g.label) }}{% endfor %}
@@ -269,6 +321,7 @@
     </div>
   </div>
   {% endfor %}
+  {% endif %}
 </div>
 </body>
 </html>
