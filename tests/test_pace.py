@@ -199,7 +199,7 @@ def test_all_stats_avg_finish_pace_and_overtaken():
     from cup_racing_insights.render.season import _all_stats
     stats = _all_stats(con, "X", "S1")
     assert stats["avg_finish"] == 3.0                    # (2 + 4) / 2
-    assert -0.7 < stats["pace_vs_field_pct"] < -0.4      # ~-0.55% vs 90500 field avg
+    assert abs(stats["pace_vs_field_s"] - (-0.5)) < 1e-9  # 90000 vs 90500 field avg = -0.5s/lap
     assert stats["times_overtaken"] == 3                 # 1 + 2 suffered
     assert stats["net_overtakes"] == 2                   # (3+2) made − (1+2) suffered
     assert stats["avg_qual_position"] == 1.0             # X fastest in the one session

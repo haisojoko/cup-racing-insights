@@ -137,7 +137,7 @@ class SeasonSummary:
     clean_races: int | None = None            # contact-free races run (hidden if 0)
     # --all analytical stats (None unless include_all and data present).
     avg_finish: float | None = None           # mean finishing position (started races)
-    pace_vs_field_pct: float | None = None     # mean % vs the race field average (− = faster)
+    pace_vs_field_s: float | None = None       # mean per-lap gap to the race field avg, seconds (− = faster)
     times_overtaken: int | None = None        # on-track passes suffered
     net_overtakes: int | None = None          # passes made − suffered
     avg_qual_position: float | None = None     # mean qualifying rank
@@ -276,7 +276,7 @@ def _all_stats(
                 SELECT venue_order, race_num, AVG(avg_ms) AS field_avg
                   FROM rep GROUP BY venue_order, race_num
             )
-            SELECT AVG((r.avg_ms - f.field_avg) / f.field_avg) * 100
+            SELECT AVG(r.avg_ms - f.field_avg) / 1000.0
               FROM rep r JOIN field f USING (venue_order, race_num)
              WHERE r.driver = ?
             """,
@@ -321,7 +321,7 @@ def _all_stats(
         return {}
     return {
         "avg_finish": float(avg_finish) if avg_finish is not None else None,
-        "pace_vs_field_pct": float(pace_vs_field) if pace_vs_field is not None else None,
+        "pace_vs_field_s": float(pace_vs_field) if pace_vs_field is not None else None,
         "times_overtaken": int(overtaken) if overtaken is not None else None,
         "net_overtakes": int(net_ot) if net_ot is not None else None,
         "avg_qual_position": float(avg_qual_pos) if avg_qual_pos is not None else None,
@@ -505,7 +505,7 @@ def build_season_summary(
         best_drive_venue=gstats.get("best_drive_venue"),
         clean_races=gstats.get("clean_races"),
         avg_finish=all_stats.get("avg_finish"),
-        pace_vs_field_pct=all_stats.get("pace_vs_field_pct"),
+        pace_vs_field_s=all_stats.get("pace_vs_field_s"),
         times_overtaken=all_stats.get("times_overtaken"),
         net_overtakes=all_stats.get("net_overtakes"),
         avg_qual_position=all_stats.get("avg_qual_position"),
@@ -651,9 +651,9 @@ def _attach_presentation(s: SeasonSummary) -> None:
     pace: list[dict[str, Any]] = []
     if s.lap_consistency_cv is not None:
         pace.append({"glyph": "consistency", "value": f"{s.lap_consistency_cv:.2f}%", "label": "Lap consistency"})
-    if s.pace_vs_field_pct is not None:
-        sign = "+" if s.pace_vs_field_pct >= 0 else "−"
-        pace.append({"glyph": "speed", "value": f"{sign}{abs(s.pace_vs_field_pct):.2f}%", "label": "Pace vs field"})
+    if s.pace_vs_field_s is not None:
+        sign = "+" if s.pace_vs_field_s >= 0 else "−"
+        pace.append({"glyph": "speed", "value": f"{sign}{abs(s.pace_vs_field_s):.2f}s", "label": "Pace vs field"})
     if s.avg_finish is not None:
         pace.append({"glyph": "finish", "value": f"P{s.avg_finish:.1f}", "label": "Avg finish"})
 
