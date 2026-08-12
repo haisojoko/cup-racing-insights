@@ -65,36 +65,36 @@ Cumulative career statistics for all drivers across all completed seasons.
 
 | Driver | WDC | WCC | Wins | Podiums | Poles | FLs | Points | Races | Win% | Pod% | Pts/Race | FL% | Top5 | Top5% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Josie | 18 | 13 | 175 | 280 | 257 | 232 | 9369 | 348 | 50.3% | 80.5% | 26.9 | 66.7% | 319 | 91.7% |
-| James | 3 | 4 | 72 | 224 | 69 | 88 | 7629 | 332 | 21.7% | 67.5% | 23.0 | 26.5% | 287 | 86.4% |
+| Josie | 18 | 13 | 176 | 284 | 257 | 233 | 9475 | 352 | 50.0% | 80.7% | 26.9 | 66.2% | 323 | 91.8% |
+| James | 3 | 4 | 75 | 228 | 73 | 91 | 7751 | 336 | 22.3% | 67.9% | 23.1 | 27.1% | 291 | 86.6% |
 | Lee | 1 | 6 | 34 | 143 | 21 | 20 | 5957 | 294 | 11.6% | 48.6% | 20.3 | 6.8% | 214 | 72.8% |
 | Brie | 0 | 1 | 11 | 77 | 0 | 6 | 4495 | 241 | 4.6% | 32.0% | 18.7 | 2.5% | 163 | 67.6% |
 | Toby | 2 | 10 | 31 | 102 | 22 | 24 | 4335 | 209 | 14.8% | 48.8% | 20.7 | 11.5% | 161 | 77.0% |
 | Colin | 0 | 4 | 3 | 19 | 0 | 0 | 4049 | 273 | 1.1% | 7.0% | 14.8 | 0% | 73 | 26.7% |
 | Isaac | 0 | 2 | 2 | 34 | 0 | 1 | 2919 | 184 | 1.1% | 18.5% | 15.9 | 0.5% | 70 | 38.0% |
+| Walnut | 0 | 2 | 10 | 50 | 2 | 1 | 2829 | 154 | 6.5% | 32.5% | 18.4 | 0.6% | 96 | 62.3% |
+| Green Kyle | 1 | 2 | 10 | 32 | 8 | 7 | 2733 | 171 | 5.8% | 18.7% | 16.0 | 4.1% | 72 | 42.1% |
 | Mike | 0 | 1 | 0 | 5 | 0 | 0 | 2721 | 200 | 0% | 2.5% | 13.6 | 0% | 30 | 15.0% |
-| Walnut | 0 | 2 | 8 | 46 | 0 | 1 | 2717 | 150 | 5.3% | 30.7% | 18.1 | 0.7% | 92 | 61.3% |
-| Green Kyle | 1 | 2 | 10 | 31 | 8 | 7 | 2651 | 167 | 6.0% | 18.6% | 15.9 | 4.2% | 68 | 40.7% |
 | Tawm | 0 | 1 | 5 | 34 | 0 | 2 | 2287 | 129 | 3.9% | 26.4% | 17.7 | 1.6% | 71 | 55.0% |
-| Allan | 0 | 1 | 0 | 13 | 6 | 0 | 1535 | 95 | 0% | 13.7% | 16.2 | 0% | 47 | 49.5% |
+| Allan | 0 | 1 | 1 | 17 | 8 | 0 | 1638 | 99 | 1.0% | 17.2% | 16.5 | 0% | 51 | 51.5% |
 | Joyce | 0 | 2 | 0 | 11 | 0 | 1 | 1407 | 99 | 0% | 11.1% | 14.2 | 1.0% | 22 | 22.2% |
 | Dom | 0 | 1 | 12 | 28 | 7 | 7 | 1261 | 60 | 20.0% | 46.7% | 21.0 | 11.7% | 44 | 73.3% |
-| Alfred | 0 | 2 | 0 | 0 | 0 | 0 | 968 | 80 | 0% | 0% | 12.1 | 0% | 8 | 10.0% |
+| Alfred | 0 | 2 | 0 | 3 | 0 | 0 | 1054 | 84 | 0% | 3.6% | 12.5 | 0% | 12 | 14.3% |
 | Jerry | 0 | 0 | 2 | 10 | 6 | 7 | 815 | 54 | 3.7% | 18.5% | 15.1 | 13.0% | 21 | 38.9% |
 | Ghin | 0 | 1 | 0 | 0 | 0 | 0 | 688 | 63 | 0% | 0% | 10.9 | 0% | 1 | 1.6% |
 | Timmy | 0 | 0 | 0 | 1 | 0 | 0 | 682 | 60 | 0% | 1.7% | 11.4 | 0% | 3 | 5.0% |
 | Chris | 0 | 0 | 4 | 14 | 0 | 1 | 629 | 32 | 12.5% | 43.8% | 19.7 | 3.1% | 21 | 65.6% |
+| Arren | 0 | 0 | 0 | 4 | 0 | 3 | 585 | 46 | 0% | 8.7% | 12.7 | 6.5% | 16 | 34.8% |
 | DK | 0 | 0 | 0 | 9 | 4 | 1 | 524 | 30 | 0% | 30.0% | 17.5 | 3.3% | 15 | 50.0% |
 | Kevin | 0 | 1 | 0 | 1 | 0 | 0 | 502 | 38 | 0% | 2.6% | 13.2 | 0% | 9 | 23.7% |
-| Arren | 0 | 0 | 0 | 3 | 0 | 0 | 500 | 42 | 0% | 7.1% | 11.9 | 0% | 12 | 28.6% |
 | Caleb | 0 | 1 | 0 | 4 | 0 | 0 | 490 | 32 | 0% | 12.5% | 15.3 | 0% | 13 | 40.6% |
 | Michael G | 0 | 0 | 0 | 0 | 0 | 0 | 451 | 43 | 0% | 0% | 10.5 | 0% | 1 | 2.3% |
 | Samson | 0 | 0 | 0 | 2 | 0 | 0 | 439 | 33 | 0% | 6.1% | 13.3 | 0% | 9 | 27.3% |
 | Austin | 0 | 0 | 0 | 0 | 0 | 0 | 369 | 28 | 0% | 0% | 13.2 | 0% | 6 | 21.4% |
+| Donald | 0 | 0 | 2 | 6 | 0 | 0 | 347 | 20 | 10.0% | 30.0% | 17.4 | 0% | 12 | 60.0% |
 | Nick | 0 | 0 | 0 | 7 | 1 | 1 | 346 | 20 | 0% | 35.0% | 17.3 | 5.0% | 13 | 65.0% |
 | Calvin | 0 | 0 | 0 | 0 | 0 | 0 | 315 | 21 | 0% | 0% | 15.0 | 0% | 6 | 28.6% |
 | JingTang | 0 | 0 | 0 | 3 | 0 | 0 | 306 | 26 | 0% | 11.5% | 11.8 | 0% | 5 | 19.2% |
-| Donald | 0 | 0 | 1 | 3 | 0 | 0 | 255 | 16 | 6.3% | 18.8% | 15.9 | 0% | 8 | 50.0% |
 | Abu | 0 | 0 | 0 | 0 | 0 | 0 | 201 | 13 | 0% | 0% | 15.5 | 0% | 3 | 23.1% |
 | Edwin | 0 | 0 | 0 | 0 | 0 | 0 | 193 | 17 | 0% | 0% | 11.4 | 0% | 0 | 0% |
 | Martin | 0 | 1 | 0 | 0 | 0 | 0 | 187 | 15 | 0% | 0% | 12.5 | 0% | 0 | 0% |
@@ -104,6 +104,7 @@ Cumulative career statistics for all drivers across all completed seasons.
 | Ryan | 0 | 0 | 0 | 0 | 0 | 0 | 145 | 12 | 0% | 0% | 12.1 | 0% | 0 | 0% |
 | Cheese | 0 | 0 | 0 | 1 | 0 | 0 | 136 | 12 | 0% | 8.3% | 11.3 | 0% | 1 | 8.3% |
 | Ivan | 0 | 0 | 0 | 0 | 0 | 0 | 130 | 11 | 0% | 0% | 11.8 | 0% | 0 | 0% |
+| Ben | 0 | 0 | 0 | 0 | 0 | 0 | 115 | 8 | 0% | 0% | 14.4 | 0% | 4 | 50.0% |
 | Hana | 0 | 0 | 0 | 0 | 0 | 0 | 103 | 9 | 0% | 0% | 11.4 | 0% | 0 | 0% |
 | Allen Q | 0 | 0 | 0 | 0 | 0 | 0 | 83 | 8 | 0% | 0% | 10.4 | 0% | 0 | 0% |
 | Steven | 0 | 0 | 0 | 0 | 0 | 0 | 71 | 7 | 0% | 0% | 10.1 | 0% | 0 | 0% |
@@ -112,7 +113,6 @@ Cumulative career statistics for all drivers across all completed seasons.
 | Lucian | 0 | 1 | 0 | 0 | 0 | 0 | 61 | 4 | 0% | 0% | 15.3 | 0% | 0 | 0% |
 | Wild Card | 0 | 0 | 0 | 0 | 0 | 0 | 44 | 4 | 0% | 0% | 11.0 | 0% | 0 | 0% |
 | Lea | 0 | 0 | 0 | 0 | 0 | 0 | 42 | 4 | 0% | 0% | 10.5 | 0% | 0 | 0% |
-| Ben | 0 | 0 | 0 | 0 | 0 | 0 | 41 | 4 | 0% | 0% | 10.3 | 0% | 0 | 0% |
 | Alan | 0 | 0 | 0 | 0 | 0 | 0 | 38 | 3 | 0% | 0% | 12.7 | 0% | 0 | 0% |
 | Anlac | 0 | 0 | 0 | 0 | 0 | 0 | 32 | 3 | 0% | 0% | 10.7 | 0% | 0 | 0% |
 | Henly | 0 | 0 | 0 | 0 | 0 | 0 | 19 | 2 | 0% | 0% | 9.5 | 0% | 0 | 0% |
@@ -122,10 +122,10 @@ Cumulative career statistics for all drivers across all completed seasons.
 ## Driver Career Summaries
 
 ### Josie — Career Summary
-Josie has competed in 348 races across Cup Racing history. 18x World Drivers' Champion. 13x World Constructors' Champion. 175 wins (50.3% win rate). 280 podiums (80.5% podium rate). 257 pole positions. 232 fastest laps (66.7% FL rate). 9369 career points (26.9 pts/race). 319 top-5 finishes (91.7% top-5 rate).
+Josie has competed in 352 races across Cup Racing history. 18x World Drivers' Champion. 13x World Constructors' Champion. 176 wins (50.0% win rate). 284 podiums (80.7% podium rate). 257 pole positions. 233 fastest laps (66.2% FL rate). 9475 career points (26.9 pts/race). 323 top-5 finishes (91.8% top-5 rate).
 
 ### James — Career Summary
-James has competed in 332 races across Cup Racing history. 3x World Drivers' Champion. 4x World Constructors' Champion. 72 wins (21.7% win rate). 224 podiums (67.5% podium rate). 69 pole positions. 88 fastest laps (26.5% FL rate). 7629 career points (23.0 pts/race). 287 top-5 finishes (86.4% top-5 rate).
+James has competed in 336 races across Cup Racing history. 3x World Drivers' Champion. 4x World Constructors' Champion. 75 wins (22.3% win rate). 228 podiums (67.9% podium rate). 73 pole positions. 91 fastest laps (27.1% FL rate). 7751 career points (23.1 pts/race). 291 top-5 finishes (86.6% top-5 rate).
 
 ### Lee — Career Summary
 Lee has competed in 294 races across Cup Racing history. 1x World Drivers' Champion. 6x World Constructors' Champion. 34 wins (11.6% win rate). 143 podiums (48.6% podium rate). 21 pole positions. 20 fastest laps (6.8% FL rate). 5957 career points (20.3 pts/race). 214 top-5 finishes (72.8% top-5 rate).
@@ -142,20 +142,20 @@ Colin has competed in 273 races across Cup Racing history. 4x World Constructors
 ### Isaac — Career Summary
 Isaac has competed in 184 races across Cup Racing history. 2x World Constructors' Champion. 2 wins (1.1% win rate). 34 podiums (18.5% podium rate). 1 fastest laps (0.5% FL rate). 2919 career points (15.9 pts/race). 70 top-5 finishes (38.0% top-5 rate).
 
-### Mike — Career Summary
-Mike has competed in 200 races across Cup Racing history. 1x World Constructors' Champion. 5 podiums (2.5% podium rate). 2721 career points (13.6 pts/race). 30 top-5 finishes (15.0% top-5 rate).
-
 ### Walnut — Career Summary
-Walnut has competed in 150 races across Cup Racing history. 2x World Constructors' Champion. 8 wins (5.3% win rate). 46 podiums (30.7% podium rate). 1 fastest laps (0.7% FL rate). 2717 career points (18.1 pts/race). 92 top-5 finishes (61.3% top-5 rate).
+Walnut has competed in 154 races across Cup Racing history. 2x World Constructors' Champion. 10 wins (6.5% win rate). 50 podiums (32.5% podium rate). 2 pole positions. 1 fastest laps (0.6% FL rate). 2829 career points (18.4 pts/race). 96 top-5 finishes (62.3% top-5 rate).
 
 ### Green Kyle — Career Summary
-Green Kyle has competed in 167 races across Cup Racing history. 1x World Drivers' Champion. 2x World Constructors' Champion. 10 wins (6.0% win rate). 31 podiums (18.6% podium rate). 8 pole positions. 7 fastest laps (4.2% FL rate). 2651 career points (15.9 pts/race). 68 top-5 finishes (40.7% top-5 rate).
+Green Kyle has competed in 171 races across Cup Racing history. 1x World Drivers' Champion. 2x World Constructors' Champion. 10 wins (5.8% win rate). 32 podiums (18.7% podium rate). 8 pole positions. 7 fastest laps (4.1% FL rate). 2733 career points (16.0 pts/race). 72 top-5 finishes (42.1% top-5 rate).
+
+### Mike — Career Summary
+Mike has competed in 200 races across Cup Racing history. 1x World Constructors' Champion. 5 podiums (2.5% podium rate). 2721 career points (13.6 pts/race). 30 top-5 finishes (15.0% top-5 rate).
 
 ### Tawm — Career Summary
 Tawm has competed in 129 races across Cup Racing history. 1x World Constructors' Champion. 5 wins (3.9% win rate). 34 podiums (26.4% podium rate). 2 fastest laps (1.6% FL rate). 2287 career points (17.7 pts/race). 71 top-5 finishes (55.0% top-5 rate).
 
 ### Allan — Career Summary
-Allan has competed in 95 races across Cup Racing history. 1x World Constructors' Champion. 13 podiums (13.7% podium rate). 6 pole positions. 1535 career points (16.2 pts/race). 47 top-5 finishes (49.5% top-5 rate).
+Allan has competed in 99 races across Cup Racing history. 1x World Constructors' Champion. 1 wins (1.0% win rate). 17 podiums (17.2% podium rate). 8 pole positions. 1638 career points (16.5 pts/race). 51 top-5 finishes (51.5% top-5 rate).
 
 ### Joyce — Career Summary
 Joyce has competed in 99 races across Cup Racing history. 2x World Constructors' Champion. 11 podiums (11.1% podium rate). 1 fastest laps (1.0% FL rate). 1407 career points (14.2 pts/race). 22 top-5 finishes (22.2% top-5 rate).
@@ -164,7 +164,7 @@ Joyce has competed in 99 races across Cup Racing history. 2x World Constructors'
 Dom has competed in 60 races across Cup Racing history. 1x World Constructors' Champion. 12 wins (20.0% win rate). 28 podiums (46.7% podium rate). 7 pole positions. 7 fastest laps (11.7% FL rate). 1261 career points (21.0 pts/race). 44 top-5 finishes (73.3% top-5 rate).
 
 ### Alfred — Career Summary
-Alfred has competed in 80 races across Cup Racing history. 2x World Constructors' Champion. 968 career points (12.1 pts/race). 8 top-5 finishes (10.0% top-5 rate).
+Alfred has competed in 84 races across Cup Racing history. 2x World Constructors' Champion. 3 podiums (3.6% podium rate). 1054 career points (12.5 pts/race). 12 top-5 finishes (14.3% top-5 rate).
 
 ### Jerry — Career Summary
 Jerry has competed in 54 races across Cup Racing history. 2 wins (3.7% win rate). 10 podiums (18.5% podium rate). 6 pole positions. 7 fastest laps (13.0% FL rate). 815 career points (15.1 pts/race). 21 top-5 finishes (38.9% top-5 rate).
@@ -178,14 +178,14 @@ Timmy has competed in 60 races across Cup Racing history. 1 podiums (1.7% podium
 ### Chris — Career Summary
 Chris has competed in 32 races across Cup Racing history. 4 wins (12.5% win rate). 14 podiums (43.8% podium rate). 1 fastest laps (3.1% FL rate). 629 career points (19.7 pts/race). 21 top-5 finishes (65.6% top-5 rate).
 
+### Arren — Career Summary
+Arren has competed in 46 races across Cup Racing history. 4 podiums (8.7% podium rate). 3 fastest laps (6.5% FL rate). 585 career points (12.7 pts/race). 16 top-5 finishes (34.8% top-5 rate).
+
 ### DK — Career Summary
 DK has competed in 30 races across Cup Racing history. 9 podiums (30.0% podium rate). 4 pole positions. 1 fastest laps (3.3% FL rate). 524 career points (17.5 pts/race). 15 top-5 finishes (50.0% top-5 rate).
 
 ### Kevin — Career Summary
 Kevin has competed in 38 races across Cup Racing history. 1x World Constructors' Champion. 1 podiums (2.6% podium rate). 502 career points (13.2 pts/race). 9 top-5 finishes (23.7% top-5 rate).
-
-### Arren — Career Summary
-Arren has competed in 42 races across Cup Racing history. 3 podiums (7.1% podium rate). 500 career points (11.9 pts/race). 12 top-5 finishes (28.6% top-5 rate).
 
 ### Caleb — Career Summary
 Caleb has competed in 32 races across Cup Racing history. 1x World Constructors' Champion. 4 podiums (12.5% podium rate). 490 career points (15.3 pts/race). 13 top-5 finishes (40.6% top-5 rate).
@@ -199,6 +199,9 @@ Samson has competed in 33 races across Cup Racing history. 2 podiums (6.1% podiu
 ### Austin — Career Summary
 Austin has competed in 28 races across Cup Racing history. 369 career points (13.2 pts/race). 6 top-5 finishes (21.4% top-5 rate).
 
+### Donald — Career Summary
+Donald has competed in 20 races across Cup Racing history. 2 wins (10.0% win rate). 6 podiums (30.0% podium rate). 347 career points (17.4 pts/race). 12 top-5 finishes (60.0% top-5 rate).
+
 ### Nick — Career Summary
 Nick has competed in 20 races across Cup Racing history. 7 podiums (35.0% podium rate). 1 pole positions. 1 fastest laps (5.0% FL rate). 346 career points (17.3 pts/race). 13 top-5 finishes (65.0% top-5 rate).
 
@@ -207,9 +210,6 @@ Calvin has competed in 21 races across Cup Racing history. 315 career points (15
 
 ### JingTang — Career Summary
 JingTang has competed in 26 races across Cup Racing history. 3 podiums (11.5% podium rate). 306 career points (11.8 pts/race). 5 top-5 finishes (19.2% top-5 rate).
-
-### Donald — Career Summary
-Donald has competed in 16 races across Cup Racing history. 1 wins (6.3% win rate). 3 podiums (18.8% podium rate). 255 career points (15.9 pts/race). 8 top-5 finishes (50.0% top-5 rate).
 
 ### Abu — Career Summary
 Abu has competed in 13 races across Cup Racing history. 201 career points (15.5 pts/race). 3 top-5 finishes (23.1% top-5 rate).
@@ -238,6 +238,9 @@ Cheese has competed in 12 races across Cup Racing history. 1 podiums (8.3% podiu
 ### Ivan — Career Summary
 Ivan has competed in 11 races across Cup Racing history. 130 career points (11.8 pts/race). 0 top-5 finishes (0% top-5 rate).
 
+### Ben — Career Summary
+Ben has competed in 8 races across Cup Racing history. 115 career points (14.4 pts/race). 4 top-5 finishes (50.0% top-5 rate).
+
 ### Hana — Career Summary
 Hana has competed in 9 races across Cup Racing history. 103 career points (11.4 pts/race). 0 top-5 finishes (0% top-5 rate).
 
@@ -261,9 +264,6 @@ Wild Card has competed in 4 races across Cup Racing history. 44 career points (1
 
 ### Lea — Career Summary
 Lea has competed in 4 races across Cup Racing history. 42 career points (10.5 pts/race). 0 top-5 finishes (0% top-5 rate).
-
-### Ben — Career Summary
-Ben has competed in 4 races across Cup Racing history. 41 career points (10.3 pts/race). 0 top-5 finishes (0% top-5 rate).
 
 ### Alan — Career Summary
 Alan has competed in 3 races across Cup Racing history. 38 career points (12.7 pts/race). 0 top-5 finishes (0% top-5 rate).
@@ -5255,20 +5255,20 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 
 | Pos | Driver | Points | Wins | Podiums | Poles | FLs | Races | Part. | Pts Rate | Top 5 Rate |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Josie | 127 | 4 | 4 | 4 | 3 | 4 | 25.0% | 24.8% | 25.0% |
-| 1 | Lee | 100 | 1 | 3 | 4 | 3 | 4 | 25.0% | 19.5% | 18.8% |
-| 2 | James | 101 | 0 | 4 | 0 | 1 | 4 | 25.0% | 19.7% | 25.0% |
-| 2 | Chris | 93 | 2 | 2 | 0 | 1 | 4 | 25.0% | 18.2% | 18.8% |
-| 3 | Green Kyle | 22 | 0 | 1 | 0 | 0 | 1 | 6.3% | 4.3% | 6.3% |
-| 3 | Walnut | 90 | 1 | 2 | 0 | 0 | 4 | 25.0% | 17.6% | 25.0% |
-| 4 | Alfred | 0 | 0 | 0 | 0 | 0 | 0 | 0% | 0% | 0% |
-| 4 | Allan | 83 | 0 | 2 | 0 | 0 | 4 | 25.0% | 16.2% | 18.8% |
-| 5 | Donald | 73 | 0 | 1 | 0 | 0 | 4 | 25.0% | 14.3% | 18.8% |
-| 6 | Arren | 69 | 0 | 1 | 0 | 0 | 4 | 25.0% | 13.5% | 18.8% |
-| 7 | DK | 63 | 0 | 1 | 0 | 0 | 4 | 25.0% | 12.3% | 6.3% |
-| 8 | Mike | 53 | 0 | 0 | 0 | 0 | 4 | 25.0% | 10.4% | 0% |
-| 9 | Timmy | 52 | 0 | 0 | 0 | 0 | 4 | 25.0% | 10.2% | 0% |
-| 10 | Ben | 41 | 0 | 0 | 0 | 0 | 4 | 25.0% | 8.0% | 0% |
+| 1 | Josie | 233 | 5 | 8 | 4 | 4 | 8 | 50.0% | 45.5% | 50.0% |
+| 1 | Walnut | 202 | 3 | 6 | 2 | 0 | 8 | 50.0% | 39.5% | 50.0% |
+| 2 | James | 223 | 3 | 8 | 4 | 4 | 8 | 50.0% | 43.6% | 50.0% |
+| 2 | Allan | 186 | 1 | 6 | 2 | 0 | 8 | 50.0% | 36.3% | 43.8% |
+| 3 | Green Kyle | 104 | 0 | 2 | 0 | 0 | 5 | 31.3% | 20.3% | 31.3% |
+| 3 | Donald | 165 | 1 | 4 | 0 | 0 | 8 | 50.0% | 32.2% | 43.8% |
+| 4 | Alfred | 86 | 0 | 3 | 0 | 0 | 4 | 25.0% | 16.8% | 25.0% |
+| 4 | Arren | 154 | 0 | 2 | 0 | 3 | 8 | 50.0% | 30.1% | 43.8% |
+| 5 | Ben | 115 | 0 | 0 | 0 | 0 | 8 | 50.0% | 22.5% | 25.0% |
+| 6 | Lee | 100 | 1 | 3 | 4 | 3 | 4 | 25.0% | 19.5% | 18.8% |
+| 7 | Chris | 93 | 2 | 2 | 0 | 1 | 4 | 25.0% | 18.2% | 18.8% |
+| 8 | DK | 63 | 0 | 1 | 0 | 0 | 4 | 25.0% | 12.3% | 6.3% |
+| 9 | Mike | 53 | 0 | 0 | 0 | 0 | 4 | 25.0% | 10.4% | 0% |
+| 10 | Timmy | 52 | 0 | 0 | 0 | 0 | 4 | 25.0% | 10.2% | 0% |
 | 11 | Allen Q | 30 | 0 | 0 | 0 | 0 | 2 | 12.5% | 5.9% | 0% |
 | 12 | Abu | 13 | 0 | 0 | 0 | 0 | 1 | 6.3% | 2.5% | 0% |
 | 13 | Brie | 0 | 0 | 0 | 0 | 0 | 0 | 0% | 0% | 0% |
@@ -5279,11 +5279,11 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 
 | Team | Points |
 | --- | --- |
-| Josie + Arren + Abu | 209 |
-| Lee + Walnut + Cheese | 190 |
+| James + Allan + Alfred | 495 |
+| Josie + Arren + Abu | 400 |
+| Lee + Walnut + Cheese | 302 |
+| Aditya + Donald + Green Kyle | 269 |
+| Ben + Mike + Brie + Timmy | 220 |
 | Chris + DK + Allen Q | 186 |
-| James + Allan + Alfred | 184 |
-| Ben + Mike + Brie + Timmy | 146 |
-| Aditya + Donald + Green Kyle | 95 |
 
 ---
