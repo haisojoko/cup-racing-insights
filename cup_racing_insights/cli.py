@@ -215,18 +215,23 @@ def _render_season_card(
     Blocks in-progress seasons (no champion declared yet) — the feature is a
     celebration of *completed* seasons for now.
     """
-    season = season.upper()
+    season_input = season.strip()
     with dbmod.open_db() as con:
+        # Match case-insensitively: multi-class seasons are stored with a
+        # lowercase suffix (S24a, S18b), so a naive .upper() ("S24A") missed
+        # them. Adopt the DB's canonical id for all downstream use.
         meta = con.execute(
-            "SELECT wdc FROM seasons WHERE season_id = ?", [season]
+            "SELECT season_id, wdc FROM seasons WHERE UPPER(season_id) = UPPER(?)",
+            [season_input],
         ).fetchone()
         if meta is None:
             console.print(
-                f"[red]Unknown season: {season}.[/red] "
+                f"[red]Unknown season: {season_input}.[/red] "
                 f"Use an ID like S21 (run `cri rebuild` if the data is new)."
             )
             raise typer.Exit(1)
-        if (meta[0] or "").strip().upper() in ("", "TBD"):
+        season = meta[0]
+        if (meta[1] or "").strip().upper() in ("", "TBD"):
             console.print(
                 f"[yellow]{season} is still in progress[/yellow] — season "
                 f"cards are for completed seasons only."

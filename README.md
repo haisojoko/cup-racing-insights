@@ -46,6 +46,7 @@ Parses `data/Cup_Racing_Complete_Data.md` into `output/cup_racing.duckdb`.
 |---|---|---|
 | `--data`, `-d` | `data/Cup_Racing_Complete_Data.md` | Source markdown path |
 | `--out`, `-o` | `output/cup_racing.duckdb` | DuckDB output path |
+| `--races` | `data/races` | Race dataset dir (`index.json` + `seasons/`) for per-venue detail; optional |
 
 ### `cri cards`
 
@@ -82,17 +83,20 @@ into one post.
 Render a 1200×1600 PNG card. HTML → headless Chromium → PNG.
 
 Layout modes:
-- **Season celebration** (`--season SXX`): one completed season, framed as a celebration — best finish (laurel/medal badge), compact completion + points-scoring gauges, rate tiles for points/wins/podiums/top-5s, and counted stats with iconography. Deliberately avoids any "out of N drivers" comparison so mid- and lower-pack drivers feel their season. Auto-picks the strongest hero (a podium leads with the medal badge; a non-podium season leads with its best rate). In-progress seasons are blocked (completed seasons only). Output defaults to `output/<driver>_<season>.png`.
+- **Season celebration** (`--season SXX`): one completed season, framed as a celebration — best finish (laurel/medal badge), compact completion + points-scoring gauges, rate tiles for points/wins/podiums/top-5s, and counted stats with iconography. Deliberately avoids any "out of N drivers" comparison so mid- and lower-pack drivers feel their season. Auto-picks the strongest hero (a podium leads with the medal badge; a non-podium season leads with its best rate). In-progress seasons are blocked (completed seasons only). Add `--all` for analytical stats or `--detailed` for a per-venue breakdown table. Output defaults to `output/<driver>_<season>.png`.
 - **Single-card hero layout** (default, or `--card NAME`): top-N insights in the classic stacked-row design.
 - **Card-first grid** (`--cards NAMES`, or `--card all` / `--cards all`): every selected card becomes its own tile; related insight families collapse into **composite** blocks (see [`cri composites`](#cri-composites)).
 
 | Flag | Default | Purpose |
 |---|---|---|
-| `--season` | — | Season celebration card (e.g. `--season S21`). Completed seasons only |
+| `--season` | — | Season celebration card (e.g. `--season S21`). Completed seasons only. Case-insensitive; multi-class suffixes work (`--season S24a`) |
+| `--all` | off | (Season mode) add analytical stats — avg finish, pace vs field, times overtaken. May read as unflattering |
+| `--detailed` | off | (Season mode) replace the summary tiles with a per-venue breakdown table (every stat, averaged per circuit) |
 | `--card` | — | Single-card hero layout. Use `all` for the card-first grid |
 | `--cards` | — | Card-first grid (e.g. `--cards streaks,venues` or `all`) |
 | `--top`, `-n` | `10` | (Single-card mode) insights to feature; with `--card`, applied directly after card filtering |
 | `--allow-grow` | off | (Card-first mode) let the canvas grow taller than `--height` to fit everything |
+| `--trim-height` | off | (Card-first mode) shrink the canvas if content is shorter than `--height`; combine with `--allow-grow` for exact-fit |
 | `--no-composites` | off | (Card-first mode) disable composite tiles; render every insight as its own row |
 | `--budget` | `40` | (Card-first mode) tile-weight budget before drop/grow kicks in |
 | `--out`, `-o` | `output/{driver}_card.png` | Output path; `{driver}` is replaced |
