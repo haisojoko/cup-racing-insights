@@ -17,6 +17,7 @@ from __future__ import annotations
 from duckdb import DuckDBPyConnection
 
 from ..models import Insight, InsightCategory
+from ..races import CLASS_KEY_CTE
 
 # Minimum field size for a gap to be meaningful (avoid 2-car sessions).
 _MIN_FIELD = 3
@@ -50,28 +51,36 @@ def _fmt_gap(ms: float) -> str:
 
 
 def detect_pole_margin(con: DuckDBPyConnection, driver: str) -> list[Insight]:
-    """D-089 — the driver's biggest qualifying pole margin over P2."""
+    """D-089 — the driver's biggest qualifying pole margin over P2.
+
+    On multi-class seasons the margin is measured within the driver's own car
+    class (a GT3 pole over the next GT3), never against a faster class."""
     if not _has_table(con, "qual_times"):
         return []
     row = con.execute(
-        """
-        WITH ranked AS (
-            SELECT season_id, venue, venue_order, session, driver, best_ms,
-                   ROW_NUMBER() OVER (PARTITION BY season_id, venue_order, session
+        "WITH " + CLASS_KEY_CTE + """,
+        q AS (
+            SELECT qt.season_id, qt.venue, qt.venue_order, qt.session, qt.driver, qt.best_ms,
+                   COALESCE(_dc.class_key, '') AS class_key
+              FROM qual_times qt
+              LEFT JOIN _dc USING (season_id, driver)
+        ),
+        ranked AS (
+            SELECT season_id, venue, venue_order, session, driver, best_ms, class_key,
+                   ROW_NUMBER() OVER (PARTITION BY season_id, venue_order, session, class_key
                                       ORDER BY best_ms) AS pos,
-                   COUNT(*) OVER (PARTITION BY season_id, venue_order, session) AS field
-              FROM qual_times
+                   COUNT(*) OVER (PARTITION BY season_id, venue_order, session, class_key) AS field
+              FROM q
         ),
         poles AS (
-            SELECT p.season_id, p.venue, p.driver, p.field,
-                   p.best_ms AS pole_ms, s.best_ms AS second_ms,
+            SELECT p.season_id, p.venue, p.driver, p.field, p.class_key,
                    s.best_ms - p.best_ms AS gap_ms
               FROM ranked p
-              JOIN ranked s USING (season_id, venue_order, session)
+              JOIN ranked s USING (season_id, venue_order, session, class_key)
              WHERE p.pos = 1 AND s.pos = 2 AND p.field >= ?
                AND s.best_ms - p.best_ms <= p.best_ms * ?
         )
-        SELECT season_id, venue, gap_ms, field
+        SELECT season_id, venue, gap_ms, field, class_key
           FROM poles
          WHERE driver = ?
          ORDER BY gap_ms DESC
@@ -81,19 +90,21 @@ def detect_pole_margin(con: DuckDBPyConnection, driver: str) -> list[Insight]:
     ).fetchone()
     if not row:
         return []
-    season_id, venue, gap_ms, field = row
+    season_id, venue, gap_ms, field, car_class = row
+    cw = f"{car_class} " if car_class else ""
     return [
         Insight(
             category=InsightCategory.RECORD,
             kind="pole_margin",
             subject=driver,
-            headline=f"Widest pole: {_fmt_gap(gap_ms)} clear at {venue} ({season_id})",
+            headline=f"Widest {cw}pole: {_fmt_gap(gap_ms)} clear at {venue} ({season_id})",
             payload={
                 "season": season_id,
                 "venue": venue,
                 "gap_ms": float(gap_ms),
                 "gap_s": round(gap_ms / 1000, 3),
                 "field": int(field),
+                "class": car_class or None,
             },
             sources=[season_id],
         )
@@ -106,26 +117,29 @@ def detect_dominant_fastest_lap(con: DuckDBPyConnection, driver: str) -> list[In
     if not _has_table(con, "race_pace"):
         return []
     row = con.execute(
-        """
-        WITH representative AS (
-            SELECT * FROM race_pace WHERE laps_used >= ?
+        "WITH " + CLASS_KEY_CTE + """,
+        representative AS (
+            SELECT rp.*, COALESCE(_dc.class_key, '') AS class_key
+              FROM race_pace rp
+              LEFT JOIN _dc USING (season_id, driver)
+             WHERE rp.laps_used >= ?
         ),
         ranked AS (
-            SELECT season_id, venue, venue_order, race_num, driver, best_ms,
-                   ROW_NUMBER() OVER (PARTITION BY season_id, venue_order, race_num
+            SELECT season_id, venue, venue_order, race_num, driver, best_ms, class_key,
+                   ROW_NUMBER() OVER (PARTITION BY season_id, venue_order, race_num, class_key
                                       ORDER BY best_ms) AS pos,
-                   COUNT(*) OVER (PARTITION BY season_id, venue_order, race_num) AS field
+                   COUNT(*) OVER (PARTITION BY season_id, venue_order, race_num, class_key) AS field
               FROM representative
         ),
         margins AS (
-            SELECT a.season_id, a.venue, a.race_num, a.driver, a.field,
+            SELECT a.season_id, a.venue, a.race_num, a.driver, a.field, a.class_key,
                    b.best_ms - a.best_ms AS gap_ms
               FROM ranked a
-              JOIN ranked b USING (season_id, venue_order, race_num)
+              JOIN ranked b USING (season_id, venue_order, race_num, class_key)
              WHERE a.pos = 1 AND b.pos = 2 AND a.field >= ?
                AND b.best_ms - a.best_ms <= a.best_ms * ?
         )
-        SELECT season_id, venue, race_num, gap_ms, field
+        SELECT season_id, venue, race_num, gap_ms, field, class_key
           FROM margins
          WHERE driver = ?
          ORDER BY gap_ms DESC
@@ -135,13 +149,14 @@ def detect_dominant_fastest_lap(con: DuckDBPyConnection, driver: str) -> list[In
     ).fetchone()
     if not row:
         return []
-    season_id, venue, race_num, gap_ms, field = row
+    season_id, venue, race_num, gap_ms, field, car_class = row
+    cw = f"{car_class} " if car_class else ""
     return [
         Insight(
             category=InsightCategory.RECORD,
             kind="dominant_fastest_lap",
             subject=driver,
-            headline=f"Fastest lap {_fmt_gap(gap_ms)} clear of the field at {venue} ({season_id})",
+            headline=f"Fastest lap {_fmt_gap(gap_ms)} clear of the {cw}field at {venue} ({season_id})",
             payload={
                 "season": season_id,
                 "venue": venue,
@@ -149,6 +164,7 @@ def detect_dominant_fastest_lap(con: DuckDBPyConnection, driver: str) -> list[In
                 "gap_ms": float(gap_ms),
                 "gap_s": round(gap_ms / 1000, 3),
                 "field": int(field),
+                "class": car_class or None,
             },
             sources=[season_id],
         )
@@ -167,9 +183,12 @@ def detect_avg_pace_gap(con: DuckDBPyConnection, driver: str) -> list[Insight]:
     if not _has_table(con, "race_pace"):
         return []
     rows = con.execute(
-        """
-        WITH representative AS (
-            SELECT * FROM race_pace WHERE laps_used >= ?
+        "WITH " + CLASS_KEY_CTE + """,
+        representative AS (
+            SELECT rp.*, COALESCE(_dc.class_key, '') AS class_key
+              FROM race_pace rp
+              LEFT JOIN _dc USING (season_id, driver)
+             WHERE rp.laps_used >= ?
         ),
         season_rounds AS (
             SELECT season_id, COUNT(DISTINCT (venue_order, race_num)) AS rounds
@@ -177,17 +196,17 @@ def detect_avg_pace_gap(con: DuckDBPyConnection, driver: str) -> list[Insight]:
           GROUP BY season_id
         ),
         race_best AS (
-            SELECT season_id, venue_order, race_num, MIN(avg_ms) AS best_avg
+            SELECT season_id, venue_order, race_num, class_key, MIN(avg_ms) AS best_avg
               FROM representative
-          GROUP BY season_id, venue_order, race_num
+          GROUP BY season_id, venue_order, race_num, class_key
         ),
         gaps AS (
-            SELECT p.season_id, p.driver,
+            SELECT p.season_id, p.driver, p.class_key,
                    AVG((p.avg_ms - rb.best_avg) / rb.best_avg) AS gap_pct,
                    COUNT(*) AS races
               FROM representative p
-              JOIN race_best rb USING (season_id, venue_order, race_num)
-          GROUP BY p.season_id, p.driver
+              JOIN race_best rb USING (season_id, venue_order, race_num, class_key)
+          GROUP BY p.season_id, p.driver, p.class_key
         ),
         eligible AS (
             SELECT g.*, sr.rounds
@@ -196,13 +215,13 @@ def detect_avg_pace_gap(con: DuckDBPyConnection, driver: str) -> list[Insight]:
              WHERE g.races >= GREATEST(?, CEIL(? * sr.rounds))
         ),
         ranked AS (
-            SELECT season_id, driver, gap_pct, races,
-                   RANK() OVER (PARTITION BY season_id ORDER BY gap_pct) AS pace_rank,
-                   COUNT(*) OVER (PARTITION BY season_id) AS cohort,
-                   LEAD(gap_pct) OVER (PARTITION BY season_id ORDER BY gap_pct) AS next_gap_pct
+            SELECT season_id, driver, class_key, gap_pct, races,
+                   RANK() OVER (PARTITION BY season_id, class_key ORDER BY gap_pct) AS pace_rank,
+                   COUNT(*) OVER (PARTITION BY season_id, class_key) AS cohort,
+                   LEAD(gap_pct) OVER (PARTITION BY season_id, class_key ORDER BY gap_pct) AS next_gap_pct
               FROM eligible
         )
-        SELECT season_id, gap_pct, races, pace_rank, cohort, next_gap_pct
+        SELECT season_id, gap_pct, races, pace_rank, cohort, next_gap_pct, class_key
           FROM ranked
          WHERE driver = ?
          ORDER BY gap_pct
@@ -214,9 +233,10 @@ def detect_avg_pace_gap(con: DuckDBPyConnection, driver: str) -> list[Insight]:
 
     out: list[Insight] = []
     best_follower: tuple | None = None
-    for season_id, gap_pct, races, pace_rank, cohort, next_gap_pct in rows:
+    for season_id, gap_pct, races, pace_rank, cohort, next_gap_pct, car_class in rows:
+        cw = f"{car_class} " if car_class else ""
         if pace_rank == 1:
-            # Margin over the next-fastest driver (gap to "P2" on pace).
+            # Margin over the next-fastest driver in class (gap to "P2" on pace).
             margin_pct = (next_gap_pct - gap_pct) if next_gap_pct is not None else None
             clear = f" — {margin_pct * 100:.2f}% clear of the next driver" if margin_pct else ""
             out.append(
@@ -225,7 +245,7 @@ def detect_avg_pace_gap(con: DuckDBPyConnection, driver: str) -> list[Insight]:
                     kind="pace_setter_season",
                     subject=driver,
                     headline=(
-                        f"Fastest average race pace of {season_id}"
+                        f"Fastest average {cw}race pace of {season_id}"
                         f"{clear} ({int(cohort)} drivers)"
                     ),
                     payload={
@@ -234,22 +254,24 @@ def detect_avg_pace_gap(con: DuckDBPyConnection, driver: str) -> list[Insight]:
                         "rank": int(pace_rank),
                         "races": int(races),
                         "margin_pct": round(margin_pct * 100, 3) if margin_pct else None,
+                        "class": car_class or None,
                     },
                     sources=[season_id],
                 )
             )
         elif best_follower is None:
-            best_follower = (season_id, gap_pct, races, pace_rank, cohort)
+            best_follower = (season_id, gap_pct, races, pace_rank, cohort, car_class)
 
     if best_follower is not None:
-        season_id, gap_pct, races, pace_rank, cohort = best_follower
+        season_id, gap_pct, races, pace_rank, cohort, car_class = best_follower
+        cw = f"{car_class} " if car_class else ""
         out.append(
             Insight(
                 category=InsightCategory.MARGIN,
                 kind="pace_gap_to_leader",
                 subject=driver,
                 headline=(
-                    f"{gap_pct * 100:.2f}% off the pace-setter's average in {season_id} "
+                    f"{gap_pct * 100:.2f}% off the {cw}pace-setter's average in {season_id} "
                     f"(P{int(pace_rank)} on race pace)"
                 ),
                 payload={
@@ -258,6 +280,7 @@ def detect_avg_pace_gap(con: DuckDBPyConnection, driver: str) -> list[Insight]:
                     "pace_rank": int(pace_rank),
                     "cohort_size": int(cohort),
                     "races": int(races),
+                    "class": car_class or None,
                 },
                 sources=[season_id],
             )

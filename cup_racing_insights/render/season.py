@@ -24,6 +24,8 @@ from typing import Any
 
 from duckdb import DuckDBPyConnection
 
+from ..races import CLASS_KEY_CTE
+
 
 def _champion_names(wdc: str | None) -> list[str]:
     """Champion name(s) from a `seasons.wdc` cell.
@@ -293,16 +295,20 @@ def _all_stats(
             [driver, season_id],
         ).fetchone()[0]
         pace_vs_field = con.execute(
-            """
-            WITH rep AS (
-                SELECT * FROM race_pace WHERE season_id = ? AND laps_used >= 2
+            "WITH " + CLASS_KEY_CTE + """,
+            rep AS (
+                SELECT rp.venue_order, rp.race_num, rp.driver, rp.avg_ms,
+                       COALESCE(_dc.class_key, '') AS class_key
+                  FROM race_pace rp
+                  LEFT JOIN _dc USING (season_id, driver)
+                 WHERE rp.season_id = ? AND rp.laps_used >= 2
             ),
             field AS (
-                SELECT venue_order, race_num, AVG(avg_ms) AS field_avg
-                  FROM rep GROUP BY venue_order, race_num
+                SELECT venue_order, race_num, class_key, AVG(avg_ms) AS field_avg
+                  FROM rep GROUP BY venue_order, race_num, class_key
             )
             SELECT AVG(r.avg_ms - f.field_avg) / 1000.0
-              FROM rep r JOIN field f USING (venue_order, race_num)
+              FROM rep r JOIN field f USING (venue_order, race_num, class_key)
              WHERE r.driver = ?
             """,
             [season_id, driver],
@@ -318,29 +324,42 @@ def _all_stats(
             [driver, season_id],
         ).fetchone()[0]
         avg_qual_pos = con.execute(
-            """
-            WITH ranked AS (
-                SELECT season_id, driver,
-                       RANK() OVER (PARTITION BY season_id, venue_order, session
+            "WITH " + CLASS_KEY_CTE + """,
+            q AS (
+                SELECT qt.season_id, qt.venue_order, qt.session, qt.driver, qt.best_ms,
+                       COALESCE(_dc.class_key, '') AS class_key
+                  FROM qual_times qt
+                  LEFT JOIN _dc USING (season_id, driver)
+                 WHERE qt.season_id = ?
+            ),
+            ranked AS (
+                SELECT driver,
+                       RANK() OVER (PARTITION BY season_id, venue_order, session, class_key
                                     ORDER BY best_ms) AS pos
-                  FROM qual_times WHERE season_id = ?
+                  FROM q
             )
             SELECT AVG(pos) FROM ranked WHERE driver = ?
             """,
             [season_id, driver],
         ).fetchone()[0]
         pole_gap = con.execute(
-            """
-            WITH pole AS (
-                SELECT season_id, venue_order, session, MIN(best_ms) AS pole_ms
-                  FROM qual_times WHERE season_id = ?
-              GROUP BY season_id, venue_order, session
+            "WITH " + CLASS_KEY_CTE + """,
+            q AS (
+                SELECT qt.season_id, qt.venue_order, qt.session, qt.driver, qt.best_ms,
+                       COALESCE(_dc.class_key, '') AS class_key
+                  FROM qual_times qt
+                  LEFT JOIN _dc USING (season_id, driver)
+                 WHERE qt.season_id = ?
+            ),
+            pole AS (
+                SELECT venue_order, session, class_key, MIN(best_ms) AS pole_ms
+                  FROM q GROUP BY venue_order, session, class_key
             )
             SELECT AVG(q.best_ms - p.pole_ms)
-              FROM qual_times q JOIN pole p USING (season_id, venue_order, session)
-             WHERE q.driver = ? AND q.season_id = ?
+              FROM q JOIN pole p USING (venue_order, session, class_key)
+             WHERE q.driver = ?
             """,
-            [season_id, driver, season_id],
+            [season_id, driver],
         ).fetchone()[0]
     except Exception:  # noqa: BLE001
         return {}

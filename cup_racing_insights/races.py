@@ -31,6 +31,27 @@ _MAX_LAP_MS = 600_000
 _OUTLIER_FACTOR = 1.20  # drop laps slower than 120% of the median (pit/off)
 
 
+# Shared CTE for scoping speed comparisons (pace, qualifying) to a driver's car
+# class. It exposes `dc(season_id, driver, class_key)`: class_key is the car
+# class in seasons that run >= 2 classes, else '' (one bucket = whole field).
+# Callers add `class_key` to their PARTITION BY / GROUP BY and it automatically
+# falls back to whole-field on single-class seasons — `driver_classes` only
+# holds rows for multi-class seasons, so the LEFT JOIN yields '' everywhere
+# else. Prepend with `WITH` and a trailing comma before the caller's own CTEs.
+CLASS_KEY_CTE = """
+    _multi_class AS (
+        SELECT season_id FROM driver_classes
+      GROUP BY season_id HAVING COUNT(DISTINCT car_class) >= 2
+    ),
+    _dc AS (
+        SELECT c.season_id, c.driver,
+               CASE WHEN m.season_id IS NOT NULL THEN c.car_class ELSE '' END AS class_key
+          FROM driver_classes c
+          LEFT JOIN _multi_class m USING (season_id)
+    )
+"""
+
+
 RACES_SCHEMA_SQL = """
 DROP TABLE IF EXISTS race_pace;
 DROP TABLE IF EXISTS qual_times;
