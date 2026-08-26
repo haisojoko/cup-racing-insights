@@ -32,7 +32,7 @@ Season 18 was split into S18a and S18b (both sports car seasons).
 | S21 | Formula | F1 2007 (McLaren, Ferrari) | Yes | Kyalami, Shanghai, Monza, Sepang | 4 | James | Allan + Walnut |
 | S22 | Sports | GT4 | Yes | VIR, Charlotte Roval, Barcelona City Circuit, Road Atlanta | 4 | Josie | Josie + Toby + Kevin + Alfred |
 | S23 | Formula | F1 1990 (McLaren, Ferrari) | Yes | Silverstone, Spa, Suzuka, Interlagos | 4 | Josie | Josie + Colin + Alfred |
-| S24a | Sports | WEC (GT3 and Hypercars) | Yes | Dragon Trail Seaside, Red Bull Ring, Sebring, Fuji | 4 | James | James + Allan + Alfred |
+| S24a | Sports | WEC (GT3 and Hypercars) | Yes | Dragon Trail Seaside, Red Bull Ring, Sebring, Fuji | 4 | James (Hypercar), Walnut (GT3) | James + Allan + Alfred |
 | S24b | Sports | Vintage Mini Coopers | Yes | TBD | 4 | TBD | TBD |
 
 ## Scoring System
@@ -5300,7 +5300,7 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 **Reverse Grid:** Yes
 **Venues:** Dragon Trail Seaside, Red Bull Ring, Sebring, Fuji
 **Races Per Venue:** 4
-**WDC:** James
+**WDC:** James (Hypercar), Walnut (GT3)
 **WCC:** James + Allan + Alfred
 
 ### Scoring System

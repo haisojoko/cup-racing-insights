@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "generator": "cup-racing-race-processor 0.3.0",
   "season": "S12",
-  "lastUpdated": "2026-08-26T15:24:09.388803+00:00",
+  "lastUpdated": "2026-08-26T08:56:59.148409+00:00",
   "unprocessed": [],
   "events": [
     {
@@ -95,7 +95,7 @@
               ]
             },
             "Green Kyle": {
-              "bestMs": 118838,
+              "bestMs": 105496,
               "laps": [
                 118838,
                 105496,
@@ -104,7 +104,7 @@
               ]
             },
             "Isaac": {
-              "bestMs": 125857,
+              "bestMs": 107407,
               "laps": [
                 125857,
                 107407,
@@ -240,7 +240,7 @@
               ]
             },
             "Brie": {
-              "bestMs": 102907,
+              "bestMs": 101884,
               "laps": [
                 116127,
                 101884,
@@ -259,7 +259,7 @@
               ]
             },
             "Isaac": {
-              "bestMs": 103241,
+              "bestMs": 102494,
               "laps": [
                 131305,
                 104734,
@@ -18025,7 +18025,7 @@
               ]
             },
             "Green Kyle": {
-              "bestMs": 99752,
+              "bestMs": 99270,
               "laps": [
                 108073,
                 101940,
@@ -18238,7 +18238,7 @@
               ]
             },
             "Lee": {
-              "bestMs": 97720,
+              "bestMs": 97504,
               "laps": [
                 126213,
                 100115,
