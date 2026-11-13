@@ -69,41 +69,42 @@ Cumulative career statistics for all drivers across all completed seasons.
 
 | Driver | WDC | WCC | Wins | Podiums | Poles | FLs | Points | Races | Win% | Pod% | Pts/Race | FL% | Top5 | Top5% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Josie | 18 | 13 | 183 | 306 | 263 | 237 | 10095 | 376 | 48.7% | 81.4% | 26.8 | 63.0% | 347 | 92.3% |
-| James | 5 | 6 | 88 | 250 | 91 | 109 | 8403 | 360 | 24.4% | 69.4% | 23.3 | 30.3% | 314 | 87.2% |
-| Lee | 1 | 6 | 39 | 152 | 25 | 24 | 6438 | 318 | 12.3% | 47.8% | 20.2 | 7.5% | 230 | 72.3% |
+| Josie | 18 | 13 | 190 | 317 | 273 | 243 | 10435 | 388 | 49.0% | 81.7% | 26.9 | 62.6% | 359 | 92.5% |
+| James | 5 | 6 | 92 | 262 | 93 | 115 | 8713 | 372 | 24.7% | 70.4% | 23.4 | 30.9% | 326 | 87.6% |
+| Lee | 1 | 6 | 40 | 160 | 25 | 24 | 6693 | 330 | 12.1% | 48.5% | 20.3 | 7.3% | 240 | 72.7% |
 | Brie | 0 | 1 | 11 | 77 | 0 | 6 | 4495 | 241 | 4.6% | 32.0% | 18.7 | 2.5% | 163 | 67.6% |
-| Toby | 2 | 10 | 31 | 102 | 22 | 24 | 4335 | 209 | 14.8% | 48.8% | 20.7 | 11.5% | 161 | 77.0% |
-| Colin | 0 | 5 | 3 | 19 | 0 | 0 | 4181 | 289 | 1.0% | 6.6% | 14.5 | 0% | 73 | 25.3% |
-| Walnut | 1 | 2 | 14 | 60 | 4 | 6 | 3314 | 178 | 7.9% | 33.7% | 18.6 | 3.4% | 114 | 64.0% |
-| Mike | 0 | 1 | 0 | 5 | 0 | 0 | 2939 | 222 | 0% | 2.3% | 13.2 | 0% | 30 | 13.5% |
+| Toby | 2 | 10 | 31 | 102 | 22 | 24 | 4472 | 217 | 14.3% | 47.0% | 20.6 | 11.1% | 167 | 77.0% |
+| Colin | 0 | 5 | 3 | 19 | 0 | 0 | 4281 | 297 | 1.0% | 6.4% | 14.4 | 0% | 73 | 24.6% |
+| Walnut | 1 | 2 | 14 | 62 | 4 | 6 | 3462 | 186 | 7.5% | 33.3% | 18.6 | 3.2% | 121 | 65.1% |
+| Mike | 0 | 1 | 0 | 5 | 0 | 0 | 2986 | 226 | 0% | 2.2% | 13.2 | 0% | 30 | 13.3% |
 | Isaac | 0 | 2 | 2 | 34 | 0 | 1 | 2919 | 184 | 1.1% | 18.5% | 15.9 | 0.5% | 70 | 38.0% |
 | Green Kyle | 1 | 3 | 10 | 36 | 8 | 7 | 2861 | 180 | 5.6% | 20.0% | 15.9 | 3.9% | 77 | 42.8% |
 | Tawm | 0 | 1 | 5 | 34 | 0 | 2 | 2287 | 129 | 3.9% | 26.4% | 17.7 | 1.6% | 71 | 55.0% |
 | Allan | 0 | 3 | 1 | 23 | 8 | 0 | 2014 | 123 | 0.8% | 18.7% | 16.4 | 0% | 61 | 49.6% |
 | Joyce | 0 | 2 | 0 | 11 | 0 | 1 | 1407 | 99 | 0% | 11.1% | 14.2 | 1.0% | 22 | 22.2% |
+| Alfred | 0 | 3 | 0 | 4 | 0 | 0 | 1304 | 100 | 0% | 4.0% | 13.0 | 0% | 16 | 16.0% |
 | Dom | 0 | 1 | 12 | 28 | 7 | 7 | 1261 | 60 | 20.0% | 46.7% | 21.0 | 11.7% | 44 | 73.3% |
-| Alfred | 0 | 3 | 0 | 4 | 0 | 0 | 1131 | 88 | 0% | 4.5% | 12.9 | 0% | 16 | 18.2% |
 | Chris | 0 | 1 | 7 | 22 | 0 | 2 | 1037 | 52 | 13.5% | 42.3% | 19.9 | 3.8% | 36 | 69.2% |
+| Arren | 0 | 0 | 0 | 8 | 0 | 3 | 1010 | 74 | 0% | 10.8% | 13.6 | 4.1% | 28 | 37.8% |
 | Timmy | 0 | 1 | 0 | 1 | 0 | 0 | 884 | 76 | 0% | 1.3% | 11.6 | 0% | 8 | 10.5% |
+| DK | 0 | 1 | 0 | 17 | 4 | 1 | 837 | 47 | 0% | 36.2% | 17.8 | 2.1% | 27 | 57.4% |
 | Jerry | 0 | 0 | 2 | 10 | 6 | 7 | 815 | 54 | 3.7% | 18.5% | 15.1 | 13.0% | 21 | 38.9% |
-| Arren | 0 | 0 | 0 | 7 | 0 | 3 | 802 | 62 | 0% | 11.3% | 12.9 | 4.8% | 20 | 32.3% |
-| DK | 0 | 1 | 0 | 15 | 4 | 1 | 743 | 41 | 0% | 36.6% | 18.1 | 2.4% | 23 | 56.1% |
 | Ghin | 0 | 1 | 0 | 0 | 0 | 0 | 688 | 63 | 0% | 0% | 10.9 | 0% | 1 | 1.6% |
 | Caleb | 0 | 1 | 0 | 4 | 0 | 0 | 512 | 36 | 0% | 11.1% | 14.2 | 0% | 13 | 36.1% |
 | Kevin | 0 | 1 | 0 | 1 | 0 | 0 | 502 | 38 | 0% | 2.6% | 13.2 | 0% | 9 | 23.7% |
 | Donald | 0 | 0 | 2 | 7 | 0 | 0 | 491 | 31 | 6.5% | 22.6% | 15.8 | 0% | 15 | 48.4% |
 | Michael G | 0 | 0 | 0 | 0 | 0 | 0 | 451 | 43 | 0% | 0% | 10.5 | 0% | 1 | 2.3% |
 | Samson | 0 | 0 | 0 | 2 | 0 | 0 | 439 | 33 | 0% | 6.1% | 13.3 | 0% | 9 | 27.3% |
+| Ben | 0 | 1 | 0 | 0 | 0 | 0 | 401 | 32 | 0% | 0% | 12.5 | 0% | 5 | 15.6% |
 | Austin | 0 | 0 | 0 | 0 | 0 | 0 | 369 | 28 | 0% | 0% | 13.2 | 0% | 6 | 21.4% |
 | Nick | 0 | 0 | 0 | 7 | 1 | 1 | 346 | 20 | 0% | 35.0% | 17.3 | 5.0% | 13 | 65.0% |
 | Calvin | 0 | 0 | 0 | 0 | 0 | 0 | 315 | 21 | 0% | 0% | 15.0 | 0% | 6 | 28.6% |
 | JingTang | 0 | 0 | 0 | 3 | 0 | 0 | 306 | 26 | 0% | 11.5% | 11.8 | 0% | 5 | 19.2% |
-| Ben | 0 | 1 | 0 | 0 | 0 | 0 | 299 | 24 | 0% | 0% | 12.5 | 0% | 4 | 16.7% |
 | Abu | 0 | 0 | 0 | 0 | 0 | 0 | 201 | 13 | 0% | 0% | 15.5 | 0% | 3 | 23.1% |
 | Kevin H | 0 | 1 | 0 | 0 | 0 | 0 | 196 | 16 | 0% | 0% | 12.3 | 0% | 3 | 18.8% |
 | Edwin | 0 | 0 | 0 | 0 | 0 | 0 | 193 | 17 | 0% | 0% | 11.4 | 0% | 0 | 0% |
 | Martin | 0 | 1 | 0 | 0 | 0 | 0 | 187 | 15 | 0% | 0% | 12.5 | 0% | 0 | 0% |
+| Allen Q | 0 | 0 | 0 | 0 | 0 | 0 | 186 | 17 | 0% | 0% | 10.9 | 0% | 0 | 0% |
 | Heyzeus | 0 | 1 | 0 | 1 | 0 | 0 | 186 | 16 | 0% | 6.3% | 11.6 | 0% | 2 | 12.5% |
 | Vincent | 0 | 0 | 0 | 0 | 0 | 0 | 179 | 14 | 0% | 0% | 12.8 | 0% | 5 | 35.7% |
 | Viphu | 0 | 0 | 0 | 0 | 0 | 0 | 175 | 18 | 0% | 0% | 9.7 | 0% | 0 | 0% |
@@ -112,7 +113,6 @@ Cumulative career statistics for all drivers across all completed seasons.
 | Ryan | 0 | 0 | 0 | 0 | 0 | 0 | 145 | 12 | 0% | 0% | 12.1 | 0% | 0 | 0% |
 | Cheese | 0 | 0 | 0 | 1 | 0 | 0 | 136 | 12 | 0% | 8.3% | 11.3 | 0% | 1 | 8.3% |
 | Ivan | 0 | 0 | 0 | 0 | 0 | 0 | 130 | 11 | 0% | 0% | 11.8 | 0% | 0 | 0% |
-| Allen Q | 0 | 0 | 0 | 0 | 0 | 0 | 122 | 11 | 0% | 0% | 11.1 | 0% | 0 | 0% |
 | Hana | 0 | 0 | 0 | 0 | 0 | 0 | 103 | 9 | 0% | 0% | 11.4 | 0% | 0 | 0% |
 | Tim H | 0 | 0 | 0 | 0 | 0 | 0 | 87 | 8 | 0% | 0% | 10.9 | 0% | 0 | 0% |
 | Steven | 0 | 0 | 0 | 0 | 0 | 0 | 71 | 7 | 0% | 0% | 10.1 | 0% | 0 | 0% |
@@ -133,28 +133,28 @@ Cumulative career statistics for all drivers across all completed seasons.
 ## Driver Career Summaries
 
 ### Josie — Career Summary
-Josie has competed in 376 races across Cup Racing history. 18x World Drivers' Champion. 13x World Constructors' Champion. 183 wins (48.7% win rate). 306 podiums (81.4% podium rate). 263 pole positions. 237 fastest laps (63.0% FL rate). 10095 career points (26.8 pts/race). 347 top-5 finishes (92.3% top-5 rate).
+Josie has competed in 388 races across Cup Racing history. 18x World Drivers' Champion. 13x World Constructors' Champion. 190 wins (49.0% win rate). 317 podiums (81.7% podium rate). 273 pole positions. 243 fastest laps (62.6% FL rate). 10435 career points (26.9 pts/race). 359 top-5 finishes (92.5% top-5 rate).
 
 ### James — Career Summary
-James has competed in 360 races across Cup Racing history. 5x World Drivers' Champion. 6x World Constructors' Champion. 88 wins (24.4% win rate). 250 podiums (69.4% podium rate). 91 pole positions. 109 fastest laps (30.3% FL rate). 8403 career points (23.3 pts/race). 314 top-5 finishes (87.2% top-5 rate).
+James has competed in 372 races across Cup Racing history. 5x World Drivers' Champion. 6x World Constructors' Champion. 92 wins (24.7% win rate). 262 podiums (70.4% podium rate). 93 pole positions. 115 fastest laps (30.9% FL rate). 8713 career points (23.4 pts/race). 326 top-5 finishes (87.6% top-5 rate).
 
 ### Lee — Career Summary
-Lee has competed in 318 races across Cup Racing history. 1x World Drivers' Champion. 6x World Constructors' Champion. 39 wins (12.3% win rate). 152 podiums (47.8% podium rate). 25 pole positions. 24 fastest laps (7.5% FL rate). 6438 career points (20.2 pts/race). 230 top-5 finishes (72.3% top-5 rate).
+Lee has competed in 330 races across Cup Racing history. 1x World Drivers' Champion. 6x World Constructors' Champion. 40 wins (12.1% win rate). 160 podiums (48.5% podium rate). 25 pole positions. 24 fastest laps (7.3% FL rate). 6693 career points (20.3 pts/race). 240 top-5 finishes (72.7% top-5 rate).
 
 ### Brie — Career Summary
 Brie has competed in 241 races across Cup Racing history. 1x World Constructors' Champion. 11 wins (4.6% win rate). 77 podiums (32.0% podium rate). 6 fastest laps (2.5% FL rate). 4495 career points (18.7 pts/race). 163 top-5 finishes (67.6% top-5 rate).
 
 ### Toby — Career Summary
-Toby has competed in 209 races across Cup Racing history. 2x World Drivers' Champion. 10x World Constructors' Champion. 31 wins (14.8% win rate). 102 podiums (48.8% podium rate). 22 pole positions. 24 fastest laps (11.5% FL rate). 4335 career points (20.7 pts/race). 161 top-5 finishes (77.0% top-5 rate).
+Toby has competed in 217 races across Cup Racing history. 2x World Drivers' Champion. 10x World Constructors' Champion. 31 wins (14.3% win rate). 102 podiums (47.0% podium rate). 22 pole positions. 24 fastest laps (11.1% FL rate). 4472 career points (20.6 pts/race). 167 top-5 finishes (77.0% top-5 rate).
 
 ### Colin — Career Summary
-Colin has competed in 289 races across Cup Racing history. 5x World Constructors' Champion. 3 wins (1.0% win rate). 19 podiums (6.6% podium rate). 4181 career points (14.5 pts/race). 73 top-5 finishes (25.3% top-5 rate).
+Colin has competed in 297 races across Cup Racing history. 5x World Constructors' Champion. 3 wins (1.0% win rate). 19 podiums (6.4% podium rate). 4281 career points (14.4 pts/race). 73 top-5 finishes (24.6% top-5 rate).
 
 ### Walnut — Career Summary
-Walnut has competed in 178 races across Cup Racing history. 1x World Drivers' Champion. 2x World Constructors' Champion. 14 wins (7.9% win rate). 60 podiums (33.7% podium rate). 4 pole positions. 6 fastest laps (3.4% FL rate). 3314 career points (18.6 pts/race). 114 top-5 finishes (64.0% top-5 rate).
+Walnut has competed in 186 races across Cup Racing history. 1x World Drivers' Champion. 2x World Constructors' Champion. 14 wins (7.5% win rate). 62 podiums (33.3% podium rate). 4 pole positions. 6 fastest laps (3.2% FL rate). 3462 career points (18.6 pts/race). 121 top-5 finishes (65.1% top-5 rate).
 
 ### Mike — Career Summary
-Mike has competed in 222 races across Cup Racing history. 1x World Constructors' Champion. 5 podiums (2.3% podium rate). 2939 career points (13.2 pts/race). 30 top-5 finishes (13.5% top-5 rate).
+Mike has competed in 226 races across Cup Racing history. 1x World Constructors' Champion. 5 podiums (2.2% podium rate). 2986 career points (13.2 pts/race). 30 top-5 finishes (13.3% top-5 rate).
 
 ### Isaac — Career Summary
 Isaac has competed in 184 races across Cup Racing history. 2x World Constructors' Champion. 2 wins (1.1% win rate). 34 podiums (18.5% podium rate). 1 fastest laps (0.5% FL rate). 2919 career points (15.9 pts/race). 70 top-5 finishes (38.0% top-5 rate).
@@ -171,26 +171,26 @@ Allan has competed in 123 races across Cup Racing history. 3x World Constructors
 ### Joyce — Career Summary
 Joyce has competed in 99 races across Cup Racing history. 2x World Constructors' Champion. 11 podiums (11.1% podium rate). 1 fastest laps (1.0% FL rate). 1407 career points (14.2 pts/race). 22 top-5 finishes (22.2% top-5 rate).
 
+### Alfred — Career Summary
+Alfred has competed in 100 races across Cup Racing history. 3x World Constructors' Champion. 4 podiums (4.0% podium rate). 1304 career points (13.0 pts/race). 16 top-5 finishes (16.0% top-5 rate).
+
 ### Dom — Career Summary
 Dom has competed in 60 races across Cup Racing history. 1x World Constructors' Champion. 12 wins (20.0% win rate). 28 podiums (46.7% podium rate). 7 pole positions. 7 fastest laps (11.7% FL rate). 1261 career points (21.0 pts/race). 44 top-5 finishes (73.3% top-5 rate).
-
-### Alfred — Career Summary
-Alfred has competed in 88 races across Cup Racing history. 3x World Constructors' Champion. 4 podiums (4.5% podium rate). 1131 career points (12.9 pts/race). 16 top-5 finishes (18.2% top-5 rate).
 
 ### Chris — Career Summary
 Chris has competed in 52 races across Cup Racing history. 1x World Constructors' Champion. 7 wins (13.5% win rate). 22 podiums (42.3% podium rate). 2 fastest laps (3.8% FL rate). 1037 career points (19.9 pts/race). 36 top-5 finishes (69.2% top-5 rate).
 
+### Arren — Career Summary
+Arren has competed in 74 races across Cup Racing history. 8 podiums (10.8% podium rate). 3 fastest laps (4.1% FL rate). 1010 career points (13.6 pts/race). 28 top-5 finishes (37.8% top-5 rate).
+
 ### Timmy — Career Summary
 Timmy has competed in 76 races across Cup Racing history. 1x World Constructors' Champion. 1 podiums (1.3% podium rate). 884 career points (11.6 pts/race). 8 top-5 finishes (10.5% top-5 rate).
 
+### DK — Career Summary
+DK has competed in 47 races across Cup Racing history. 1x World Constructors' Champion. 17 podiums (36.2% podium rate). 4 pole positions. 1 fastest laps (2.1% FL rate). 837 career points (17.8 pts/race). 27 top-5 finishes (57.4% top-5 rate).
+
 ### Jerry — Career Summary
 Jerry has competed in 54 races across Cup Racing history. 2 wins (3.7% win rate). 10 podiums (18.5% podium rate). 6 pole positions. 7 fastest laps (13.0% FL rate). 815 career points (15.1 pts/race). 21 top-5 finishes (38.9% top-5 rate).
-
-### Arren — Career Summary
-Arren has competed in 62 races across Cup Racing history. 7 podiums (11.3% podium rate). 3 fastest laps (4.8% FL rate). 802 career points (12.9 pts/race). 20 top-5 finishes (32.3% top-5 rate).
-
-### DK — Career Summary
-DK has competed in 41 races across Cup Racing history. 1x World Constructors' Champion. 15 podiums (36.6% podium rate). 4 pole positions. 1 fastest laps (2.4% FL rate). 743 career points (18.1 pts/race). 23 top-5 finishes (56.1% top-5 rate).
 
 ### Ghin — Career Summary
 Ghin has competed in 63 races across Cup Racing history. 1x World Constructors' Champion. 688 career points (10.9 pts/race). 1 top-5 finishes (1.6% top-5 rate).
@@ -210,6 +210,9 @@ Michael G has competed in 43 races across Cup Racing history. 451 career points 
 ### Samson — Career Summary
 Samson has competed in 33 races across Cup Racing history. 2 podiums (6.1% podium rate). 439 career points (13.3 pts/race). 9 top-5 finishes (27.3% top-5 rate).
 
+### Ben — Career Summary
+Ben has competed in 32 races across Cup Racing history. 1x World Constructors' Champion. 401 career points (12.5 pts/race). 5 top-5 finishes (15.6% top-5 rate).
+
 ### Austin — Career Summary
 Austin has competed in 28 races across Cup Racing history. 369 career points (13.2 pts/race). 6 top-5 finishes (21.4% top-5 rate).
 
@@ -222,9 +225,6 @@ Calvin has competed in 21 races across Cup Racing history. 315 career points (15
 ### JingTang — Career Summary
 JingTang has competed in 26 races across Cup Racing history. 3 podiums (11.5% podium rate). 306 career points (11.8 pts/race). 5 top-5 finishes (19.2% top-5 rate).
 
-### Ben — Career Summary
-Ben has competed in 24 races across Cup Racing history. 1x World Constructors' Champion. 299 career points (12.5 pts/race). 4 top-5 finishes (16.7% top-5 rate).
-
 ### Abu — Career Summary
 Abu has competed in 13 races across Cup Racing history. 201 career points (15.5 pts/race). 3 top-5 finishes (23.1% top-5 rate).
 
@@ -236,6 +236,9 @@ Edwin has competed in 17 races across Cup Racing history. 193 career points (11.
 
 ### Martin — Career Summary
 Martin has competed in 15 races across Cup Racing history. 1x World Constructors' Champion. 187 career points (12.5 pts/race). 0 top-5 finishes (0% top-5 rate).
+
+### Allen Q — Career Summary
+Allen Q has competed in 17 races across Cup Racing history. 186 career points (10.9 pts/race). 0 top-5 finishes (0% top-5 rate).
 
 ### Heyzeus — Career Summary
 Heyzeus has competed in 16 races across Cup Racing history. 1x World Constructors' Champion. 1 podiums (6.3% podium rate). 186 career points (11.6 pts/race). 2 top-5 finishes (12.5% top-5 rate).
@@ -260,9 +263,6 @@ Cheese has competed in 12 races across Cup Racing history. 1 podiums (8.3% podiu
 
 ### Ivan — Career Summary
 Ivan has competed in 11 races across Cup Racing history. 130 career points (11.8 pts/race). 0 top-5 finishes (0% top-5 rate).
-
-### Allen Q — Career Summary
-Allen Q has competed in 11 races across Cup Racing history. 122 career points (11.1 pts/race). 0 top-5 finishes (0% top-5 rate).
 
 ### Hana — Career Summary
 Hana has competed in 9 races across Cup Racing history. 103 career points (11.4 pts/race). 0 top-5 finishes (0% top-5 rate).
@@ -5586,6 +5586,134 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 
 ### Race Results by Venue
 
+#### Venue 1: Lime Rock Park
+
+| Driver | R1 Pos | R1 Pts | R2 Pos | R2 Pts | R3 Pos | R3 Pts | R4 Pos | R4 Pts | Day Total |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| James | 1 (P) | 31 | 2 (P,-4pen) | 22 | 1 (P,FL,-2pen) | 30 | 2 (P) | 26 | 109 |
+| Josie | 4 | 20 | 1 (FL) | 31 | 2 | 25 | 3 | 22 | 98 |
+| Chris | 2 (FL) | 26 | 6 | 16 | 13 | 8 | 1 | 30 | 80 |
+| Walnut | 7 | 14 | 3 | 22 | 3 | 22 | 7 | 14 | 72 |
+| DK | 3 | 22 | 4 | 20 | 8 | 13 | 10 | 11 | 66 |
+| Vincent | 6 | 16 | 5 | 18 | 5 | 18 | 9 (-3pen) | 9 | 61 |
+| Lee | 5 | 18 | 10 | 11 | 4 | 20 | 12 | 9 | 58 |
+| Kevin H | 9 | 12 | 16 | 5 | 9 | 12 | 5 | 18 | 47 |
+| Techno | 8 | 13 | 7 | 14 | 6 | 16 | 18 | 3 | 46 |
+| Arren | 10 | 11 | 9 | 12 | 7 (-1pen) | 13 | 13 | 8 | 44 |
+| Tim H | 15 | 6 | 8 | 13 | 14 | 7 | 6 | 16 | 42 |
+| Heyzeus | 13 | 8 | 15 | 6 | 11 | 10 | 8 | 13 | 37 |
+| Allan | 11 | 10 | 11 (-4pen) | 6 | 10 | 11 | 11 | 10 | 37 |
+| Timmy | 18 | 3 | 12 | 9 | 18 | 3 | 4 | 20 | 35 |
+| Ben | 12 | 9 | 18 | 3 | 12 | 9 | 17 | 4 | 25 |
+| Colin | 16 | 5 | 14 | 7 | 15 | 6 | 15 | 6 | 24 |
+| Caleb | 14 | 7 | 17 | 4 | 17 | 4 | 14 | 7 | 22 |
+| Mike | 17 | 4 | 13 | 8 | 16 | 5 | 16 | 5 | 22 |
+| Brie | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Chris Jin | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| James H | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Green Kyle | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Francis | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Alfred | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Clive | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Donald | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Allen Q | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+
+#### Venue 2: VIR North
+
+| Driver | R1 Pos | R1 Pts | R2 Pos | R2 Pts | R3 Pos | R3 Pts | R4 Pos | R4 Pts | Day Total |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Josie | 2 | 25 | 3 | 22 | 2 (P) | 26 | 1 (P,FL) | 32 | 105 |
+| Chris | 1 | 30 | 2 | 25 | 3 | 22 | 8 | 13 | 90 |
+| James | 10 (P,FL,-3pen) | 10 | 1 (P,FL) | 32 | 1 (FL) | 31 | 3 (-6pen) | 16 | 89 |
+| Lee | 6 | 16 | 8 (-2pen) | 11 | 4 | 20 | 2 | 25 | 72 |
+| Vincent | 5 | 18 | 4 | 20 | 11 | 10 | 4 | 20 | 68 |
+| Allan | 3 | 22 | 6 | 16 | 6 | 16 | 7 | 14 | 68 |
+| Walnut | 4 | 20 | 7 (-3pen) | 11 | 5 | 18 | 5 (-1pen) | 17 | 66 |
+| Heyzeus | 11 | 10 | 5 (-2pen) | 16 | 8 | 13 | 6 | 16 | 55 |
+| Ben | 8 (-3pen) | 10 | 9 (-1pen) | 11 | 7 | 14 | 9 | 12 | 47 |
+| Kevin H | 7 | 14 | 11 (-2pen) | 8 | 9 | 12 | 13 | 8 | 42 |
+| Arren | 9 | 12 | 10 | 11 | 12 | 9 | 11 | 10 | 42 |
+| Mike | 12 | 9 | 12 | 9 | 14 | 7 | 12 | 9 | 34 |
+| Colin | 13 | 8 | 13 | 8 | 15 | 6 | 14 | 7 | 29 |
+| Green Kyle | 14 | 7 | 14 | 7 | 10 | 11 | 15 (-2pen) | 4 | 29 |
+| Donald | DNS | 0 | 15 | 6 | 13 | 8 | 10 | 11 | 25 |
+| Brie | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Chris Jin | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Tim H | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Caleb | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| James H | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Techno | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Francis | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Alfred | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Clive | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Timmy | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| DK | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Allen Q | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+
+#### Venue 3: Tucuru West A
+
+| Driver | R1 Pos | R1 Pts | R2 Pos | R2 Pts | R3 Pos | R3 Pts | R4 Pos | R4 Pts | Day Total |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Josie | 1 (P,FL) | 32 | 4 (P,-1pen) | 20 | 2 | 25 | 1 (FL) | 31 | 108 |
+| James | 2 | 25 | 2 (FL,-6pen) | 20 | 1 (P,FL) | 32 | 3 (P) | 23 | 100 |
+| Lee | 11 | 10 | 1 | 30 | 3 | 22 | 4 | 20 | 82 |
+| Chris | 4 | 20 | 3 (-2pen) | 20 | 4 | 20 | 5 | 18 | 78 |
+| Allan | 5 | 18 | 7 | 14 | 7 | 14 | 7 | 14 | 60 |
+| Walnut | 3 | 22 | 10 (-5pen) | 6 | 5 | 18 | 8 | 13 | 59 |
+| Kevin H | 8 | 13 | 5 (-1pen) | 17 | 6 | 16 | 12 (-2pen) | 7 | 53 |
+| Ben | 6 | 16 | 12 | 9 | 9 | 12 | 6 | 16 | 53 |
+| Heyzeus | 12 (-1pen) | 8 | 11 | 10 | 10 | 11 | 2 (-3pen) | 22 | 51 |
+| Arren | 7 | 14 | 8 (-1pen) | 12 | 8 | 13 | 13 | 8 | 47 |
+| Tim H | 9 | 12 | 6 | 16 | 14 | 7 | 11 | 10 | 45 |
+| Timmy | 10 | 11 | 9 | 12 | 11 | 10 | 10 | 11 | 44 |
+| Colin | 14 | 7 | 14 | 7 | 13 | 8 | 9 | 12 | 34 |
+| Mike | 13 (-2pen) | 6 | 13 | 8 | 12 (-2pen) | 7 | 14 | 7 | 28 |
+| Brie | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Chris Jin | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Caleb | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| James H | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Techno | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Green Kyle | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Francis | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Vincent | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Alfred | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Clive | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| DK | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Donald | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Allen Q | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+
+#### Venue 4: Gingerman
+
+| Driver | R1 Pos | R1 Pts | R2 Pos | R2 Pts | R3 Pos | R3 Pts | R4 Pos | R4 Pts | Day Total |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| James | 1 (P,FL) | 32 | 4 (P,FL) | 22 | 1 (P,FL) | 32 | 1 (P,FL) | 32 | 118 |
+| Josie | 2 | 25 | 3 | 22 | 2 | 25 | 2 | 25 | 97 |
+| Chris | 6 | 16 | 1 | 30 | 4 | 20 | 4 | 20 | 86 |
+| Walnut | 4 | 20 | 5 | 18 | 6 | 16 | 5 | 18 | 72 |
+| DK | 3 | 22 | 2 | 25 | 3 | 22 | DNS | 0 | 69 |
+| Donald | 7 | 14 | 6 | 16 | 11 | 10 | 3 | 22 | 62 |
+| Lee | 8 | 13 | 10 | 11 | 5 | 18 | 6 | 16 | 58 |
+| Kevin H | 5 | 18 | 12 | 9 | 8 | 13 | 7 | 14 | 54 |
+| Mike | 10 | 11 | 9 | 12 | 10 | 11 | 8 | 13 | 47 |
+| Colin | 9 | 12 | 11 | 10 | 9 | 12 | 10 | 11 | 45 |
+| Heyzeus | 12 | 9 | 8 | 13 | 12 | 9 | 9 | 12 | 43 |
+| Allan | 11 | 10 | 13 | 8 | 7 | 14 | 11 | 10 | 42 |
+| Vincent | 13 | 8 | 7 | 14 | DNS | 0 | DNS | 0 | 22 |
+| Brie | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Chris Jin | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Tim H | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Caleb | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| James H | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Techno | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Green Kyle | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Francis | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Alfred | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Ben | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Clive | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Timmy | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Arren | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Allen Q | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+
 ### Season Standings
 
 | Pos | Driver | Points | Wins | Podiums | Poles | FLs | Races | Part. | Pts Rate | Top 5 Rate |
@@ -5624,5 +5752,139 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 | --- | --- |
 | Team Tyuap | 1839 |
 | Team Byump | 1604 |
+
+---
+
+## Season 25 Results
+
+**Type:** Formula Car Season
+**Car:** Super Formula 2025
+**Reverse Grid:** Yes
+**Venues:** Chang International, Sepang, Singapore, Heart Lake Complex GP
+**Races Per Venue:** 4
+**WDC:** TBD
+**WCC:** TBD
+
+### Scoring System
+Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
+
+### Race Results by Venue
+
+#### Venue 1: Chang International
+
+| Driver | R1 Pos | R1 Pts | R2 Pos | R2 Pts | R3 Pos | R3 Pts | R4 Pos | R4 Pts | Day Total |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| James | 1 (P,FL) | 32 | 2 (P,FL) | 27 | 2 (FL) | 26 | 2 (-1pen) | 24 | 109 |
+| Josie | 2 | 25 | 1 | 30 | 1 (P) | 31 | 4 (P,FL) | 22 | 108 |
+| Lee | 4 | 20 | 6 | 16 | 7 | 14 | 1 | 30 | 80 |
+| Arren | 6 | 16 | 5 | 18 | 3 | 22 | 5 | 18 | 74 |
+| Walnut | 5 | 18 | 4 (-6pen) | 14 | 4 | 20 | 3 | 22 | 74 |
+| Alfred | 7 | 14 | 8 | 13 | 6 | 16 | 6 | 16 | 59 |
+| DK | 3 | 22 | 3 (-5pen) | 17 | 5 | 18 | DNS | 0 | 57 |
+| Ben | 8 | 13 | 7 | 14 | 8 | 13 | 7 | 14 | 54 |
+| Allen Q | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Brie | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Cheese | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Chris | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Colin | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Donald | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Mike | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Toby | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+
+#### Venue 2: Sepang
+
+| Driver | R1 Pos | R1 Pts | R2 Pos | R2 Pts | R3 Pos | R3 Pts | R4 Pos | R4 Pts | Day Total |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| James | 1 (FL,-6pen) | 25 | 2 (FL) | 26 | 1 (FL) | 31 | 1 | 30 | 112 |
+| Josie | 3 (P) | 23 | 1 (P) | 31 | 2 (P,-1pen) | 25 | 2 (P,FL) | 27 | 106 |
+| Lee | 2 | 25 | 3 | 22 | 3 | 22 | 3 | 22 | 91 |
+| Toby | 4 | 20 | 4 | 20 | 4 | 20 | 4 | 20 | 80 |
+| Arren | 5 | 18 | 5 | 18 | 5 | 18 | 5 | 18 | 72 |
+| Alfred | 6 | 16 | 6 | 16 | 7 | 14 | 6 | 16 | 62 |
+| Colin | 8 | 13 | 7 | 14 | 6 | 16 | 7 | 14 | 57 |
+| Allen Q | 7 | 14 | 8 | 13 | DNS | 0 | DNS | 0 | 27 |
+| Ben | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Brie | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Cheese | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Chris | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| DK | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Donald | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Mike | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Walnut | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+
+#### Venue 3: Singapore
+
+| Driver | R1 Pos | R1 Pts | R2 Pos | R2 Pts | R3 Pos | R3 Pts | R4 Pos | R4 Pts | Day Total |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Josie | 1 (P,FL) | 32 | 1 (P,FL,-2pen) | 30 | 1 (P,FL) | 32 | 1 (P,FL) | 32 | 126 |
+| James | 2 | 25 | 2 (-5pen) | 20 | 2 (-3pen) | 22 | 2 (-3pen) | 22 | 89 |
+| Lee | 3 | 22 | 3 | 22 | 5 | 18 | 3 | 22 | 84 |
+| Walnut | 7 | 14 | 4 | 20 | 3 | 22 | 4 (-2pen) | 18 | 74 |
+| Arren | 4 | 20 | 7 | 14 | 6 | 16 | 8 (-1pen) | 12 | 62 |
+| Toby | 5 | 18 | 6 | 16 | 4 (-5pen) | 15 | 10 (-3pen) | 8 | 57 |
+| Alfred | 6 | 16 | 8 | 13 | 10 | 11 | 9 | 12 | 52 |
+| Ben | 9 | 12 | 12 | 9 | 7 | 14 | 5 (-5pen) | 13 | 48 |
+| Mike | 12 | 9 | 11 | 10 | 9 | 12 | 6 | 16 | 47 |
+| Colin | 10 (-3pen) | 8 | 10 | 11 | 11 | 10 | 7 | 14 | 43 |
+| Allen Q | 8 | 13 | 9 (-4pen) | 8 | 8 (-7pen) | 6 | 11 | 10 | 37 |
+| DK | 11 | 10 | 5 | 18 | 12 | 9 | DNS | 0 | 37 |
+| Brie | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Cheese | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Chris | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Donald | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+
+#### Venue 4: Heart Lake Complex GP
+
+| Driver | R1 Pos | R1 Pts | R2 Pos | R2 Pts | R3 Pos | R3 Pts | R4 Pos | R4 Pts | Day Total |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Alfred | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Allen Q | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Arren | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Ben | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Brie | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Cheese | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Chris | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Colin | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| DK | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Donald | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| James | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Josie | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Lee | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Mike | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Toby | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+| Walnut | DNS | 0 | DNS | 0 | DNS | 0 | DNS | 0 | 0 |
+
+### Season Standings
+
+| Pos | Driver | Points | Wins | Podiums | Poles | FLs | Races | Part. | Pts Rate | Top 5 Rate |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | Josie | 340 | 7 | 11 | 10 | 6 | 12 | 75.0% | 66.4% | 75.0% |
+| 2 | James | 310 | 4 | 12 | 2 | 6 | 12 | 75.0% | 60.5% | 75.0% |
+| 3 | Lee | 255 | 1 | 8 | 0 | 0 | 12 | 75.0% | 49.8% | 62.5% |
+| 4 | Arren | 208 | 0 | 1 | 0 | 0 | 12 | 75.0% | 40.6% | 50.0% |
+| 5 | Alfred | 173 | 0 | 0 | 0 | 0 | 12 | 75.0% | 33.8% | 0% |
+| 6 | Walnut | 148 | 0 | 2 | 0 | 0 | 8 | 50.0% | 28.9% | 43.8% |
+| 7 | Toby | 137 | 0 | 0 | 0 | 0 | 8 | 50.0% | 26.8% | 37.5% |
+| 8 | Ben | 102 | 0 | 0 | 0 | 0 | 8 | 50.0% | 19.9% | 6.3% |
+| 9 | Colin | 100 | 0 | 0 | 0 | 0 | 8 | 50.0% | 19.5% | 0% |
+| 10 | DK | 94 | 0 | 2 | 0 | 0 | 6 | 37.5% | 18.4% | 25.0% |
+| 11 | Allen Q | 64 | 0 | 0 | 0 | 0 | 6 | 37.5% | 12.5% | 0% |
+| 12 | Mike | 47 | 0 | 0 | 0 | 0 | 4 | 25.0% | 9.2% | 0% |
+| 13 | Brie | 0 | 0 | 0 | 0 | 0 | 0 | 0% | 0% | 0% |
+| 13 | Cheese | 0 | 0 | 0 | 0 | 0 | 0 | 0% | 0% | 0% |
+| 13 | Chris | 0 | 0 | 0 | 0 | 0 | 0 | 0% | 0% | 0% |
+| 13 | Donald | 0 | 0 | 0 | 0 | 0 | 0 | 0% | 0% | 0% |
+
+### Team Standings (WCC)
+
+| Team | Points |
+| --- | --- |
+| Alfred + Josie | 513 |
+| James + Ben | 412 |
+| Cheese + Walnut + Arren | 356 |
+| Lee + Colin | 355 |
+| DK + Allen Q + Chris | 158 |
+| Donald + Toby | 137 |
+| Mike + Brie | 47 |
 
 ---
