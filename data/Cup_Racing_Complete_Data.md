@@ -34,8 +34,8 @@ Season 18 was split into S18a and S18b (both sports car seasons).
 | S23 | Formula | F1 1990 (McLaren, Ferrari) | Yes | Silverstone, Spa, Suzuka, Interlagos | 4 | Josie | Josie + Colin + Alfred |
 | S24a | Sports | WEC (GT3 and Hypercars) | Yes | Dragon Trail Seaside, Red Bull Ring, Sebring, Fuji | 4 | James (Hypercar), Walnut (GT3) | James + Allan + Alfred |
 | S24b | Sports | Vintage Mini Coopers | Yes | Lime Rock Park, VIR North, Tucuru West A, Gingerman | 4 | James | James + Kevin H + Heyzeus + Colin + Green Kyle + Allan + Ben + Timmy + Chris + DK |
-| S25 | Formula | Super Formula 2025 | Yes | Chang International, Sepang, Singapore, Heart Lake Complex GP | 4 | TBD | TBD |
-| S26a | Sports | Cup Racing TC | Yes | TBD | 4 | TBD | TBD |
+| S25 | Formula | Super Formula 2025 | Yes | Chang International, Sepang, Singapore, Heart Lake Complex GP | 4 | Josie | Josie + Alfred |
+| S26a | Sports | Cup Racing TC | Yes | Algarve Portimao, Pitt Race, Nordschleife VLN, Kalinago National A | 4 | TBD | TBD |
 | S26b | Sports | Cup Racing TC | Yes | TBD | 4 | TBD | TBD |
 
 ## Scoring System
@@ -5762,8 +5762,8 @@ Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
 **Reverse Grid:** Yes
 **Venues:** Chang International, Sepang, Singapore, Heart Lake Complex GP
 **Races Per Venue:** 4
-**WDC:** TBD
-**WCC:** TBD
+**WDC:** Josie
+**WCC:** Josie + Alfred
 
 ### Scoring System
 Pole Position: 1 bonus point, Fastest Lap: 1 bonus point
